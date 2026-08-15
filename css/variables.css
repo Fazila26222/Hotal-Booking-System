@@ -1,0 +1,30 @@
+ /* =====primary colors====== */
+    :root {
+      --primary:       #2563EB;
+      --primary-hover: #1D4ED8;
+      --secondary:     #3B82F6;
+  /*=======status colors======*/    
+      --success:       #10B981;
+      --warning:       #F59E0B;
+      --danger:        #EF4444;
+/*======bacground===============*/
+      --bg-main:       #F8FAFC;
+      --bg-section:    #FFFFFF;
+      --bg-card:       #FFFFFF;
+/*======Text===================*/
+      --text-primary:  #1E293B;
+      --text-secondary:#64748B;
+      --text-light:    #94A3B8;
+/*==========footer ============*/
+      --footer-bg:     #0F172A;
+      --footer-text:   #CBD5E1;
+      --footer-link:   #60A5FA;
+/* ==========border============*/
+      --border:        #E2E8F0;
+/*============ shadow===========*/
+      --shadow-sm:  0 1px 3px rgba(37,99,235,.08);
+      --shadow-md:  0 4px 16px rgba(37,99,235,.12);
+      --shadow-lg:  0 10px 40px rgba(37,99,235,.16);
+      --radius:     14px;
+      --transition: .28s ease;
+    }
