@@ -250,7 +250,7 @@
 }
 
 .hotel-image {
-    width: 100%;
+    width: 90%;
     padding-left: 10px;
     top: 10px;
     border-radius: 10px;
@@ -516,6 +516,7 @@
 .image-city {
     position: relative;
     top: 20px;
+    margin-bottom: 20px;
     transition: 0.4s;
 }
 
