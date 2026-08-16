@@ -500,7 +500,7 @@
     counter-reset: var(--text-secondary);
     border: 1.5px solid var(--border);
     border-radius: 8px;
-    padding: 7px 22px;
+    padding: 7px 15px;
     cursor: pointer;
     transition: all var(--transition);
     white-space: nowrap;
@@ -515,7 +515,7 @@
 
 .image-city {
     position: relative;
-    top: 20px;
+    margin-top: 20px;
     margin-bottom: 20px;
     transition: 0.4s;
 }
@@ -876,8 +876,15 @@
     .fea-image{
         height: 150px;
     }
-    .filter-btn{
-        font-size: 0.75rem;
-        padding: 6px 12px;
+    @media (max-width: 991px) {
+    #filter {
+        top: 67px;
+    }
+}
+}
+@media (max-width: 576px) {
+    .filter-scroll {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
 }
