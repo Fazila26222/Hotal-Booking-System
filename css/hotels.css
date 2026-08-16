@@ -1,0 +1,214 @@
+#hero {
+    background: url("../images/Hotle\ \(2\).png");
+    padding: 100px 0 80px;
+    position: relative;
+    overflow: visible;
+    width: 100%;
+    min-height: 450px;
+}
+
+.hero-headding {
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: sans-serif;
+}
+
+.hero-headding h1 {
+    color: #fff;
+    font-size: 1.34rem;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+
+.hero-headding p {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.search-card {
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Location */
+.location-box {
+    position: relative;
+}
+
+#locationBtn {
+    padding: 10px 20px;
+    background-color: var(--bg-main);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.location-card {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 350px;
+    padding: 15px;
+    background: var(--bg-card);
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.location-card.active {
+    display: block;
+}
+
+.location-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.location-search input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+.country-tital {
+    display: flex;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+}
+
+.country {
+    display: block;
+    width: 100%;
+    color: #333;
+    padding: 10px 15px;
+    cursor: pointer;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.counter span {
+    display: block;
+    color: #333;
+    font-size: 15px;
+    visibility: visible !important;
+}
+
+.country:hover {
+    background-color: #f2f2f2;
+}
+
+.search-item {
+    flex: 1;
+}
+
+.search-item label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.search-card input,
+.search-item select {
+    width: 100%;
+    border-radius: 8px;
+    outline: none;
+}
+
+.btn-search {
+    background-color: var(--text-primary);
+    color: #fff;
+    transition: 0.4s;
+}
+
+.btn-search:hover {
+    background-color: var(--primary-hover);
+    color: #fff;
+    transform: translateY(-6px);
+}
+
+/*   Guest   */
+.guest-box {
+    position: relative;
+}
+
+#guestBtn {
+    padding: 10px 20px;
+    background-color: var(--bg-main);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.guest-card {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 400px;
+    padding: 20px;
+    background: var(--bg-main);
+    border-radius: var(--radius);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.guest-card.active {
+    display: block;
+}
+
+.guest-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.counter {
+    display: flex;
+    gap: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px 15px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.counter button {
+    border: none;
+    background: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#doneBtn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: var(--text-primary);
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#doneBtn:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-6px);
+}
