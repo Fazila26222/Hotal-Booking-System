@@ -198,7 +198,680 @@
             </div>
         </div>
     </section>
-  
+    <!--=================Destination================-->
+    <section id="destination">
+        <div class="container">
+            <div class="row g-2">
+                <!--Filter-->
+                <div class="col-lg-3 col-md-4">
+                    <div class="filter-card">
+                        <!--Check Box-->
+                        <div class="heading">
+                            <span> Filter By </span>
+                            <span style="color: blue;"> Clear All </span>
+                        </div>
+                        <div class="head">
+                            <h1>Destination</h1>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="All Destination">
+                                <label for="All Destination">All Destination</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="Kabul">
+                                <label for="Kabul">Kabul</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="Dubai">
+                                <label for="Dubai">Dubai</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="Istanbul">
+                                <label for="Istanbul">Istanbul</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="Bangkok">
+                                <label for="Bangkok">Bangkok</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="London">
+                                <label for="London">London</label>
+                            </div>
+                            <button class="showBtn" id="showBtn">Show more</button>
+                        </div>
+                        <!--Radio Button-->
+                        <div class="head1">
+                            <h1>Price Range</h1>
+                            <span>$50</span>
+                            <span>$500</span>
+                            <div class="form-radio">
+                                <input type="radio" name="radio">
+                                <label>$50 - $100</label>
+                            </div>
+                            <div class="form-radio">
+                                <input type="radio" name="radio">
+                                <label>$100 - $200</label>
+                            </div>
+                            <div class="form-radio">
+                                <input type="radio" name="radio">
+                                <label>$200 - $300</label>
+                            </div>
+                            <div class="form-radio">
+                                <input type="radio" name="radio">
+                                <label>$300 - $400</label>
+                            </div>
+                            <div class="form-radio">
+                                <input type="radio" name="radio">
+                                <label>$500</label>
+                            </div>
+                        </div>
+                        <!--Hotel Type-->
+                        <div class="head2">
+                            <h1>Hotel Type</h1>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="All Type">
+                                <label for="All Type">All Type</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="Luxury">
+                                <label for="Luxury">Luxury</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="budget">
+                                <label for="budget">Budget</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="resort">
+                                <label for="resort">Resort</label>
+                            </div>
+                        </div>
+                        <!--Amenities-->
+                        <div class="head3">
+                            <h1>Amenities</h1>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="Wi-Fi">
+                                <label for="Wi-Fi">Wi-Fi</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="Pool">
+                                <label for="Pool">Pool</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="Breakfast">
+                                <label for="Breakfast">Breakfast</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="Parking">
+                                <label for="Parking">Parking</label>
+                            </div>
+                        </div>
+                        <button class="apllyBtn" id="applyFilterBtn">Apply Filter</button>
+                    </div>
+                </div>
+                <!--Hotels-->
+                <div class="col-lg-9 col-md-8">
+                    <div id="hotelBtn">
+                        <div class="d-flex align-items-center gap-1 hotelBtn-scroll">
+                            <button class="HotelBtn" id="hotelBtn">All</button>
+                            <button class="HotelBtn" id="hotelBtn">Kabul</button>
+                            <button class="HotelBtn" id="hotelBtn">Dubai</button>
+                            <button class="HotelBtn" id="hotelBtn">Istanbul</button>
+                            <button class="HotelBtn" id="hotelBtn">Bangkok</button>
+                            <button class="HotelBtn" id="hotelBtn">London</button>
+
+                            <div class="ms-auto d-none d-md-flex align-items-center g-0">
+                                <span class="filter-lable">Sort:</span>
+                                <select class="sort-select">
+                                    <option value="recommended">Recommended</option>
+                                    <option value="rating">Highest Rated</option>
+                                    <option value="price-Low">Price: Low to High</option>
+                                    <option value="price-High">Price: High to Low</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card Hotel card 1-->
+                    <div class="hotel-card">
+                        <div class="row g-3">
+                            <!--iamge-->
+                            <div class="col-lg-4 image-hotel">
+                                <img src="images/kaubl-hotel.jpg" class="img-fluid" alt="">
+                            </div>
+                            <!--hotel information-->
+                            <div class="col-lg-5 hotel-info">
+                                <div class="hotel-information">
+                                    <h3>Kabul Serena Hotel</h3>
+                                    <p>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star" style="color: var(--warning);"></i>
+                                        4.5 <span style="color: blue;">(230 Reviews)</span>
+                                    </p>
+                                    <p><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i> Kabul Afghanistan</p>
+                                    <p>
+                                        Experience a comfortable and relaxing stay at Kabul Serena Hotel, offering
+                                        modern rooms,excellent service,and convenient access to the city's
+                                        popular attractions.
+                                    </p>
+                                    <p class="d-flex gap-3"><span> <i class="bi bi-wifi" style="color: #0f2d3d;"></i>
+                                            Wi-Fi
+                                        </span>
+                                        <span> <i class="bi bi-cup-hot" style="color: #f45e13;"></i> Breakfast </span>
+                                        <span> <i class="bi bi-p-square" style="color: #0f2d3d;"></i>Parking
+                                        </span>
+                                        <span> <i class="bi bi-water" style="color: #0f2d3d;"></i> Pool </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!--price-->
+                            <div class="col-lg-3 hotel-price">
+                                <span style="font-weight: bold;">$120</span>
+                                <span>/night</span>
+                                <h6>Taxes & fees included</h6>
+                                <button class="btn viewBtn" id="viewBtn">view Details</button>
+                                <button class="btn bookBtn" id="bookBtn">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--card 2-->
+                    <div class="hotel-card">
+                        <div class="row g-3">
+                            <!--iamge-->
+                            <div class="col-lg-4 image-hotel">
+                                <img src="images/Burj Al Arab.jpg" class="img-fluid" alt="">
+                            </div>
+                            <!--hotel information-->
+                            <div class="col-lg-5 hotel-info">
+                                <div class="hotel-information">
+                                    <h3>Burj Al Arab</h3>
+                                    <p>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star" style="color: var(--warning);"></i>
+                                        4.5 <span style="color: blue;">(230 Reviews)</span>
+                                    </p>
+                                    <p><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i> Dubai UAE</p>
+                                    <p>
+                                        enjoy a comfortable stay with modern rooms, friendly service, and a convenient
+                                        location in Dubai.
+                                    </p>
+                                    <p class="d-flex gap-3"><span> <i class="bi bi-wifi" style="color: #0f2d3d;"></i>
+                                            Wi-Fi
+                                        </span>
+                                        <span> <i class="bi bi-cup-hot" style="color: #f45e13;"></i> Breakfast </span>
+                                        <span> <i class="bi bi-p-square" style="color: #0f2d3d;"></i>Parking
+                                        </span>
+                                        <span> <i class="bi bi-water" style="color: #0f2d3d;"></i> Pool </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!--price-->
+                            <div class="col-lg-3 hotel-price">
+                                <span style="font-weight: bold;">$120</span>
+                                <span>/night</span>
+                                <h6>Taxes & fees included</h6>
+                                <button class="btn viewBtn" id="viewBtn">view Details</button>
+                                <button class="btn bookBtn" id="bookBtn">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--card 3-->
+                    <div class="hotel-card">
+                        <div class="row g-3">
+                            <!--iamge-->
+                            <div class="col-lg-4 image-hotel">
+                                <img src="images/ciragan palace .jpg" class="img-fluid" alt="">
+                            </div>
+                            <!--hotel information-->
+                            <div class="col-lg-5 hotel-info">
+                                <div class="hotel-information">
+                                    <h3>Ciragan Palace Kempinski</h3>
+                                    <p>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star" style="color: var(--warning);"></i>
+                                        4.5 <span style="color: blue;">(230 Reviews)</span>
+                                    </p>
+                                    <p><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i> Istanbul Turkey</p>
+                                    <p>
+                                        Experience a comfort and convenientce with modern rooms, professional service
+                                        and a central location.
+                                    </p>
+                                    <p class="d-flex gap-3"><span> <i class="bi bi-wifi" style="color: #0f2d3d;"></i>
+                                            Wi-Fi
+                                        </span>
+                                        <span> <i class="bi bi-cup-hot" style="color: #f45e13;"></i> Breakfast </span>
+                                        <span> <i class="bi bi-p-square" style="color: #0f2d3d;"></i>Parking
+                                        </span>
+                                        <span> <i class="bi bi-water" style="color: #0f2d3d;"></i> Pool </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!--price-->
+                            <div class="col-lg-3 hotel-price">
+                                <span style="font-weight: bold;">$120</span>
+                                <span>/night</span>
+                                <h6>Taxes & fees included</h6>
+                                <button class="btn viewBtn" id="viewBtn">view Details</button>
+                                <button class="btn bookBtn" id="bookBtn">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--card 4-->
+                    <div class="hotel-card">
+                        <div class="row g-3">
+                            <!--iamge-->
+                            <div class="col-lg-4 image-hotel">
+                                <img src="images/kaubl-hotel.jpg" class="img-fluid" alt="">
+                            </div>
+                            <!--hotel information-->
+                            <div class="col-lg-5 hotel-info">
+                                <div class="hotel-information">
+                                    <h3>Kabul Serena Hotel</h3>
+                                    <p>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star" style="color: var(--warning);"></i>
+                                        4.5 <span style="color: blue;">(230 Reviews)</span>
+                                    </p>
+                                    <p><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i> Kabul Afghanistan</p>
+                                    <p>
+                                        Experience a comfortable and relaxing stay at Kabul Serena Hotel, offering
+                                        modern rooms,excellent service,and convenient access to the city's
+                                        popular attractions.
+                                    </p>
+                                    <p class="d-flex gap-3"><span> <i class="bi bi-wifi" style="color: #0f2d3d;"></i>
+                                            Wi-Fi
+                                        </span>
+                                        <span> <i class="bi bi-cup-hot" style="color: #f45e13;"></i> Breakfast </span>
+                                        <span> <i class="bi bi-p-square" style="color: #0f2d3d;"></i>Parking
+                                        </span>
+                                        <span> <i class="bi bi-water" style="color: #0f2d3d;"></i> Pool </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!--price-->
+                            <div class="col-lg-3 hotel-price">
+                                <span style="font-weight: bold;">$120</span>
+                                <span>/night</span>
+                                <h6>Taxes & fees included</h6>
+                                <button class="btn viewBtn" id="viewBtn">view Details</button>
+                                <button class="btn bookBtn" id="bookBtn">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--card 5-->
+                    <div class="hotel-card">
+                        <div class="row g-3">
+                            <!--iamge-->
+                            <div class="col-lg-4 image-hotel">
+                                <img src="images/kaubl-hotel.jpg" class="img-fluid" alt="">
+                            </div>
+                            <!--hotel information-->
+                            <div class="col-lg-5 hotel-info">
+                                <div class="hotel-information">
+                                    <h3>Kabul Serena Hotel</h3>
+                                    <p>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star" style="color: var(--warning);"></i>
+                                        4.5 <span style="color: blue;">(230 Reviews)</span>
+                                    </p>
+                                    <p><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i> Kabul Afghanistan</p>
+                                    <p>
+                                        Experience a comfortable and relaxing stay at Kabul Serena Hotel, offering
+                                        modern rooms,excellent service,and convenient access to the city's
+                                        popular attractions.
+                                    </p>
+                                    <p class="d-flex gap-3"><span> <i class="bi bi-wifi" style="color: #0f2d3d;"></i>
+                                            Wi-Fi
+                                        </span>
+                                        <span> <i class="bi bi-cup-hot" style="color: #f45e13;"></i> Breakfast </span>
+                                        <span> <i class="bi bi-p-square" style="color: #0f2d3d;"></i>Parking
+                                        </span>
+                                        <span> <i class="bi bi-water" style="color: #0f2d3d;"></i> Pool </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!--price-->
+                            <div class="col-lg-3 hotel-price">
+                                <span style="font-weight: bold;">$120</span>
+                                <span>/night</span>
+                                <h6>Taxes & fees included</h6>
+                                <button class="btn viewBtn" id="viewBtn">view Details</button>
+                                <button class="btn bookBtn" id="bookBtn">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--card 6-->
+                    <div class="hotel-card">
+                        <div class="row g-3">
+                            <!--iamge-->
+                            <div class="col-lg-4 image-hotel">
+                                <img src="images/kaubl-hotel.jpg" class="img-fluid" alt="">
+                            </div>
+                            <!--hotel information-->
+                            <div class="col-lg-5 hotel-info">
+                                <div class="hotel-information">
+                                    <h3>Kabul Serena Hotel</h3>
+                                    <p>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star" style="color: var(--warning);"></i>
+                                        4.5 <span style="color: blue;">(230 Reviews)</span>
+                                    </p>
+                                    <p><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i> Kabul Afghanistan</p>
+                                    <p>
+                                        Experience a comfortable and relaxing stay at Kabul Serena Hotel, offering
+                                        modern rooms,excellent service,and convenient access to the city's
+                                        popular attractions.
+                                    </p>
+                                    <p class="d-flex gap-3"><span> <i class="bi bi-wifi" style="color: #0f2d3d;"></i>
+                                            Wi-Fi
+                                        </span>
+                                        <span> <i class="bi bi-cup-hot" style="color: #f45e13;"></i> Breakfast </span>
+                                        <span> <i class="bi bi-p-square" style="color: #0f2d3d;"></i>Parking
+                                        </span>
+                                        <span> <i class="bi bi-water" style="color: #0f2d3d;"></i> Pool </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!--price-->
+                            <div class="col-lg-3 hotel-price">
+                                <span style="font-weight: bold;">$120</span>
+                                <span>/night</span>
+                                <h6>Taxes & fees included</h6>
+                                <button class="btn viewBtn" id="viewBtn">view Details</button>
+                                <button class="btn bookBtn" id="bookBtn">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--card 7-->
+                    <div class="hotel-card">
+                        <div class="row g-3">
+                            <!--iamge-->
+                            <div class="col-lg-4 image-hotel">
+                                <img src="images/kaubl-hotel.jpg" class="img-fluid" alt="">
+                            </div>
+                            <!--hotel information-->
+                            <div class="col-lg-5 hotel-info">
+                                <div class="hotel-information">
+                                    <h3>Kabul Serena Hotel</h3>
+                                    <p>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star" style="color: var(--warning);"></i>
+                                        4.5 <span style="color: blue;">(230 Reviews)</span>
+                                    </p>
+                                    <p><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i> Kabul Afghanistan</p>
+                                    <p>
+                                        Experience a comfortable and relaxing stay at Kabul Serena Hotel, offering
+                                        modern rooms,excellent service,and convenient access to the city's
+                                        popular attractions.
+                                    </p>
+                                    <p class="d-flex gap-3"><span> <i class="bi bi-wifi" style="color: #0f2d3d;"></i>
+                                            Wi-Fi
+                                        </span>
+                                        <span> <i class="bi bi-cup-hot" style="color: #f45e13;"></i> Breakfast </span>
+                                        <span> <i class="bi bi-p-square" style="color: #0f2d3d;"></i>Parking
+                                        </span>
+                                        <span> <i class="bi bi-water" style="color: #0f2d3d;"></i> Pool </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!--price-->
+                            <div class="col-lg-3 hotel-price">
+                                <span style="font-weight: bold;">$120</span>
+                                <span>/night</span>
+                                <h6>Taxes & fees included</h6>
+                                <button class="btn viewBtn" id="viewBtn">view Details</button>
+                                <button class="btn bookBtn" id="bookBtn">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--card 8-->
+                    <div class="hotel-card">
+                        <div class="row g-3">
+                            <!--iamge-->
+                            <div class="col-lg-4 image-hotel">
+                                <img src="images/kaubl-hotel.jpg" class="img-fluid" alt="">
+                            </div>
+                            <!--hotel information-->
+                            <div class="col-lg-5 hotel-info">
+                                <div class="hotel-information">
+                                    <h3>Kabul Serena Hotel</h3>
+                                    <p>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star" style="color: var(--warning);"></i>
+                                        4.5 <span style="color: blue;">(230 Reviews)</span>
+                                    </p>
+                                    <p><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i> Kabul Afghanistan</p>
+                                    <p>
+                                        Experience a comfortable and relaxing stay at Kabul Serena Hotel, offering
+                                        modern rooms,excellent service,and convenient access to the city's
+                                        popular attractions.
+                                    </p>
+                                    <p class="d-flex gap-3"><span> <i class="bi bi-wifi" style="color: #0f2d3d;"></i>
+                                            Wi-Fi
+                                        </span>
+                                        <span> <i class="bi bi-cup-hot" style="color: #f45e13;"></i> Breakfast </span>
+                                        <span> <i class="bi bi-p-square" style="color: #0f2d3d;"></i>Parking
+                                        </span>
+                                        <span> <i class="bi bi-water" style="color: #0f2d3d;"></i> Pool </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!--price-->
+                            <div class="col-lg-3 hotel-price">
+                                <span style="font-weight: bold;">$120</span>
+                                <span>/night</span>
+                                <h6>Taxes & fees included</h6>
+                                <button class="btn viewBtn" id="viewBtn">view Details</button>
+                                <button class="btn bookBtn" id="bookBtn">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--card 9-->
+                    <div class="hotel-card">
+                        <div class="row g-3">
+                            <!--iamge-->
+                            <div class="col-lg-4 image-hotel">
+                                <img src="images/kaubl-hotel.jpg" class="img-fluid" alt="">
+                            </div>
+                            <!--hotel information-->
+                            <div class="col-lg-5 hotel-info">
+                                <div class="hotel-information">
+                                    <h3>Kabul Serena Hotel</h3>
+                                    <p>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star" style="color: var(--warning);"></i>
+                                        4.5 <span style="color: blue;">(230 Reviews)</span>
+                                    </p>
+                                    <p><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i> Kabul Afghanistan</p>
+                                    <p>
+                                        Experience a comfortable and relaxing stay at Kabul Serena Hotel, offering
+                                        modern rooms,excellent service,and convenient access to the city's
+                                        popular attractions.
+                                    </p>
+                                    <p class="d-flex gap-3"><span> <i class="bi bi-wifi" style="color: #0f2d3d;"></i>
+                                            Wi-Fi
+                                        </span>
+                                        <span> <i class="bi bi-cup-hot" style="color: #f45e13;"></i> Breakfast </span>
+                                        <span> <i class="bi bi-p-square" style="color: #0f2d3d;"></i>Parking
+                                        </span>
+                                        <span> <i class="bi bi-water" style="color: #0f2d3d;"></i> Pool </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!--price-->
+                            <div class="col-lg-3 hotel-price">
+                                <span style="font-weight: bold;">$120</span>
+                                <span>/night</span>
+                                <h6>Taxes & fees included</h6>
+                                <button class="btn viewBtn" id="viewBtn">view Details</button>
+                                <button class="btn bookBtn" id="bookBtn">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--card 10-->
+                    <div class="hotel-card">
+                        <div class="row g-3">
+                            <!--iamge-->
+                            <div class="col-lg-4 image-hotel">
+                                <img src="images/kaubl-hotel.jpg" class="img-fluid" alt="">
+                            </div>
+                            <!--hotel information-->
+                            <div class="col-lg-5 hotel-info">
+                                <div class="hotel-information">
+                                    <h3>Kabul Serena Hotel</h3>
+                                    <p>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star" style="color: var(--warning);"></i>
+                                        4.5 <span style="color: blue;">(230 Reviews)</span>
+                                    </p>
+                                    <p><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i> Kabul Afghanistan</p>
+                                    <p>
+                                        Experience a comfortable and relaxing stay at Kabul Serena Hotel, offering
+                                        modern rooms,excellent service,and convenient access to the city's
+                                        popular attractions.
+                                    </p>
+                                    <p class="d-flex gap-3"><span> <i class="bi bi-wifi" style="color: #0f2d3d;"></i>
+                                            Wi-Fi
+                                        </span>
+                                        <span> <i class="bi bi-cup-hot" style="color: #f45e13;"></i> Breakfast </span>
+                                        <span> <i class="bi bi-p-square" style="color: #0f2d3d;"></i>Parking
+                                        </span>
+                                        <span> <i class="bi bi-water" style="color: #0f2d3d;"></i> Pool </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!--price-->
+                            <div class="col-lg-3 hotel-price">
+                                <span style="font-weight: bold;">$120</span>
+                                <span>/night</span>
+                                <h6>Taxes & fees included</h6>
+                                <button class="btn viewBtn" id="viewBtn">view Details</button>
+                                <button class="btn bookBtn" id="bookBtn">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--card 11-->
+                    <div class="hotel-card">
+                        <div class="row g-3">
+                            <!--iamge-->
+                            <div class="col-lg-4 image-hotel">
+                                <img src="images/kaubl-hotel.jpg" class="img-fluid" alt="">
+                            </div>
+                            <!--hotel information-->
+                            <div class="col-lg-5 hotel-info">
+                                <div class="hotel-information">
+                                    <h3>Kabul Serena Hotel</h3>
+                                    <p>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star" style="color: var(--warning);"></i>
+                                        4.5 <span style="color: blue;">(230 Reviews)</span>
+                                    </p>
+                                    <p><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i> Kabul Afghanistan</p>
+                                    <p>
+                                        Experience a comfortable and relaxing stay at Kabul Serena Hotel, offering
+                                        modern rooms,excellent service,and convenient access to the city's
+                                        popular attractions.
+                                    </p>
+                                    <p class="d-flex gap-3"><span> <i class="bi bi-wifi" style="color: #0f2d3d;"></i>
+                                            Wi-Fi
+                                        </span>
+                                        <span> <i class="bi bi-cup-hot" style="color: #f45e13;"></i> Breakfast </span>
+                                        <span> <i class="bi bi-p-square" style="color: #0f2d3d;"></i>Parking
+                                        </span>
+                                        <span> <i class="bi bi-water" style="color: #0f2d3d;"></i> Pool </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!--price-->
+                            <div class="col-lg-3 hotel-price">
+                                <span style="font-weight: bold;">$120</span>
+                                <span>/night</span>
+                                <h6>Taxes & fees included</h6>
+                                <button class="btn viewBtn" id="viewBtn">view Details</button>
+                                <button class="btn bookBtn" id="bookBtn">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--card 12-->
+                    <div class="hotel-card">
+                        <div class="row g-3">
+                            <!--iamge-->
+                            <div class="col-lg-4 image-hotel">
+                                <img src="images/kaubl-hotel.jpg" class="img-fluid" alt="">
+                            </div>
+                            <!--hotel information-->
+                            <div class="col-lg-5 hotel-info">
+                                <div class="hotel-information">
+                                    <h3>Kabul Serena Hotel</h3>
+                                    <p>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
+                                        <i class="bi bi-star" style="color: var(--warning);"></i>
+                                        4.5 <span style="color: blue;">(230 Reviews)</span>
+                                    </p>
+                                    <p><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i> Kabul Afghanistan</p>
+                                    <p>
+                                        Experience a comfortable and relaxing stay at Kabul Serena Hotel, offering
+                                        modern rooms,excellent service,and convenient access to the city's
+                                        popular attractions.
+                                    </p>
+                                    <p class="d-flex gap-3"><span> <i class="bi bi-wifi" style="color: #0f2d3d;"></i>
+                                            Wi-Fi
+                                        </span>
+                                        <span> <i class="bi bi-cup-hot" style="color: #f45e13;"></i> Breakfast </span>
+                                        <span> <i class="bi bi-p-square" style="color: #0f2d3d;"></i>Parking
+                                        </span>
+                                        <span> <i class="bi bi-water" style="color: #0f2d3d;"></i> Pool </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!--price-->
+                            <div class="col-lg-3 hotel-price">
+                                <span style="font-weight: bold;">$120</span>
+                                <span>/night</span>
+                                <h6>Taxes & fees included</h6>
+                                <button class="btn viewBtn" id="viewBtn">view Details</button>
+                                <button class="btn bookBtn" id="bookBtn">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer id="footer">
         <div class="container">

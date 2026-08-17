@@ -516,7 +516,7 @@
 .image-city {
     position: relative;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     transition: 0.4s;
 }
 
@@ -734,154 +734,13 @@
     transform: scale(1.09);
 }
 
-/*==================== 
-  Responsive design
-======================*/
-/*Hero*/
-@media(max-width: 768px) {
-    #hero {
-        padding: 70px 15px 40px;
-        min-height: auto;
-    }
 
-    .hero-headding h1 {
-        font-size: 1.7rem;
-    }
-
-    .hero-headding p {
-        font-size: 1rem;
-    }
-    /* Search Card*/
-    .search-card{
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 12px;
-        margin-top: 50px;
-        padding: 15px;
-    }
-    .search-item{
-        width: 100%;
-    }
-    .search-card input,
-    .search-item select,
-    #locationBtn,
-    #guestBtn{
-        width: 100%;
-        box-sizing: border-box;
-    }
-    /*Location*/
-    .location-box{
-        width: 100%;
-    }
-    .location-card{
-        width: 100%;
-        max-width: 100%;
-        left: 0;
-        right: 0;
-        box-sizing: border-box;
-    }
-    /* Guest*/
-    .guest-box{
-        width: 100%;
-    }
-    .guest-card{
-        width: 100%;
-        max-width: 100%;
-        left: 0;
-        right: 0;
-        box-sizing: border-box;
-    }
-    .guest-row{
-        gap: 10px;
-    }
-    .counter{
-        gap: 8px;
-        padding: 7px 10px;
-    }
-    /*search button*/
-    .btn-search{
-        width: 100%;
-        margin-top: 5px;
-    }
-    /*Offer*/
-    .card-offer,
-    .card-offer1{
-        flex-direction: column;
-        padding: 15px;
-    }
-    .hotel-image{
-        width: 100%;
-        padding-left: 0;
-    }
-    .hotel-info{
-        padding-left: 0;
-        padding-top: 15px;
-    }
-    .hotel-info h3{
-        font-size: 1.4rem;
-    }
-    .bookBtn{
-        width: 100%;
-        margin-left: 0;
-        padding: 10px;
-    }
-    /*Filter*/
-    #filter{
-        top: 60px;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-    #filter .container{
-        overflow-x: auto;
-    }
-    .filter-btn{
-        padding: 7px 15px;
-    }
-}
-/* mobile */
-@media(max-width: 480px) {
-    .hero-headding h1 {
-        font-size: 1.4rem;
-    }
-    .hero-headding p {
-        font-size: 0.9rem;
-    }
-    .search-card{
-        margin-top: 30px;
-        padding: 10px;
-    }
-    .card-cus{
-        height: auto;
-    }
-    .location-card,
-    .guest-card{
-        width: 100%;
-        max-width: 100%;
-        left: 0;
-        right: 0;
-        box-sizing: border-box;
-    }
-    .guest-row{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .counter{
-        width: 100%;
-        justify-content: space-between;
-    }
-    .image img{
-        height: 150px;
-    }
-    .fea-image{
-        height: 150px;
-    }
     @media (max-width: 991px) {
     #filter {
         top: 67px;
     }
 }
-}
+
 @media (max-width: 576px) {
     .filter-scroll {
         overflow-x: auto;
