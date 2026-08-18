@@ -455,6 +455,30 @@
 .bookBtn:hover {
     background-color: var(--primary-hover);
 }
+/*==========pagination===========*/
+#pagination{
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+#pagination .pagination{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.89rem;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    
+}
+#pagination .page-link{
+    color: #000 !important;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+#pagination .page-item.active .page-link{
+    background: var(--text-primary) !important;
+    color: #fff;
+    border-color: var(--primary) !important;
+}
 
   @media (max-width: 991px) {
     #hotelBtn {
