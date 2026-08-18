@@ -44,3 +44,69 @@ img {
     object-fit: cover;
     border-radius: 5px;
 }
+/*==========Hotel Overview=========*/
+.informaton{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.informaton h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.60rem;
+    font-weight: 800;
+}
+.premiumBtn{
+    background-color: #ebce9a;
+    border: 1px solid #ebce9a;
+    border-radius: 8px;
+    color: #553704;
+    margin-left: 70px;
+    padding: 10px 20px;
+}
+.informaton span{
+    font-size: 0.87rem;
+}
+.small-circle{
+    font-size: 0.3rem;
+    padding: 0 10px;
+}
+.informaton p{
+    font-size: 0.87rem;
+}
+
+.cart-view{
+    position: relative;
+    background: var(--bg-card);
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+.cart-view:hover{
+     transform: translateY(-6px);
+}
+.cart-view span{
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    text-align: center;
+    top: 20px;
+}
+.cart-view p{
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    text-align: center;
+}
+.bookBtn{
+    background-color: #6f4805 !important;
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+}
+.bookBtn:hover{
+    background-color: #553704 !important;
+}
