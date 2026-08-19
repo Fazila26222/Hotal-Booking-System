@@ -95,12 +95,17 @@ img {
     transform: translateY(-6px);
 }
 
-.cart-view span {
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    text-align: center;
-    top: 20px;
+.overview {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.87rem;
+    display: flex;
+    flex-direction: row !important;
+    font-weight: 500;
+    align-items: center !important;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-bottom: 10px;
 }
 
 .cart-view p {
@@ -121,6 +126,7 @@ img {
 .bookBtn:hover {
     background-color: #553704 !important;
 }
+
 /* <!--==========Hotel Amenities=========-->*/
 .cart-amenities {
     position: relative;
@@ -147,7 +153,8 @@ img {
     font-weight: 700;
     padding: 20px;
 }
-.amenities{
+
+.amenities {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -163,16 +170,191 @@ img {
     align-items: center;
     gap: 5px;
 }
-.amenity i{
+
+.amenity i {
     font-size: 1.60rem;
 }
-.locations{
+
+.locations {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: 600 !important;
     padding: 10px;
 }
-.locations a{
+
+.locations a {
     color: var(--primary) !important;
 }
 
+/*=========Room Types==========*/
+.head {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.24rem;
+    font-weight: 700;
+    margin-top: 30px !important;
+    margin-bottom: 10px;
+}
+
+.cart-room {
+    position: relative;
+    background: var(--bg-card);
+    max-width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.cart-room:hover {
+    transform: translateY(-3px);
+}
+
+.cart-room h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 20px !important;
+    margin-bottom: 10px;
+}
+
+.room-info {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.87rem;
+    display: flex;
+    flex-direction: row !important;
+    font-weight: 500;
+    align-items: center !important;
+    gap: 20px;
+}
+
+.cart-room p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.87rem;
+    font-weight: 500;
+}
+
+.selectBtn {
+    background-color: #8b5a04;
+    color: #fff;
+    border: #8b5a04;
+    border-radius: 8px;
+    width: 50%;
+    padding: 10px;
+    margin-left: 50px !important;
+    transition: 0.3s;
+}
+
+.selectBtn:hover {
+    background-color: #553704;
+    transform: translateY(-3px);
+}
+
+/* <!--==========Guest Reviews=========-->*/
+.reviews {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.24rem;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.cart-review {
+    position: relative;
+    background: var(--bg-card);
+    max-width: 80%;
+    margin-top: 20px;
+    margin-left: 10%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cart-review:hover {
+    background-color: var(--bg-main);
+    cursor: pointer;
+}
+
+.left-arrow {
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    background-color: #fff !important;
+    border: none !important;
+    left: 10px !important;
+}
+
+.right-arrow {
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    background-color: #fff !important;
+    border: none !important;
+    right: 10px !important;
+}
+
+.t-avatar {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Sora", sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.reviews-info h4 {
+    font-family: "Sora", sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-left: 55px;
+}
+
+.reviews-info p {
+    font-family: "Sora", sans-serif;
+    font-weight: 500;
+    font-size: 0.96rem;
+    margin-left: 55px;
+    color: #999;
+}
+
+.reviews-info span {
+    font-family: "Sora", sans-serif;
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin-left: 55px;
+}
+
+/* <!--==========hotel policies=========-->*/
+.cart {
+    position: relative;
+    background: #f5e6cb;
+    max-width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+.cart-body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cart-body h4{
+font-size: 1.1rem;
+font-weight: 600;
+}
