@@ -1,11 +1,11 @@
 #page-hero {
-    padding: 10px 0 50px;
+    padding: 10px 0;
 }
 
 .link-hero a {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
-    color: var(--primary) !important;
+    color: var(--text-primary) !important;
     margin-top: 10px !important;
 }
 
@@ -44,16 +44,19 @@ img {
     object-fit: cover;
     border-radius: 5px;
 }
+
 /*==========Hotel Overview=========*/
-.informaton{
+.informaton {
     font-family: Arial, Helvetica, sans-serif;
 }
-.informaton h1{
+
+.informaton h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.60rem;
     font-weight: 800;
 }
-.premiumBtn{
+
+.premiumBtn {
     background-color: #ebce9a;
     border: 1px solid #ebce9a;
     border-radius: 8px;
@@ -61,18 +64,21 @@ img {
     margin-left: 70px;
     padding: 10px 20px;
 }
-.informaton span{
-    font-size: 0.87rem;
-}
-.small-circle{
-    font-size: 0.3rem;
-    padding: 0 10px;
-}
-.informaton p{
+
+.informaton span {
     font-size: 0.87rem;
 }
 
-.cart-view{
+.small-circle {
+    font-size: 0.3rem;
+    padding: 0 10px;
+}
+
+.informaton p {
+    font-size: 0.87rem;
+}
+
+.cart-view {
     position: relative;
     background: var(--bg-card);
     max-width: 100%;
@@ -84,29 +90,89 @@ img {
     overflow: hidden;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
-.cart-view:hover{
-     transform: translateY(-6px);
+
+.cart-view:hover {
+    transform: translateY(-6px);
 }
-.cart-view span{
+
+.cart-view span {
     justify-content: center;
     align-items: center;
     font-size: 1rem;
     text-align: center;
     top: 20px;
 }
-.cart-view p{
+
+.cart-view p {
     justify-content: center;
     align-items: center;
     font-size: 1rem;
     text-align: center;
 }
-.bookBtn{
+
+.bookBtn {
     background-color: #6f4805 !important;
     color: #fff;
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 10px;
 }
-.bookBtn:hover{
+
+.bookBtn:hover {
     background-color: #553704 !important;
 }
+/* <!--==========Hotel Amenities=========-->*/
+.cart-amenities {
+    position: relative;
+    background: var(--bg-card);
+    max-width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.cart-amenities:hover {
+    transform: translateY(-6px);
+    background-color: var(--bg-main);
+}
+
+.heading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.24rem;
+    font-weight: 700;
+    padding: 20px;
+}
+.amenities{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.amenity {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.87rem;
+    font-weight: 500;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.amenity i{
+    font-size: 1.60rem;
+}
+.locations{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 600 !important;
+    padding: 10px;
+}
+.locations a{
+    color: var(--primary) !important;
+}
+
