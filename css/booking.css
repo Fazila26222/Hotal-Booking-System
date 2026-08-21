@@ -1,0 +1,281 @@
+.link-hero a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: var(--text-primary) !important;
+    margin-top: 10px !important;
+}
+
+.book-heading h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.24rem;
+    margin-top: 10px !important;
+    color: var(--text-primary);
+}
+
+.book-heading p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin-top: 10px !important;
+   color: var(--text-primary);
+}
+
+.book-Head h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin-top: 10px !important;
+    margin-right: 60px;
+    color: var(--text-primary);
+}
+
+.book-Head p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.89rem;
+    margin-top: 10px !important;
+    margin-right: 60px;
+     color: var(--text-primary);
+}
+/*<!--=====right======-->*/
+.card-booking {
+    position: relative;
+    background: var(--bg-card);
+    width: 100%;
+    min-height: 450px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.card-booking:hover {
+    transform: translateY(-6px);
+}
+
+.book-head h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin-top: 20px !important;
+    margin-left: 20px;
+     color: var(--text-primary);
+}
+
+.book-head label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.87rem;
+    font-weight: 600;
+    margin-top: 20px !important;
+    margin-left: 20px;
+     color: var(--text-primary);
+}
+
+.number {
+    margin-top: 10px !important;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.numberBtn {
+    background-color: var(--text-light);
+    width: 10%;
+    border: none;
+    border-radius: 8px;
+}
+
+.numberBtn:hover {
+    background-color: var(--text-primary);
+    color: #fff;
+    cursor: pointer;
+}
+
+.cart {
+    background-color: #f7dda2;
+    border-radius: 14px;
+    margin-top: 20px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.cart i {
+    padding: 20px;
+    font-size: 1.15rem !important;
+    color: var(--warning);
+}
+
+.cart span {
+    margin-left: 20px;
+    color: var(--text-primary);
+}
+/*<!--=====center======-->*/
+.card-booking1 {
+    position: relative;
+    background: var(--bg-card);
+    width: 100%;
+    min-height: 350px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.card-booking1:hover {
+    transform: translateY(-6px);
+}
+
+.card-booking2 {
+    position: relative;
+    background: var(--bg-card);
+    width: 100% !important;
+    min-height: 275px;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.card-booking2:hover {
+    transform: translateY(-6px);
+}
+
+.book-head p {
+     color: var(--text-primary);
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.89rem;
+}
+
+/* <!--=======Left======-->*/
+.card-booking3 {
+    background: var(--bg-card);
+    width: 100%;
+    min-height: 450px !important;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.card-booking3:hover {
+    transform: translateY(-6px);
+}
+
+.text-white h3 {
+    color: #fff !important;
+    font-size: 1rem;
+}
+
+.text-white p {
+    font-size: 0.89rem;
+}
+
+.bg-dark-blue {
+    background-color: rgba(0, 51, 102, 0.75) !important;
+}
+
+.information h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 1.3rem;
+    font-weight: 700;
+    margin-top: 20px;
+    color: var(--text-primary);
+}
+
+.description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 0.90rem;
+    color: var(--text-primary);
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.total {
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 1.3rem;
+    font-weight: 700;
+    margin-top: 10px;
+    color: var(--text-primary);
+}
+
+.cart-book {
+    background-color: #afebd7;
+    border-radius: 8px;
+    width: 100%;
+    height: 40px;
+}
+
+.cart-book h6 {
+    color: var(--success);
+    font-size: 0.70rem;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.confirmBtn {
+    background-color: var(--text-primary);
+    color: #fff;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.card1 {
+    background-color: var(--bg-card);
+    border: 1px solid #ccc;
+    border-radius: 14px;
+    margin-top: 20px;
+    width: 100%;
+}
+/*  <!--cart booking-->*/
+.d-flex i {
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-left: 10px;
+    color: var(--text-primary);
+}
+
+.d-flex h4 {
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 30px;
+     color: var(--text-primary);
+}
+
+.d-flex p {
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.78rem;
+    font-weight: 500;
+    margin-left: 30px;
+    color: var(--text-primary);
+}
+
+.info {
+    color: var(--text-primary);
+    padding: 20px;
+    left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.87;
+}

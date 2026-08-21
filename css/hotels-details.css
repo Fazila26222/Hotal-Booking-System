@@ -355,6 +355,17 @@ img {
     font-family: Arial, Helvetica, sans-serif;
 }
 .cart-body h4{
-font-size: 1.1rem;
-font-weight: 600;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.cart-body p{
+    font-size: 0.89rem;
+    margin-left: 30px;
+}
+.contactBtn{
+    background-color:#f5e6cb ;
+    border:1px solid #8b5a04;
+    border-radius: 8px;
+    padding: 10px;
+    margin-left: 50%;
 }
