@@ -1,5 +1,9 @@
  #hero {
      background: linear-gradient(135deg, #111827, #1e3a8a);
+     display: flex;
+     width: 100%;
+     min-height: 420px;
+     overflow: hidden;
  }
 
  .hero-heading {
@@ -30,19 +34,23 @@
      font-family: sans-serif;
      margin-bottom: 0px;
  }
-
- #hero img {
-     width: 100%;
-     height: 400px;
+ .image{
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+    border-radius: 0 0 0 180px;
+ }
+ .image img{
+     width: 100% !important;
+     height: 100%;
      object-fit: cover;
-     border-radius: 0 0 0 180px;
-     padding-right: 0 !important;
      display: block;
  }
+
  .service {
      margin-top: 30px !important;
      display: flex;
-     gap: 15px;
+     gap: 10px;
  }
 
  .service i {
@@ -76,16 +84,18 @@
 
  .search-section {
      width: 90%;
-     max-width: 900px;
-     margin: -25px auto 30px;
+     max-width: 1000px;
+     margin: -25px auto 40px;
      position: relative;
      z-index: 10;
  }
 
  .search-box {
      display: flex;
+     align-items: center;
+     gap: 10px;
      background: white;
-     padding: 10px;
+     padding: 12px;
      border-radius: 12px;
      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
  }
@@ -108,28 +118,22 @@
      font-size: 15px;
  }
 
- .search-card {
-     align-items: center;
-     gap: 20px;
-     padding: 20px;
-     margin-top: 100px;
-     margin-bottom: 10px;
-     background: #fff;
-     border-radius: 14px;
-     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
- }
-
  /* Location */
  .location-box {
      position: relative;
+     flex: 1;
  }
 
  #locationBtn {
-     padding: 10px 20px;
+    width: 100%;
+    height: 52px;
+     padding: 0px 15px;
      background-color: var(--bg-main);
      border: 1px solid #ccc;
      border-radius: 8px;
      cursor: pointer;
+     color: #333;
+     margin:0;
  }
 
  .location-card {
@@ -137,7 +141,7 @@
      position: absolute;
      top: 100%;
      left: 0;
-     width: 350px;
+     width: 300px;
      padding: 15px;
      background: var(--bg-card);
      border-radius: 8px;
@@ -162,7 +166,6 @@
      border: 1px solid #ccc;
      border-radius: 8px;
      outline: none;
-     margin-bottom: 15px;
  }
 
  .country-tital {
@@ -197,12 +200,23 @@
 
  .search-item {
      flex: 1;
+     min-width: 140px;
+     margin: 0;
  }
 
  .search-item label {
      display: block;
-     margin-bottom: 8px;
+     margin-bottom: 5px;
      font-weight: bold;
+     font-size: 13px;
+ }
+ .search-item input{
+    width: 100%;
+    height: 52px;
+    padding: 0 15px;
+    border: 1px solid#ddd;
+    border-radius: 8px;
+    outline: none;
  }
 
  .search-card input,
@@ -212,11 +226,6 @@
      outline: none;
  }
 
- .btn-search {
-     background-color: var(--text-primary);
-     color: #fff;
-     transition: 0.4s;
- }
 
  .btn-search:hover {
      background-color: var(--primary-hover);
@@ -224,16 +233,27 @@
      transform: translateY(-6px);
  }
 
+ .search-item {
+     color: #333;
+     margin-right: 20px;
+     gap: 15px;
+ }
+
  /*   Guest   */
  .guest-box {
      position: relative;
+     flex: 1;
  }
 
  #guestBtn {
-     padding: 10px 20px;
+    width: 100%;
+    height: 52px;
+     padding: 0px 15px;
      background-color: var(--bg-main);
      border: 1px solid #ccc;
      border-radius: 8px;
+     color: #333;
+     margin:0px;
  }
 
  .guest-card {
@@ -241,7 +261,7 @@
      position: absolute;
      top: 40px;
      right: 0;
-     width: 400px;
+     width: 300px;
      padding: 20px;
      background: var(--bg-main);
      border-radius: var(--radius);
@@ -273,6 +293,7 @@
  .counter button {
      border: none;
      background: none;
+     color: #333;
      font-size: 25px;
      cursor: pointer;
  }
@@ -282,7 +303,7 @@
      padding: 15px;
      border: none;
      border-radius: 8px;
-     background: var(--text-primary);
+     background: #1d4ed8;
      color: #fff;
      font-size: 18px;
      cursor: pointer;
@@ -290,21 +311,58 @@
  }
 
  #doneBtn:hover {
-     background-color: var(--primary-hover);
+     background-color: #1e3a8a;
      transform: translateY(-6px);
  }
-
-
-
+/*=======search button=======*/
+ #searchButton{
+    height: 52px;
+    padding: 0 22px;
+    border: none;
+    border-radius: 8px;
+    background: #2564eb;
+    color: #fff;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 15px;
+ }
+ #searchButton:hover{
+    background: #1d4ed8;
+ }
+/*========responsive======*/
  @media (max-width: 991px) {
-     #hotelBtn {
-         top: 67px;
+     .search-box {
+         flex-wrap: wrap;
+     }
+     .location-box,
+     .search-item,
+     .guest-box{
+        flex: 1 1 calc(50%-10px);
+     }
+     #searchButton{
+        flex: 1 1 100%;
      }
  }
 
  @media (max-width: 576px) {
-     .hotelBtn-scroll {
-         overflow-x: auto;
-         -webkit-overflow-scrolling: touch;
+     .search-section {
+       width: 94%;
+     }
+     .search-box{
+        flex-direction: column;
+        align-items: stretch;
+     }
+     .location-box,
+     .search-item,
+     .guest-box{
+        width: 100%;
+        flex: 1 1 100%;
+     }
+     #searchButton{
+        width: 100%;
+     }
+     .location-card,
+     .guest-card{
+        width: 100%;
      }
  }

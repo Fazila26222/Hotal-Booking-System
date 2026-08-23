@@ -133,119 +133,142 @@
                         </p>
                     </div>
                     <div class="service">
-                    <div class="col-lg-4">
-                        <div class="d-flex">
-                            <i class="bi bi-car-front"></i>
-                            <div>
-                                <h4>Premium Comfort</h4>
-                                <p>Luxurybeds & Premium linens</p>
+                        <div class="col-lg-4">
+                            <div class="d-flex">
+                                <i class="bi bi-car-front"></i>
+                                <div>
+                                    <h4>Premium Comfort</h4>
+                                    <p>Luxurybeds & Premium linens</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="d-flex">
-                            <i class="bi bi-wifi"></i>
-                            <div>
-                                <h4>High Speed wi-fi</h4>
-                                <p>Stay connected everywhere</p>
+                        <div class="col-lg-4">
+                            <div class="d-flex">
+                                <i class="bi bi-wifi"></i>
+                                <div>
+                                    <h4>High Speed wi-fi</h4>
+                                    <p>Stay connected everywhere</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="d-flex">
-                            <i class="bi bi-bell"></i>
-                            <div>
-                                <h4>Room Service</h4>
-                                <p>24/7 Service for your convenience</p>
+                        <div class="col-lg-4">
+                            <div class="d-flex">
+                                <i class="bi bi-bell"></i>
+                                <div>
+                                    <h4>Room Service</h4>
+                                    <p>24/7 Service for your convenience</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     </div>
                 </div>
                 <div class="col-lg-6 p-0">
-                    <img src="images/Hotle (2).png" class="img-fluid" alt="">
-                </div>
-            </div>
-            <!--
-            <div class="search-card d-flex">
-                
-                <div class="location-box">
-                    <button id="locationBtn" type="button">Locations</button>
-                    <div class="location-card" id="locationCard">
-                        <div class="location-search">
-                            <input type="text" id="locationInput" placeholder="Where are you going?">
-                        </div>
-                        <div class="country-tital">
-                            <span>Trending Country</span>
-                        </div>
-                        <div class="country">
-                            <span>Afghanistan</span>
-                        </div>
-                        <div class="country">
-                            <span>Pakistan</span>
-                        </div>
-                        <div class="country">
-                            <span>UAE</span>
-                        </div>
-                        <div class="country">
-                            <span>US</span>
-                        </div>
-                        <div class="country">
-                            <span>Turkiye</span>
-                        </div>
+                    <div class="image">
+                        <img src="images/Hotle (2).png" class="img-fluid" alt="">
                     </div>
                 </div>
-                
-                <div class="search-item">
-                    <table>Check-in</table>
-                    <input type="date" placeholder="Check in">
-                </div>
-                <div class="search-item">
-                    <table>Check-out</table>
-                    <input type="date" placeholder="Check out">
-                </div>
-               
-                <div class="guest-box ">
-                    <button id="guestBtn">Guests</button>
-                    <div class="guest-card" id="guestCard">
-                        <div class="guest-row">
-                            <span>Adults</span>
-                            <div class="counter">
-                                <button class="minus">-</button>
-                                <span>2</span>
-                                <button class="plus">+</button>
-                            </div>
-                        </div>
-                        <div class="guest-row">
-                            <span>Children</span>
-                            <div class="counter">
-                                <button class="minus">-</button>
-                                <span>2</span>
-                                <button class="plus">+</button>
-                            </div>
-                        </div>
-                        <div class="guest-row">
-                            <span>Rooms</span>
-                            <div class="counter">
-                                <button class="minus">-</button>
-                                <span>1</span>
-                                <button class="plus">+</button>
-                            </div>
-                        </div>
-                        <button id="doneBtn">Done</button>
-                    </div>
-                </div>
-                <button class="btn btn-search">Search</button>
             </div>
-        -->
         </div>
     </section>
+    <!--========Search==========-->
     <section class="search-section">
         <div class="search-box">
-            <input type="text" id="searchInput" placeholder="Search rooms..." autocomplete="off">
+            <input type="text" id="searchInput" autocomplete="off">
+            <!--========Location==========-->
+            <div class="location-box">
+                <table>Location</table>
+                <button id="locationBtn" type="button">Locations</button>
+                <div class="location-card" id="locationCard">
+                    <div class="location-search">
+                        <input type="text" id="locationInput" placeholder="Where are you going?">
+                    </div>
+                    <div class="country-tital">
+                        <span>Trending Country</span>
+                    </div>
+                    <div class="country">
+                        <span>Afghanistan</span>
+                    </div>
+                    <div class="country">
+                        <span>Pakistan</span>
+                    </div>
+                    <div class="country">
+                        <span>UAE</span>
+                    </div>
+                    <div class="country">
+                        <span>US</span>
+                    </div>
+                    <div class="country">
+                        <span>Turkiye</span>
+                    </div>
+                </div>
+            </div>
+            <!--========check-out and in==========-->
+            <div class="search-item">
+                <table>Check-out</table>
+                <input type="date" placeholder="Check out">
+            </div>
+            <div class="search-item">
+                <table>Check-in</table>
+                <input type="date" placeholder="Check out">
+            </div>
+            <!--========Guest==========-->
+            <div class="guest-box ">
+                <table>Guest</table>
+                <button id="guestBtn">Guests</button>
+                <div class="guest-card" id="guestCard">
+                    <div class="guest-row">
+                        <span>Adults</span>
+                        <div class="counter">
+                            <button class="minus">-</button>
+                            <span>2</span>
+                            <button class="plus">+</button>
+                        </div>
+                    </div>
+                    <div class="guest-row">
+                        <span>Children</span>
+                        <div class="counter">
+                            <button class="minus">-</button>
+                            <span>2</span>
+                            <button class="plus">+</button>
+                        </div>
+                    </div>
+                    <div class="guest-row">
+                        <span>Rooms</span>
+                        <div class="counter">
+                            <button class="minus">-</button>
+                            <span>1</span>
+                            <button class="plus">+</button>
+                        </div>
+                    </div>
+                    <button id="doneBtn">Done</button>
+                </div>
+            </div>
             <button id="searchButton">
                 🔎 Search
             </button>
+        </div>
+    </section>
+    <!--=========Room Section=========-->
+    <section id="room-section">
+        <div class="container">
+            <h2>Explore Our Rooms</h2>
+            <div class="catagorties">
+                <button class="category-btn active" data-category="All Rooms">
+                    All Rooms
+                </button>
+                <button class="category-btn" data-category=" Standard Rooms">
+                    Standard Rooms
+                </button>
+                <button class="category-btn" data-category="Deluxe Rooms">
+                    Deluxe Rooms
+                </button>
+                <button class="category-btn" data-category="Suite Rooms">
+                    Suite Rooms
+                </button>
+                <button class="category-btn" data-category="Family Rooms">
+                    Family Rooms
+                </button>
+            </div>
         </div>
     </section>
 
