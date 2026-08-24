@@ -121,7 +121,7 @@
     ==============-->
 
     <section id="hero">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="hero-heading ">
@@ -268,10 +268,171 @@
                 <button class="category-btn" data-category="Family Rooms">
                     Family Rooms
                 </button>
+                <!--=========Sort=========-->
+                <div class="ms-auto d-none d-md-flex align-items-center g-0">
+                    <span class="filter-lable">Sort By:</span>
+                    <select class="sort-select">
+                        <option value="recommended">Recommended</option>
+                        <option value="rating">Highest Rated</option>
+                        <option value="price-Low">Price: Low to High</option>
+                        <option value="price-High">Price: High to Low</option>
+                    </select>
+                </div>
             </div>
         </div>
     </section>
 
+    <section class="rooms-grid">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="room-card">
+                        <div class="room-image">
+                            <img src="images/Standert.jpg" class="img-fluid" alt="">
+                            <button class="discount">20% OFF</button>
+                        </div>
+                        <div class="content">
+                            <h3>Standard Room</h3>
+                            <div class="room-info">
+                                <span><i class="bi bi-person"></i> 2 Guests</span>
+                                <span><i class="bi bi-lamp-fill"></i>1 Beds</span>
+                                <span><i class="bi bi-arrows-angle-expand"></i> 18 m <sub>2</sub></span>
+                            </div>
+                            <div class="description">
+                                <p>A cozy room with modrn amenities perfect for solo travelers or couples.</p>
+                            </div>
+                            <div class="price">
+                                <span style="font-weight: bold;">$80 </span><span>/night</span>
+                                <button class="viewBtn" id="viewBtn">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="room-card">
+                        <div class="room-image">
+                            <img src="images/Delax.jpg" class="img-fluid" alt="">
+                            <button class="discount">15% OFF</button>
+                        </div>
+                        <div class="content">
+                            <h3>Deluxe Room</h3>
+                            <div class="room-info">
+                                <span><i class="bi bi-person"></i> 2 Guests</span>
+                                <span><i class="bi bi-lamp-fill"></i>1 Beds</span>
+                                <span><i class="bi bi-arrows-angle-expand"></i> 24 m <sub>2</sub></span>
+                            </div>
+                            <div class="description">
+                                <p>Spacious room with city view and extra comfort for a relaxing stay.</p>
+                            </div>
+                            <div class="price">
+                                <span style="font-weight: bold;">$120 </span><span>/night</span>
+                                <button class="viewBtn" id="viewBtn">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="room-card">
+                        <div class="room-image">
+                            <img src="images/Suite.jpg" class="img-fluid" alt="">
+                            <button class="discount">10% OFF</button>
+                        </div>
+                        <div class="content">
+                            <h3>Suite Room</h3>
+                            <div class="room-info">
+                                <span><i class="bi bi-person"></i> 2 Guests</span>
+                                <span><i class="bi bi-lamp-fill"></i>1 Beds</span>
+                                <span><i class="bi bi-arrows-angle-expand"></i> 40 m <sub>2</sub></span>
+                            </div>
+                            <div class="description">
+                                <p>Enjoy a luxurious space with a separate living area and premium facilities.</p>
+                            </div>
+                            <div class="price">
+                                <span style="font-weight: bold;">$180 </span><span>/night</span>
+                                <button class="viewBtn" id="viewBtn">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="room-card">
+                        <div class="room-image">
+                            <img src="images/Hotle (2).png" class="img-fluid" alt="">
+                            <button class="discount">10% OFF</button>
+                        </div>
+                        <div class="content">
+                            <h3>Family Room</h3>
+                            <div class="room-info">
+                                <span><i class="bi bi-person"></i> 4 Guests</span>
+                                <span><i class="bi bi-lamp-fill"></i>2 Beds</span>
+                                <span><i class="bi bi-arrows-angle-expand"></i> 35 m <sub>2</sub></span>
+                            </div>
+                            <div class="description">
+                                <p>Ideal for families with childern, offering comfort and plenty of apace.</p>
+                            </div>
+                            <div class="price">
+                                <span style="font-weight: bold;">$160 </span><span>/night</span>
+                                <button class="viewBtn" id="viewBtn">
+                                    View Details
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="information">
+        <div class="container">
+            <div class="row g-5">
+                <div class="serVice">
+                    <div class="col-lg-3">
+                        <div class="d-flex">
+                            <i class="bi bi-wifi" style="color: #d4af37;"></i>
+                            <div>
+                                <h4>Feer Wi-Fi</h4>
+                                <p>Stay connected with high-speed internet</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="d-flex">
+                            <i class="bi bi-cup-hot" style="color: #d4af37;"></i>
+                            <div>
+                                <h4>Feer Breakfast</h4>
+                                <p>Delicious breakfast included with your stay</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="d-flex">
+                            <i class="bi bi-shield-check" style="color: #d4af37;"></i>
+                            <div>
+                                <h4>Safe & Secure</h4>
+                                <p>Your safety is our top priority</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="d-flex">
+                            <i class="bi bi-headphones" style="color: #d4af37;"></i>
+                            <div>
+                                <h4>24/7 Support</h4>
+                                <p>We're here to help you anytime</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer id="footer">
@@ -346,6 +507,5 @@
 </body>
 <script src="js/bootstrap.bundle.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/index.js"></script>
 
 </html>
