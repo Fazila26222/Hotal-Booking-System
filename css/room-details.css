@@ -1,0 +1,228 @@
+.room-details {
+    background-color: var(--bg-main);
+}
+
+.link-hero a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: var(--text-primary) !important;
+    margin-top: 10px !important;
+}
+
+.image {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 10px !important;
+}
+
+.image img {
+    width: 100%;
+    height: 380px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.image img:hover {
+    transform: scale(1.06);
+    cursor: pointer;
+}
+
+.images {
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.images img {
+    width: 95%;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.images img:hover {
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+.img-name {
+    color: var(--text-primary);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin-left: 20px;
+}
+.gallery-more{
+    position: relative;
+}
+.gallery-more img{
+    width: 100%;
+    display: block;
+}
+.gallery-more span{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0,0, 0, 0.1);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/*========right=======*/
+.heading {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+
+}
+
+.heading h2 {
+    font-size: 1.24rem;
+    font-weight: 700;
+    color: #d4af37;
+}
+
+.heading h1 {
+    font-size: 1.60rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.heading p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.room-Info {
+    border-bottom: 1px solid #ddd;
+}
+
+.room-Info i {
+    font-size: 1.60rem;
+    color: #d4af37;
+    flex: 1;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+}
+
+.room-Info sub {
+    position: relative;
+    top: -0.4em;
+    font-size: 0.7em;
+    flex: 1;
+    color: var(--text-primary);
+}
+
+.room-Info span {
+    font-size: 0.90rem;
+    flex: 1;
+    font-weight: bold;
+    color: var(--text-primary);
+}
+
+.room-Info p {
+    font-size: 0.87rem;
+    flex: 1;
+    color: var(--text-primary);
+}
+
+.amenities {
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 20px;
+}
+
+.head {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-top: 20px;
+}
+
+.amenity span {
+    color: var(--text-primary);
+    font-size: 0.87rem;
+}
+
+.amenity i {
+    color: #d4af37;
+    margin-right: 20px;
+}
+
+.price {
+    margin-top: 20px;
+}
+
+.price h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #d4af37;
+}
+
+.prIce span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.87rem;
+    color: var(--text-primary);
+}
+
+.prIce button {
+    background-color: #d4af37;
+    color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    width: 40%;
+    margin-left: 20px;
+}
+
+.prIce button:hover {
+    background-color: #e3b418;
+    cursor: pointer;
+}
+
+/*
+.prIce i{
+    color: #d4af37;
+     margin-left: 20px;
+     width: 52px;
+     height: 52px;
+     border-radius: 50%;
+     border: 1px solid #d4af37;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-family: "Sora", sans-serif;
+     font-size: 1.1rem;
+}
+     */
+.luxury-room {
+    background-color: var(--bg-main);
+    margin-top: 20px;
+}
+
+.room-info h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #d4af37;
+}
+
+.room-info span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.87rem;
+    color: var(--text-primary);
+    gap: 20px !important;
+}
+.dot{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    display: inline-block;
+    background: var(--text-primary);
+}
