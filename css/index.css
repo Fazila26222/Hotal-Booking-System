@@ -735,7 +735,7 @@
 }
 
 
-    @media (max-width: 991px) {
+@media (max-width: 991px) {
     #filter {
         top: 67px;
     }

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotal Booking System</title>
+    <!--css and bootstrap file-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/booking-details.css">
+
+    <!--icons and fonts file-->
+    <link rel="stylesheet" href="icons/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="icons/fonts/bootstrap-icons.woff">
+    <link rel="stylesheet" href="fonts/Vazirmatn-Regular.ttf">
+</head>
+
+<body>
+    <!--======
+    Header
+    ========-->
+    <div id="Top-header">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-between g-2">
+                <!--========
+                Contant
+                ==========-->
+                <div class="d-flex flex-wrap align-items-center gap-3">
+                    <h1>Hotel Booking & Travel</h1>
+                </div>
+                <div class="d-flex gap-2">
+                    <button id="languageBtn"> EN / دری </button>
+                    <button class="btn btn-login ">Login</button>
+                    <button class="btn btn-register ">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=============
+        Start Navbar
+     ==============-->
+    <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+        <div class="container">
+            <a href="" class="navbar-brand">Stay<span>ora</span></a>
+
+            <!-- Mobile Toggle -->
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#navOffcanvas" aria-controls="navOffcanvas">
+                <i class="bi bi-list" style="font-size: 1.6rem; color: #faced3"></i>
+            </button>
+            <!--=================
+            Disktop nav
+    ==================-->
+            <div class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav align-items-center gap-1 me-3">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="hotels.html" class="nav-link">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="room.html" class="nav-link">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="booking.html" class="nav-link active">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--===========
+        Mobile Menu
+    ============-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="navOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Hotel Booking & Travel</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav gap-1 mb-4">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link ">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="hotels.html" class="nav-link">Hotels</a>
+                </li>
+                <li class="nav-item">
+                    <a href="room.html" class="nav-link">Rooms</a>
+                </li>
+                <li class="nav-item">
+                    <a href="booking.html" class="nav-link active">Booking</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--=============
+     Hero Section
+    ==============-->
+    <section class="book-details">
+        <div class="container">
+            <div class="row g-3">
+                <!--=====Left=======-->
+                <div class="col-lg-8 col-md-6">
+                    <div class="row g-3">
+                        <div class="col-lg-8 col-12">
+                            <div class="big-room-img">
+                                <img src="images/room2.jpg" class="img-fluid" alt="">
+                                <button class="gallery-btn">
+                                    <i class="bi bi-images"></i>
+                                    View Gallery
+                                </button>
+                            </div>
+                        </div>
+                        <!--====small image=====-->
+                        <div class="col-lg-4 col-12">
+                            <div class="row g-3">
+                                <div class="col-6">
+                                    <div class="small-room-img">
+                                        <img src="images/bedroom.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="small-room-img">
+                                        <img src="images/garden1.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="small-room-img">
+                                        <img src="images/guestroom.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="small-room-img last-img">
+                                        <img src="images/restaurant.jpg" class="img-fluid" alt="">
+                                        <span>+57 Photos</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--======room information=======-->
+                    <div class="room-information">
+                        <div class="room-info-header">
+                            <div>
+                                <span class="room-category">
+                                    Deluxe Room
+                                </span>
+                                <h1>Deluxe Kind Room</h1>
+                                <p class="room-location">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    Kabul Afghanistan
+                                </p>
+                            </div>
+                            <div class="room-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <strong>4.9</strong>
+                                <span>128 Reviews</span>
+                            </div>
+                        </div>
+                        <p class="room-description">
+                            Enjoy a comfortable and luxurious stay in our Deluxe Kind Room.
+                            This spacious room features modern furniture, a comfortable Kind-size bed
+                            and all the facilities yoy need for a relaxing stay.
+                        </p>
+                    </div>
+                    <!--room featuers-->
+                    <div class="room-features">
+                        <h2>Room Features</h2>
+                        <div class="features-row">
+                            <!--Feature 1-->
+                            <div features-item>
+                                <div class="feature-icon">
+                                    <i class="bi bi-moon-stars"></i>
+                                </div>
+                                <div>
+                                    <h4>Kind Bed</h4>
+                                    <span>Bed Type</span>
+                                </div>
+                            </div>
+
+                            <!--Feature 2-->
+                            <div features-item>
+                                <div class="feature-icon">
+                                    <i class="bi bi-rulers"></i>
+                                </div>
+                                <div>
+                                    <h4>35 m <sub>2</sub></h4>
+                                    <span>Room Size</span>
+                                </div>
+                            </div>
+
+                            <!--Feature 3-->
+                            <div features-item>
+                                <div class="feature-icon">
+                                    <i class="bi bi-people"></i>
+                                </div>
+                                <div>
+                                    <h4>2 Guests</h4>
+                                    <span>Capacity</span>
+                                </div>
+                            </div>
+
+                            <!--Feature 4-->
+                            <div features-item>
+                                <div class="feature-icon">
+                                    <i class="bi bi-droplet"></i>
+                                </div>
+                                <div>
+                                    <h4>Private</h4>
+                                    <span>Bathroom</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Room Amenities-->
+                    <div class="room-amenities">
+                        <div class="amenities-tatle">
+                            <span>Comfort & Convenience</span>
+                            <h2>Room Amenities</h2>
+                            <p>Everything you need for a comfortable stay.</p>
+                        </div>
+                        <div class="amenities-grid">
+                            <!--Wi-Fi-->
+                            <div class="ameity-item">
+                                <div class="amenity-icon">
+                                    <i class="bi bi-wifi"></i>
+                                </div>
+                                <div>
+                                    <h4>Free Wi-Fi</h4>
+                                    <span>High-speed internet</span>
+                                </div>
+                            </div>
+                             <!--Smart TV-->
+                            <div class="ameity-item">
+                                <div class="amenity-icon">
+                                    <i class="bi bi-tv"></i>
+                                </div>
+                                <div>
+                                    <h4>Smart TV</h4>
+                                    <span>Entertainment included</span>
+                                </div>
+                            </div>
+                             <!--Air Conditioning-->
+                            <div class="ameity-item">
+                                <div class="amenity-icon">
+                                    <i class="bi bi-snow"></i>
+                                </div>
+                                <div>
+                                    <h4>Air Conditioning</h4>
+                                    <span>Climate control</span>
+                                </div>
+                            </div>
+                             <!--Coffee Maker-->
+                            <div class="ameity-item">
+                                <div class="amenity-icon">
+                                    <i class="bi bi-cup-hot"></i>
+                                </div>
+                                <div>
+                                    <h4>Coffee Maker</h4>
+                                    <span>Fresh coffee anytime</span>
+                                </div>
+                            </div>
+                             <!--Mini Bar-->
+                            <div class="ameity-item">
+                                <div class="amenity-icon">
+                                    <i class="bi bi-cup-straw"></i>
+                                </div>
+                                <div>
+                                    <h4>Mini Bar</h4>
+                                    <span>Drinks & snacks</span>
+                                </div>
+                            </div>
+
+                             <!--Safe Box-->
+                            <div class="ameity-item">
+                                <div class="amenity-icon">
+                                    <i class="bi bi-safe"></i>
+                                </div>
+                                <div>
+                                    <h4>Safe Box</h4>
+                                    <span>Keep your valuables safe</span>
+                                </div>
+                            </div>
+                             <!--Parking-->
+                            <div class="ameity-item">
+                                <div class="amenity-icon">
+                                    <i class="bi bi-car-front"></i>
+                                </div>
+                                <div>
+                                    <h4>Free Parking</h4>
+                                    <span>Private parking available</span>
+                                </div>
+                            </div>
+
+                            <!--Beakfast-->
+                            <div class="ameity-item">
+                                <div class="amenity-icon">
+                                    <i class="bi bi-egg-fried"></i>
+                                </div>
+                                <div>
+                                    <h4>Beakfast</h4>
+                                    <span>Beakfast included</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--=======Right=======-->
+                <div class="col-lg-4 col-md-6">
+                    <div class="booking-card">
+                        <span class="room-label">
+                            Deluxe Room
+                        </span>
+                        <h2>Deluxe Kind Room</h2>
+                        <div class="rating">
+                            <i class="bi bi-star-fill"></i>
+                            <strong>4.9</strong>
+                            <span>(128 Reviews)</span>
+                        </div>
+                        <p class="location">
+                            <i class="bi bi-geo-alt"></i>
+                            Kabul Afghanistan
+                        </p>
+                        <hr>
+
+                        <div class="price">
+                            <strong>$120</strong>
+                            <span>/ Night</span>
+                        </div>
+                        <div class="discount">
+                            20% OFF
+                        </div>
+                        <!--=======check in=====-->
+                        <label>Check-in</label>
+                        <div class="input-box">
+                            <i class="bi bi-calendar-check"></i>
+                            <input type="date">
+                        </div>
+                        <!--=======check out=====-->
+                        <label>Check-out</label>
+                        <div class="input-box">
+                            <i class="bi bi-calendar-x"></i>
+                            <input type="date">
+                        </div>
+                        <!--Guests-->
+
+                        <label>--Guests--</label>
+                        <div class="input-box">
+                            <i class="bi bi-people"></i>
+                            <select>
+                                <option>2 Guests</option>
+                                <option>3 Guests</option>
+                                <option>4 Guests</option>
+                                <option>5 Guests</option>
+                            </select>
+                        </div>
+                        <div class="total">
+                            <span>Total</span>
+                            <strong>$132</strong>
+                        </div>
+                        <button class="book-now">Book Now
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                        <div class="guarantee">
+                            <p>
+                                <i class="bi bi-check-circle"></i>
+                                Free Cancellation
+                            </p>
+                            <p>
+                                <i class="bi bi-shield-check"></i>
+                                Best price guarantee
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row g-5">
+                <!--Col 1: info-->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-brand">
+                        Stay<span>ora</span>
+                    </div>
+                    <p class="footer-info">Your perfect stay starts here. </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <!-- Col 2: Quick Links -->
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="footer-heading">Quick Links</div>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Rooms</a></li>
+                        <li><a href="#">Booking</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Col 3: Support -->
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer-heading">Support</div>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <!-- Col 4: Contact -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-heading">Contact Us</div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span>Kabul Afghanistan</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-envelope-fill"></i>
+                        <span>Stayora1234@gmail.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-telephone-fill"></i>
+                        <span>+9377894450</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-clock-fill"></i>
+                        <span>24/7 Support</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom Footer -->
+            <div class="footer-bottom d-flex flex-wrap align-items-center justify-content-between gap-2">
+                <p>&copy; 2024 <a href="#">Stayora</a>. All Rights Reserved.</p>
+                <p>
+                    <a href="#" class="me-3">Privacy Policy</a>
+                    <a href="#" class="me-3">Terms of Conditions</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/index.js"></script>
+
+</html>
