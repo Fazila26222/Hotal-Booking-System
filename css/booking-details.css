@@ -187,36 +187,43 @@
     color: #888;
     font-size: 12px;
 }
+
 /*Amenities*/
-.room-amenities{
+.room-amenities {
     margin-top: 25px;
     padding: 30px 0;
     border-top: 1px solid #eee;
 }
-.amenities-tatle{
+
+.amenities-tatle {
     margin-bottom: 22px;
 }
-.amenities-tatle span{
+
+.amenities-tatle span {
     color: #c59b45;
     font-size: 13px;
     font-weight: 600;
 }
-.amenities-tatle h2{
+
+.amenities-tatle h2 {
     color: #172033;
     font-size: 24px;
     margin: 5px 0;
 }
-.amenities-tatle p{
+
+.amenities-tatle p {
     color: #777;
     font-size: 14px;
     margin: 0;
 }
-.amenities-grid{
+
+.amenities-grid {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 14px;
 }
-.ameity-item{
+
+.ameity-item {
     display: flex;
     align-items: center;
     gap: 13px;
@@ -226,12 +233,14 @@
     border-radius: 10px;
     transition: 0.3s;
 }
-.ameity-item:hover{
+
+.ameity-item:hover {
     transform: translateY(-3px);
     border-color: #c59b45;
     cursor: pointer;
 }
-.amenity-icon{
+
+.amenity-icon {
     width: 45px;
     height: 45px;
     flex-shrink: 0;
@@ -243,16 +252,220 @@
     border-radius: 9px;
     font-size: 21px;
 }
-.ameity-item h4{
+
+.ameity-item h4 {
     margin: 0;
     color: #172033;
     font-size: 14px;
 }
-.ameity-item span{
+
+.ameity-item span {
     display: block;
     margin-top: 4px;
     color: #888;
     font-size: 12px;
+
+}
+
+/*policies*/
+.room-policies {
+    margin-top: 25px;
+    padding: 30px 0;
+    border-top: 1px solid #eee;
+}
+
+.policies-title {
+    margin-bottom: 22px;
+}
+
+.policies-title span {
+    color: #c59b45;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.policies-title h2 {
+    color: #172033;
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.policies-title p {
+    color: #777;
+    font-size: 14px;
+    margin: 0;
+}
+
+.policies-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.policy-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 17px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.policy-item:hover {
+    border-color: #c59b45;
+    transform: translateY(-2px);
+}
+
+.policy-icon {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f3e8;
+    color: #c59b45;
+    border-radius: 9px;
+    font-size: 20px;
+}
+
+.policy-item h4 {
+    margin: 0;
+    color: #172033;
+    font-size: 14px;
+}
+
+.policy-item p {
+    margin: 5px 0 0;
+    color: #777;
+    font-size: 12px;
+}
+/* GUEST REVIEWS */
+
+.guest-reviews {
+    margin-top: 25px;
+    padding: 30px 0;
+    border-top: 1px solid #eee;
+}
+
+.reviews-title {
+    margin-bottom: 22px;
+}
+
+.reviews-title span {
+    color: #c59b45;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.reviews-title h2 {
+    color: #172033;
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.reviews-title p {
+    color: #777;
+    font-size: 14px;
+    margin: 0;
+}
+.review-summary {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    margin-bottom: 18px;
+}
+
+.overall-rating {
+    min-width: 130px;
+    text-align: center;
+    border-right: 1px solid #eee;
+    padding-right: 25px;
+}
+
+.overall-rating strong {
+    display: block;
+    color: #172033;
+    font-size: 38px;
+}
+
+.stars {
+    margin: 5px 0;
+}
+
+.stars i {
+    color: #e7aa28;
+    font-size: 14px;
+}
+
+.overall-rating span {
+    color: #777;
+    font-size: 12px;
+}
+
+.rating-text h4 {
+    margin: 0;
+    color: #172033;
+    font-size: 16px;
+}
+
+.rating-text p {
+    margin: 5px 0 0;
+    color: #777;
+    font-size: 13px;
+}
+.review-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.review-user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-avatar {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f3e8;
+    color: #c59b45;
+    border-radius: 50%;
+    font-weight: 600;
+}
+
+.review-user h4 {
+    margin: 0;
+    color: #172033;
+    font-size: 14px;
+}
+
+.review-user span {
+    color: #999;
+    font-size: 12px;
+}
+
+.review-stars {
+    margin: 10px 0;
+}
+.review-stars i {
+    color: #e7aa28;
+    font-size: 13px;
+}
+.review-item > p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
 }
 /*======= Right === booking card=========*/
 .booking-card {
@@ -427,20 +640,44 @@
         font-size: 25px;
     }
 }
+
 /* Tablet*/
-@media(max-width:991px){
-    .features-row{
+@media(max-width:991px) {
+    .features-row {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 /*mobile*/
-@media(max-width:575px){
-    .features-row{
+@media(max-width:575px) {
+    .features-row {
         grid-template-columns: 1fr;
     }
 }
-@media(max-width:767px){
-    .amenities-grid{
+
+@media(max-width:767px) {
+    .amenities-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+
+    .policies-grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 575px) {
+    .review-summary {
+        display: block;
+    }
+    .overall-rating {
+        border-right: none;
+        border-bottom: 1px solid #eee;
+        padding: 0 0 15px;
+        margin-bottom: 15px;
+    }
+
 }
