@@ -232,7 +232,12 @@
 .contact-link span {
     margin-left: 5px;
 }
-
+@media(max-width: 768px){
+    .card-section{
+         margin: 20px;
+        padding: 20px 10px;
+    }
+}
 @media(max-width: 768px) {
     .cart-service {
         margin: 20px;
