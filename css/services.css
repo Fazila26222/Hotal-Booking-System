@@ -1,0 +1,254 @@
+.bg-servies {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/services.jpg");
+    padding: 100px 0 80px;
+    position: relative;
+    overflow: visible;
+    width: 100%;
+    min-height: 450px;
+}
+
+.services-heading {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.services-heading h1 {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.60rem;
+    font-weight: 700;
+}
+
+.services-heading p {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+/*card section*/
+.card-section {
+    width: 90%;
+    max-width: 1000px;
+    margin: -65px auto 40px;
+    position: relative;
+    z-index: 10;
+}
+
+.card-box {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card-body {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.us-icon {
+    font-size: 2rem;
+    color: #d4af37;
+}
+
+.card-body h3 {
+    color: var(--text-primary);
+    font-size: 1rem;
+}
+
+.card-body p {
+    color: #777;
+    font-size: 0.87rem;
+}
+
+/*============card services=======*/
+.services {
+    padding: 20px;
+}
+
+.services-head {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.services-head h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.87rem;
+    color: #d4af37;
+}
+
+.services-head h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.40rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.card-services {
+    background-color: #fff;
+    border-radius: 8px;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 300px;
+    margin-top: 20px;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    position: relative;
+}
+
+.card-services:hover {
+    transform: translateY(-3px);
+}
+
+.service-gird {
+    row-gap: 30px !important;
+}
+
+.card-body-services {
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.service-image {
+    background-color: #f8f6f0;
+}
+
+.service-image img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+}
+
+.us-icons {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--border);
+    position: absolute;
+    margin: -30px 100px;
+    color: #d4af37;
+    font-size: 2rem;
+}
+
+.card-body-services h2 {
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    margin-top: 40px;
+}
+
+.card-body-services p {
+    font-size: 0.87rem;
+    color: #777;
+}
+
+.cart-service {
+    margin: 30px 40px;
+    padding: 30px 70px;
+    background: #071a30;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.cart-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.cart-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid #c9a45c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #c9a45c;
+    font-size: 2rem;
+}
+
+.cart-text {
+    flex: 1;
+}
+
+.cart-text h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.60rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.cart-text p {
+    font-size: 0.87rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.cart-buttons {
+    border-left: 1px solid #c9a45c;
+    padding-left: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.book-btn {
+    background: #c9a45c;
+    color: #fff;
+    text-decoration: none;
+    padding: 16px 30px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.book-btn i {
+    margin-left: 8px;
+}
+
+.contact-link {
+    color: #c9a45c;
+    text-decoration: none;
+    font-size: 0.87rem;
+}
+
+.contact-link span {
+    margin-left: 5px;
+}
+
+@media(max-width: 768px) {
+    .cart-service {
+        margin: 20px;
+        padding: 30px 20px;
+    }
+
+    .cart-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cart-buttons {
+        border-left: none;
+        border-top: 1px solid #c9a45c;
+        margin-left: 0;
+        padding-top: 25px;
+        width: 100%;
+    }
+}

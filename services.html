@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotal Booking System</title>
+    <!--css and bootstrap file-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/services.css">
+
+    <!--icons and fonts file-->
+    <link rel="stylesheet" href="icons/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="icons/fonts/bootstrap-icons.woff">
+    <link rel="stylesheet" href="fonts/Vazirmatn-Regular.ttf">
+</head>
+
+<body>
+    <!--======
+    Header
+    ========-->
+    <div id="Top-header">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-between g-2">
+                <!--========
+                Contant
+                ==========-->
+                <div class="d-flex flex-wrap align-items-center gap-3">
+                    <h1>Hotel Booking & Travel</h1>
+                </div>
+                <div class="d-flex gap-2">
+                    <button id="languageBtn"> EN / دری </button>
+                    <button class="btn btn-login ">Login</button>
+                    <button class="btn btn-register ">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=============
+        Start Navbar
+     ==============-->
+    <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+        <div class="container">
+            <a href="" class="navbar-brand">Stay<span>ora</span></a>
+
+            <!-- Mobile Toggle -->
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#navOffcanvas" aria-controls="navOffcanvas">
+                <i class="bi bi-list" style="font-size: 1.6rem; color: #faced3"></i>
+            </button>
+            <!--=================
+            Disktop nav
+    ==================-->
+            <div class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav align-items-center gap-1 me-3">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="hotels.html" class="nav-link">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="room.html" class="nav-link">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="booking.html" class="nav-link">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link active">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--===========
+        Mobile Menu
+    ============-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="navOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Hotel Booking & Travel</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav gap-1 mb-4">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="hotels.html" class="nav-link">Hotels</a>
+                </li>
+                <li class="nav-item">
+                    <a href="room.html" class="nav-link">Rooms</a>
+                </li>
+                <li class="nav-item">
+                    <a href="booking.html" class="nav-link">Booking</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--=============
+      Hero Section
+    ==============-->
+    <section class="bg-servies">
+        <div class="container">
+            <div class="services-heading">
+                <h1>Our Services</h1>
+                <p>Everything you need for a comfortable and memorable stay</p>
+            </div>
+        </div>
+    </section>
+    <section class="card-section">
+        <div class="card-box g-3">
+            <div class="card-body">
+                <div class="us-icon">
+                    <i class="bi bi-p-circle"></i>
+                </div>
+                <h3>Feer Parking</h3>
+                <p>Everything you reed for comfortable</p>
+            </div>
+            <div class="card-body">
+                <div class="us-icon">
+                    <i class="bi bi-shield-check"></i>
+                </div>
+                <h3>24/7 Securtiy</h3>
+                <p>Everything you reed for comfortable</p>
+            </div>
+            <div class="card-body">
+                <div class="us-icon">
+                    <i class="bi bi-person-badge"></i>
+                </div>
+                <h3>24/7 Front Desk</h3>
+                <p>Everything you reed for comfortable</p>
+            </div>
+            <div class="card-body">
+                <div class="us-icon">
+                    <i class="bi bi-bell"></i>
+                </div>
+                <h3>Room Service</h3>
+                <p>Everything you reed for comfortable</p>
+            </div>
+            <div class="card-body">
+                <div class="us-icon">
+                    <i class="bi bi-wifi"></i>
+                </div>
+                <h3>Feer Wi-fi</h3>
+                <p>Everything you reed for comfortable</p>
+            </div>
+        </div>
+    </section>
+    <!--============card services=======-->
+    <section class="services">
+        <div class="container">
+            <div class="services-head">
+                <h6>SERVICES & AMENITIES</h6>
+                <h2>Designed for Your comfort</h2>
+            </div>
+            <div class="row service-gird">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card-services">
+                        <div class="card-body-services">
+                            <div class="service-image">
+                                  <img src="images/breakfast.png" class="img-fluid" alt="">
+                            </div>
+                          
+                            <div class="us-icons">
+                                <i class="bi bi-bell"></i>
+                            </div>
+                            <h2>Complimcantary Breakfast</h2>
+                            <p>Start your day with a variety of fresh and delicious Breakfast options. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card-services">
+                        <div class="card-body-services">
+                            <div class="service-image">
+                                 <img src="images/wi-fi.png" class="img-fluid" alt="">
+                            </div>
+                           
+                            <div class="us-icons">
+                                <i class="bi bi-wifi"></i>
+                            </div>
+                            <h2>High Speed Wi-Fi</h2>
+                            <p>+Stay connected with fast and reliable internet access in all areas of the hotel.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card-services">
+                        <div class="card-body-services">
+                            <div class="service-image">
+                                 <img src="images/free parking.png" class="img-fluid" alt="">
+                            </div>
+                           
+                            <div class="us-icons">
+                                <i class="bi bi-p-circle"></i>
+                            </div>
+                            <h2>Free Parking</h2>
+                            <p>Enjoy free and convenient parking with 24/7 access and security. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card-services">
+                        <div class="card-body-services">
+                            <div class="service-image">
+                                <img src="images/daily housekeeping.png" class="img-fluid" alt="">
+                            </div>
+                            
+                            <div class="us-icons">
+                                <i class="bi bi-person-workspace"></i>
+                            </div>
+                            <h2>Daily Housekeeping</h2>
+                            <p>We ensure your room is always clean, fresh, and ready for your comfort.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card-services">
+                        <div class="card-body-services">
+                            <div class="service-image">
+                                 <img src="images/Airport transfer.png" class="img-fluid" alt="">
+                            </div>
+                           
+                            <div class="us-icons">
+                                <i class="bi bi-car-front"></i>
+                            </div>
+                            <h2>Airport Transfer</h2>
+                            <p>comfortable and reliable Transfer to and from the airport on request.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card-services">
+                        <div class="card-body-services">
+                            <div class="service-image">
+                                   <img src="images/fitness center.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="us-icons">
+                                <i class="bi bi-universal-access"></i>
+                            </div>
+                            <h2>Fitness Center</h2>
+                            <p>Saty active during your stay with our modern and fully equipped gym.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card-services">
+                        <div class="card-body-services">
+                            <div class="service-image">
+                                <img src="images/laundry.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="us-icons">
+                                <i class="bi bi-basket"></i>
+                            </div>
+                            <h2>Laundry Service</h2>
+                            <p>Professional Laundry and ironing servise for ahassle-free experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card-services">
+                        <div class="card-body-services">
+                            <div class="service-image">
+                                <img src="images/concierge service.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="us-icons">
+                                <i class="bi bi-person-badge"></i>
+                            </div>
+                            <h2>Concierge Service </h2>
+                            <p>Our Concierge team is here to assist with tours, tickets, and more.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cart-service">
+        <div class="container">
+            <div class="cart-content">
+                <div class="cart-icon">
+                    <i class="bi bi-person-workspace"></i>
+                </div>
+                <div class="cart-text">
+                    <h2>We'er here to make your <br>stay exceptional</h2>
+                    <p>Let us know how we can make your stay <br> more comfortable.</p>
+                </div>
+                <div class="cart-buttons">
+                    <a href="booking.html" class="book-btn">BOOK YOUR STAY
+                        <i class="bi bi-calendar3"></i>
+                    </a>
+                    <a href="contact.html" class="contact-link">Contact Us
+                        <span><i class="bi bi-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row g-5">
+                <!--Col 1: info-->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-brand">
+                        Stay<span>ora</span>
+                    </div>
+                    <p class="footer-info">Your perfect stay starts here. </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <!-- Col 2: Quick Links -->
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="footer-heading">Quick Links</div>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Rooms</a></li>
+                        <li><a href="#">Booking</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Col 3: Support -->
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer-heading">Support</div>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <!-- Col 4: Contact -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-heading">Contact Us</div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span>Kabul Afghanistan</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-envelope-fill"></i>
+                        <span>Stayora1234@gmail.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-telephone-fill"></i>
+                        <span>+9377894450</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-clock-fill"></i>
+                        <span>24/7 Support</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom Footer -->
+            <div class="footer-bottom d-flex flex-wrap align-items-center justify-content-between gap-2">
+                <p>&copy; 2024 <a href="#">Stayora</a>. All Rights Reserved.</p>
+                <p>
+                    <a href="#" class="me-3">Privacy Policy</a>
+                    <a href="#" class="me-3">Terms of Conditions</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/index.js"></script>
+
+</html>
