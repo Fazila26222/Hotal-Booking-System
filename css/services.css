@@ -40,7 +40,8 @@
     margin-left: 0;
     margin-right: 0;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    align-items: stretch;
     gap: 10px;
     background: white;
     padding: 12px;
@@ -52,6 +53,9 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex: 1 1 170px;
+    min-width: 0;
+    padding: 10px;
 }
 
 .us-icon {
@@ -140,9 +144,15 @@
     border-radius: 50%;
     background: var(--border);
     position: absolute;
-    margin: -30px 100px;
+    top: 135px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     color: #d4af37;
-    font-size: 2rem;
+    font-size: 1.8zrem;
 }
 
 .card-body-services h2 {
@@ -232,10 +242,27 @@
 .contact-link span {
     margin-left: 5px;
 }
-@media(max-width: 768px){
+
+@media(max-width: 576px){
+    .bg-servies{
+        min-height: 350px;
+        padding: 70px 15px 60px;
+    }
+    .services-heading{
+        padding: 30px 10px;
+    }
+    .services-heading h1{
+        font-size: 1.5rem;
+    }
+    .services-heading p{
+        font-size: 0.9rem;
+    }
     .card-section{
-         margin: 20px;
-        padding: 20px 10px;
+        width: calc(100% - 30px);
+        margin: -30px auto 30px;
+    }
+    .card-box{
+        flex-direction: column;
     }
 }
 @media(max-width: 768px) {
