@@ -76,7 +76,7 @@
     */
 .our-story {
     background-color: #f8f6f0;
-    padding: 20px;
+    margin-bottom: 20px;
 }
 
 .image {
@@ -87,6 +87,7 @@
 
 .image img {
     border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 .about-story {
@@ -168,16 +169,287 @@
     color: var(--text-primary);
     margin-bottom: 10px;
 }
-@media(max-width:768px){
-    .cart-about{
+
+/*<!--=============
+     Why choose us
+    ==============-->*/
+.why-us {
+    background: var(--bg-main);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.label-chooes {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.label-chooes span {
+    color: #d4ad63;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.label-chooes i {
+    width: 40px;
+    height: 1px;
+    background: #d4ad63;
+    display: block;
+    margin-top: 20px;
+}
+
+.choose-heading h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    color: var(--text-primary);
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-about {
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.card-about:hover {
+    transform: translateY(-6px);
+    cursor: pointer;
+}
+
+.card-body h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    color: var(--text-primary);
+    margin-top: 10px;
+}
+
+.card-body p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.87rem;
+    color: #999;
+    margin-top: 10px;
+}
+
+.icon {
+    color: #c9a45c;
+    background: var(--text-primary);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: -10px auto 22px;
+}
+
+.icon i {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.20rem;
+}
+
+/*=============
+     Our facilties
+    ==============*/
+.facilties {
+    background: #f8f6f0;
+}
+
+.our-facilties {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+}
+
+.icons {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.87rem;
+    font-weight: 500;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    color: var(--text-primary);
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.icons:not(:last-child) {
+    border-right: 1px solid#ccc;
+    padding-right: 20px;
+}
+
+.icons i {
+    font-size: 1.20rem;
+}
+
+/*=============
+     statistics
+    ==============*/
+.statistics {
+    background: var(--text-primary);
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+.stat-item {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.stat-item:not(:last-child) {
+    border-right: 1px solid #ccc;
+    padding-right: 100px;
+}
+
+.stat-item i {
+    font-size: 2rem;
+    color: #d4ad63;
+    margin-top: 20px;
+}
+
+.stat-item span {
+    font-size: 2rem;
+    color: #d4ad63;
+}
+
+.stat-item h4 {
+    color: #d4ad63;
+    font-size: 1.20rem;
+}
+
+.stat-item p {
+    color: #fff;
+    font-size: 0.87rem;
+}
+
+/*=============
+     book-section
+    ==============*/
+.book-card {
+    background-image: linear-gradient(to right, #ffffff 0%, rgba(245, 239, 229, 0.9)35%, rgba(245, 239, 229, 0) 70%), url("../images/bedroom.jpg");
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.book-content {
+    display: flex;
+    gap: 15px;
+    margin-left: 20px;
+}
+
+.book-content span {
+    color: #d4ad63;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.book-content i {
+    width: 40px;
+    height: 1px;
+    background: #d4ad63;
+    display: block;
+    margin-top: 30px;
+}
+
+.book-contents {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--text-primary);
+    margin-left: 20px;
+}
+
+.book-contents h2 {
+    color: var(--text-primary);
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn-primary {
+    background: var(--text-primary);
+    color: #fff;
+    margin-left: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px !important;
+
+}
+
+.btn-primary:hover {
+    background: #d4ad63;
+    cursor: pointer;
+}
+
+@media(max-width:768px) {
+    .about-us {
+        min-height: 500px;
+    }
+
+    .cart-about {
         flex-direction: column;
     }
-    .cart-content{
+
+    .our-facilties {
+        display: block;
+    }
+
+    .icons {
+        border-right: none !important;
+    }
+
+    .cart-content {
         width: 100%;
         border-right: none !important;
         border-bottom: 1px solid #ccc;
     }
-    .cart-content:last-child{
+
+    .cart-content:last-child {
+        border-bottom: none;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+
+    .stat-item {
+        width: 100%;
+        border-right: none !important;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .stat-item:last-child {
         border-bottom: none;
     }
 }
