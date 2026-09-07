@@ -9,7 +9,6 @@
 
 .about-heading {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 40px;
 }
 
 .about-lable {
@@ -23,6 +22,7 @@
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: 1px;
+    margin-top: 40px;
 }
 
 .about-lable i {
@@ -30,6 +30,7 @@
     height: 1px;
     background: #d4ad63;
     display: block;
+    margin-top: 40px;
 }
 
 .about-heading h1 {

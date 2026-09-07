@@ -1,0 +1,250 @@
+.about-us {
+    background-image: linear-gradient(to right, #070b10 0%, rgba(245, 239, 229, 0.1)70%, rgba(245, 239, 229, 0) 70%), url("../images/contact_hero-background.png");
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-heading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about-lable {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.about-lable span {
+    color: #d4ad63;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 100px;
+}
+
+.about-lable i {
+    width: 40px;
+    height: 1px;
+    background: #d4ad63;
+    display: block;
+    margin-top: 100px;
+}
+
+.about-heading h1 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 20px;
+}
+
+.about-heading p {
+    color: #fff;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 20px;
+}
+
+/*=============
+      contact Section
+    ==============*/
+.contact-section {
+    background: #f8f6fa;
+}
+
+.cart-contact {
+    background: #fff;
+    border-radius: var(--radius);
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.cantact-lable {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cantact-lable span {
+    color: #d4ad63;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 20px;
+}
+
+.cantact-lable i {
+    width: 40px;
+    height: 1px;
+    background: #d4ad63;
+    display: block;
+}
+
+.cantact-head h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.20rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-left: 20px;
+}
+
+.cantact-head p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.87rem;
+    color: var(--text-primary);
+    margin-left: 20px;
+}
+
+.position-relative {
+    padding: 10px 20px;
+}
+
+.message {
+    position: relative;
+    padding: 10px 20px;
+}
+
+.message i {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    z-index: 2;
+}
+
+.message textarea {
+    padding-left: 45px;
+    padding-top: 12px;
+}
+.sendBtn{
+    background: var(--text-primary);
+    color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    border-radius: var(--radius);
+    border: 1px solid #ccc;
+}
+.sendBtn:hover{
+    background: #d4ad63;
+    cursor: pointer;
+}
+.card-contact-left{
+    background: #ddd;
+    margin-top: 20px;
+    border-radius: var(--radius);
+    width: 100%;
+
+}
+.cantact-details{
+    display: block;
+}
+.cantact-item{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+.cantact-icon{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--text-primary);
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-shrink: 0;
+    margin-left: 10px;
+
+}
+.cantact-text{
+    flex: 1;
+}
+.cantact-text h6{
+    color: var(--text-primary);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin: 0 0 5px;
+}
+.cantact-text p{
+    color: var(--text-primary);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.87rem;
+    margin: 2px 0;
+}
+.comfort-text{
+    font-style: italic;
+    font-size: 28px;
+    font-weight: 500;
+    color: #c99a3d;
+    font-family: dancing script;
+    text-align: center;
+}
+/*======= Map Box =======*/
+.map-box{
+    position: relative;
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 6px;
+    margin-bottom: 20px !important;
+}
+.map-box iframe{
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.map-card{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 200px;
+    background: #fff;
+    padding: 12px;
+    border-radius: 3px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.map-card-top{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.map-card h4{
+    margin: 0;
+    font-size: 13px;
+    color: #333;
+}
+.map-card p{
+    margin:3px 0;
+    font-size: 10px;
+    color: #777;
+}
+.rating{
+    font-size: 10px;
+    margin: 5px 0;
+}
+.rating span:nth-child(2){
+    color: #e0b44c;
+}
+.map-card a{
+    font-size: 9px;
+    color: #4285f4 !important;
+    text-decoration: none;
+}
+.directions{
+    white-space: nowrap !important;
+}
+@media(max-width:768px) {
+    .about-us {
+        min-height: 500px;
+    }
+
+    .cart-about {
+        flex-direction: column;
+    }
+}
