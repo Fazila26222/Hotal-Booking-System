@@ -733,21 +733,57 @@
 .image-news:hover {
     transform: scale(1.09);
 }
-
-@media(max-width:768px){
-    .card-offer p span{
-        display: block;
-    }
-    .card-offer1 p span{
-        display: block;
+/*toplet*/
+@media (max-width: 991px) {
+    .search-card{
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 50px;
     }
     .bookBtn{
-        width: 50%;
+        margin-left: 0;
+        width: 100%;
     }
-}
-@media (max-width: 991px) {
+    .viewBtn{
+        margin-left: 0;
+        width: 100%;
+    }
     #filter {
         top: 67px;
+    }
+}
+/*mobale*/
+@media(max-width:768px){
+    #hero{
+        padding: 70px 0 50px;
+        min-height: auto;
+    }
+    .search-card{
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        padding: 15px;
+        margin-top: 35px;
+        gap: 12px;
+    }
+    .card-offer,
+    .card-offer1{
+        padding: 15px;
+    }
+    .card-offer img,
+    .card-offer1 img{
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+    .card-offer .row,
+    .card-offer1 .row{
+        flex-direction: column;
+    }
+    .bookBtn,
+    .viewBtn{
+        width: 100%;
+        margin-left: 0;
     }
 }
 
