@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotal Booking System</title>
+    <!--css and bootstrap file-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/register.css">
+
+    <!--icons and fonts file-->
+    <link rel="stylesheet" href="icons/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="icons/fonts/bootstrap-icons.woff">
+    <link rel="stylesheet" href="fonts/Vazirmatn-Regular.ttf">
+</head>
+
+<body>
+    <section class="register">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 ">
+                    <div class="register-label">
+                        <span>JOIN US</span>
+                    </div>
+                    <div class="register-head">
+                        <h2>Create Your <br> Account</h2>
+                        <p>Book your dream stay, manage your <br>
+                            reservation and enjoy exclusive offers.
+                        </p>
+                    </div>
+                    <div class="register-securty">
+                        <h6><i class="bi bi-calendar-check"></i>Easy Booking</h6>
+                        <h6><i class="bi bi-star"></i>Exclusive Offers</h6>
+                        <h6><i class="bi bi-headset"></i>24/7 Support</h6>
+                    </div>
+                </div>
+                <!--======card-register=======-->
+                <div class="col-lg-8">
+                    <form id="registerForm">
+                        <div class="card-register">
+                            <div class="register-item">
+                                <div class="register-icon">
+                                    <i class="bi bi-person-fill"></i>
+                                </div>
+                                <div class="register-text">
+                                    <h2>Register</h2>
+                                    <p>Fill in form below to create your account</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="input-box position-relative">
+                                        <i class="bi bi-person position-absolute top-50 start-3 translate-middle-y ms-3
+                                            "></i>
+                                        <input type="phone" class="form-control ps-5 text-start"
+                                            placeholder="Full Name *" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-box position-relative">
+                                        <i class="bi bi-envelope position-absolute top-50 start-3 translate-middle-y ms-3
+                                            "></i>
+                                        <input type="phone" class="form-control ps-5 text-start"
+                                            placeholder="Email Address *" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class=" input-box position-relative">
+                                        <i class="bi bi-telephone position-absolute top-50 start-3 translate-middle-y ms-3
+                                            "></i>
+                                        <input type="phone" class="form-control ps-5 text-start"
+                                            placeholder="Phone Number *" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-box position-relative">
+                                        <i class="bi bi-lock-fill position-absolute top-50 start-3 translate-middle-y ms-3
+                                            "></i>
+                                        <input type="phone" class="form-control ps-5 text-start" placeholder="Pasword *"
+                                            required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-box position-relative">
+                                <i class="bi bi-lock-fill position-absolute top-50 start-3 translate-middle-y ms-3
+                                            "></i>
+                                <input type="phone" class="form-control ps-5 text-start" placeholder="Confirm Pasword *"
+                                    required>
+                            </div>
+                            <div class="input-box position-relative">
+                                <i class="bi bi-person-badge position-absolute top-50 start-3 translate-middle-y ms-3
+                                            "></i>
+                                <select class="form-select form-select-lg form-control ps-5 text-start">
+                                    <option value="role" selected disabled>Select Role*</option>
+                                    <option value="guest">Guest</option>
+                                    <option value="receptionist">Receptionist</option>
+                                    <option value="manager">Manager</option>
+                                    <option value="admin">Admin</option>
+                                </select>
+                            </div>
+                            <div class="input-box position-relative">
+                                <i class="bi bi-geo-alt-fill position-absolute top-50 start-3 translate-middle-y ms-3
+                                            "></i>
+                                <input type="phone" class="form-control ps-5 text-start" placeholder="Address" required>
+                            </div>
+                            <div class="terms">
+                                <input type="checkbox" id="terms">
+                                <label for="terms">
+                                    I agree to the Terms & Conditions
+                                </label>
+                            </div>
+                            <button type="submit">
+                                Register
+                            </button>
+                            <div class="login-line">
+                                <span></span>
+                                <p>Already have an account?
+                                </p>
+                                <span></span>
+                            </div>
+                           <a href="login.html">Login here</a>
+                        </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/index.js"></script>
+
+</html>

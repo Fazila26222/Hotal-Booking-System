@@ -1,0 +1,137 @@
+body {
+    background: url("../images/bg\ login.png");
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 0;
+}
+
+.form-container {
+    width: 400px;
+    max-width: 92%;
+    background: white;
+    padding: 30px !important;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 8px;
+    color: var(--text-primary);
+}
+
+.login-lable {
+    text-align: center;
+    margin-bottom: 8px;
+    color: #d4ad63;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 8px;
+    color: var(--text-primary);
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.field {
+    margin-bottom: 18px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    color: var(--text-primary);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.terms input {
+    width: auto;
+    margin: 0;
+}
+
+.terms label {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.terms a {
+    text-decoration: none;
+    padding: 0;
+    margin-left: auto;
+    white-space: nowrap;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #04308f;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.register-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.register-line span {
+    height: 1px;
+    background-color: #ccc;
+    flex: 1;
+}
+
+.register-line p {
+    margin: 0;
+    white-space: nowrap;
+    font-size: 14px;
+    color: var(--text-primary);
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0a5dbd !important;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 20px !important;
+}

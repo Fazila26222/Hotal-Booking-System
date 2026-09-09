@@ -1,0 +1,141 @@
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+body {
+    background-image: linear-gradient(to right, #081b32 0%, rgba(245, 239, 229, 0.1)50%,
+            rgba(245, 239, 229, 0) 70%), url("../images/stayora-hotel.png");
+}
+
+.register-label {
+    color: #d4ad63;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: dancing script;
+}
+
+.register-head h2 {
+    color: #fff;
+    font-family: dancing script;
+    margin-top: 10px;
+}
+
+.register-head p {
+    color: #fff;
+    font-family: dancing script;
+    margin-top: 20px;
+}
+
+.register-securty {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.register-securty h6 {
+    color: #fff;
+    font-family: dancing script;
+}
+
+.register-securty i {
+    color: #d4ad63;
+}
+
+.register-securty h6 i {
+    margin-right: 10px;
+}
+
+/*======card-register=======*/
+.card-register {
+    background: #fff;
+    border-radius: 10px;
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+}
+
+.register-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.register-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #d4ad63;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.register-text h2{
+    font-family: dancing script;
+    color: var(--text-primary);
+}
+.register-text p{
+    font-family: dancing script;
+    color: var(--text-primary);
+}
+.input-box{
+    padding: 10px 20px;
+}
+.terms{
+    padding: 0 20px;
+    color: var(--text-primary);
+}
+button {
+    width: 95%;
+    padding: 14px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 10px;
+    background:var(--text-primary);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(5, 204, 226, 0.3);
+}
+.login-line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+.login-line span{
+    height: 1px;
+    background-color: #ccc;
+    flex: 1;
+}
+.login-line p{
+    margin: 0;
+    white-space: nowrap;
+    font-size: 14px;
+    color: var(--text-primary);
+}
+.card-register a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0a5dbd !important;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 20px !important;
+    
+}
+

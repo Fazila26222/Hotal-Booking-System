@@ -1,5 +1,5 @@
 #hero {
-    background: url("../images/Hotle\ \(1\).png");
+    background: url("../images/stayora-hotel.png");
     padding: 100px 0 80px;
     position: relative;
     overflow: visible;
@@ -734,7 +734,17 @@
     transform: scale(1.09);
 }
 
-
+@media(max-width:768px){
+    .card-offer p span{
+        display: block;
+    }
+    .card-offer1 p span{
+        display: block;
+    }
+    .bookBtn{
+        width: 50%;
+    }
+}
 @media (max-width: 991px) {
     #filter {
         top: 67px;
