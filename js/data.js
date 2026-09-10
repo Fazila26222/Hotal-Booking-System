@@ -1,0 +1,98 @@
+ const hotels =[
+    {
+        id:1,
+        name:"Dubai Grand Hotel",
+        city:"Dubai",
+        country:"UAE",
+        rating:4.8,
+        reviews:15,
+        price:150,
+        discount:20,
+        image:"images/dubai.jpg",
+        description:"Very Good"
+    },
+     {
+        id:2,
+        name:"Istanbul Royal Hotel",
+        city:"Istanbul",
+        country:"Turkey",
+        rating:4.1,
+        reviews:100,
+        price:100,
+        discount:10,
+        image:"../images/istanbul1.jpg",
+        description:"Very Good"
+    },
+     {
+        id:3,
+        name:"Paris Luxury Hotel",
+        city:"Paris",
+        country:"France",
+        rating:4.6,
+        reviews:153,
+        price:190,
+        discount:15,
+        image:"images/paris.jpg",
+        description:"Very Good"
+    },
+     {
+        id:4,
+        name:"London Central Hotel",
+        city:"London",
+        country:"UK",
+        rating:4.9,
+        reviews:15,
+        price:150,
+        discount:25,
+        image:"images/london.jpg",
+        description:"Very Good"
+    },
+     {
+        id:5,
+        name:"Toronto Downtown Hotel",
+        city:"Toronto",
+        country:"Canada",
+        rating:3.8,
+        reviews:12,
+        price:130,
+        discount:18,
+        image:"images/Toronto-Canada.jpg",
+        description:"Very Good"
+    },
+     {
+        id:6,
+        name:"Sydeny Beach Hotel",
+        city:"Sydeny",
+        country:"Australia",
+        rating:4.2,
+        reviews:14,
+        price:110,
+        discount:12,
+        image:"images/Sydney-Australia.jpg",
+        description:"Very Good"
+    },
+     {
+        id:7,
+        name:"Kabul Serena Hotel",
+        city:"Kabul",
+        country:"Afghanistan",
+        rating:4.5,
+        reviews:13,
+        price:130,
+        discount:10,
+        image:"images/Serena.jpg",
+        description:"Very Good"
+    },
+     {
+        id:8,
+        name:"US Stayora Hotel",
+        city:"US",
+        country:"America",
+        rating:4.2,
+        reviews:15,
+        price:100,
+        discount:20,
+        image:"images/US.jpg",
+        description:"Very Good"
+    },
+];
