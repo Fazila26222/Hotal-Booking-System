@@ -425,7 +425,7 @@
 .discount {
     position: absolute;
     top: 10px;
-    left: 10px !important;
+    right: 10px !important;
     background: #dc2626;
     color: #fff;
     padding: 5px 9px;
