@@ -1,0 +1,83 @@
+.confirm-section{
+    background: #f5f7fb;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px 50px;
+}
+.confirm-card{
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    padding: 45px 35px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+}
+.success-icon{
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #e8f8ef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+.confirm-card h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.success-text{
+    color: #777;
+    margin-bottom: 30px;
+}
+.booking-info{
+    text-align: left;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+.booking-info p{
+    margin: 8px 0;
+    color: #555;
+}
+.download-text{
+    color: #666;
+    margin-bottom: 18px;
+}
+.download-btn{
+    border: none;
+    padding: 13px 25px;
+    border-radius: 8px;
+    background: #0d6efd;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+.download-btn i{
+    margin-right: 8px;
+}
+.home-link{
+    display: block;
+    margin-top: 20px;
+    color: #0d6efd !important;
+    text-decoration: none;
+}
+.home-link i{
+    margin-right: 5px;
+}
+@media(max-width: 576px){
+    .confirm-card{
+        padding: 35px 20px;
+    }
+    .confirm-card h2{
+        font-size: 25px;
+    }
+    .booking-info{
+        font-size: 14px;
+    }
+}
