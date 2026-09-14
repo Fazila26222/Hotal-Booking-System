@@ -16,7 +16,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     margin-top: 10px !important;
-   color: var(--text-primary);
+    color: var(--text-primary);
 }
 
 .book-Head h3 {
@@ -32,8 +32,9 @@
     font-size: 0.89rem;
     margin-top: 10px !important;
     margin-right: 60px;
-     color: var(--text-primary);
+    color: var(--text-primary);
 }
+
 /*<!--=====right======-->*/
 .card-booking {
     position: relative;
@@ -58,7 +59,7 @@
     font-size: 1rem;
     margin-top: 20px !important;
     margin-left: 20px;
-     color: var(--text-primary);
+    color: var(--text-primary);
 }
 
 .book-head label {
@@ -67,7 +68,7 @@
     font-weight: 600;
     margin-top: 20px !important;
     margin-left: 20px;
-     color: var(--text-primary);
+    color: var(--text-primary);
 }
 
 .number {
@@ -109,6 +110,7 @@
     margin-left: 20px;
     color: var(--text-primary);
 }
+
 /*<!--=====center======-->*/
 .card-booking1 {
     position: relative;
@@ -148,7 +150,7 @@
 }
 
 .book-head p {
-     color: var(--text-primary);
+    color: var(--text-primary);
     margin-left: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.89rem;
@@ -187,7 +189,7 @@
 
 .information h3 {
     font-family: Arial, Helvetica, sans-serif;
-    font-family: 1.3rem;
+    font-size: 1.3rem;
     font-weight: 700;
     margin-top: 20px;
     color: var(--text-primary);
@@ -195,18 +197,46 @@
 
 .description {
     font-family: Arial, Helvetica, sans-serif;
-    font-family: 0.90rem;
+    font-size: 0.90rem;
     color: var(--text-primary);
     font-weight: 500;
     margin-top: 20px;
 }
 
+.description p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.description p i {
+    color: #0a87e0;
+    width: 30px;
+    flex-shrink: 0;
+}
+
+.description p span {
+    margin-left: auto;
+    text-align: right;
+}
+
 .total {
     font-family: Arial, Helvetica, sans-serif;
-    font-family: 1.3rem;
+    font-size: 1.3rem;
     font-weight: 700;
     margin-top: 10px;
     color: var(--text-primary);
+}
+
+.total h3 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.total h3 span {
+    margin-left: auto;
+    text-align: right;
 }
 
 .cart-book {
@@ -235,6 +265,7 @@
     border-radius: 8px;
     padding: 10px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .card1 {
@@ -244,6 +275,7 @@
     margin-top: 20px;
     width: 100%;
 }
+
 /*  <!--cart booking-->*/
 .d-flex i {
     margin-top: 30px;
@@ -260,7 +292,7 @@
     font-size: 1rem;
     font-weight: 700;
     margin-left: 30px;
-     color: var(--text-primary);
+    color: var(--text-primary);
 }
 
 .d-flex p {

@@ -372,10 +372,9 @@
     border-radius: 30%;
     background: #1255a9;
     color: #fff;
-    margin-top: 15px;
-    justify-content: space-between !important;
+    display: flex;
+    justify-content: center !important;
     align-items: center !important;
-    text-align: center !important;
 }
 .discount{
     display: flex;

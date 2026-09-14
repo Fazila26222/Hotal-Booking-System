@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotal Booking System</title>
+    <!--css and bootstrap file-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/payment.css">
+
+    <!--icons and fonts file-->
+    <link rel="stylesheet" href="icons/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="icons/fonts/bootstrap-icons.woff">
+    <link rel="stylesheet" href="fonts/Vazirmatn-Regular.ttf">
+</head>
+
+<body>
+    <!--======
+    Header
+    ========-->
+    <div id="Top-header">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-between g-2">
+                <!--========
+                Contant
+                ==========-->
+                <div class="d-flex flex-wrap align-items-center gap-3">
+                    <h1>Hotel Booking & Travel</h1>
+                </div>
+                <div class="d-flex gap-2">
+                    <button id="languageBtn"> EN / دری </button>
+                    <button class="btn btn-login ">Login</button>
+                    <button class="btn btn-register ">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=============
+        Start Navbar
+     ==============-->
+    <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+        <div class="container">
+            <a href="" class="navbar-brand">Stay<span>ora</span></a>
+
+            <!-- Mobile Toggle -->
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#navOffcanvas" aria-controls="navOffcanvas">
+                <i class="bi bi-list" style="font-size: 1.6rem; color: #faced3"></i>
+            </button>
+            <!--=================
+            Disktop nav
+    ==================-->
+            <div class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav align-items-center gap-1 me-3">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="hotels.html" class="nav-link">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="room.html" class="nav-link">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="booking.html" class="nav-link active">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--===========
+        Mobile Menu
+    ============-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="navOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Hotel Booking & Travel</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav gap-1 mb-4">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link ">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="hotels.html" class="nav-link">Hotels</a>
+                </li>
+                <li class="nav-item">
+                    <a href="room.html" class="nav-link">Rooms</a>
+                </li>
+                <li class="nav-item">
+                    <a href="booking.html" class="nav-link active">Booking</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--=============
+     Payment hero
+    ==============-->
+    <section id="payment-hero">
+        <div class="container">
+            <div class="col-lg-6">
+                <div class="payment-head">
+                    <div class="payment-lable">
+                        <span>Payment</span>
+                        <i></i>
+                    </div>
+                    <p>Secre your booking with confidence</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=============
+     Payment Main
+    ==============-->
+    <section class="main-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-6">
+                    <div class="payment-card">
+                        <div class="payment-heading">
+                            <i class="bi bi-credit-card"></i>
+                            <h3>Payment Method <br>
+                                <span>
+                                    Please enter your card details to complete the booking.
+                                </span>
+                            </h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="card-pay d-flex">
+                                    <div class="pay-info">
+                                        <div class="form-radio">
+                                            <input type="radio" name="radio">
+                                            <i class="bi bi-credit-card"></i>
+                                        </div>
+                                        <h6>Credit/Debit Card</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="card-pay d-flex">
+                                    <div class="pay-info">
+                                        <div class="form-radio">
+                                            <input type="radio" name="radio">
+                                            <i class="bi bi-credit-card"><span
+                                                    style="color: #050232; font-weight: bold;">Pay<span
+                                                        style="color: #1608e1;">pal</span>
+                                                </span>
+                                            </i>
+                                        </div>
+                                        <h6>PayPal</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="card-pay d-flex">
+                                    <div class="pay-info">
+                                        <div class="form-radio">
+                                            <input type="radio" name="radio">
+                                            <i class="bi bi-apple"><span style="color: black; font-weight: bold;">Pay
+                                                </span>
+                                            </i>
+                                        </div>
+                                        <h6>Apple Pay</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="card-pay d-flex">
+                                    <div class="pay-info">
+                                        <div class="form-radio">
+                                            <input type="radio" name="radio">
+                                            <i class="bi bi-google"><span style="color: #323149;">Pay
+                                                </span>
+                                            </i>
+                                        </div>
+                                        <h6>Google Pay</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input">
+                            <label>Card Number*</label><br>
+                            <input type="number" placeholder="123456789" required>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="input">
+                                    <label>Card Holder Name*</label><br>
+                                    <input type="text" placeholder="Fazila" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="input">
+                                    <label>Expiry Data*</label><br>
+                                    <input type="date" placeholder="MM/YY" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="input">
+                                    <label>CVV*</label><br>
+                                    <input type="number" placeholder="123" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="input">
+                                    <label>Billing Address</label><br>
+                                    <input type="text" placeholder="Street, city" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pay-icon">
+                            <i class="bi bi-lock-fill"></i>
+                            <p>Your payment information is secure and encrypted.</p>
+                        </div>
+                        <button class="payBtn" id="payBtn">Pay Now <i class="bi bi-arrow-right"></i></button>
+                    </div>
+                </div>
+                <!--=========left section===========-->
+                <div class="col-lg-4 col-md-6">
+                    <div class="payment-card">
+                        <img src="images/contact_hero-background.png" class="img-fluid" alt="payment">
+                        <div class="pay-summary">
+                            <h3>Booking Summary</h3>
+                            <div class="description">
+                                <p>
+                                    <i class="bi bi-house-door"></i> Hotel Name
+                                    <span>Kabul Grand
+                                        Hotel</span>
+                                </p>
+                                <p>
+                                    <i class="bi bi-house"></i>Room Type
+                                    <span>Geluxe Room</span>
+                                </p>
+                                <p>
+                                    <i class="bi bi-calendar-check"></i> Check-in
+                                    <span>15 Oct 2025</span>
+                                </p>
+                                <p>
+                                    <i class="bi bi-calendar3"></i> Check-out
+                                    <span>18 Oct 2025</span>
+                                </p>
+                                <p>
+                                    <i class="bi bi-people"></i> Guests
+                                    <span>2 Adults, 1
+                                        Child</span>
+                                </p>
+                            </div>
+                            <div class="room-price">
+                                <p>Room Price (3 night) <span>$450</span></p>
+                                <p>Taxes & Fees <span>$45</span></p>
+                            </div>
+                            <div class="total">
+                                <h6>Total Price <span>$495</span></h6>
+                            </div>
+                            <div class="pay-icon">
+                                <i class="bi bi-shield-check"></i>
+                                <p>Secure Payment</p>
+                            </div>
+                            <div class="pay-methods">
+                                <span class="visa">VISA</span>
+                                <span class="mastercard">
+                                    <i class="bi bi-circle-fill"></i>
+                                    <i class="bi bi-circle-fill"></i>
+                                </span>
+                                <span class="amex">AMERICAN <br>EXPRESS</span>
+                                <span class="paypal">P PayPal</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row g-5">
+                <!--Col 1: info-->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-brand">
+                        Stay<span>ora</span>
+                    </div>
+                    <p class="footer-info">Your perfect stay starts here. </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <!-- Col 2: Quick Links -->
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="footer-heading">Quick Links</div>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Rooms</a></li>
+                        <li><a href="#">Booking</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Col 3: Support -->
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer-heading">Support</div>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <!-- Col 4: Contact -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-heading">Contact Us</div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span>Kabul Afghanistan</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-envelope-fill"></i>
+                        <span>Stayora1234@gmail.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-telephone-fill"></i>
+                        <span>+9377894450</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="bi bi-clock-fill"></i>
+                        <span>24/7 Support</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom Footer -->
+            <div class="footer-bottom d-flex flex-wrap align-items-center justify-content-between gap-2">
+                <p>&copy; 2024 <a href="#">Stayora</a>. All Rights Reserved.</p>
+                <p>
+                    <a href="#" class="me-3">Privacy Policy</a>
+                    <a href="#" class="me-3">Terms of Conditions</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/index.js"></script>
+
+</html>
