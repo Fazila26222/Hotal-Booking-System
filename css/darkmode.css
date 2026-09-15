@@ -25,12 +25,17 @@ body.darkBtn {
     background-color: #0f172a;
     color: #f5f5f5;
 }
+body.darkBtn section:last-of-type{
+    margin-bottom: 0;
+}
 
 /* Navbar */
 body.darkBtn .navbar {
     background-color: #0f173a !important;
 }
-
+body.darkBtn .navbar-brand span{
+    color: #fbbf24;
+}
 body.darkBtn .navbar .nav-link {
     color: #f5f5f5 !important;
 }
@@ -385,4 +390,20 @@ body.darkBtn .cart-review{
 body.darkBtn .cart-review:hover{
     background-color: #2d476e;
 }
-
+/*footer*/
+body.darkBtn #footer{
+    background-color: #020617;
+    color: #cbd5e1;
+}
+body.darkBtn .footer-heading{
+    color: #032d72;
+}
+body.darkBtn .footer-brand{
+    color:#fbbf24 ;
+}
+body.darkBtn .footer-bottom p{
+    color: #fbbf24;
+}
+body.darkBtn .footer-contact-item i{
+    color: #fbbf24;
+}

@@ -146,12 +146,11 @@ a {
     font-family: "Sora", sans-serif;
     font-weight: 800;
     font-size: 1.5rem;
-    color: var(--text-primary) !important;
     letter-spacing: -0.5px;
 }
 
 .navbar-brand span {
-    color: #fff;
+    color: #020d42;
 }
 
 .nav-item {
@@ -187,7 +186,7 @@ a {
 #footer {
     background-color: var(--footer-bg);
     color: #fff;
-    margin-top: 50px;
+    margin-top: 0px;
     position: relative;
     overflow: hidden;
     padding: 20px 20px;
