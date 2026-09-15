@@ -1,3 +1,15 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+section{
+    margin: 0;
+    padding: 40px 0;
+}
+h1, h2, h3, h4, h5, p{
+    margin-top: 0;
+}
+
 #hero {
     background: url("../images/stayora-hotel.png");
     padding: 100px 0 80px;
@@ -504,15 +516,7 @@
      margin-bottom: 8px;
  }
 /* Filter */
-#filter {
-    background-color: var(--bg-card);
-    border-bottom: 1px solid var(--border);
-    padding: 14px 0px;
-    position: sticky;
-    top: 73px;
-    z-index: 100;
-    margin-bottom: 10px;
-}
+
 
 .filter-btn {
     background-color: var(--bg-main);

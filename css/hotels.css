@@ -1,3 +1,14 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+section{
+    margin: 0;
+    padding: 40px 0;
+}
+h1, h2, h3, h4, h5, p{
+    margin-top: 0;
+}
 #hero {
     background: url("../images/Hotle\ \(2\).png");
     padding: 100px 0 80px;

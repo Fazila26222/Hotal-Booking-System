@@ -248,7 +248,7 @@
     flex: 1;
     border: 1px solid #1255a9;
     border-radius: 8px;
-    width: auto;
+    width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     margin-top: 30px;
@@ -394,8 +394,7 @@
     color: #18ed38;
     border: none;
     border-radius: 18px;
-    padding: 10px;
-   margin-top: 10px;
+   width: auto;
 }
 .discount span {
     font-family: Arial, Helvetica, sans-serif;

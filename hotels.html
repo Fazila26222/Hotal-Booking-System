@@ -8,6 +8,7 @@
     <!--css and bootstrap file-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/darkmode.css">
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/hotels.css">
 
@@ -78,6 +79,10 @@
                         <a href="contact.html" class="nav-link">Contact</a>
                     </li>
                 </ul>
+                <!--Dark Mode Button-->
+                <button class="darkBtn" id="darkBtn">
+                    <i class="bi bi-moon-fill"></i>Light Mode
+                </button>
             </div>
         </div>
     </nav>
@@ -113,6 +118,10 @@
                     <a href="contact.html" class="nav-link">Contact</a>
                 </li>
             </ul>
+            <!--Dark Mode Button-->
+            <button class="darkBtn" id="darkBtn">
+                <i class="bi bi-moon-fill"></i>Light Mode
+            </button>
         </div>
     </div>
 
@@ -204,7 +213,7 @@
             <div class="row g-2">
                 <!--Filter-->
                 <div class="col-lg-3 col-md-4">
-                    <div class="filter-card">
+                    <div class=" filter-card ">
                         <!--Check Box-->
                         <div class="heading">
                             <span> Filter By </span>
@@ -483,7 +492,8 @@
                                     </p>
                                     <p><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i>Paris France</p>
                                     <p>
-                                        Enjoy comfortable rooms, helpful Services, and easy access to important Destinations
+                                        Enjoy comfortable rooms, helpful Services, and easy access to important
+                                        Destinations
                                         around Le Meurice.
                                     </p>
                                     <p class="d-flex gap-3"><span> <i class="bi bi-wifi" style="color: #0f2d3d;"></i>
@@ -528,7 +538,7 @@
                                     <p><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i>Rome Italy</p>
                                     <p>
                                         Experience a relaxing stay with well-equipped rooms, friendly service,
-                                         and a convenient location.
+                                        and a convenient location.
                                     </p>
                                     <p class="d-flex gap-3"><span> <i class="bi bi-wifi" style="color: #0f2d3d;"></i>
                                             Wi-Fi
@@ -616,7 +626,7 @@
                                     <p><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i>New York USA</p>
                                     <p>
                                         Enjoy a peaceful stay with clean rooms, excellent service, and comfortable
-                                         facilities for every guest.
+                                        facilities for every guest.
                                     </p>
                                     <p class="d-flex gap-3"><span> <i class="bi bi-wifi" style="color: #0f2d3d;"></i>
                                             Wi-Fi
@@ -704,7 +714,7 @@
                                     <p><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i>Bangkok Thailand</p>
                                     <p>
                                         Stay in a convenient location with comfortable rooms, modern
-                                         facilities, and friendly hotel Services.
+                                        facilities, and friendly hotel Services.
                                     </p>
                                     <p class="d-flex gap-3"><span> <i class="bi bi-wifi" style="color: #0f2d3d;"></i>
                                             Wi-Fi
@@ -745,9 +755,10 @@
                                         <i class="bi bi-star" style="color: var(--warning);"></i>
                                         4.5 <span style="color: blue;">(230 Reviews)</span>
                                     </p>
-                                    <p><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i>Kuala Lumpur Malaysia</p>
+                                    <p><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i>Kuala Lumpur Malaysia
+                                    </p>
                                     <p>
-                                        A welcoming hotel with comfortable accommodation, helpful staff, and a 
+                                        A welcoming hotel with comfortable accommodation, helpful staff, and a
                                         peaceful environment for travelers.
                                     </p>
                                     <p class="d-flex gap-3"><span> <i class="bi bi-wifi" style="color: #0f2d3d;"></i>
@@ -791,7 +802,7 @@
                                     </p>
                                     <p><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i>Sydney Australia</p>
                                     <p>
-                                        Enjoy a pleasant stay with spacious rooms, excellent hospitality, and a 
+                                        Enjoy a pleasant stay with spacious rooms, excellent hospitality, and a
                                         range of convenient hotel facilities.
                                     </p>
                                     <p class="d-flex gap-3"><span> <i class="bi bi-wifi" style="color: #0f2d3d;"></i>
@@ -865,23 +876,23 @@
     <!--==========pagination===========-->
     <section id="pagination">
         <div class="container">
-                <ul class="pagination justify-content-center">
-                    <li class="page-item">
-                        <a class="page-link" href="#">previous</a>
-                    </li>
-                    <li class="page-item active">
-                        <a class="page-link" href="#">1</a>
-                    </li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">2</a>
-                    </li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">3</a>
-                    </li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">Next</a>
-                    </li>
-                </ul>
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                    <a class="page-link" href="#">previous</a>
+                </li>
+                <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
         </div>
     </section>
 
@@ -959,5 +970,6 @@
 <script src="js/bootstrap.bundle.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/index.js"></script>
+<script src="js/darkmode.js"></script>
 
 </html>

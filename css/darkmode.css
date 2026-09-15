@@ -1,39 +1,388 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color: #f4f4f4;
-    color: #222;
-    transition: 0.3s;
-}
+/* =========================
+   DARK MODE BUTTON
+========================= */
 
-button{
-    padding: 12px 25px;
+.darkBtn {
     border: none;
-    border-radius: 8px;
-    background-color: #222;
+    background: transparent;
     color: #fff;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
+    margin-left: 15px;
 }
 
-body.dark{
-    background-color: #222;
-    color: #fff;
+/* =========================
+   DARK MODE
+========================= */
+
+body.darkBtn {
+    background-color: #0f172a;
+    color: #f5f5f5;
 }
 
-body.dark .container{
-    background-color: #1f1f1f;
-    color: #fff;
-    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.05);
+/* Navbar */
+body.darkBtn .navbar {
+    background-color: #0f173a !important;
 }
 
-body.dark button{
-    background-color: #fff;
-    color: #000;
+body.darkBtn .navbar .nav-link {
+    color: #f5f5f5 !important;
 }
 
+body.darkBtn .navbar .nav-link:hover {
+    color: #4da3ff !important;
+}
+
+body.darkBtn .link-hero a {
+    color: #f8fafc;
+}
+
+
+/* Sections */
+body.darkBtn section {
+    background: #0f172a;
+}
+
+body.darkBtn h1,
+body.darkBtn h2,
+body.darkBtn h3,
+body.darkBtn h4,
+body.darkBtn h5,
+body.darkBtn h6 {
+    color: #f8fafc;
+}
+
+body.darkBtn p {
+    color: #cbd5e1;
+}
+
+body.darkBtn span {
+    color: #777;
+}
+
+body.darkBtn label {
+    color: #999;
+}
+
+body.darkBtn .heading h1 {
+    color: #f5f5f5;
+}
+
+/* cards*/
+body.darkBtn .card,
+body.darkBtn .location-card,
+body.darkBtn .guest-card,
+body.darkBtn .cart,
+body.darkBtn .search-card,
+body.darkBtn .card-offer,
+body.darkBtn .card-offer1,
+body.darkBtn .popular-card,
+body.darkBtn .hotel-card,
+body.darkBtn .card-us,
+body.darkBtn .card-cus,
+body.darkBtn .filter-card,
+body.darkBtn .card-about {
+    background-color: #1e293b;
+    border-color: #334155;
+    color: #f8fafc;
+}
+
+body.darkBtn .card:hover,
+body.darkBtn .cart:hover,
+body.darkBtn .search-card:hover,
+body.darkBtn .card-offer:hover,
+body.darkBtn .card-offer1:hover,
+body.darkBtn .popular-card:hover,
+body.darkBtn .hotel-card:hover,
+body.darkBtn .card-us:hover,
+body.darkBtn .card-cus:hover,
+body.darkBtn .filter-card:hover,
+body.darkBtn .card-about:hover {
+    background-color: #263449;
+}
+
+body.darkBtn .hotel-card h4 {
+    color: #f8fafc;
+}
+
+body.darkBtn .hotel-card p {
+    color: #cbd5e1;
+}
+
+body.darkBtn .hotel-card .price {
+    color: #3b82f6;
+}
+
+/*search box*/
+body.darkBtn input,
+body.darkBtn select,
+body.darkBtn textarea {
+    background-color: #111827;
+    color: #f8fafc;
+    border-radius: #334155;
+}
+
+body.darkBtn input::placeholder,
+body.darkBtn textarea::placeholder {
+    color: #94a3b8;
+}
+
+body.darkBtn span {
+    color: #f8fafc;
+}
+
+body.darkBtn label {
+    color: #f8fafc;
+}
+
+/*===about===*/
+body.darkBtn .book-card span {
+    color: #fbbf24;
+}
+
+body.darkBtn .book-contents h2 {
+    color: #0f173a;
+}
+
+body.darkBtn .book-contents p {
+    color: #111827;
+}
+
+body.darkBtn .stat-item i {
+    color: #fbbf24;
+}
+
+body.darkBtn .icons {
+    color: #fbbf24;
+}
+
+/*===Room====*/
+body.darkBtn .search-section {
+    background: #0f172a;
+}
+
+body.darkBtn .container-fluid {
+    background-color: #0f172a;
+}
+
+body.darkBtn .search-box {
+    background-color: #0f173a;
+}
+
+body.darkBtn #searchButton {
+    background-color: #111827;
+}
+
+body.darkBtn .category-btn {
+    background-color: #1e293b;
+    border-color: #334155;
+    color: #f8fafc;
+}
+
+body.darkBtn .category-btn:hover {
+    background-color: #0f173a;
+}
+
+body.darkBtn .room-card {
+    background-color: #1e293b;
+    border-color: #334155;
+    color: #f8fafc;
+}
+
+body.darkBtn .room-card:hover {
+    background-color: #263449;
+}
+
+/*booking*/
+body.darkBtn .card-booking,
+body.darkBtn .card-booking1,
+body.darkBtn .card-booking2,
+body.darkBtn .card-booking3,
+body.darkBtn .card1 {
+    background-color: #1e293b;
+    border-color: #334155;
+    color: #f8fafc;
+}
+
+body.darkBtn .card-booking:hover,
+body.darkBtn .card-booking1:hover,
+body.darkBtn .card-booking2:hover,
+body.darkBtn .card-booking3:hover,
+body.darkBtn .card1:hover {
+    background-color: #263449;
+}
+
+body.darkBtn .cart-book,
+body.darkBtn .confirmBtn {
+    background-color: #0f173a;
+}
+
+body.darkBtn .input-group span {
+    background-color: #1e293b;
+    border-color: #334155;
+    color: #f8fafc;
+}
+
+body.darkBtn .card-box,
+body.darkBtn .card-services {
+    background-color: #1e293b;
+    border-color: #334155;
+    color: #f8fafc;
+}
+
+body.darkBtn .card-box:hover,
+body.darkBtn .card-services:hover {
+    background-color: #263449;
+}
+
+body.darkBtn .cart-contact,
+body.darkBtn .card-contact-left,
+body.darkBtn .map-card {
+    background-color: #1e293b;
+    border-color: #334155;
+    color: #f8fafc;
+}
+
+body.darkBtn .room-rating {
+    background-color: #1e293b;
+    border-color: #334155;
+    color: #f8fafc;
+}
+/* booking details*/
+body.darkBtn .room-rating strong {
+    color: #3b82f6;
+}
+
+body.darkBtn .ameity-item {
+    background-color: #1e293b;
+    border-color: #334155;
+    color: #f8fafc;
+}
+
+body.darkBtn .ameity-item:hover {
+    background-color: #263449;
+}
+body.darkBtn .policy-item {
+    background-color: #1e293b;
+    border-color: #334155;
+    color: #f8fafc;
+}
+
+body.darkBtn .policy-item:hover {
+    background-color: #263449;
+}
+body.darkBtn .review-summary {
+    background-color: #1e293b;
+    border-color: #334155;
+    color: #f8fafc;
+}
+
+body.darkBtn .review-summary:hover {
+    background-color: #263449;
+}
+body.darkBtn .review-summary strong {
+    color: #3b82f6;
+}
+body.darkBtn .booking-card {
+    background-color: #1e293b;
+    border-color: #334155;
+    color: #f8fafc;
+}
+body.darkBtn .booking-card:hover {
+    background-color: #263449;
+}
+body.darkBtn .price strong {
+    color: #3b82f6;
+}
+body.darkBtn .book-now{
+    background-color: #0f173a;
+}
+body.darkBtn .book-now:hover{
+    background-color: #3b82f6;
+}
+/*Confirm*/
+
+body.darkBtn .confirm-card {
+    background-color: #1e293b;
+    border-color: #334155;
+    color: #f8fafc;
+}
+body.darkBtn .confirm-card:hover {
+    background-color: #263449;
+}
+body.darkBtn .success-icon{
+    color: #09db1e;
+}
+body.darkBtn .booking-info{
+    background-color: #0f173a;
+}
+body.darkBtn .download-btn:hover{
+    background-color: #0f173a;
+}
+/*Payment*/
+body.darkBtn .payment-card {
+    background-color: #1e293b;
+    border-color: #334155;
+    color: #f8fafc;
+}
+body.darkBtn .payment-card:hover {
+    background-color: #263449;
+}
+body.darkBtn .card-pay {
+    background-color: #1e293b;
+    border-color: #334155;
+    color: #f8fafc;
+}
+body.darkBtn .card-pay:hover {
+    background-color: #2d476e;
+    border-color: #3b82f6;
+}
+body.darkBtn .total{
+    background-color: #3b82f6;
+}
+body.darkBtn .total:hover{
+    background-color: #0f173a;
+}
+body.darkBtn .sort{
+    background-color: #0f172a;
+}
+/*Hotel Details*/
+body.darkBtn .cart-view{
+    background-color: #1e293b;
+    border-color: #334155;
+    color: #f8fafc;
+}
+body.darkBtn .cart-view:hover{
+    background-color: #2d476e;
+}
+body.darkBtn .cart-amenities{
+    background-color: #1e293b;
+    border-color: #334155;
+    color: #f8fafc;
+}
+body.darkBtn .cart-amenities:hover{
+    background-color: #2d476e;
+}
+body.darkBtn .cart-room{
+    background-color: #1e293b;
+    border-color: #334155;
+    color: #f8fafc;
+}
+body.darkBtn .cart-room:hover{
+    background-color: #2d476e;
+}
+body.darkBtn .cart-review{
+    background-color: #1e293b;
+    border-color: #334155;
+    color: #f8fafc;
+}
+body.darkBtn .cart-review:hover{
+    background-color: #2d476e;
+}
 

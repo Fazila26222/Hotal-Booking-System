@@ -1,17 +1,16 @@
 .bg-servies {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/services.jpg");
-    padding: 100px 0 80px;
     position: relative;
     overflow: visible;
     width: 100%;
-    min-height: 450px;
+    min-height: 300px;
 }
 
 .services-heading {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 40px;
+    padding: 20px;
 }
 
 .services-heading h1 {
@@ -44,7 +43,6 @@
     align-items: stretch;
     gap: 10px;
     background: white;
-    padding: 12px;
     border-radius: 12px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
 }
@@ -55,7 +53,6 @@
     text-align: center;
     flex: 1 1 170px;
     min-width: 0;
-    padding: 10px;
 }
 
 .us-icon {
@@ -105,7 +102,6 @@
     display: flex;
     flex-wrap: wrap;
     min-height: 300px;
-    margin-top: 20px;
     overflow: hidden;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
@@ -167,8 +163,7 @@
 }
 
 .cart-service {
-    margin: 30px 40px;
-    padding: 30px 70px;
+    padding: 10px 70px;
     background: #071a30;
     border-radius: 15px;
     color: #fff;
@@ -202,7 +197,6 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.60rem;
     color: #fff;
-    margin-bottom: 10px;
 }
 
 .cart-text p {

@@ -157,6 +157,16 @@ a {
 .nav-item {
     position: relative;
 }
+.lightBut{
+    background: var(--primary);
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 14px;
+}
+.lightBut:hover{
+    background: var(--text-primary);
+}
 
 .offcanvas-header {
     background-color: var(--primary);

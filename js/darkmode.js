@@ -1,11 +1,11 @@
-const button = document.getElementById("darkModeBtn");
+const button = document.getElementById("darkBtn");
 const body = document.body;
 
 
 button.addEventListener("click",function(){
-    body.classList.toggle("dark");
+    body.classList.toggle("darkBtn");
 
-    if (body.classList.contains("dark")){
+    if (body.classList.contains("darktBtn")){
         button.textContent ="☀ Light Mode"
     }else{
         button.textContent="🌙 Dark Mode";
