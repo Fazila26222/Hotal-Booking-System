@@ -430,8 +430,7 @@
 
 /*==========pagination===========*/
 #pagination {
-    margin-top: 25px;
-    margin-bottom: 30px;
+   padding: 10px;
 }
 
 #pagination .pagination {
@@ -440,7 +439,6 @@
     display: flex;
     justify-content: center;
     gap: 5px;
-
 }
 
 #pagination .page-link {
