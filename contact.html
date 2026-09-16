@@ -19,26 +19,6 @@
 </head>
 
 <body>
-    <!--======
-    Header
-    ========-->
-    <div id="Top-header">
-        <div class="container">
-            <div class="d-flex flex-wrap align-items-center justify-content-between g-2">
-                <!--========
-                Contant
-                ==========-->
-                <div class="d-flex flex-wrap align-items-center gap-3">
-                    <h1>Hotel Booking & Travel</h1>
-                </div>
-                <div class="d-flex gap-2">
-                    <button id="languageBtn"> EN / دری </button>
-                    <button class="btn btn-login ">Login</button>
-                    <button class="btn btn-register ">Register</button>
-                </div>
-            </div>
-        </div>
-    </div>
     <!--=============
         Start Navbar
      ==============-->
@@ -81,8 +61,14 @@
                 </ul>
                 <!--Dark Mode Button-->
                 <button class="darkBtn" id="darkBtn">
-                    <i class="bi bi-moon-fill"></i>Light Mode
-                </button>
+                <i class="bi bi-moon-fill"></i>
+            </button>
+            <button class="btn btn-login ">
+                Login
+            </button>
+            <button id="languageBtn" class="langBtn">
+                دری
+            </button>
             </div>
         </div>
     </nav>
@@ -120,7 +106,13 @@
             </ul>
             <!--Dark Mode Button-->
             <button class="darkBtn" id="darkBtn">
-                <i class="bi bi-moon-fill"></i>Light Mode
+                <i class="bi bi-moon-fill"></i>
+            </button>
+            <button class="btn btn-login ">
+                Login
+            </button>
+            <button id="languageBtn" class="langBtn">
+                دری
             </button>
         </div>
     </div>
@@ -324,38 +316,43 @@
         <div class="container">
             <div class="row g-5">
                 <!--Col 1: info-->
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="footer-brand">
                         Stay<span>ora</span>
                     </div>
                     <p class="footer-info">Your perfect stay starts here. </p>
-                    <div class="footer-social">
-                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    <p class="footer-info">Discover yhe best hotel,amazing experiences 
+                        and unforgettable stays around the world
+                    </p>
+                    <div class="news-box">
+                        <i class="bi bi-envelope"></i>
+                        <input type="email" placeholder="Enter your email address">
+                        <button type="submit">
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
                     </div>
                 </div>
                 <!-- Col 2: Quick Links -->
                 <div class="col-lg-2 col-md-6 col-sm-6">
                     <div class="footer-heading">Quick Links</div>
                     <ul class="footer-links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Rooms</a></li>
-                        <li><a href="#">Booking</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="index.html" class="link"><span>></span>Home</a></li>
+                        <li><a href="room.html" class="link"><span>></span>Rooms</a></li>
+                        <li><a href="booking.html" class="link"><span>></span>Booking</a></li>
+                        <li><a href="services.html" class="link"><span>></span>Services</a></li>
+                        <li><a href="about.html" class="link"><span>></span>About</a></li>
+                        <li><a href="contact.html" class="link"><span>></span>Contact</a></li>
                     </ul>
                 </div>
                 <!-- Col 3: Support -->
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="footer-heading">Support</div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="footer-heading">Booking</div>
                     <ul class="footer-links">
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Cancellation Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#" class="link"><span>></span>Favorite</a></li>
+                        <li><a href="#" class="link"><span>></span>My Booking </a></li>
+                        <li><a href="search-reslut.html" class="link"><span>></span>Search Hotel</a></li>
+                        <li><a href="" class="link"><span>></span>Offers</a></li>
+                        <li><a href="payment.html" class="link"><span>></span>Payment</a></li>
                     </ul>
                 </div>
                 <!-- Col 4: Contact -->
@@ -371,11 +368,14 @@
                     </div>
                     <div class="footer-contact-item">
                         <i class="bi bi-telephone-fill"></i>
-                        <span>+9377894450</span>
+                        <span>+93 778 944 506</span>
                     </div>
-                    <div class="footer-contact-item">
-                        <i class="bi bi-clock-fill"></i>
-                        <span>24/7 Support</span>
+                    <div class="footer-heading">Follow Us</div>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
                     </div>
                 </div>
             </div>
