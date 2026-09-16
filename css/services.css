@@ -259,22 +259,6 @@
         flex-direction: column;
     }
 }
-
-@media (max-width: 768px) {
-    .search-box {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .search-item {
-        border-right: none;
-        border-bottom: 1px solid #ddd;
-    }
-
-    .search-btn {
-        justify-content: center;
-    }
-}
 @media(max-width: 768px) {
     .cart-service {
         margin: 20px;
