@@ -1,12 +1,19 @@
-body{
+body {
     display: flex;
     flex-direction: column;
 }
-section{
+
+section {
     margin: 0;
     padding: 40px 0;
 }
-h1, h2, h3, h4, h5, p{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
     margin-top: 0;
 }
 
@@ -156,9 +163,11 @@ h1, h2, h3, h4, h5, p{
     border-radius: 10px;
     object-fit: cover;
 }
-.hotel-image img{
+
+.hotel-image img {
     border-radius: 10px;
 }
+
 #offerBtn {
     background-color: var(--danger);
     color: #fff;
@@ -170,6 +179,7 @@ h1, h2, h3, h4, h5, p{
     height: 34px;
     border-radius: 8px;
 }
+
 .hotel-info {
     padding-left: 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -280,17 +290,18 @@ h1, h2, h3, h4, h5, p{
 }
 
 /*  <!--Featured Hotels -- کارت های هتل--> */
-.feature h2{
+.feature h2 {
     text-align: center;
     font-size: 2rem;
     font-weight: 800;
     margin-top: 30px;
 }
+
 .hotel-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    margin:30px 0;
+    margin: 30px 0;
 }
 
 .hotel-card {
@@ -309,6 +320,7 @@ h1, h2, h3, h4, h5, p{
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
+
 .hotel-image {
     width: 100%;
     height: 150px;
@@ -364,12 +376,14 @@ h1, h2, h3, h4, h5, p{
     font-size: 1.2rem;
     font-weight: bold;
 }
+
 .old-price {
     text-decoration: line-through;
     color: #9ca3af;
     margin-left: 7px;
     font-size: 13px;
 }
+
 .viewBtn {
     width: 100%;
     border: none;
@@ -382,21 +396,24 @@ h1, h2, h3, h4, h5, p{
     transition: 0.3s;
     margin-top: auto;
 }
+
 .viewBtn:hover {
     background: #1f2937;
 }
-.no-result {
-     display: none;
-     text-align: center;
-     padding: 50px;
-     color: #6b7280;
-     grid-column: 1 / -1;
- }
 
- .no-result h3 {
-     font-size: 25px;
-     margin-bottom: 8px;
- }
+.no-result {
+    display: none;
+    text-align: center;
+    padding: 50px;
+    color: #6b7280;
+    grid-column: 1 / -1;
+}
+
+.no-result h3 {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
 /* Filter */
 
 
@@ -665,13 +682,16 @@ h1, h2, h3, h4, h5, p{
         padding: 60px 0 40px;
         min-height: auto;
     }
-    .hero-headding h1{
+
+    .hero-headding h1 {
         font-size: 1.6rem;
     }
-    .hero-headding p{
+
+    .hero-headding p {
         font-size: 0.95rem;
     }
-.search-box {
+
+    .search-box {
         flex-direction: column;
         align-items: stretch;
         padding: 15px;
@@ -684,14 +704,17 @@ h1, h2, h3, h4, h5, p{
         min-height: auto;
         padding: 12px 10px;
     }
-     .search-item:last-of-type{
+
+    .search-item:last-of-type {
         border-bottom: none;
-     }
+    }
+
     .search-btn {
         justify-content: center;
         width: 100%;
         height: 50px;
     }
+
     .card-offer,
     .card-offer1 {
         padding: 15px;
@@ -701,29 +724,39 @@ h1, h2, h3, h4, h5, p{
         width: 100%;
         padding-left: 0;
     }
-    .hotel-info{
+
+    .hotel-info {
         padding-left: 0;
         padding-top: 15px;
         text-align: center;
     }
-    .hotel-info h3{
+
+    .hotel-info h3 {
         font-size: 1.4rem;
+        margin-top: 30px;
     }
-    .hotel-info p{
+
+    .hotel-info p {
         font-size: 0.9rem;
+        margin-top: 10px;
     }
-    .hotel-info .d-flex{
+   
+    .hotel-info .d-flex {
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
     }
-    .bookBtn{
+    .hotel-info .d-flex span{
+        gap: 5px;
+    }
+    .bookBtn {
         width: 100%;
         margin-left: 0;
         margin-top: 10px;
         display: block;
     }
-    #offerBtn{
+
+    #offerBtn {
         top: 20px;
         left: 20px;
         width: 70px;
@@ -733,17 +766,19 @@ h1, h2, h3, h4, h5, p{
 }
 
 @media (max-width: 576px) {
-    .hotel-grid{
+    .hotel-grid {
         grid-template-columns: 1fr;
     }
+
     .filter-scroll {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
         padding-bottom: 10px;
     }
-    .filter-scroll::-webkit-scrollbar{
+
+    .filter-scroll::-webkit-scrollbar {
         display: none;
     }
-    
+
 }
