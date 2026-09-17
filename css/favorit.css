@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+}
+
+.favorites-section {
+    padding: 70px 0;
+}
+
+.page-heading h1 {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.page-heading p {
+    color: #777;
+    margin-bottom: 40px;
+}
+
+
+/* Favorite Card */
+
+.favorite-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.favorite-card:hover {
+    transform: translateY(-5px);
+}
+
+.favorite-image {
+    position: relative;
+    height: 240px;
+}
+
+.favorite-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Heart */
+
+.heart-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    width: 42px;
+    height: 42px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: white;
+    color: #dc3545;
+
+    font-size: 18px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Content */
+
+.favorite-content {
+    padding: 20px;
+}
+
+.favorite-content h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.rating {
+    color: #f5a623;
+    font-size: 14px;
+}
+
+.location {
+    color: #777;
+    margin: 10px 0 20px;
+}
+
+.location i {
+    color: #0d6efd;
+}
+
+
+/* Bottom */
+
+.favorite-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.favorite-bottom strong {
+    font-size: 21px;
+    color: #0d6efd;
+}
+
+.favorite-bottom span {
+    color: #777;
+    font-size: 13px;
+}
+
+.view-btn {
+    text-decoration: none;
+    background: #0d6efd;
+    color: white;
+    padding: 9px 15px;
+    border-radius: 7px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 576px) {
+
+    .favorites-section {
+        padding: 40px 15px;
+    }
+
+    .page-heading h1 {
+        font-size: 30px;
+    }
+
+    .favorite-image {
+        height: 220px;
+    }
+
+    .favorite-content h3 {
+        font-size: 18px;
+    }
+
+}
