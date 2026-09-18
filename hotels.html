@@ -130,42 +130,79 @@
             <div class="hero-search">
                 <div class="search-box">
                     <!--====Destination====-->
-                    <div class="search-item">
+                    <div class="search-item" id="destinationItem">
                         <i class="bi bi-geo-alt"></i>
-                        <div>
+                        <div id="destinations">
                             <small>Destination</small>
-                            <span>Kabul, Afghanistan</span>
+                            <span id="destinationValue">Kabul, Afghanistan</span>
                         </div>
                         <i class="bi bi-chevron-down"></i>
+                        <!--country list-->
+                        <ul class="dropdown-list" id="destinationList">
+                           <li data-value="Kabul ,Afghanistan">Kabul ,Afghanistan</li>
+                           <li data-value="Kabul ,Afghanistan">Paris ,France</li>
+                           <li data-value="Kabul ,Afghanistan">Istanbul , Turkey</li>
+                           <li data-value="Kabul ,Afghanistan">London , UK</li>
+                           <li data-value="Kabul ,Afghanistan">Dubai ,UAE</li>
+                           <li data-value="Kabul ,Afghanistan">Toronto , Canada</li>
+                           <li data-value="Kabul ,Afghanistan">Sydeny , Australia</li>
+                           <li data-value="Kabul ,Afghanistan">Us ,America</li>
+                           <li data-value="Kabul ,Afghanistan">Plaza ,New York USA</li>
+                           <li data-value="Kabul ,Afghanistan">Marina , Singapore</li>
+                        </ul>
                     </div>
                     <!--===Chech in====-->
-                    <div class="search-item">
+                    <div class="search-item" id="checkinItem">
                         <i class="bi bi-calendar3"></i>
-                        <div>
+                        <div id="check-in">
                             <small>Check-in</small>
-                            <span>12 Sep 2015</span>
+                            <span id="checkinValue">12 Sep 2015</span>
                         </div>
+                        <input type="date" id="checkinInput" class="hidden-date">
                     </div>
                     <!--===Check out====-->
-                    <div class="search-item">
+                    <div class="search-item" id="checkoutItem">
                         <i class="bi bi-calendar3"></i>
-                        <div>
+                        <div id="check-out">
                             <small>Check-out</small>
-                            <span>15 Sep 2015</span>
+                            <span id="checkoutValue">15 Sep 2015</span>
                         </div>
+                        <input type="date" id="checkoutInput" class="hidden-date">
                     </div>
                     <!--===Guests====-->
-                    <div class="search-item">
+                    <div class="search-item" id="guestsItem">
                         <i class="bi bi-person"></i>
-                        <div>
+                        <div id="guests">
                             <small>Guests</small>
-                            <span>2 Adults, 0 Children, 1 Room</span>
+                            <span id="guestsValue">2 Adults, 0 Children, 1 Room</span>
                         </div>
                         <i class="bi bi-chevron-down"></i>
+                        <!--select guests-->
+                        <div class="guests-panel" id="guestsPanel">
+                            <div class="guest-row">
+                                <span>Adults</span>
+                                <button class="guest-btn" data-type="adults" data-action="minus">-</button>
+                                <span id="adultsCount">2</span>
+                                <button class="guest-btn" data-type="adults" data-action="plus">+</button>
+                            </div>
+                            <div class="guest-row">
+                                <span>Children</span>
+                                <button class="guest-btn" data-type="children" data-action="minus">-</button>
+                                <span id="childrenCount">0</span>
+                                <button class="guest-btn" data-type="children" data-action="plus">+</button>
+                            </div>
+                            <div class="guest-row">
+                                <span>Rooms</span>
+                                <button class="guest-btn" data-type="rooms" data-action="minus">-</button>
+                                <span id="roomsCount">1</span>
+                                <button class="guest-btn" data-type="rooms" data-action="plus">+</button>
+                            </div>
+                            <button class="guest-done" id="guestDone">Done</button>
+                        </div>
                     </div>
                     <!--====Search Button=====-->
-                    <button class="search-btn">Search
-                        <i class="bi bi-search"></i>
+                    <button class="search-btn" id="search">
+                        Search <i class="bi bi-search"></i>
                     </button>
                 </div>
             </div>
