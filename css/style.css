@@ -109,6 +109,7 @@ a {
 
 .darkBtn i {
     font-size: 0.85rem;
+    transition: 0.2s;
 }
 
 .darkBtn i:hover {
@@ -119,35 +120,72 @@ a {
     justify-content: center;
     align-items: center;
     border: 1px solid #fbbf24;
+    transform: translateY(-3px);
 }
 
-.langBtn {
-    display: flex;
-    font-size: 0.85rem;
-    background-color: #041b8f;
-    color: #fff;
-    border: none;
-}
-
-.langBtn:hover {
-    font-size: 1rem;
-    color: #fbbf24;
-}
-
-.btn-login {
-    display: flex;
-    font-family: sans-serif;
-    font-size: 0.85rem;
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px !important;
+    padding: 13px 26px;
+    border-radius: 14px;
     font-weight: 600;
+    font-size: 0.95rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    white-space: nowrap;
+}
+
+.btn-primary {
+    background: #1255a9 !important;
     color: #fff;
+    box-shadow: var( --shadow-lg);
 }
 
-.btn-login:hover {
-    font-size: 1rem;
-    color: #fbbf24;
+.btn-primary:hover {
+    background: #041b8f !important;
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
 }
 
+.btn-secondary {
+    background: #fff;
+    color: #041b8f;
+    box-shadow: var(--shadow-lg);
+}
 
+.btn-secondary:hover {
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background: #fff;
+    color: #041b8f !important;
+    border: 1.5px solid #041b8f;
+}
+
+.btn-outline:hover {
+    border-color: #1769d1;
+    color: #fff !important;
+}
+
+.btn-cream {
+    background: #1769d1;
+    color: #6b4b12;
+}
+
+.btn-cream:hover {
+    background: #ffe9ad;
+    transform: translateY(-2px);
+}
+.btn-sm {
+    padding: 9px 18px;
+    font-size: 0.85rem;
+}
+
+.btn-block {
+    width: 100%;
+    justify-content: center;
+}
 .offcanvas-header {
     background-color: var(--primary);
     color: #fff !important;

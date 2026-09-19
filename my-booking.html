@@ -38,35 +38,35 @@
             <div class="collapse navbar-collapse justify-content-end">
                 <ul class="navbar-nav align-items-center gap-1 me-3">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="index.html" class="nav-link" data-i18n="nav_home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="hotels.html" class="nav-link">Hotels</a>
+                        <a href="hotels.html" class="nav-link" data-i18n="nav_hotels">Hotels</a>
                     </li>
                     <li class="nav-item">
-                        <a href="room.html" class="nav-link">Rooms</a>
+                        <a href="room.html" class="nav-link" data-i18n="nav_rooms">Rooms</a>
                     </li>
                     <li class="nav-item">
-                        <a href="booking.html" class="nav-link active">Booking</a>
+                        <a href="booking.html" class="nav-link active" data-i18n="nav_booking">Booking</a>
                     </li>
                     <li class="nav-item">
-                        <a href="services.html" class="nav-link">Services</a>
+                        <a href="services.html" class="nav-link" data-i18n="nav_services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a href="about.html" class="nav-link">About</a>
+                        <a href="about.html" class="nav-link" data-i18n="nav_about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="contact.html" class="nav-link">Contact</a>
+                        <a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact</a>
                     </li>
                 </ul>
                 <!--Dark Mode Button-->
                 <button class="darkBtn" id="darkBtn">
                     <i class="bi bi-moon-fill"></i>
                 </button>
-                <button class="btn btn-login ">
-                    Login
+                <button class="btn btn-primary btn-sm login-btn" data-open-modal="login-modal">
+                    <span data-i18n="login_btn">Login</span>
                 </button>
-                <button id="languageBtn" class="langBtn">
+                <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
                     دری
                 </button>
             </div>
@@ -76,42 +76,38 @@
         Mobile Menu
     ============-->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="navOffcanvas">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title">Hotel Booking & Travel</h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
-        </div>
         <div class="offcanvas-body">
             <ul class="navbar-nav gap-1 mb-4">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link ">Home</a>
+                    <a href="index.html" class="nav-link " data-i18n="nav_home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="hotels.html" class="nav-link">Hotels</a>
+                    <a href="hotels.html" class="nav-link" data-i18n="nav_hotels">Hotels</a>
                 </li>
                 <li class="nav-item">
-                    <a href="room.html" class="nav-link">Rooms</a>
+                    <a href="room.html" class="nav-link" data-i18n="nav_rooms">Rooms</a>
                 </li>
                 <li class="nav-item">
-                    <a href="booking.html" class="nav-link active">Booking</a>
+                    <a href="booking.html" class="nav-link active" data-i18n="nav_booking">Booking</a>
                 </li>
                 <li class="nav-item">
-                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="services.html" class="nav-link" data-i18n="nav_services">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a href="about.html" class="nav-link">About</a>
+                    <a href="about.html" class="nav-link" data-i18n="nav_about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact</a>
                 </li>
             </ul>
             <!--Dark Mode Button-->
             <button class="darkBtn" id="darkBtn">
                 <i class="bi bi-moon-fill"></i>
             </button>
-            <button class="btn btn-login ">
-                Login
+            <button class="btn btn-primary btn-sm login-btn" data-open-modal="login-modal">
+                <span data-i18n="login_btn">Login</span>
             </button>
-            <button id="languageBtn" class="langBtn">
+            <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
                 دری
             </button>
         </div>
