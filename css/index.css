@@ -26,7 +26,7 @@ p {
     min-height: 450px;
 }
 
-.hero-headding {
+.hero-heading {
     font-size: 2rem;
     font-weight: 800;
     font-family: sans-serif;
@@ -35,14 +35,14 @@ p {
     text-align: center;
 }
 
-.hero-headding h1 {
+.hero-heading h1 {
     color: #fff;
     font-size: 2.23rem;
     font-weight: 900;
     font-family: sans-serif;
 }
 
-.hero-headding p {
+.hero-heading p {
     color: #fff;
     font-size: 1.2rem;
     font-weight: 500;

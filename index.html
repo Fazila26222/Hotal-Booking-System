@@ -59,16 +59,18 @@
                         <a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact</a>
                     </li>
                 </ul>
-                <!--Dark Mode Button-->
-                <button class="darkBtn" id="darkBtn">
-                    <i class="bi bi-moon-fill"></i>
-                </button>
-                <button class="btn btn-primary btn-sm login-btn" data-open-modal="login-modal">
-                    <span data-i18n="login_btn">Login</span>
-                </button>
-                <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
-                    دری
-                </button>
+                <!-- navbar Button-->
+                <div class="nav-buttons">
+                    <button class="darkBtn" id="darkBtn">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                    <button class="btn btn-primary btn-sm login-btn" data-open-modal="login-modal">
+                        <span data-i18n="login_btn">Login</span>
+                    </button>
+                    <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
+                        دری
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
@@ -104,16 +106,18 @@
                     <a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact</a>
                 </li>
             </ul>
-            <!--Dark Mode Button-->
-            <button class="darkBtn" id="darkBtn">
-                <i class="bi bi-moon-fill"></i>
-            </button>
-            <button class="btn btn-primary btn-sm login-btn" data-open-modal="login-modal">
-                <span data-i18n="login_btn">Login</span>
-            </button>
-            <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
-                دری
-            </button>
+            <!-- navbar Button-->
+            <div class="nav-buttons">
+                <button class="darkBtn" id="darkBtn">
+                    <i class="bi bi-moon-fill"></i>
+                </button>
+                <button class="btn btn-primary btn-sm login-btn" data-open-modal="login-modal">
+                    <span data-i18n="login_btn">Login</span>
+                </button>
+                <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
+                    دری
+                </button>
+            </div>
         </div>
     </div>
 
@@ -123,9 +127,9 @@
 
     <section id="hero">
         <div class="container">
-            <div class="hero-headding ">
-                <h1>Find Your Perfect Stay</h1>
-                <p>Discover amazing hotels at unbeatable prices</p>
+            <div class="hero-heading ">
+                <h1 data-i18n="headings">Find Your Perfect Stay</h1>
+                <p data-i18n="info">Discover amazing hotels at unbeatable prices</p>
             </div>
             <div class="hero-search">
                 <div class="search-box">
@@ -133,25 +137,25 @@
                     <div class="search-item" id="destinationItem">
                         <i class="bi bi-geo-alt"></i>
                         <div id="destinations">
-                            <small>Destination</small>
-                            <span id="destinationValue">Kabul, Afghanistan</span>
+                            <small data-i18n="destination-head">Destination</small>
+                            <span id="destinationValue" data-i18n="destination-value">Kabul, Afghanistan</span>
                         </div>
                         <i class="bi bi-chevron-down"></i>
                         <!--country list-->
                         <ul class="dropdown-list" id="destinationList">
                             <li data-value="Kabul ,Afghanistan">Kabul ,Afghanistan</li>
-                            <li data-value="Kabul ,Afghanistan">Paris ,France</li>
-                            <li data-value="Kabul ,Afghanistan">Istanbul , Turkey</li>
-                            <li data-value="Kabul ,Afghanistan">London , UK</li>
-                            <li data-value="Kabul ,Afghanistan">Dubai ,UAE</li>
-                            <li data-value="Kabul ,Afghanistan">Toronto , Canada</li>
-                            <li data-value="Kabul ,Afghanistan">Sydeny , Australia</li>
-                            <li data-value="Kabul ,Afghanistan">Us ,America</li>
-                            <li data-value="Kabul ,Afghanistan">Plaza ,New York USA</li>
-                            <li data-value="Kabul ,Afghanistan">Marina , Singapore</li>
+                            <li data-value="Paris ,France">Paris ,France</li>
+                            <li data-value="Istanbul , Turkey">Istanbul , Turkey</li>
+                            <li data-value="London , UK">London , UK</li>
+                            <li data-value="Dubai ,UAE">Dubai ,UAE</li>
+                            <li data-value="Toronto , Canada">Toronto , Canada</li>
+                            <li data-value="Sydeny , Australia">Sydeny , Australia</li>
+                            <li data-value="Us ,America">Us ,America</li>
+                            <li data-value="Plaza ,New York USA">Plaza ,New York USA</li>
+                            <li data-value="Marina , Singapor">Marina , Singapore</li>
                         </ul>
                     </div>
-                    <!--===Chech in====-->
+                    <!--===Check in====-->
                     <div class="search-item" id="checkinItem">
                         <i class="bi bi-calendar3"></i>
                         <div id="check-in">
