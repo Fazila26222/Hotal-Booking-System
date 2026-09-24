@@ -1,3 +1,4 @@
+
 // ========== Destination  ==============
 const destinationItem = document.getElementById("destinationItem");
 const destinationValue = document.getElementById("destinationValue");
@@ -16,21 +17,21 @@ destinations.forEach(function (item) {
   });
 });
 // Seclect country
- destinationList.querySelectorAll("li").forEach(li => {
-    li.addEventListener("click", () =>{
-        destinationValue.textContent = li.dataset.value;
-        destinationList.classList.remove("show");
-    });
+destinationList.querySelectorAll("li").forEach((li) => {
+  li.addEventListener("click", () => {
+    destinationValue.textContent = li.dataset.value;
+    destinationList.classList.remove("show");
   });
+});
 
 // ======= formatDate ==========
 
-  function formatDate(date){
-    const day = date.getDate();
-    const month = date.toLocaleString("en-US", {month: "short"});
-    const year = date.getFullYear();
-    return `${day} ${month} ${year}`;
-  }
+function formatDate(date) {
+  const day = date.getDate();
+  const month = date.toLocaleString("en-US", { month: "short" });
+  const year = date.getFullYear();
+  return `${day} ${month} ${year}`;
+}
 // ====== Check in =========
 
 const checkinItem = document.getElementById("checkinItem");
@@ -38,22 +39,21 @@ const checkinValue = document.getElementById("checkinValue");
 const checkinInput = document.getElementById("checkinInput");
 
 checkinItem.addEventListener("click", () => {
-    checkinInput.showPicker?.();
+  checkinInput.showPicker?.();
 });
 
 checkinInput.addEventListener("change", () => {
-  if(!checkinInput.value) return;
-const date = new Date(checkinInput.value);
-checkinValue.textContent = formatDate(date);
+  if (!checkinInput.value) return;
+  const date = new Date(checkinInput.value);
+  checkinValue.textContent = formatDate(date);
 
+  //====== date check in befor date check out=======
 
-//====== date check in befor date check out=======
-
-checkoutInput.min = checkinInput.value;
- if(checkoutInput.value &&  checkinInput.value <= checkinInput.value){
-  checkinInput.value = "" ;
-  checkoutValue.textContent = "Select date";
- }
+  checkoutInput.min = checkinInput.value;
+  if (checkoutInput.value && checkinInput.value <= checkinInput.value) {
+    checkinInput.value = "";
+    checkoutValue.textContent = "Select date";
+  }
 });
 
 // ======= check out =========
@@ -63,13 +63,13 @@ const checkoutValue = document.getElementById("checkoutValue");
 const checkoutInput = document.getElementById("checkoutInput");
 
 checkoutItem.addEventListener("click", () => {
-    checkoutInput.showPicker?.();
+  checkoutInput.showPicker?.();
 });
 
 checkoutInput.addEventListener("change", () => {
-  if(!checkoutInput.value) return;
-const date = new Date(checkoutInput.value);
-checkoutValue.textContent = formatDate(date);
+  if (!checkoutInput.value) return;
+  const date = new Date(checkoutInput.value);
+  checkoutValue.textContent = formatDate(date);
 });
 
 // ======== Guests =========
@@ -78,29 +78,74 @@ const guestsValue = document.getElementById("guestsValue");
 const guestsPanel = document.getElementById("guestsPanel");
 const guestDone = document.getElementById("guestDone");
 
-let adults = 2;
-let rooms = 1;
-let children = 0;
-
-guestsItem.addEventListener("click",(e)=> {
-  if(e.target.closest(".guest-btn") || e.target.closest(".guests-panel"))return;
+guestsItem.addEventListener("click", (e) => {
+  if (e.target.closest(".guest-btn") || e.target.closest(".guests-panel"))
+    return;
   e.stopPropagation();
-  closeAllDropdowns();
   guestsPanel.classList.toggle("show");
 });
 
 // bouttns
-document.querySelectorAll(".guest-btn").forEach(btn => {
-  btn.addEventListener("click", (e) => {
-    e.stopPropagation();
-    const type = btn.dataset.type;
-    const action = btn.dataset.action;
 
-    if(action === "plus") guests[type]++;
-    if(action === "minus" && guests[type] > 0) guests[type]--;
-    if(type === "adults" && guests.adults < 1) guests.adults = 1;
-    if(type === "rooms" && guests.rooms < 1) guests.rooms = 1;
-  })
-})
+let guests = {
+  adults: 2,
+  rooms: 1,
+  children: 0,
+};
+const adultsCount = document.getElementById("adultsCount");
+let adults = 2;
+const roomsCount = document.getElementById("roomsCount");
+let rooms = 1;
+const childrenCount = document.getElementById("childrenCount");
+let children = 0;
+
+document.querySelectorAll(".guest-btn").forEach((button) => {
+  button.addEventListener("click", () => {
+    const action = button.dataset.action;
+    const type = button.dataset.type;
+
+    // ======= Adults
+    if (type === "adults") {
+      if (action === "plus") {
+        adults++;
+      } else if (action === "minus" && adults > 1) {
+        adults--;
+      }
+    }
+    // ========= Children
+    if (type === "children") {
+      if (action === "plus") {
+        children++;
+      } else if (action === "minus" && children > 1) {
+        children--;
+      }
+    }
+
+    // ======= Rooms
+
+    if (type === "rooms") {
+      if (action === "plus") {
+        rooms++;
+      } else if (action === "minus" && rooms > 1) {
+        rooms--;
+      }
+    }
+    adultsCount.textContent = adults;
+    childrenCount.textContent = children;
+    roomsCount.textContent = rooms;
+  
+  });
+    guestDone.addEventListener("click", () => {
+      guestsValue.textContent = `${adults} Adults  
+  ${children} Children  ${rooms} Rooms`;
+      guestsPanel.classList.remove("show");
+    });
+});
+
 // =====Search ======
 const search = document.getElementById("search");
+search.addEventListener("click" , function (){
+  
+  console.log("search");
+   window.location.href = "search-reslut.html";
+});
