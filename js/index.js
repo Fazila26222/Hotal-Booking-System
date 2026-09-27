@@ -4,10 +4,11 @@ const destinationItem = document.getElementById("destinationItem");
 const destinationValue = document.getElementById("destinationValue");
 const destinationList = document.getElementById("destinationList");
 
-const destinations = document.querySelectorAll("destinationList li");
+const destinations = document.querySelectorAll("#destinationList li");
 destinationItem.addEventListener("click", function () {
   destinationList.classList.toggle("show");
 });
+
 // Open Dropdown
 destinations.forEach(function (item) {
   item.addEventListener("click", function (e) {
@@ -16,14 +17,15 @@ destinations.forEach(function (item) {
     destinationList.classList.remove("show");
   });
 });
+
 // Seclect country
+
 destinationList.querySelectorAll("li").forEach((li) => {
   li.addEventListener("click", () => {
     destinationValue.textContent = li.dataset.value;
     destinationList.classList.remove("show");
   });
 });
-
 // ======= formatDate ==========
 
 function formatDate(date) {
@@ -143,19 +145,27 @@ document.querySelectorAll(".guest-btn").forEach((button) => {
 
 // =====Search ======
 const search = document.getElementById("search");
-if(search !== null){
+
 search.addEventListener("click", function () {
   const destinationValue = document.getElementById("destinationValue").textContent.trim();
-  const result = Hotels.filter(function (hotel) {
-    return hotel.city === destinationValue;
+  const result = Hotels.filter(function (Hotel) {
+    return Hotel.city.trim() === destinationValue;
   });
   console.log("Destination:", destinationValue);
   console.log(result);
+  
+  if(result.length === 0){
+    console.log("hotel is not fount");
+    return;
+  }
 
   localStorage.setItem("searchResults", JSON.stringify(result));
   console.log("search");
+  localStorage.getItem("searchResults");
+  
   window.location.href = "search-reslut.html";
+  
 });
-}
+
 
 

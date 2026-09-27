@@ -245,6 +245,7 @@ a {
     list-style: none;
     z-index: 999;
     display: none;
+    cursor: pointer;
 }
 
 .dropdown-list.show,

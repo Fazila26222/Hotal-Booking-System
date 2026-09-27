@@ -93,7 +93,7 @@ p {
   bottom: 64px;
   top: 84px;
   padding: 0 48px;
-  color: var(--white);
+  color: #fff;
   max-width: 640px;
 }
 

@@ -193,87 +193,89 @@
                     </div>
                 </div>
             </div>
+        </section>
     </main>
-    </section>
     <!-- search box -->
     <section id="search">
-        <div class="hero-search">
-            <div class="search-box">
-                <!--====Destination====-->
-                <div class="search-item" id="destinationItem">
-                    <i class="bi bi-geo-alt"></i>
-                    <div id="destinations">
-                        <small data-i18n="destination-head">Destination</small>
-                        <span id="destinationValue" data-i18n="destination-value">Kabul, Afghanistan</span>
-                    </div>
-                    <i class="bi bi-chevron-down"></i>
-                    <!--country list-->
-                    <ul class="dropdown-list" id="destinationList">
-                        <li data-value="Kabul ,Afghanistan" data-i18n="Afghanistan">Kabul ,Afghanistan</li>
-                        <li data-value="Paris ,France" data-i18n="France">Paris ,France</li>
-                        <li data-value="Istanbul , Turkey" data-i18n="Turkey">Istanbul , Turkey</li>
-                        <li data-value="London , UK" data-i18n="UK">London , UK</li>
-                        <li data-value="Dubai ,UAE" data-i18n="UAE">Dubai ,UAE</li>
-                        <li data-value="Toronto , Canada" data-i18n="Canada">Toronto , Canada</li>
-                        <li data-value="Sydeny , Australia" data-i18n="Australia">Sydeny , Australia</li>
-                        <li data-value="Us ,America" data-i18n="America">Us ,America</li>
-                        <li data-value="Plaza ,New York USA" data-i18n="New York USA">Plaza ,New York USA</li>
-                        <li data-value="Marina , Singapor " data-i18n="Singapore">Marina , Singapore</li>
-                    </ul>
-                </div>
-                <!--===Check in====-->
-                <div class="search-item" id="checkinItem">
-                    <i class="bi bi-calendar3"></i>
-                    <div id="check-in">
-                        <small data-i18n="check-in">Check-in</small>
-                        <span id="checkinValue" data-i18n="date-in">12 Sep 2015</span>
-                    </div>
-                    <input type="date" id="checkinInput" class="hidden-date">
-                </div>
-                <!--===Check out====-->
-                <div class="search-item" id="checkoutItem">
-                    <i class="bi bi-calendar3"></i>
-                    <div id="check-out">
-                        <small data-i18n="check-out">Check-out</small>
-                        <span id="checkoutValue" data-i18n="date-out">15 Sep 2015</span>
-                    </div>
-                    <input type="date" id="checkoutInput" class="hidden-date">
-                </div>
-                <!--===Guests====-->
-                <div class="search-item" id="guestsItem">
-                    <i class="bi bi-person"></i>
-                    <div id="guests">
-                        <small data-i18n="guest-head">Guests</small>
-                        <span id="guestsValue" data-i18n="guest-info">2 Adults, 0 Children, 1 Room</span>
-                    </div>
-                    <i class="bi bi-chevron-down"></i>
-                    <!--select guests-->
-                    <div class="guests-panel" id="guestsPanel">
-                        <div class="guest-row">
-                            <span data-i18n="adults">Adults</span>
-                            <button class="guest-btn" data-type="adults" data-action="minus">-</button>
-                            <span id="adultsCount" data-i18n="adults-count">2</span>
-                            <button class="guest-btn" data-type="adults" data-action="plus">+</button>
+        <div class="container">
+            <div class="hero-search">
+                <div class="search-box">
+                    <!--====Destination====-->
+                    <div class="search-item" id="destinationItem">
+                        <i class="bi bi-geo-alt"></i>
+                        <div id="destinations">
+                            <small data-i18n="destination-head">Destination</small>
+                            <span id="destinationValue" data-i18n="destination-value">Kabul, Afghanistan</span>
                         </div>
-                        <div class="guest-row">
-                            <span data-i18n="child-head">Children</span>
-                            <button class="guest-btn" data-type="children" data-action="minus">-</button>
-                            <span id="childrenCount" data-i18n="child-count">0</span>
-                            <button class="guest-btn" data-type="children" data-action="plus">+</button>
-                        </div>
-                        <div class="guest-row">
-                            <span data-i18n="room-head">Rooms</span>
-                            <button class="guest-btn" data-type="rooms" data-action="minus">-</button>
-                            <span id="roomsCount" data-i18n="room-info">1</span>
-                            <button class="guest-btn" data-type="rooms" data-action="plus">+</button>
-                        </div>
-                        <button class="guest-done" id="guestDone" data-i18n="done-but">Done</button>
+                        <i class="bi bi-chevron-down"></i>
+                        <!--country list-->
+                        <ul class="dropdown-list" id="destinationList">
+                            <li data-value="Kabul ,Afghanistan" data-i18n="Afghanistan">Kabul ,Afghanistan</li>
+                            <li data-value="Paris ,France" data-i18n="France">Paris ,France</li>
+                            <li data-value="Istanbul , Turkey" data-i18n="Turkey">Istanbul , Turkey</li>
+                            <li data-value="London , UK" data-i18n="UK">London , UK</li>
+                            <li data-value="Dubai ,UAE" data-i18n="UAE">Dubai ,UAE</li>
+                            <li data-value="Toronto , Canada" data-i18n="Canada">Toronto , Canada</li>
+                            <li data-value="Sydeny , Australia" data-i18n="Australia">Sydeny , Australia</li>
+                            <li data-value="Us ,America" data-i18n="America">Us ,America</li>
+                            <li data-value="Plaza ,New York USA" data-i18n="New York USA">Plaza ,New York USA</li>
+                            <li data-value="Marina , Singapor " data-i18n="Singapore">Marina , Singapore</li>
+                        </ul>
                     </div>
+                    <!--===Check in====-->
+                    <div class="search-item" id="checkinItem">
+                        <i class="bi bi-calendar3"></i>
+                        <div id="check-in">
+                            <small data-i18n="check-in">Check-in</small>
+                            <span id="checkinValue" data-i18n="date-in">12 Sep 2015</span>
+                        </div>
+                        <input type="date" id="checkinInput" class="hidden-date">
+                    </div>
+                    <!--===Check out====-->
+                    <div class="search-item" id="checkoutItem">
+                        <i class="bi bi-calendar3"></i>
+                        <div id="check-out">
+                            <small data-i18n="check-out">Check-out</small>
+                            <span id="checkoutValue" data-i18n="date-out">15 Sep 2015</span>
+                        </div>
+                        <input type="date" id="checkoutInput" class="hidden-date">
+                    </div>
+                    <!--===Guests====-->
+                    <div class="search-item" id="guestsItem">
+                        <i class="bi bi-person"></i>
+                        <div id="guests">
+                            <small data-i18n="guest-head">Guests</small>
+                            <span id="guestsValue" data-i18n="guest-info">2 Adults, 0 Children, 1 Room</span>
+                        </div>
+                        <i class="bi bi-chevron-down"></i>
+                        <!--select guests-->
+                        <div class="guests-panel" id="guestsPanel">
+                            <div class="guest-row">
+                                <span data-i18n="adults">Adults</span>
+                                <button class="guest-btn" data-type="adults" data-action="minus">-</button>
+                                <span id="adultsCount" data-i18n="adults-count">2</span>
+                                <button class="guest-btn" data-type="adults" data-action="plus">+</button>
+                            </div>
+                            <div class="guest-row">
+                                <span data-i18n="child-head">Children</span>
+                                <button class="guest-btn" data-type="children" data-action="minus">-</button>
+                                <span id="childrenCount" data-i18n="child-count">0</span>
+                                <button class="guest-btn" data-type="children" data-action="plus">+</button>
+                            </div>
+                            <div class="guest-row">
+                                <span data-i18n="room-head">Rooms</span>
+                                <button class="guest-btn" data-type="rooms" data-action="minus">-</button>
+                                <span id="roomsCount" data-i18n="room-info">1</span>
+                                <button class="guest-btn" data-type="rooms" data-action="plus">+</button>
+                            </div>
+                            <button class="guest-done" id="guestDone" data-i18n="done-but">Done</button>
+                        </div>
+                    </div>
+                    <!--====Search Button=====-->
+                    <button class="search-btn" id="search" data-i18n="search-but">
+                        Search <i class="bi bi-search"></i>
+                    </button>
                 </div>
-                <!--====Search Button=====-->
-                <button class="search-btn" id="search" data-i18n="search-but">
-                    Search <i class="bi bi-search"></i>
-                </button>
             </div>
         </div>
     </section>
@@ -788,8 +790,8 @@
     </footer>
 </body>
 <script src="js/bootstrap.bundle.js"></script>
-<script src="js/index.js"></script>
 <script src="js/slide.js"></script>
+<script src="js/index.js"></script>
 <script src="js/data.js"></script>
 <script src="js/app.js"></script>
 <script src="js/darkmode.js"></script>
