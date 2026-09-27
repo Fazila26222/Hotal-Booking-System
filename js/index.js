@@ -133,19 +133,29 @@ document.querySelectorAll(".guest-btn").forEach((button) => {
     adultsCount.textContent = adults;
     childrenCount.textContent = children;
     roomsCount.textContent = rooms;
-  
   });
-    guestDone.addEventListener("click", () => {
-      guestsValue.textContent = `${adults} Adults  
+  guestDone.addEventListener("click", () => {
+    guestsValue.textContent = `${adults} Adults  
   ${children} Children  ${rooms} Rooms`;
-      guestsPanel.classList.remove("show");
-    });
+    guestsPanel.classList.remove("show");
+  });
 });
 
 // =====Search ======
 const search = document.getElementById("search");
-search.addEventListener("click" , function (){
-  
+if(search !== null){
+search.addEventListener("click", function () {
+  const destinationValue = document.getElementById("destinationValue").textContent.trim();
+  const result = Hotels.filter(function (hotel) {
+    return hotel.city === destinationValue;
+  });
+  console.log("Destination:", destinationValue);
+  console.log(result);
+
+  localStorage.setItem("searchResults", JSON.stringify(result));
   console.log("search");
-   window.location.href = "search-reslut.html";
+  window.location.href = "search-reslut.html";
 });
+}
+
+

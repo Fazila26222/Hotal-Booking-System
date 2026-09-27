@@ -1,7 +1,6 @@
 const hotelContainer = document.getElementById("hotelContainer");
 const noResult = document.getElementById("noResult");
 
-
 function displayhotels(hotelList) {
   hotelContainer.innerHTML = "";
 
@@ -17,9 +16,8 @@ function displayhotels(hotelList) {
 
   hotelList.forEach(function (hotel) {
     const hotelCard = document.createElement("div");
-    const discountedPrice = hotel.price - (hotel.price * hotel.discount /100);
+    const discountedPrice = hotel.price - (hotel.price * hotel.discount) / 100;
     hotelCard.classList.add("hotel-card");
-
 
     hotelCard.innerHTML = `
         <div class= "discount">
@@ -48,18 +46,20 @@ function displayhotels(hotelList) {
         </div>
         `;
 
-         hotelContainer.appendChild(hotelCard);
+    hotelContainer.appendChild(hotelCard);
   });
   document.querySelectorAll(".viewBtn").forEach((btn) => {
     btn.addEventListener("click", function () {
       const hotelId = parseInt(this.dataset.id);
       const selectHotel = hotels.find((h) => h.id === hotelId);
+
       if (selectHotel) {
         localStorage.setItem("selectHotle", JSON.stringify(selectHotel));
-        alert("You selected: ${selectHotel.name}");
+        console.log("btn");
+        window.location.href = "search-reslut.html";
       }
     });
-   
   });
 }
 displayhotels(hotels);
+

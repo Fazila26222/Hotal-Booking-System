@@ -104,105 +104,45 @@
             </ul>
              <!-- navbar Button-->
             <div class=" nav-buttons">
-                <button class=" darkBtn" id="darkBtn">
-                    <i class="bi bi-moon-fill"></i>
-                </button>
-                <button class="btn btn-primary btn-sm login-btn" data-open-modal="login-modal">
-                    <span data-i18n="login_btn">Login</span>
-                </button>
-                <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
-                   دری
-                </button>
-            </div>
+                        <button class=" darkBtn" id="darkBtn">
+                            <i class="bi bi-moon-fill"></i>
+                        </button>
+                        <button class="btn btn-primary btn-sm login-btn" data-open-modal="login-modal">
+                            <span data-i18n="login_btn">Login</span>
+                        </button>
+                        <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
+                            دری
+                        </button>
         </div>
+    </div>
     </div>
 
     <!--=============
       Hero Section
     ==============-->
-
-    <section id="hero">
-        <div class="container">
-            <div class="hero-search">
-                <div class="search-box">
-                    <!--====Destination====-->
-                    <div class="search-item" id="destinationItem">
-                        <i class="bi bi-geo-alt"></i>
-                        <div id="destinations">
-                            <small>Destination</small>
-                            <span id="destinationValue">Kabul, Afghanistan</span>
-                        </div>
-                        <i class="bi bi-chevron-down"></i>
-                        <!--country list-->
-                        <ul class="dropdown-list" id="destinationList">
-                            <li data-value="Kabul ,Afghanistan">Kabul ,Afghanistan</li>
-                            <li data-value="Paris ,France">Paris ,France</li>
-                            <li data-value="Istanbul , Turkey">Istanbul , Turkey</li>
-                            <li data-value="London , UK">London , UK</li>
-                            <li data-value="Dubai ,UAE">Dubai ,UAE</li>
-                            <li data-value="Toronto , Canada">Toronto , Canada</li>
-                            <li data-value="Sydeny , Australia">Sydeny , Australia</li>
-                            <li data-value="Us ,America">Us ,America</li>
-                            <li data-value="Plaza ,New York USA">Plaza ,New York USA</li>
-                            <li data-value="Marina , Singapor">Marina , Singapore</li>
-                        </ul>
-                    </div>
-                    <!--===Chech in====-->
-                    <div class="search-item" id="checkinItem">
-                        <i class="bi bi-calendar3"></i>
-                        <div id="check-in">
-                            <small>Check-in</small>
-                            <span id="checkinValue">12 Sep 2015</span>
-                        </div>
-                        <input type="date" id="checkinInput" class="hidden-date">
-                    </div>
-                    <!--===Check out====-->
-                    <div class="search-item" id="checkoutItem">
-                        <i class="bi bi-calendar3"></i>
-                        <div id="check-out">
-                            <small>Check-out</small>
-                            <span id="checkoutValue">15 Sep 2015</span>
-                        </div>
-                        <input type="date" id="checkoutInput" class="hidden-date">
-                    </div>
-                    <!--===Guests====-->
-                    <div class="search-item" id="guestsItem">
-                        <i class="bi bi-person"></i>
-                        <div id="guests">
-                            <small>Guests</small>
-                            <span id="guestsValue">2 Adults, 0 Children, 1 Room</span>
-                        </div>
-                        <i class="bi bi-chevron-down"></i>
-                        <!--select guests-->
-                        <div class="guests-panel" id="guestsPanel">
-                            <div class="guest-row">
-                                <span>Adults</span>
-                                <button class="guest-btn" data-type="adults" data-action="minus">-</button>
-                                <span id="adultsCount">2</span>
-                                <button class="guest-btn" data-type="adults" data-action="plus">+</button>
-                            </div>
-                            <div class="guest-row">
-                                <span>Children</span>
-                                <button class="guest-btn" data-type="children" data-action="minus">-</button>
-                                <span id="childrenCount">0</span>
-                                <button class="guest-btn" data-type="children" data-action="plus">+</button>
-                            </div>
-                            <div class="guest-row">
-                                <span>Rooms</span>
-                                <button class="guest-btn" data-type="rooms" data-action="minus">-</button>
-                                <span id="roomsCount">1</span>
-                                <button class="guest-btn" data-type="rooms" data-action="plus">+</button>
-                            </div>
-                            <button class="guest-done" id="guestDone">Done</button>
-                        </div>
-                    </div>
-                    <!--====Search Button=====-->
-                    <button class="search-btn" id="search">
-                        Search <i class="bi bi-search"></i>
-                    </button>
+    <main>
+        <!-- Hero Slider -->
+        <section id="hero-slider" class="hero-slider" data-hero-slider aria-roledescription="carousel"
+            aria-label="Hotels">
+            <div class="slider-track">
+                <div class="slide is-active">
+                    <img src="images/banner2.png" class="img-fluid" alt="banner2">
+                    <div class="slide-overlay"></div>
                 </div>
-            </div>
-    </section>
+                <div class="slide">
+                    <img src="images/banner1.jpg" class="img-fluid" alt="banner1">
+                    <div class="slide-overlay"></div>
+                </div>
+                <div class="slide">
+                    <img src="images/banner2.jpg" class="img-fluid" alt="banner2">
+                    <div class="slide-overlay"></div>
+                </div>
+                <div class="slide">
+                    <img src="images/banner3.jpg" class="img-fluid" alt="banner3">
+                    <div class="slide-overlay"></div>
+                </div>
+        </section>
+    </main>
     <!--=================Destination================-->
     <section id="destination">
         <div class="container">
@@ -436,6 +376,7 @@
                             Back to Home
                         </a>
                     </div>
+                    <div id="hotelResult"></div>
                     <!--Card Hotel card 1-->
                     <div class="hotel-card">
                         <div class="row g-3">
@@ -1554,6 +1495,8 @@
 <script src="js/bootstrap.bundle.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/index.js"></script>
+<script src="js/data.js"></script>
+<script src="js/searchResult.js"></script>
 <script src="js/darkmode.js"></script>
 
 </html>

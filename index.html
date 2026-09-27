@@ -155,8 +155,8 @@
                     <div class="search-item" id="checkinItem">
                         <i class="bi bi-calendar3"></i>
                         <div id="check-in">
-                            <small>Check-in</small>
-                            <span id="checkinValue">12 Sep 2015</span>
+                            <small data-i18n="check-in">Check-in</small>
+                            <span id="checkinValue" data-i18n="date-in">12 Sep 2015</span>
                         </div>
                         <input type="date" id="checkinInput" class="hidden-date">
                     </div>
@@ -164,8 +164,8 @@
                     <div class="search-item" id="checkoutItem">
                         <i class="bi bi-calendar3"></i>
                         <div id="check-out">
-                            <small>Check-out</small>
-                            <span id="checkoutValue">15 Sep 2015</span>
+                            <small data-i18n="check-out">Check-out</small>
+                            <span id="checkoutValue" data-i18n="date-out">15 Sep 2015</span>
                         </div>
                         <input type="date" id="checkoutInput" class="hidden-date">
                     </div>
@@ -173,35 +173,35 @@
                     <div class="search-item" id="guestsItem">
                         <i class="bi bi-person"></i>
                         <div id="guests">
-                            <small>Guests</small>
-                            <span id="guestsValue">2 Adults, 0 Children, 1 Room</span>
+                            <small data-i18n="guest-head">Guests</small>
+                            <span id="guestsValue" data-i18n="guest-info">2 Adults, 0 Children, 1 Room</span>
                         </div>
                         <i class="bi bi-chevron-down"></i>
                         <!--select guests-->
                         <div class="guests-panel" id="guestsPanel">
                             <div class="guest-row">
-                                <span>Adults</span>
-                                <button class="guest-btn" data-type="adults" data-action ="minus">-</button>
-                                <span id="adultsCount">2</span>
-                                <button class="guest-btn" data-type="adults" data-action ="plus">+</button>
+                                <span data-i18n="adults">Adults</span>
+                                <button class="guest-btn" data-type="adults" data-action="minus">-</button>
+                                <span id="adultsCount" data-i18n="adults-count">2</span>
+                                <button class="guest-btn" data-type="adults" data-action="plus">+</button>
                             </div>
                             <div class="guest-row">
-                                <span>Children</span>
-                                <button class="guest-btn" data-type="children" data-action ="minus">-</button>
-                                <span id="childrenCount">0</span>
-                                <button class="guest-btn" data-type="children" data-action ="plus">+</button>
+                                <span data-i18n="child-head">Children</span>
+                                <button class="guest-btn" data-type="children" data-action="minus">-</button>
+                                <span id="childrenCount" data-i18n="child-count">0</span>
+                                <button class="guest-btn" data-type="children" data-action="plus">+</button>
                             </div>
                             <div class="guest-row">
-                                <span>Rooms</span>
+                                <span data-i18n="room-head">Rooms</span>
                                 <button class="guest-btn" data-type="rooms" data-action="minus">-</button>
-                                <span id="roomsCount">1</span>
+                                <span id="roomsCount" data-i18n="room-info">1</span>
                                 <button class="guest-btn" data-type="rooms" data-action="plus">+</button>
                             </div>
-                            <button class="guest-done" id="guestDone">Done</button>
+                            <button class="guest-done" id="guestDone" data-i18n="done-but">Done</button>
                         </div>
                     </div>
                     <!--====Search Button=====-->
-                    <button class="search-btn" id="search">
+                    <button class="search-btn" id="search" data-i18n="search-but">
                         Search <i class="bi bi-search"></i>
                     </button>
                 </div>
@@ -214,8 +214,8 @@
     <section id="offer">
         <div class="container">
             <div class="heading-offer">
-                <h2>Off<span style="color: blue;">ers</span></h2>
-                <p>Promotions, deals and special offers for you</p>
+                <h2 data-i18n="offer-head">Off<span style="color: blue;">ers</span></h2>
+                <p data-i18n="offer-info">Promotions, deals and special offers for you</p>
             </div>
             <div class="card-offer">
                 <div class="row g-0">
@@ -227,9 +227,10 @@
                     </div>
                     <div class="col-12 col-md-7">
                         <div class="hotel-info">
-                            <h3>Hotel Kabul Serena</h3>
-                            <p><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i> Kabul Afghanistan</p>
-                            <p>
+                            <h3 data-i18n="hotel-kabul">Hotel Kabul Serena</h3>
+                            <p data-i18n="hotel-city"><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i> Kabul
+                                Afghanistan</p>
+                            <p data-i18n="Reviews">
                                 <i class="bi bi-star-fill" style="color: var(--warning)"></i>
                                 <i class="bi bi-star-fill" style="color: var(--warning)"></i>
                                 <i class="bi bi-star-fill" style="color: var(--warning)"></i>
@@ -238,18 +239,23 @@
 
                                 4.6(128 Reviews)
                             </p>
-                            <p class="d-flex gap-5"><span> <i class="bi bi-wifi" style="color: #0f2d3d;"></i> Free Wi-Fi
+                            <p class="d-flex gap-5"><span data-i18n="free-wifi"> <i class="bi bi-wifi"
+                                        style="color: #0f2d3d;"></i> Free Wi-Fi
                                 </span>
-                                <span> <i class="bi bi-cup-hot" style="color: #f45e13;"></i> Breakfast </span>
-                                <span> <i class="bi bi-p-square" style="color: #0f2d3d;"></i> Free Parking </span>
-                                <span> <i class="bi bi-water" style="color: #0f2d3d;"></i> Swimming Pool </span>
+                                <span data-i18n="breakfast"> <i class="bi bi-cup-hot" style="color: #f45e13;"></i>
+                                    Breakfast </span>
+                                <span data-i18n="free-parking"> <i class="bi bi-p-square" style="color: #0f2d3d;"></i>
+                                    Free Parking </span>
+                                <span data-i18n="swimming-pool"> <i class="bi bi-water" style="color: #0f2d3d;"></i>
+                                    Swimming Pool </span>
                             </p>
                             <div class="price">
-                                <span class="old-price">$150</span>
-                                <span style="color: red;">$120</span> <span> / night</span>
+                                <span class="old-price" data-i18n="price">$150</span>
+                                <span style="color: red;" data-i18n="price">$120</span> <span data-i18n="night"> /
+                                    night</span>
                             </div>
-                            <p style="color: #1c9503; font-weight: bold;">you save $30(20%)
-                                <button class="btn bookBtn" id="bookBtn">Book Now</button>
+                            <p style="color: #1c9503; font-weight: bold;" data-i18n="price-info">you save $30(20%)
+                                <button class="btn bookBtn" id="bookBtn" data-i18n="book-but">Book Now</button>
                             </p>
 
                         </div>
@@ -266,27 +272,33 @@
                     </div>
                     <div class="col-12 col-md-7">
                         <div class="hotel-info">
-                            <h3>Kabul Star Hotel</h3>
-                            <p><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i> Kabul Afghanistan</p>
-                            <p><i class="bi bi-star-fill" style="color: #F59E0B;"></i>
+                            <h3 data-i18n="hotel-kabul">Kabul Star Hotel</h3>
+                            <p data-i18n="hotel-city"><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i> Kabul
+                                Afghanistan</p>
+                            <p data-i18n="Reviews"><i class="bi bi-star-fill" style="color: #F59E0B;"></i>
                                 <i class="bi bi-star-fill" style="color: #F59E0B;"></i>
                                 <i class="bi bi-star-fill" style="color: #F59E0B;"></i>
                                 <i class="bi bi-star-fill" style="color: #F59E0B;"></i>
                                 <i class="bi bi-star-half" style="color: #F59E0B;"></i>
                                 4.3(91 Reviews)
                             </p>
-                            <p class="d-flex gap-5"><span> <i class="bi bi-wifi" style="color: #0f2d3d;"></i> Free Wi-Fi
+                            <p class="d-flex gap-5"><span data-i18n="free-wifi"> <i class="bi bi-wifi"
+                                        style="color: #0f2d3d;"></i> Free Wi-Fi
                                 </span>
-                                <span> <i class="bi bi-cup-hot" style="color: #f45e13;"></i> Breakfast </span>
-                                <span> <i class="bi bi-p-square" style="color: #0f2d3d;"></i> Free Parking </span>
-                                <span> <i class="bi bi-activity" style="color: #c28b2c;"></i> Gym </span>
+                                <span data-i18n="breakfast"> <i class="bi bi-cup-hot" style="color: #f45e13;"></i>
+                                    Breakfast </span>
+                                <span data-i18n="free-parking"> <i class="bi bi-p-square" style="color: #0f2d3d;"></i>
+                                    Free Parking </span>
+                                <span data-i18n="swimming-pool"> <i class="bi bi-activity" style="color: #c28b2c;"></i>
+                                    Gym </span>
                             </p>
                             <div class="price">
-                                <span class="old-price">$100</span>
-                                <span style="color: red;">$80</span> <span> / night</span>
+                                <span class="old-price" data-i18n="price">$100</span>
+                                <span style="color: red;" data-i18n="price">$80</span> <span data-i18n="night"> /
+                                    night</span>
                             </div>
-                            <p style="color: #1c9503; font-weight: bold;">you save $20(15%)
-                                <button class="btn bookBtn">Book Now</button>
+                            <p style="color: #1c9503; font-weight: bold;" data-i18n="price-info">you save $20(15%)
+                                <button class="btn bookBtn" data-i18n="book-but">Book Now</button>
                             </p>
 
                         </div>
@@ -299,8 +311,8 @@
     <section id="popular-destination">
         <div class="container">
             <div class="heading justify-content-center align-item-center">
-                <h1>Popular Destination</h1>
-                <p>Discover beautiful destinations around the world and find the perect place
+                <h1 data-i18n="popular-head">Popular Destination</h1>
+                <p data-i18n="popular-info">Discover beautiful destinations around the world and find the perect place
                     for your next stay. From vibrant cities to peaceful getaways, explore top
                     destinations and book your ideal hotel with Stayora.
                 </p>
@@ -310,7 +322,7 @@
                     <div class="popular-card">
                         <div class="Image">
                             <img src="images/paris.jpg" alt="paris">
-                            <div class="img-name">Paris</div>
+                            <div class="img-name" data-i18n="paris">Paris</div>
                         </div>
                     </div>
                 </div>
@@ -318,7 +330,7 @@
                     <div class="popular-card">
                         <div class="Image">
                             <img src="images/kaubl-hotel.jpg" alt="kabul">
-                            <div class="img-name">Kabul</div>
+                            <div class="img-name" data-i18n="kabul">Kabul</div>
                         </div>
                     </div>
                 </div>
@@ -326,7 +338,7 @@
                     <div class="popular-card">
                         <div class="Image">
                             <img src="images/lstanbul.jpg" alt="lstanbul">
-                            <div class="img-name">Istanbul</div>
+                            <div class="img-name" data-i18n="istanbul1">Istanbul</div>
 
                         </div>
                     </div>
@@ -335,7 +347,7 @@
                     <div class="popular-card">
                         <div class="Image">
                             <img src="images/stayora-hotel.png" alt="canada">
-                            <div class="img-name">Canada</div>
+                            <div class="img-name" data-i18n="canada">Canada</div>
 
                         </div>
                     </div>
@@ -344,7 +356,7 @@
                     <div class="popular-card">
                         <div class="Image">
                             <img src="images/Hotle (2).png" alt="Australia">
-                            <div class="img-name">Australia</div>
+                            <div class="img-name" data-i18n="australia">Australia</div>
 
                         </div>
                     </div>
@@ -353,7 +365,7 @@
                     <div class="popular-card">
                         <div class="Image">
                             <img src="images/london.jpg" alt="london">
-                            <div class="img-name">London</div>
+                            <div class="img-name" data-i18n="london">London</div>
 
                         </div>
                     </div>
@@ -362,7 +374,7 @@
                     <div class="popular-card">
                         <div class="Image">
                             <img src="images/US.jpg" alt="US">
-                            <div class="img-name">US</div>
+                            <div class="img-name" data-i18n="us">US</div>
 
                         </div>
                     </div>
@@ -371,7 +383,7 @@
                     <div class="popular-card">
                         <div class="Image">
                             <img src="images/maldives.jpg" alt="Maldives">
-                            <div class="img-name">Maldives</div>
+                            <div class="img-name" data-i18n="maldives">Maldives</div>
                         </div>
                     </div>
                 </div>
@@ -382,12 +394,12 @@
     <!--=====Featured Hotels====== کارت های هتل-->
     <section class="feature">
         <div class="container">
-            <h2>Featured Hotels</h2>
+            <h2 data-i18n="featured-head">Featured Hotels</h2>
             <div id="hotelContainer" class="hotel-grid">
                 <!--======add to javasceript====-->
                 <div class="no-result" id="noResult">
-                    <h3>🔍 No Products Found</h3>
-                    <p>
+                    <h3 data-i18n="Products-found">🔍 No Products Found</h3>
+                    <p data-i18n="try">
                         Try another search keyword.
                     </p>
                 </div>
@@ -399,20 +411,20 @@
     <section class="explore-des">
         <div class="container">
             <div class="heading">
-                <h1>Explore more destinations</h1>
-                <p>find things to do in cities around the world</p>
+                <h1 data-i18n="explore-head">Explore more destinations</h1>
+                <p data-i18n="explore-info">find things to do in cities around the world</p>
             </div>
             <div id="filter">
                 <div class="d-flex align-items-center gap-3 filter-scroll">
-                    <button class="filter-btn active">Europe</button>
-                    <button class="filter-btn ">North America</button>
-                    <button class="filter-btn ">Aisa</button>
-                    <button class="filter-btn ">Africa</button>
-                    <button class="filter-btn ">Oceania</button>
-                    <button class="filter-btn ">Middle East</button>
-                    <button class="filter-btn ">South America</button>
-                    <button class="filter-btn ">Caribbean</button>
-                    <button class="filter-btn ">Central America</button>
+                    <button class="filter-btn active" data-i18n="country">Europe</button>
+                    <button class="filter-btn " data-i18n="country">North America</button>
+                    <button class="filter-btn " data-i18n="country">Aisa</button>
+                    <button class="filter-btn " data-i18n="country">Africa</button>
+                    <button class="filter-btn " data-i18n="country">Oceania</button>
+                    <button class="filter-btn " data-i18n="country">Middle East</button>
+                    <button class="filter-btn " data-i18n="country">South America</button>
+                    <button class="filter-btn " data-i18n="country">Caribbean</button>
+                    <button class="filter-btn " data-i18n="country">Central America</button>
                 </div>
             </div>
             <div class="row">
@@ -420,8 +432,8 @@
                     <div class="image-city">
                         <img src="images/London1.jpg" class="img-fluid" alt="">
                         <div class="image-name">
-                            <h6>London</h6>
-                            <p>4214 things to do</p>
+                            <h6 data-i18n="london">London</h6>
+                            <p data-i18n="city-info">4214 things to do</p>
                         </div>
                     </div>
                 </div>
@@ -429,8 +441,8 @@
                     <div class="image-city">
                         <img src="images/istanbul1.jpg" class="img-fluid" alt="">
                         <div class="image-name">
-                            <h6>Istanbul</h6>
-                            <p>2572 things to do</p>
+                            <h6 data-i18n="Istanbul">Istanbul</h6>
+                            <p data-i18n="city-info">2572 things to do</p>
                         </div>
                     </div>
                 </div>
@@ -438,10 +450,10 @@
                     <div class="image-city">
                         <img src="images/paris1.jpg" class="img-fluid" alt="">
                         <div class="image-name">
-                            <h6>
+                            <h6 data-i18n="paris">
                                 Paris
                             </h6>
-                            <p>3814 things to do</p>
+                            <p data-i18n="city-info">3814 things to do</p>
                         </div>
                     </div>
                 </div>
@@ -449,8 +461,8 @@
                     <div class="image-city">
                         <img src="images/hamburg1.jpg" class="img-fluid" alt="">
                         <div class="image-name">
-                            <h6>Hamburg</h6>
-                            <p>383 things to do</p>
+                            <h6 data-i18n="hamburg">Hamburg</h6>
+                            <p data-i18n="city-info">383 things to do</p>
                         </div>
                     </div>
                 </div>
@@ -462,8 +474,9 @@
     <section id="why-us">
         <div class="container">
             <div class="heading">
-                <h1>Why Choose Us?</h1>
-                <p>Choose us for a comfortable,reliable, and stress-free hotel bookink experience. We offer quality
+                <h1 data-i18n="why-us">Why Choose Us?</h1>
+                <p data-i18n="why-us-info">Choose us for a comfortable,reliable, and stress-free hotel bookink
+                    experience. We offer quality
                     hotels
                     ,competitive prices, easy booking,and 24/7 support to make your stay simple andenjoyable.
                     Your comfort, satisfaction,and trust are always our top priorites.
@@ -475,8 +488,8 @@
                         <div class="us-icon ui-yellow">
                             <i class="bi bi-award"></i>
                         </div>
-                        <h3>Best Price Guarantee</h3>
-                        <p>We offer the best price and exclusive deals for you.</p>
+                        <h3 data-i18n="best-price">Best Price Guarantee</h3>
+                        <p data-i18n="best-price-info">We offer the best price and exclusive deals for you.</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-3">
@@ -484,8 +497,8 @@
                         <div class="us-icon ui-blue">
                             <i class="bi bi-calendar-check"></i>
                         </div>
-                        <h3>Easy Booking</h3>
-                        <p>Book your stay in minutes with our simple process.</p>
+                        <h3 data-i18n="best-price">Easy Booking</h3>
+                        <p data-i18n="best-price-info">Book your stay in minutes with our simple process.</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-3">
@@ -493,8 +506,8 @@
                         <div class="us-icon ui-green">
                             <i class="bi bi-headset"></i>
                         </div>
-                        <h3>24/7 Support</h3>
-                        <p>Our team is always here to help you anytime.</p>
+                        <h3 data-i18n="best-price">24/7 Support</h3>
+                        <p data-i18n="best-price-info">Our team is always here to help you anytime.</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-3">
@@ -502,8 +515,8 @@
                         <div class="us-icon ui-red">
                             <i class="bi bi-shield-fill-check"></i>
                         </div>
-                        <h3>Trusted Hotels</h3>
-                        <p>We partner with top rated and trusted hotels.</p>
+                        <h3 data-i18n="best-price">Trusted Hotels</h3>
+                        <p data-i18n="best-price-info">We partner with top rated and trusted hotels.</p>
                     </div>
                 </div>
             </div>
@@ -514,8 +527,8 @@
     <section id="customer">
         <div class="container">
             <div class="heading">
-                <h3>What Our Guests Say</h3>
-                <p>See what our guests say about their stay.</p>
+                <h3 data-i18n="guest-say">What Our Guests Say</h3>
+                <p data-i18n="guest-say-info">See what our guests say about their stay.</p>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
@@ -527,15 +540,15 @@
                             <i class="bi bi-star-fill" style="color: #c28b2c;"></i>
                             <i class="bi bi-star-fill" style="color: #c28b2c;"></i>
                         </div>
-                        <h4>"Amazing experience"</h4>
-                        <p>The hotel was clean, comfortable and the booking process was very easy.</p>
+                        <h4 data-i18n="amazing-head">"Amazing experience"</h4>
+                        <p data-i18n="amazing-info">The hotel was clean, comfortable and the booking process was very easy.</p>
                         <div class="d-flex align-items-center gap-3">
-                            <div class="t-avatar" style="background: linear-gradient(135deg, #2563eb, #7c3aed)">
+                            <div class="t-avatar" style="background: linear-gradient(135deg, #2563eb, #7c3aed)" data-i18n="avatar">
                                 ZA
                             </div>
                             <div>
-                                <div class="t-name">Zahra Ahmadi</div>
-                                <div class="t-role">London, UK</div>
+                                <div class="t-name" data-i18n="full-name">Zahra Ahmadi</div>
+                                <div class="t-role" data-i18n="city">London, UK</div>
                             </div>
                         </div>
                     </div>
@@ -549,15 +562,15 @@
                             <i class="bi bi-star-fill" style="color: #c28b2c;"></i>
                             <i class="bi bi-star-fill" style="color: #c28b2c;"></i>
                         </div>
-                        <h4>"Excellent service!"</h4>
-                        <p>Great hotel and very frindly staff.</p>
+                        <h4 data-i18n="amazing-head">"Excellent service!"</h4>
+                        <p data-i18n="amazing-info">Great hotel and very frindly staff.</p>
                         <div class="d-flex align-items-center gap-3">
-                            <div class="t-avatar" style="background: linear-gradient(135deg, #0752f4, #723ecc)">
+                            <div class="t-avatar" style="background: linear-gradient(135deg, #0752f4, #723ecc)" data-i18n="avatar">
                                 HA
                             </div>
                             <div>
-                                <div class="t-name">Hajer Alizada</div>
-                                <div class="t-role">Tornto,Canada</div>
+                                <div class="t-name" data-i18n="full-name">Hajer Alizada</div>
+                                <div class="t-role" data-i18n="city">Tornto,Canada</div>
                             </div>
                         </div>
                     </div>
@@ -571,15 +584,15 @@
                             <i class="bi bi-star-fill" style="color: #c28b2c;"></i>
                             <i class="bi bi-star-fill" style="color: #c28b2c;"></i>
                         </div>
-                        <h4>"Highly recommended!"</h4>
-                        <p>Everything was perfect from booking to checkout.</p>
+                        <h4 data-i18n="amazing-head">"Highly recommended!"</h4>
+                        <p data-i18n="amazing-info">Everything was perfect from booking to checkout.</p>
                         <div class="d-flex align-items-center gap-3">
-                            <div class="t-avatar" style="background: linear-gradient(135deg, #2563eb, #7c3aed)">
+                            <div class="t-avatar" style="background: linear-gradient(135deg, #2563eb, #7c3aed)" data-i18n="avatar">
                                 FA
                             </div>
                             <div>
-                                <div class="t-name">Fazila Ahmadi</div>
-                                <div class="t-role">New York, USA</div>
+                                <div class="t-name" data-i18n="full-name">Fazila Ahmadi</div>
+                                <div class="t-role" data-i18n="city">Afghanistan</div>
                             </div>
                         </div>
                     </div>
@@ -594,19 +607,19 @@
                 <!--left section-->
                 <div class="col-lg-6">
                     <div class="head-news">
-                        <h1>Special Offer</h1>
-                        <h3>Get 10% OFF Your Next Stay</h3>
-                        <p>
+                        <h1 data-i18n="special">Special Offer</h1>
+                        <h3 data-i18n="special-offer">Get 10% OFF Your Next Stay</h3>
+                        <p data-i18n="special-info">
                             Book your dream stay with <strong>Stayora</strong> and enjoy an exclusive
                             <strong>10% discount</strong> on your next reservation. Whether you're planning
                             a relaxing weekend getaway, a family vacation, or a business trip, we've got
                             the perfect room waiting for you.
                         </p>
-                        <p>
+                        <p data-i18n="special-info">
                             Don't miss out on this limited-time offer — your comfort is just one click away.
                             Book now and make your next stay unforgettable!
                         </p>
-                        <button id="getBtn" class="GetBtn">Get 10% off</button>
+                        <button id="getBtn" class="GetBtn" data-i18n="get-but">Get 10% off</button>
                     </div>
                 </div>
                 <!--Right section-->
@@ -624,11 +637,11 @@
             <div class="row g-5">
                 <!--Col 1: info-->
                 <div class="col-lg-4 col-md-6">
-                    <div class="footer-brand">
+                    <div class="footer-brand" data-i18n="brand">
                         Stay<span>ora</span>
                     </div>
-                    <p class="footer-info">Your perfect stay starts here. </p>
-                    <p class="footer-info">Discover yhe best hotel,amazing experiences
+                    <p class="footer-info" data-i18n="brand-info">Your perfect stay starts here. </p>
+                    <p class="footer-info" data-i18n="brand-info">Discover yhe best hotel,amazing experiences
                         and unforgettable stays around the world
                     </p>
                     <div class="news-box">
@@ -641,33 +654,34 @@
                 </div>
                 <!-- Col 2: Quick Links -->
                 <div class="col-lg-2 col-md-6 col-sm-6">
-                    <div class="footer-heading">Quick Links</div>
+                    <div class="footer-heading" data-i18n="links">Quick Links</div>
                     <ul class="footer-links">
-                        <li><a href="index.html" class="link"><span>></span>Home</a></li>
-                        <li><a href="room.html" class="link"><span>></span>Rooms</a></li>
-                        <li><a href="booking.html" class="link"><span>></span>Booking</a></li>
-                        <li><a href="services.html" class="link"><span>></span>Services</a></li>
-                        <li><a href="about.html" class="link"><span>></span>About</a></li>
-                        <li><a href="contact.html" class="link"><span>></span>Contact</a></li>
+                        <li><a href="index.html" class="link" data-i18n="link-home"><span>></span>Home</a></li>
+                        <li><a href="room.html" class="link" data-i18n="link-rooms"><span>></span>Rooms</a></li>
+                        <li><a href="booking.html" class="link" data-i18n="link-booking"><span>></span>Booking</a></li>
+                        <li><a href="services.html" class="link" data-i18n="link-services"
+                            ><span>></span>Services</a></li>
+                        <li><a href="about.html" class="link" data-i18n="link-about"><span>></span>About</a></li>
+                        <li><a href="contact.html" class="link" data-i18n="link-contact"><span>></span>Contact</a></li>
                     </ul>
                 </div>
                 <!-- Col 3: Support -->
                 <div class="col-lg-2 col-md-6 col-sm-6">
-                    <div class="footer-heading">Booking</div>
+                    <div class="footer-heading" data-i18n="link">Booking</div>
                     <ul class="footer-links">
-                        <li><a href="#" class="link"><span>></span>Favorite</a></li>
-                        <li><a href="#" class="link"><span>></span>My Booking </a></li>
-                        <li><a href="search-reslut.html" class="link"><span>></span>Search Hotel</a></li>
-                        <li><a href="" class="link"><span>></span>Offers</a></li>
-                        <li><a href="payment.html" class="link"><span>></span>Payment</a></li>
+                        <li><a href="favorit.html" class="link" data-i18n="link-favorite"><span>></span>Favorite</a></li>
+                        <li><a href="my-booking.html" class="link" data-i18n="link-my-booking"><span>></span>My Booking </a></li>
+                        <li><a href="search-reslut.html" class="link" data-i18n="link-search-hotel"><span>></span>Search Hotel</a></li>
+                        <li><a href="" class="link" data-i18n="link-offer"><span>></span>Offers</a></li>
+                        <li><a href="payment.html" class="link" data-i18n="link-payment"><span>></span>Payment</a></li>
                     </ul>
                 </div>
                 <!-- Col 4: Contact -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="footer-heading">Contact Us</div>
+                    <div class="footer-heading" data-i18n="link">Contact Us</div>
                     <div class="footer-contact-item">
                         <i class="bi bi-geo-alt-fill"></i>
-                        <span>Kabul Afghanistan</span>
+                        <span data-i18n="country">Kabul Afghanistan</span>
                     </div>
                     <div class="footer-contact-item">
                         <i class="bi bi-envelope-fill"></i>
@@ -688,7 +702,7 @@
             </div>
             <!-- Bottom Footer -->
             <div class="footer-bottom d-flex flex-wrap align-items-center justify-content-between gap-2">
-                <p>&copy; 2024 <a href="#">Stayora</a>. All Rights Reserved.</p>
+                <p data-i18n="bottom-footer">&copy; 2024 <a href="#">Stayora</a>. All Rights Reserved.</p>
                 <p>
                     <a href="#" class="me-3">Privacy Policy</a>
                     <a href="#" class="me-3">Terms of Conditions</a>
@@ -702,5 +716,5 @@
 <script src="js/data.js"></script>
 <script src="js/app.js"></script>
 <script src="js/darkmode.js"></script>
-
+<script src="js/searchResult.js"></script>
 </html>
