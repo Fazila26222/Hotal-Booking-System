@@ -118,93 +118,162 @@
     </div>
 
     <!--=============
-      Hero Section
+      Hero Slider
     ==============-->
+    <main>
+        <section id="hero-slider" class="hero-slider" data-hero-slider aria-roledescription="carousel"
+            aria-label="Hotels">
+            <!--==== button======-->
+            <button class="slider-btn prev-btn" aria-label="Previous Slide">&#10094;</button>
+            <button class="slider-btn next-btn" aria-label="Next Slide">&#10095;</button>
 
-    <section id="hero">
-        <div class="container">
-            <div class="hero-heading ">
-                <h1 data-i18n="hero-heading">Find Your Perfect Stay</h1>
-                <p data-i18n="hero-info">Discover amazing hotels at unbeatable prices</p>
-            </div>
-            <div class="hero-search">
-                <div class="search-box">
-                    <!--====Destination====-->
-                    <div class="search-item" id="destinationItem">
-                        <i class="bi bi-geo-alt"></i>
-                        <div id="destinations">
-                            <small data-i18n="destination-head">Destination</small>
-                            <span id="destinationValue" data-i18n="destination-value">Kabul, Afghanistan</span>
-                        </div>
-                        <i class="bi bi-chevron-down"></i>
-                        <!--country list-->
-                        <ul class="dropdown-list" id="destinationList">
-                            <li data-value="Kabul ,Afghanistan" data-i18n="Afghanistan">Kabul ,Afghanistan</li>
-                            <li data-value="Paris ,France" data-i18n="France">Paris ,France</li>
-                            <li data-value="Istanbul , Turkey" data-i18n="Turkey">Istanbul , Turkey</li>
-                            <li data-value="London , UK" data-i18n="UK">London , UK</li>
-                            <li data-value="Dubai ,UAE" data-i18n="UAE">Dubai ,UAE</li>
-                            <li data-value="Toronto , Canada" data-i18n="Canada">Toronto , Canada</li>
-                            <li data-value="Sydeny , Australia" data-i18n="Australia">Sydeny , Australia</li>
-                            <li data-value="Us ,America" data-i18n="America">Us ,America</li>
-                            <li data-value="Plaza ,New York USA" data-i18n="New York USA">Plaza ,New York USA</li>
-                            <li data-value="Marina , Singapor " data-i18n="Singapore">Marina , Singapore</li>
-                        </ul>
+            <div class="slider-track">
+                <div class="slide is-active">
+                    <img src="images/banner4.jpg" class="img-fluid" alt="banner4">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h1 data-i18n="hero-heading">Find Your Perfect Stay</h1>
+                        <p data-i18n="hero-info">Discover amazing hotels at unbeatable prices</p>
                     </div>
-                    <!--===Check in====-->
-                    <div class="search-item" id="checkinItem">
-                        <i class="bi bi-calendar3"></i>
-                        <div id="check-in">
-                            <small data-i18n="check-in">Check-in</small>
-                            <span id="checkinValue" data-i18n="date-in">12 Sep 2015</span>
-                        </div>
-                        <input type="date" id="checkinInput" class="hidden-date">
-                    </div>
-                    <!--===Check out====-->
-                    <div class="search-item" id="checkoutItem">
-                        <i class="bi bi-calendar3"></i>
-                        <div id="check-out">
-                            <small data-i18n="check-out">Check-out</small>
-                            <span id="checkoutValue" data-i18n="date-out">15 Sep 2015</span>
-                        </div>
-                        <input type="date" id="checkoutInput" class="hidden-date">
-                    </div>
-                    <!--===Guests====-->
-                    <div class="search-item" id="guestsItem">
-                        <i class="bi bi-person"></i>
-                        <div id="guests">
-                            <small data-i18n="guest-head">Guests</small>
-                            <span id="guestsValue" data-i18n="guest-info">2 Adults, 0 Children, 1 Room</span>
-                        </div>
-                        <i class="bi bi-chevron-down"></i>
-                        <!--select guests-->
-                        <div class="guests-panel" id="guestsPanel">
-                            <div class="guest-row">
-                                <span data-i18n="adults">Adults</span>
-                                <button class="guest-btn" data-type="adults" data-action="minus">-</button>
-                                <span id="adultsCount" data-i18n="adults-count">2</span>
-                                <button class="guest-btn" data-type="adults" data-action="plus">+</button>
-                            </div>
-                            <div class="guest-row">
-                                <span data-i18n="child-head">Children</span>
-                                <button class="guest-btn" data-type="children" data-action="minus">-</button>
-                                <span id="childrenCount" data-i18n="child-count">0</span>
-                                <button class="guest-btn" data-type="children" data-action="plus">+</button>
-                            </div>
-                            <div class="guest-row">
-                                <span data-i18n="room-head">Rooms</span>
-                                <button class="guest-btn" data-type="rooms" data-action="minus">-</button>
-                                <span id="roomsCount" data-i18n="room-info">1</span>
-                                <button class="guest-btn" data-type="rooms" data-action="plus">+</button>
-                            </div>
-                            <button class="guest-done" id="guestDone" data-i18n="done-but">Done</button>
-                        </div>
-                    </div>
-                    <!--====Search Button=====-->
-                    <button class="search-btn" id="search" data-i18n="search-but">
-                        Search <i class="bi bi-search"></i>
-                    </button>
                 </div>
+                <div class="slide">
+                    <img src="images/banner5.jpg" class="img-fluid" alt="banner5">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h1 data-i18n="hero-heading">Find Your Perfect Stay</h1>
+                        <p data-i18n="hero-info">Discover amazing hotels at unbeatable prices</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/banner6.jpg" class="img-fluid" alt="banner6">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h1 data-i18n="hero-heading">Find Your Perfect Stay</h1>
+                        <p data-i18n="hero-info">Discover amazing hotels at unbeatable prices</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/banner7.jpg" class="img-fluid" alt="banner7">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h1 data-i18n="hero-heading">Find Your Perfect Stay</h1>
+                        <p data-i18n="hero-info">Discover amazing hotels at unbeatable prices</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/banner8.jpg" class="img-fluid" alt="banner8">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h1 data-i18n="hero-heading">Find Your Perfect Stay</h1>
+                        <p data-i18n="hero-info">Discover amazing hotels at unbeatable prices</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/banner9.jpg" class="img-fluid" alt="banner9">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h1 data-i18n="hero-heading">Find Your Perfect Stay</h1>
+                        <p data-i18n="hero-info">Discover amazing hotels at unbeatable prices</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/banner10.jpg" class="img-fluid" alt="banner10">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h1 data-i18n="hero-heading">Find Your Perfect Stay</h1>
+                        <p data-i18n="hero-info">Discover amazing hotels at unbeatable prices</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/stayora-hotel.png" class="img-fluid" alt="stayora-hotel">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h1 data-i18n="hero-heading">Find Your Perfect Stay</h1>
+                        <p data-i18n="hero-info">Discover amazing hotels at unbeatable prices</p>
+                    </div>
+                </div>
+            </div>
+    </main>
+    </section>
+    <!-- search box -->
+    <section id="search">
+        <div class="hero-search">
+            <div class="search-box">
+                <!--====Destination====-->
+                <div class="search-item" id="destinationItem">
+                    <i class="bi bi-geo-alt"></i>
+                    <div id="destinations">
+                        <small data-i18n="destination-head">Destination</small>
+                        <span id="destinationValue" data-i18n="destination-value">Kabul, Afghanistan</span>
+                    </div>
+                    <i class="bi bi-chevron-down"></i>
+                    <!--country list-->
+                    <ul class="dropdown-list" id="destinationList">
+                        <li data-value="Kabul ,Afghanistan" data-i18n="Afghanistan">Kabul ,Afghanistan</li>
+                        <li data-value="Paris ,France" data-i18n="France">Paris ,France</li>
+                        <li data-value="Istanbul , Turkey" data-i18n="Turkey">Istanbul , Turkey</li>
+                        <li data-value="London , UK" data-i18n="UK">London , UK</li>
+                        <li data-value="Dubai ,UAE" data-i18n="UAE">Dubai ,UAE</li>
+                        <li data-value="Toronto , Canada" data-i18n="Canada">Toronto , Canada</li>
+                        <li data-value="Sydeny , Australia" data-i18n="Australia">Sydeny , Australia</li>
+                        <li data-value="Us ,America" data-i18n="America">Us ,America</li>
+                        <li data-value="Plaza ,New York USA" data-i18n="New York USA">Plaza ,New York USA</li>
+                        <li data-value="Marina , Singapor " data-i18n="Singapore">Marina , Singapore</li>
+                    </ul>
+                </div>
+                <!--===Check in====-->
+                <div class="search-item" id="checkinItem">
+                    <i class="bi bi-calendar3"></i>
+                    <div id="check-in">
+                        <small data-i18n="check-in">Check-in</small>
+                        <span id="checkinValue" data-i18n="date-in">12 Sep 2015</span>
+                    </div>
+                    <input type="date" id="checkinInput" class="hidden-date">
+                </div>
+                <!--===Check out====-->
+                <div class="search-item" id="checkoutItem">
+                    <i class="bi bi-calendar3"></i>
+                    <div id="check-out">
+                        <small data-i18n="check-out">Check-out</small>
+                        <span id="checkoutValue" data-i18n="date-out">15 Sep 2015</span>
+                    </div>
+                    <input type="date" id="checkoutInput" class="hidden-date">
+                </div>
+                <!--===Guests====-->
+                <div class="search-item" id="guestsItem">
+                    <i class="bi bi-person"></i>
+                    <div id="guests">
+                        <small data-i18n="guest-head">Guests</small>
+                        <span id="guestsValue" data-i18n="guest-info">2 Adults, 0 Children, 1 Room</span>
+                    </div>
+                    <i class="bi bi-chevron-down"></i>
+                    <!--select guests-->
+                    <div class="guests-panel" id="guestsPanel">
+                        <div class="guest-row">
+                            <span data-i18n="adults">Adults</span>
+                            <button class="guest-btn" data-type="adults" data-action="minus">-</button>
+                            <span id="adultsCount" data-i18n="adults-count">2</span>
+                            <button class="guest-btn" data-type="adults" data-action="plus">+</button>
+                        </div>
+                        <div class="guest-row">
+                            <span data-i18n="child-head">Children</span>
+                            <button class="guest-btn" data-type="children" data-action="minus">-</button>
+                            <span id="childrenCount" data-i18n="child-count">0</span>
+                            <button class="guest-btn" data-type="children" data-action="plus">+</button>
+                        </div>
+                        <div class="guest-row">
+                            <span data-i18n="room-head">Rooms</span>
+                            <button class="guest-btn" data-type="rooms" data-action="minus">-</button>
+                            <span id="roomsCount" data-i18n="room-info">1</span>
+                            <button class="guest-btn" data-type="rooms" data-action="plus">+</button>
+                        </div>
+                        <button class="guest-done" id="guestDone" data-i18n="done-but">Done</button>
+                    </div>
+                </div>
+                <!--====Search Button=====-->
+                <button class="search-btn" id="search" data-i18n="search-but">
+                    Search <i class="bi bi-search"></i>
+                </button>
             </div>
         </div>
     </section>
@@ -541,9 +610,11 @@
                             <i class="bi bi-star-fill" style="color: #c28b2c;"></i>
                         </div>
                         <h4 data-i18n="amazing-head">"Amazing experience"</h4>
-                        <p data-i18n="amazing-info">The hotel was clean, comfortable and the booking process was very easy.</p>
+                        <p data-i18n="amazing-info">The hotel was clean, comfortable and the booking process was very
+                            easy.</p>
                         <div class="d-flex align-items-center gap-3">
-                            <div class="t-avatar" style="background: linear-gradient(135deg, #2563eb, #7c3aed)" data-i18n="avatar">
+                            <div class="t-avatar" style="background: linear-gradient(135deg, #2563eb, #7c3aed)"
+                                data-i18n="avatar">
                                 ZA
                             </div>
                             <div>
@@ -565,7 +636,8 @@
                         <h4 data-i18n="amazing-head">"Excellent service!"</h4>
                         <p data-i18n="amazing-info">Great hotel and very frindly staff.</p>
                         <div class="d-flex align-items-center gap-3">
-                            <div class="t-avatar" style="background: linear-gradient(135deg, #0752f4, #723ecc)" data-i18n="avatar">
+                            <div class="t-avatar" style="background: linear-gradient(135deg, #0752f4, #723ecc)"
+                                data-i18n="avatar">
                                 HA
                             </div>
                             <div>
@@ -587,7 +659,8 @@
                         <h4 data-i18n="amazing-head">"Highly recommended!"</h4>
                         <p data-i18n="amazing-info">Everything was perfect from booking to checkout.</p>
                         <div class="d-flex align-items-center gap-3">
-                            <div class="t-avatar" style="background: linear-gradient(135deg, #2563eb, #7c3aed)" data-i18n="avatar">
+                            <div class="t-avatar" style="background: linear-gradient(135deg, #2563eb, #7c3aed)"
+                                data-i18n="avatar">
                                 FA
                             </div>
                             <div>
@@ -659,8 +732,8 @@
                         <li><a href="index.html" class="link" data-i18n="link-home"><span>></span>Home</a></li>
                         <li><a href="room.html" class="link" data-i18n="link-rooms"><span>></span>Rooms</a></li>
                         <li><a href="booking.html" class="link" data-i18n="link-booking"><span>></span>Booking</a></li>
-                        <li><a href="services.html" class="link" data-i18n="link-services"
-                            ><span>></span>Services</a></li>
+                        <li><a href="services.html" class="link" data-i18n="link-services"><span>></span>Services</a>
+                        </li>
                         <li><a href="about.html" class="link" data-i18n="link-about"><span>></span>About</a></li>
                         <li><a href="contact.html" class="link" data-i18n="link-contact"><span>></span>Contact</a></li>
                     </ul>
@@ -669,9 +742,12 @@
                 <div class="col-lg-2 col-md-6 col-sm-6">
                     <div class="footer-heading" data-i18n="link">Booking</div>
                     <ul class="footer-links">
-                        <li><a href="favorit.html" class="link" data-i18n="link-favorite"><span>></span>Favorite</a></li>
-                        <li><a href="my-booking.html" class="link" data-i18n="link-my-booking"><span>></span>My Booking </a></li>
-                        <li><a href="search-reslut.html" class="link" data-i18n="link-search-hotel"><span>></span>Search Hotel</a></li>
+                        <li><a href="favorit.html" class="link" data-i18n="link-favorite"><span>></span>Favorite</a>
+                        </li>
+                        <li><a href="my-booking.html" class="link" data-i18n="link-my-booking"><span>></span>My Booking
+                            </a></li>
+                        <li><a href="search-reslut.html" class="link" data-i18n="link-search-hotel"><span>></span>Search
+                                Hotel</a></li>
                         <li><a href="" class="link" data-i18n="link-offer"><span>></span>Offers</a></li>
                         <li><a href="payment.html" class="link" data-i18n="link-payment"><span>></span>Payment</a></li>
                     </ul>
@@ -713,8 +789,10 @@
 </body>
 <script src="js/bootstrap.bundle.js"></script>
 <script src="js/index.js"></script>
+<script src="js/slide.js"></script>
 <script src="js/data.js"></script>
 <script src="js/app.js"></script>
 <script src="js/darkmode.js"></script>
 <script src="js/searchResult.js"></script>
+
 </html>

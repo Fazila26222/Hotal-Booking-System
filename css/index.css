@@ -5,7 +5,7 @@ body {
 
 section {
     margin: 0;
-    padding: 40px 0;
+   
 }
 
 h1,
@@ -17,37 +17,102 @@ p {
     margin-top: 0;
 }
 
-#hero {
-    background: url("../images/stayora-hotel.png");
-    padding: 100px 0 80px;
-    position: relative;
-    overflow: visible;
-    width: 100%;
-    min-height: 450px;
+.hero-slider {
+  position: relative;
+  height: min(80vh, 680px);
+  min-height: 360px;
+  overflow: hidden;
 }
 
-.hero-heading {
-    font-size: 2rem;
-    font-weight: 800;
-    font-family: sans-serif;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.slider-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-.hero-heading h1 {
-    color: #fff;
-    font-size: 2.23rem;
-    font-weight: 900;
-    font-family: sans-serif;
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  transition: opacity 0.9s ease;
+  z-index: 1;
 }
 
-.hero-heading p {
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 500;
-    font-family: sans-serif;
+.slide.is-active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
 }
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide-overlay {
+  position: absolute;
+  inset: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(44, 35, 80, 0.1) 0%, rgba(44, 35, 80, 0.5) 100%);
+}
+.slider-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: #333;
+    font-size: 24px;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+.slider-btn:hover{
+    background: rgba(255, 255, 255, 0.9);
+}
+.prev-btn{
+    left: 20px;
+}
+.next-btn{
+    right: 20px;
+}
+
+.slide-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 64px;
+  top: 84px;
+  padding: 0 48px;
+  color: var(--white);
+  max-width: 640px;
+}
+
+
+.slide-content h1 {
+  font-size: clamp(2rem, 4.4vw, 3.4rem);
+  color: #fff;
+  line-height: 1.1;
+  margin-bottom: 14px;
+}
+
+.slide-content p {
+  font-size: 1.05rem;
+  opacity: 0.92;
+  margin-bottom: 36px;
+  max-width: 480px;
+  color: #fff;
+}
+
 
 
 /*  Offers /تخفیف   */

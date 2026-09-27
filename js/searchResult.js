@@ -5,7 +5,9 @@ hotelCards.forEach(function (card) {
     const found = results.some(function (hotel) {
         return hotel.city === city;
     });
+  
     if (!found) {
         card.style.display = "none";
     }
+       
 });
