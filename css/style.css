@@ -173,185 +173,101 @@ a {
 .offcanvas-body {
     background-color: var(--secondary);
 }
-
-/* search box*/
-.hero-search {
-    width: 100%;
-    padding: 25px;
+/* Hero Slider */
+.hero-slider {
+  position: relative;
+  height: min(80vh, 680px);
+  min-height: 360px;
+  overflow: hidden;
 }
 
-.search-box {
-    max-width: 1150px;
-    margin: auto;
-    background: #fff;
-    padding: 10px;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-    
+.slider-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-.search-item {
-    flex: 1;
-    min-height: 65px;
-    padding: 10px 15px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    border-right: 1px solid #ddd;
-    position: relative;
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  transition: opacity 0.9s ease;
+  z-index: 1;
 }
 
-.search-item>i:first-child {
-    font-size: 22px;
-    color: #1769d1;
+.slide.is-active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
 }
 
-.search-item div {
-    flex: 1;
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.search-item small {
-    display: block;
-    color: #777;
-    font-size: 13px;
-    margin-bottom: 4px;
+.slide-overlay {
+  position: absolute;
+  inset: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(44, 35, 80, 0.1) 0%, rgba(44, 35, 80, 0.5) 100%);
 }
-
-.search-item span {
-    display: block;
-    color: #183b63;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.search-item .bi-chevron-down {
-    font-size: 14px;
-    color: #555;
-}
-
-.dropdown-list,
-.guests-panel {
+.slider-btn{
     position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    padding: 10px 0;
-    margin-top: 8px;
-    list-style: none;
-    z-index: 999;
-    display: none;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: #333;
+    font-size: 24px;
+    padding: 15px;
     cursor: pointer;
-}
-
-.dropdown-list.show,
-.guests-panel.show {
-    display: block;
-    animation: fadeIn 0.25 ease;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-8px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.dropdown-list li {
-    padding: 10px 16px;
-    cursor: pointer;
-    transition: background 0.25;
-    font-size: 0.95rem;
-}
-
-.dropdown-list li:hover {
-    background: #f0f6ff;
-    color: #2563eb;
-}
-
-/* guests panel*/
-.guests-panel {
-    padding: 16px;
-    min-width: 260px;
-}
-
-.guest-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 8px 0;
-    gap: 12px;
-}
-
-.guest-btn {
-    width: 32px;
-    height: 32px;
+    z-index: 10;
     border-radius: 50%;
-    border: 1px solid #2563eb;
-    background: #fff;
-    color: #2563eb;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: 0.2s;
+    transition: background 0.3s;
+}
+.slider-btn:hover{
+    background: rgba(255, 255, 255, 0.9);
+}
+.prev-btn{
+    left: 20px;
+}
+.next-btn{
+    right: 20px;
 }
 
-.guest-btn:hover {
-    background: #2563eb;
-    color: #fff;
+.slide-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 64px;
+  top: 84px;
+  padding: 0 48px;
+  color: #fff;
+  max-width: 640px;
 }
 
-.guest-btn:disabled {
-    opacity: 0.4;
-    cursor: not-allowed;
+
+.slide-content h1 {
+  font-size: clamp(2rem, 4.4vw, 3.4rem);
+  color: #fff;
+  line-height: 1.1;
+  margin-bottom: 14px;
 }
 
-.guest-done {
-    width: 100%;
-    margin-top: 10px;
-    padding: 8px;
-    background: #2563eb;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.hidden-date {
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
-    width: 1;
-    height: 1;
-}
-
-.search-btn {
-    height: 60px;
-    padding: 0 28px;
-    border: none;
-    border-radius: 8px;
-    background: #1769d1;
-    color: white;
-    font-size: 16px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-}
-
-.search-btn:hover {
-    background: #1255a9;
+.slide-content p {
+  font-size: 1.05rem;
+  opacity: 0.92;
+  margin-bottom: 36px;
+  max-width: 480px;
+  color: #fff;
 }
 
 /* =============Footers=============*/

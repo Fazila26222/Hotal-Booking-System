@@ -17,7 +17,7 @@ function displayhotels(hotelList) {
   hotelList.forEach(function (hotel) {
     const hotelCard = document.createElement("div");
     const discountedPrice = hotel.price - (hotel.price * hotel.discount) / 100;
-    hotelCard.classList.add("hotel-card");
+    hotelCard.classList.add("hotelCard");
 
     hotelCard.innerHTML = `
         <div class= "discount">
@@ -56,7 +56,7 @@ function displayhotels(hotelList) {
       if (selectHotel) {
         localStorage.setItem("selectHotle", JSON.stringify(selectHotel));
         console.log("btn");
-        window.location.href = "search-reslut.html";
+        window.location.href = "room-details.html";
       }
     });
   });

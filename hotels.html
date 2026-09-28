@@ -120,98 +120,84 @@
             </div>
         </div>
     </div>
-
     <!--=============
-      Hero Section
+      Hero Slider
     ==============-->
+    <main>
+        <section id="hero-slider" class="hero-slider" data-hero-slider aria-roledescription="carousel"
+            aria-label="Hotels">
+            <!--==== button======-->
+            <button class="slider-btn prev-btn" aria-label="Previous Slide">&#10094;</button>
+            <button class="slider-btn next-btn" aria-label="Next Slide">&#10095;</button>
 
-    <section id="hero">
-        <div class="container">
-            <div class="hero-heading ">
-                <h1 data-i18n="headings">Explore More Destinations</h1>
-                <p data-i18n="info">Find the perfect hotel for your next trip</p>
-            </div>
-            <div class="hero-search">
-                <div class="search-box">
-                    <!--====Destination====-->
-                    <div class="search-item" id="destinationItem">
-                        <i class="bi bi-geo-alt"></i>
-                        <div id="destinations">
-                            <small data-i18n="destination-head">Destination</small>
-                            <span id="destinationValue" data-i18n="destination-value">Kabul, Afghanistan</span>
-                        </div>
-                        <i class="bi bi-chevron-down"></i>
-                        <!--country list-->
-                        <ul class="dropdown-list" id="destinationList">
-                            <li data-value="Kabul ,Afghanistan">Kabul ,Afghanistan</li>
-                            <li data-value="Paris ,France">Paris ,France</li>
-                            <li data-value="Istanbul , Turkey">Istanbul , Turkey</li>
-                            <li data-value="London , UK">London , UK</li>
-                            <li data-value="Dubai ,UAE">Dubai ,UAE</li>
-                            <li data-value="Toronto , Canada">Toronto , Canada</li>
-                            <li data-value="Sydeny , Australia">Sydeny , Australia</li>
-                            <li data-value="Us ,America">Us ,America</li>
-                            <li data-value="Plaza ,New York USA">Plaza ,New York USA</li>
-                            <li data-value="Marina , Singapor">Marina , Singapore</li>
-                        </ul>
+            <div class="slider-track">
+                <div class="slide is-active">
+                    <img src="images/Serena.jpg" class="img-fluid" alt="Serena">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h1 data-i18n="headings">Explore More Destinations</h1>
+                        <p data-i18n="info">Find the perfect hotel for your next trip</p>
                     </div>
-                    <!--===Chech in====-->
-                    <div class="search-item" id="checkinItem">
-                        <i class="bi bi-calendar3"></i>
-                        <div id="check-in">
-                            <small>Check-in</small>
-                            <span id="checkinValue">12 Sep 2015</span>
-                        </div>
-                        <input type="date" id="checkinInput" class="hidden-date">
+                </div>
+                <div class="slide">
+                    <img src="images/kabul star.jpg" class="img-fluid" alt="kabul star">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h1 data-i18n="headings">Explore More Destinations</h1>
+                        <p data-i18n="info">Find the perfect hotel for your next trip</p>
                     </div>
-                    <!--===Check out====-->
-                    <div class="search-item" id="checkoutItem">
-                        <i class="bi bi-calendar3"></i>
-                        <div id="check-out">
-                            <small>Check-out</small>
-                            <span id="checkoutValue">15 Sep 2015</span>
-                        </div>
-                        <input type="date" id="checkoutInput" class="hidden-date">
+                </div>
+                <div class="slide">
+                    <img src="images/banner11.jpg" class="img-fluid" alt="banner11">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h1 data-i18n="headings">Explore More Destinations</h1>
+                        <p data-i18n="info">Find the perfect hotel for your next trip</p>
                     </div>
-                    <!--===Guests====-->
-                    <div class="search-item" id="guestsItem">
-                        <i class="bi bi-person"></i>
-                        <div id="guests">
-                            <small>Guests</small>
-                            <span id="guestsValue">2 Adults, 0 Children, 1 Room</span>
-                        </div>
-                        <i class="bi bi-chevron-down"></i>
-                        <!--select guests-->
-                        <div class="guests-panel" id="guestsPanel">
-                            <div class="guest-row">
-                                <span>Adults</span>
-                                <button class="guest-btn" data-type="adults" data-action="minus">-</button>
-                                <span id="adultsCount">2</span>
-                                <button class="guest-btn" data-type="adults" data-action="plus">+</button>
-                            </div>
-                            <div class="guest-row">
-                                <span>Children</span>
-                                <button class="guest-btn" data-type="children" data-action="minus">-</button>
-                                <span id="childrenCount">0</span>
-                                <button class="guest-btn" data-type="children" data-action="plus">+</button>
-                            </div>
-                            <div class="guest-row">
-                                <span>Rooms</span>
-                                <button class="guest-btn" data-type="rooms" data-action="minus">-</button>
-                                <span id="roomsCount">1</span>
-                                <button class="guest-btn" data-type="rooms" data-action="plus">+</button>
-                            </div>
-                            <button class="guest-done" id="guestDone">Done</button>
-                        </div>
+                </div>
+                <div class="slide">
+                    <img src="images/banner12.jpg" class="img-fluid" alt="banner12">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h1 data-i18n="headings">Explore More Destinations</h1>
+                        <p data-i18n="info">Find the perfect hotel for your next trip</p>
                     </div>
-                    <!--====Search Button=====-->
-                    <button class="search-btn" id="search">
-                        Search <i class="bi bi-search"></i>
-                    </button>
+                </div>
+                <div class="slide">
+                    <img src="images/banner8.jpg" class="img-fluid" alt="banner8">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h1 data-i18n="headings">Explore More Destinations</h1>
+                        <p data-i18n="info">Find the perfect hotel for your next trip</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/banner9.jpg" class="img-fluid" alt="banner9">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h1 data-i18n="headings">Explore More Destinations</h1>
+                        <p data-i18n="info">Find the perfect hotel for your next trip</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/banner10.jpg" class="img-fluid" alt="banner10">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h1 data-i18n="headings">Explore More Destinations</h1>
+                        <p data-i18n="info">Find the perfect hotel for your next trip</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/stayora-hotel.png" class="img-fluid" alt="stayora-hotel">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h1 data-i18n="headings">Explore More Destinations</h1>
+                        <p data-i18n="info">Find the perfect hotel for your next trip</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
     <!--=================Destination================-->
     <section id="destination">
         <div class="container">
@@ -344,7 +330,7 @@
                         </div>
                     </div>
                     <!--Card Hotel card 1-->
-                    <div class="hotel-card">
+                    <div class="hotel-card" data-city="Kabul ,Afghanistan">
                         <div class="row g-3">
                             <!--iamge-->
                             <div class="col-lg-4 image-hotel">
@@ -389,7 +375,7 @@
                         </div>
                     </div>
                     <!--card 2-->
-                    <div class="hotel-card">
+                    <div class="hotel-card" data-city="Dubai ,UAE">
                         <div class="row g-3">
                             <!--iamge-->
                             <div class="col-lg-4 image-hotel">
@@ -433,7 +419,7 @@
                         </div>
                     </div>
                     <!--card 3-->
-                    <div class="hotel-card">
+                    <div class="hotel-card" data-city="Plaza ,New York USA">
                         <div class="row g-3">
                             <!--iamge-->
                             <div class="col-lg-4 image-hotel">
@@ -477,7 +463,7 @@
                         </div>
                     </div>
                     <!--card 4-->
-                    <div class="hotel-card">
+                    <div class="hotel-card" data-city=" London , UK">
                         <div class="row g-3">
                             <!--iamge-->
                             <div class="col-lg-4 image-hotel">
@@ -522,7 +508,7 @@
                         </div>
                     </div>
                     <!--card 5-->
-                    <div class="hotel-card">
+                    <div class="hotel-card" data-city="Us ,America">
                         <div class="row g-3">
                             <!--iamge-->
                             <div class="col-lg-4 image-hotel">
@@ -566,7 +552,7 @@
                         </div>
                     </div>
                     <!--card 6-->
-                    <div class="hotel-card">
+                    <div class="hotel-card" data-city="Us ,America">
                         <div class="row g-3">
                             <!--iamge-->
                             <div class="col-lg-4 image-hotel">
@@ -610,7 +596,7 @@
                         </div>
                     </div>
                     <!--card 7-->
-                    <div class="hotel-card">
+                    <div class="hotel-card" data-city="Plaza ,New York USA">
                         <div class="row g-3">
                             <!--iamge-->
                             <div class="col-lg-4 image-hotel">
@@ -654,7 +640,7 @@
                         </div>
                     </div>
                     <!--card 8-->
-                    <div class="hotel-card">
+                    <div class="hotel-card" data-city=" Tokyo ,Japan">
                         <div class="row g-3">
                             <!--iamge-->
                             <div class="col-lg-4 image-hotel">
@@ -698,7 +684,7 @@
                         </div>
                     </div>
                     <!--card 9-->
-                    <div class="hotel-card">
+                    <div class="hotel-card" data-city=" Marina , Singapor">
                         <div class="row g-3">
                             <!--iamge-->
                             <div class="col-lg-4 image-hotel">
@@ -742,7 +728,7 @@
                         </div>
                     </div>
                     <!--card 10-->
-                    <div class="hotel-card">
+                    <div class="hotel-card" data-city=" London , UK">
                         <div class="row g-3">
                             <!--iamge-->
                             <div class="col-lg-4 image-hotel">
@@ -787,7 +773,7 @@
                         </div>
                     </div>
                     <!--card 11-->
-                    <div class="hotel-card">
+                    <div class="hotel-card" data-city=" Sydeny , Australia">
                         <div class="row g-3">
                             <!--iamge-->
                             <div class="col-lg-4 image-hotel">
@@ -831,7 +817,7 @@
                         </div>
                     </div>
                     <!--card 12-->
-                    <div class="hotel-card">
+                    <div class="hotel-card" data-city="Us ,America">
                         <div class="row g-3">
                             <!--iamge-->
                             <div class="col-lg-4 image-hotel">
@@ -982,9 +968,6 @@
 </body>
 <script src="js/bootstrap.bundle.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/index.js"></script>
-<script src="js/data.js"></script>
-<script src="js/searchResult.js"></script>
 <script src="js/darkmode.js"></script>
-
+<script src="js/slide.js"></script>
 </html>

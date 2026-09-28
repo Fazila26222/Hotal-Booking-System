@@ -167,5 +167,14 @@ search.addEventListener("click", function () {
   
 });
 
+// offer book now
 
+const bookBtns = document.querySelectorAll("#bookBtn");
+
+ bookBtns.forEach(button =>{
+     button.addEventListener("click",() =>{
+      localStorage.setItem("selectedHotel","Kabul Serena Hotel");
+      window.location.href = "hotel-details.html";
+     });
+ });
 
