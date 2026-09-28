@@ -32,9 +32,10 @@ const Hotels = [
     name: "France",
     city: "Paris ,France",
   },
-  {
-    name: "Istanbul",
-    city: "Istanbul , Turkey",
+ 
+   {
+    name: "Tokyo",
+    city: "Tokyo ,Japan",
   },
   {
     name: "London",

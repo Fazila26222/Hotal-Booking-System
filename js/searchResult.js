@@ -3,12 +3,14 @@ console.log("Saved Results:",results);
 
 const hotelCards = document.querySelectorAll(".hotel-card");
 hotelCards.forEach(function (card) {
-    const city = card.dataset.city;
+    const cardCity = card.dataset.city;
     const found = results.some(function (hotel) {
-        return hotel.city === city;
+        const hotelCity =hotel.city.split(",")[0].trim();
+        return hotelCity === cardCity;
     });
+    console.log("Card:", cardCity, "Found:",found);
   
-    if (!found) {
+    if (found) {
         card.style.display = "";
 
         }else{
