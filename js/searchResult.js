@@ -3,18 +3,15 @@ console.log("Saved Results:",results);
 
 const hotelCards = document.querySelectorAll(".hotel-card");
 hotelCards.forEach(function (card) {
-    const cardCity = card.dataset.city;
+    const cardCity = (card.dataset.city || "").split(",")[0].trim().toLowerCase();
+
     const found = results.some(function (hotel) {
-        const hotelCity =hotel.city.split(",")[0].trim();
+        const hotelCity = (hotel.city || "").split(",")[0].trim().toLowerCase();
         return hotelCity === cardCity;
     });
     console.log("Card:", cardCity, "Found:",found);
-  
-    if (found) {
-        card.style.display = "";
 
-        }else{
-        card.style.display = "none";
-    }
+        card.style.display = found ? "" : "none";
+    
        
 });
