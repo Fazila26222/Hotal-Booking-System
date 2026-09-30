@@ -15,6 +15,36 @@ const hotelsData = {
         "images/Hotel10.jpg",
       ]
     },
+      {
+      name: "Louvre Hotel Paris",
+      desc: "Close to the Louvre Museum, free breakfast included",
+      price: "$280 / night",
+      img: "images/paris.jpg",
+      images: [
+        "images/Hotel4.jpg",
+        "images/Hotel5.jpg",
+        "images/Hotel6.jpg",
+        "images/Hotel7.jpg",
+        "images/Hotel8.jpg",
+        "images/Hotel9.jpg",
+        "images/Hotel10.jpg",
+      ]
+    },
+      {
+      name: "Louvre Hotel Paris",
+      desc: "Close to the Louvre Museum, free breakfast included",
+      price: "$280 / night",
+      img: "images/paris.jpg",
+      images: [
+        "images/Hotel4.jpg",
+        "images/Hotel5.jpg",
+        "images/Hotel6.jpg",
+        "images/Hotel7.jpg",
+        "images/Hotel8.jpg",
+        "images/Hotel9.jpg",
+        "images/Hotel10.jpg",
+      ]
+    },
     {
       name: "Eiffel Tower Hotel",
       desc: "Direct view of the Eiffel Tower",
@@ -238,6 +268,7 @@ function showHotels(cityName) {
     hotelListContainer.innerHTML = "<p>No hotels found for this destinayion.</p>";
   } else {
     hotels.forEach((hotel, index) => {
+
       const card = document.createElement("div");
 
       card.className = "hotel-card";
