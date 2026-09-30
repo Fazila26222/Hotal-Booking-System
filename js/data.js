@@ -77,7 +77,7 @@ const Hotels = [
         reviews:100,
         price:100,
         discount:10,
-        image:"../images/istanbul1.jpg",
+        image:"images/istanbul1.jpg",
         description:"Very Good"
     },
      {

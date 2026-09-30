@@ -389,8 +389,9 @@
                 </p>
             </div>
             <div class="row g-4">
+                <!-- card paris -->
                 <div class="col-lg-3 col-md-6 col-6">
-                    <div class="popular-card">
+                    <div class="popular-card" onclick="showHotels('Paris')">
                         <div class="Image">
                             <img src="images/paris.jpg" alt="paris">
                             <div class="img-name" data-i18n="paris">Paris</div>
@@ -398,7 +399,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-6">
-                    <div class="popular-card">
+                    <div class="popular-card" onclick="showHotels('Kabul')">
                         <div class="Image">
                             <img src="images/kaubl-hotel.jpg" alt="kabul">
                             <div class="img-name" data-i18n="kabul">Kabul</div>
@@ -406,7 +407,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-6">
-                    <div class="popular-card">
+                    <div class="popular-card" onclick="showHotels('Istanbul')">
                         <div class="Image">
                             <img src="images/lstanbul.jpg" alt="lstanbul">
                             <div class="img-name" data-i18n="istanbul1">Istanbul</div>
@@ -415,7 +416,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-6">
-                    <div class="popular-card">
+                    <div class="popular-card" onclick="showHotels('Canada')">
                         <div class="Image">
                             <img src="images/stayora-hotel.png" alt="canada">
                             <div class="img-name" data-i18n="canada">Canada</div>
@@ -424,7 +425,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-6">
-                    <div class="popular-card">
+                    <div class="popular-card" onclick="showHotels('Australia')">
                         <div class="Image">
                             <img src="images/Hotle (2).png" alt="Australia">
                             <div class="img-name" data-i18n="australia">Australia</div>
@@ -433,7 +434,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-6">
-                    <div class="popular-card">
+                    <div class="popular-card" onclick="showHotels('London')">
                         <div class="Image">
                             <img src="images/london.jpg" alt="london">
                             <div class="img-name" data-i18n="london">London</div>
@@ -442,7 +443,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-6">
-                    <div class="popular-card">
+                    <div class="popular-card" onclick="showHotels('US')">
                         <div class="Image">
                             <img src="images/US.jpg" alt="US">
                             <div class="img-name" data-i18n="us">US</div>
@@ -451,7 +452,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-6">
-                    <div class="popular-card">
+                    <div class="popular-card" onclick="showHotels('Maldives')">
                         <div class="Image">
                             <img src="images/maldives.jpg" alt="Maldives">
                             <div class="img-name" data-i18n="maldives">Maldives</div>
@@ -459,7 +460,27 @@
                     </div>
                 </div>
             </div>
+           <!-- hidden page hotel -->
+            <div id="hotelPage">
+                <div class="hotel-header">
+                    <button class="back-btn" onclick="closeHotelPage()">&#8592;</button>
+                    <h2 id="hotelPageTitle">Hotels</h2>
+                </div>
+                <div class="hotel-list" id="hotelListContainer">
+                    <!-- Hotels Card for Dynamic -->
+                </div>
+            </div>
+            <!-- hidded Gallery Page -->
 
+            <div id="galleryPage">
+                <div class="hotel-header">
+                    <button class="back-btn"onclick="closeGalleryPage()">&#8592;</button>
+                    <h2 id="galleryPageTitle">Gallery</h2>
+                </div>
+                <div class="gallery-list" id="galleryContainer">
+                    <!-- Gallery for Dynamic -->
+                </div>
+            </div>
         </div>
     </section>
     <!--=====Featured Hotels====== کارت های هتل-->
@@ -794,6 +815,7 @@
 <script src="js/index.js"></script>
 <script src="js/data.js"></script>
 <script src="js/app.js"></script>
+<script src="js/destinationHotels.js"></script>
 <script src="js/darkmode.js"></script>
 <script src="js/searchResult.js"></script>
 
