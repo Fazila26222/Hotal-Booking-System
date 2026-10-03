@@ -680,6 +680,10 @@ p {
 
 .image-city {
     position: relative;
+    border-radius: 12px;
+    cursor: pointer;
+    height: 100%;
+    overflow: hidden;
     margin-top: 20px;
     margin-bottom: 10px;
     transition: 0.4s;
@@ -687,7 +691,7 @@ p {
 
 .image-city img {
     width: 100%;
-    height: 180px;
+    height: 250px;
     border-radius: 10px;
     object-fit: cover;
 }
@@ -695,22 +699,34 @@ p {
 .image-city:hover {
     transform: scale(1.05);
 }
-
-.image-name h6 {
+.image-city::after{
+    content: "";
     position: absolute;
-    bottom: 50px;
-    left: 15px;
-    color: #000;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    pointer-events: none;
+}
+.image-name{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: #fff;
+    z-index: 2;
+}
+.image-name h6 {
+    margin-bottom: 5px;
+    color: #fff;
     font-size: 24px;
     font-weight: bold;
 }
 
 .image-name p {
-    position: absolute;
-    bottom: 0px;
-    left: 15px;
-    color: #ffffff;
-    font-size: 24px;
+    margin-bottom: 5px;
+    color: #e0e0e0;
+    font-size: 14px;
 
 }
 

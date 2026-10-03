@@ -464,7 +464,7 @@
             <div id="hotelPage">
                 <div class="hotel-header">
                     <button class="back-btn" onclick="closeHotelPage()">&#8592;</button>
-                    <h2 id="hotelPageTitle">Hotels</h2>
+                    <h2 id="hotelPageTitle" data-i18n="hotel">Hotels</h2>
                 </div>
                 <div class="hotel-list" id="hotelListContainer">
                     <!-- Hotels Card for Dynamic -->
@@ -475,7 +475,7 @@
             <div id="galleryPage">
                 <div class="hotel-header">
                     <button class="back-btn"onclick="closeGalleryPage()">&#8592;</button>
-                    <h2 id="galleryPageTitle">Gallery</h2>
+                    <h2 id="galleryPageTitle" data-i18n="gallery">Gallery</h2>
                 </div>
                 <div class="gallery-list" id="galleryContainer">
                     <!-- Gallery for Dynamic -->
@@ -508,57 +508,21 @@
             </div>
             <div id="filter">
                 <div class="d-flex align-items-center gap-3 filter-scroll">
-                    <button class="filter-btn active" data-i18n="country">Europe</button>
-                    <button class="filter-btn " data-i18n="country">North America</button>
-                    <button class="filter-btn " data-i18n="country">Aisa</button>
-                    <button class="filter-btn " data-i18n="country">Africa</button>
-                    <button class="filter-btn " data-i18n="country">Oceania</button>
-                    <button class="filter-btn " data-i18n="country">Middle East</button>
-                    <button class="filter-btn " data-i18n="country">South America</button>
-                    <button class="filter-btn " data-i18n="country">Caribbean</button>
-                    <button class="filter-btn " data-i18n="country">Central America</button>
+                    <button class="filter-btn active" data-i18n="country" data-filter="europe">Europe</button>
+                    <button class="filter-btn " data-i18n="country" data-filter="north america">North America</button>
+                    <button class="filter-btn " data-i18n="country" data-filter="asia">Aisa</button>
+                    <button class="filter-btn " data-i18n="country" data-filter="africa">Africa</button>
+                    <button class="filter-btn " data-i18n="country" data-filter="oceania">Oceania</button>
+                    <button class="filter-btn " data-i18n="country" data-filter="middle East">Middle East</button>
+                    <button class="filter-btn " data-i18n="country" data-filter="south america">South America</button>
+                    <button class="filter-btn " data-i18n="country" data-filter="caribbean">Caribbean</button>
+                    <button class="filter-btn " data-i18n="country" data-filter="central america">Central America</button>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-4">
-                    <div class="image-city">
-                        <img src="images/London1.jpg" class="img-fluid" alt="">
-                        <div class="image-name">
-                            <h6 data-i18n="london">London</h6>
-                            <p data-i18n="city-info">4214 things to do</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4">
-                    <div class="image-city">
-                        <img src="images/istanbul1.jpg" class="img-fluid" alt="">
-                        <div class="image-name">
-                            <h6 data-i18n="Istanbul">Istanbul</h6>
-                            <p data-i18n="city-info">2572 things to do</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4">
-                    <div class="image-city">
-                        <img src="images/paris1.jpg" class="img-fluid" alt="">
-                        <div class="image-name">
-                            <h6 data-i18n="paris">
-                                Paris
-                            </h6>
-                            <p data-i18n="city-info">3814 things to do</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4">
-                    <div class="image-city">
-                        <img src="images/hamburg1.jpg" class="img-fluid" alt="">
-                        <div class="image-name">
-                            <h6 data-i18n="hamburg">Hamburg</h6>
-                            <p data-i18n="city-info">383 things to do</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="row g-4" id="city-container">
+                <!-- add to javascrept -->
             </div>
+            
         </div>
     </section>
 
@@ -818,5 +782,5 @@
 <script src="js/destinationHotels.js"></script>
 <script src="js/darkmode.js"></script>
 <script src="js/searchResult.js"></script>
-
+<script src="js/filterDestination.js"></script>
 </html>

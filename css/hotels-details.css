@@ -295,7 +295,7 @@ img {
     cursor: pointer;
 }
 
-.left-arrow {
+.left-arrow  {
     position: absolute !important;
     top: 50% !important;
     transform: translateY(-50%) !important;

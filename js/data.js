@@ -1,3 +1,4 @@
+
 // Hotels search
 const Hotels = [
   {
