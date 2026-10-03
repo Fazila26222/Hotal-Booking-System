@@ -698,6 +698,7 @@ p {
 
 .image-city:hover {
     transform: scale(1.05);
+    filter: brightness(60%);
 }
 .image-city::after{
     content: "";

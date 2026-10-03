@@ -416,50 +416,54 @@
             <div class="row g-5">
                 <!--Col 1: info-->
                 <div class="col-lg-4 col-md-6">
-                    <div class="footer-brand">
+                    <div class="footer-brand" data-i18n="brand">
                         Stay<span>ora</span>
                     </div>
-                    <p class="footer-info">Your perfect stay starts here. </p>
-                    <p class="footer-info">Discover yhe best hotel,amazing experiences
+                    <p class="footer-info" data-i18n="brand-info">Your perfect stay starts here. </p>
+                    <p class="footer-info" data-i18n="brand-info">Discover yhe best hotel,amazing experiences
                         and unforgettable stays around the world
                     </p>
                     <div class="news-box">
                         <i class="bi bi-envelope"></i>
-                        <input type="email" placeholder="Enter your email address">
-                        <button type="submit">
+                        <input type="email" id="subEmail" placeholder="Enter your email address">
+                        <button id="subBtn" type="submit">
                             <i class="bi bi-arrow-right"></i>
                         </button>
                     </div>
                 </div>
                 <!-- Col 2: Quick Links -->
                 <div class="col-lg-2 col-md-6 col-sm-6">
-                    <div class="footer-heading">Quick Links</div>
+                    <div class="footer-heading" data-i18n="links">Quick Links</div>
                     <ul class="footer-links">
-                        <li><a href="index.html" class="link"><span>></span>Home</a></li>
-                        <li><a href="room.html" class="link"><span>></span>Rooms</a></li>
-                        <li><a href="booking.html" class="link"><span>></span>Booking</a></li>
-                        <li><a href="services.html" class="link"><span>></span>Services</a></li>
-                        <li><a href="about.html" class="link"><span>></span>About</a></li>
-                        <li><a href="contact.html" class="link"><span>></span>Contact</a></li>
+                        <li><a href="index.html" class="link" data-i18n="link-home"><span>></span>Home</a></li>
+                        <li><a href="room.html" class="link" data-i18n="link-rooms"><span>></span>Rooms</a></li>
+                        <li><a href="booking.html" class="link" data-i18n="link-booking"><span>></span>Booking</a></li>
+                        <li><a href="services.html" class="link" data-i18n="link-services"><span>></span>Services</a>
+                        </li>
+                        <li><a href="about.html" class="link" data-i18n="link-about"><span>></span>About</a></li>
+                        <li><a href="contact.html" class="link" data-i18n="link-contact"><span>></span>Contact</a></li>
                     </ul>
                 </div>
                 <!-- Col 3: Support -->
                 <div class="col-lg-2 col-md-6 col-sm-6">
-                    <div class="footer-heading">Booking</div>
+                    <div class="footer-heading" data-i18n="link">Booking</div>
                     <ul class="footer-links">
-                        <li><a href="#" class="link"><span>></span>Favorite</a></li>
-                        <li><a href="#" class="link"><span>></span>My Booking </a></li>
-                        <li><a href="search-reslut.html" class="link"><span>></span>Search Hotel</a></li>
-                        <li><a href="" class="link"><span>></span>Offers</a></li>
-                        <li><a href="payment.html" class="link"><span>></span>Payment</a></li>
+                        <li><a href="favorit.html" class="link" data-i18n="link-favorite"><span>></span>Favorite</a>
+                        </li>
+                        <li><a href="my-booking.html" class="link" data-i18n="link-my-booking"><span>></span>My Booking
+                            </a></li>
+                        <li><a href="search-reslut.html" class="link" data-i18n="link-search-hotel"><span>></span>Search
+                                Hotel</a></li>
+                        <li><a href="" class="link" data-i18n="link-offer"><span>></span>Offers</a></li>
+                        <li><a href="payment.html" class="link" data-i18n="link-payment"><span>></span>Payment</a></li>
                     </ul>
                 </div>
                 <!-- Col 4: Contact -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="footer-heading">Contact Us</div>
+                    <div class="footer-heading" data-i18n="link">Contact Us</div>
                     <div class="footer-contact-item">
                         <i class="bi bi-geo-alt-fill"></i>
-                        <span>Kabul Afghanistan</span>
+                        <span data-i18n="country">Kabul Afghanistan</span>
                     </div>
                     <div class="footer-contact-item">
                         <i class="bi bi-envelope-fill"></i>
@@ -480,7 +484,7 @@
             </div>
             <!-- Bottom Footer -->
             <div class="footer-bottom d-flex flex-wrap align-items-center justify-content-between gap-2">
-                <p>&copy; 2024 <a href="#">Stayora</a>. All Rights Reserved.</p>
+                <p data-i18n="bottom-footer">&copy; 2024 <a href="#">Stayora</a>. All Rights Reserved.</p>
                 <p>
                     <a href="#" class="me-3">Privacy Policy</a>
                     <a href="#" class="me-3">Terms of Conditions</a>
@@ -493,5 +497,5 @@
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/index.js"></script>
 <script src="js/darkmode.js"></script>
-
+<script src="js/emailInput.js"></script>
 </html>
