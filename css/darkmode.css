@@ -104,6 +104,11 @@ body.darkBtn .guest-done {
     border-color: #334155;
     color: #f8fafc;
 }
+body.darkBtn .filter-box{
+    background-color: #0f173a;
+    border-color: #334155;
+    color: #f8fafc;
+}
 
 /* cards*/
 body.darkBtn .card,

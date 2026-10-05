@@ -1,148 +1,18 @@
+(function () {
+    const ITEMS_PER_PAGE = 3;
+    let currentPage = 1;
+    let filteredDestinations = [];
 
-// ========== Destination  ==============
-const destinationItem = document.getElementById("destinationItem");
-const destinationValue = document.getElementById("destinationValue");
-const destinationList = document.getElementById("destinationList");
 
-const destinations = document.querySelectorAll("#destinationList li");
-destinationItem.addEventListener("click", function () {
-  destinationList.classList.toggle("show");
-});
+    const hotelResults = document.getElementById("hotelResults");
+    const resultCount = document.getElementById("resultCount");
+    const pagination = document.getElementById("destination-pagination");
+    const sortHotels = document.getElementById("sortHotels");
+    const priceRange = document.getElementById("priceRange");
+    const clearFilters = document.getElementById("clearFilters");
+    const applyFilters = document.querySelector(".apply-filter");
 
-// Open Dropdown
-destinations.forEach(function (item) {
-  item.addEventListener("click", function (e) {
-    e.stopPropagation();
-    destinationValue.textContent = item.textContent;
-    destinationList.classList.remove("show");
-  });
-});
-
-// Seclect country
-
-destinationList.querySelectorAll("li").forEach((li) => {
-  li.addEventListener("click", () => {
-    destinationValue.textContent = li.dataset.value;
-    destinationList.classList.remove("show");
-  });
-});
-// ======= formatDate ==========
-
-function formatDate(date) {
-  const day = date.getDate();
-  const month = date.toLocaleString("en-US", { month: "short" });
-  const year = date.getFullYear();
-  return `${day} ${month} ${year}`;
-}
-// ====== Check in =========
-
-const checkinItem = document.getElementById("checkinItem");
-const checkinValue = document.getElementById("checkinValue");
-const checkinInput = document.getElementById("checkinInput");
-
-checkinItem.addEventListener("click", () => {
-  checkinInput.showPicker?.();
-});
-
-checkinInput.addEventListener("change", () => {
-  if (!checkinInput.value) return;
-  const date = new Date(checkinInput.value);
-  checkinValue.textContent = formatDate(date);
-
-  //====== date check in befor date check out=======
-
-  checkoutInput.min = checkinInput.value;
-  if (checkoutInput.value && checkinInput.value <= checkinInput.value) {
-    checkinInput.value = "";
-    checkoutValue.textContent = "Select date";
-  }
-});
-
-// ======= check out =========
-
-const checkoutItem = document.getElementById("checkoutItem");
-const checkoutValue = document.getElementById("checkoutValue");
-const checkoutInput = document.getElementById("checkoutInput");
-
-checkoutItem.addEventListener("click", () => {
-  checkoutInput.showPicker?.();
-});
-
-checkoutInput.addEventListener("change", () => {
-  if (!checkoutInput.value) return;
-  const date = new Date(checkoutInput.value);
-  checkoutValue.textContent = formatDate(date);
-});
-
-// ======== Guests =========
-const guestsItem = document.getElementById("guestsItem");
-const guestsValue = document.getElementById("guestsValue");
-const guestsPanel = document.getElementById("guestsPanel");
-const guestDone = document.getElementById("guestDone");
-
-guestsItem.addEventListener("click", (e) => {
-  if (e.target.closest(".guest-btn") || e.target.closest(".guests-panel"))
-    return;
-  e.stopPropagation();
-  guestsPanel.classList.toggle("show");
-});
-
-// bouttns
-
-let guests = {
-  adults: 2,
-  rooms: 1,
-  children: 0,
-};
-const adultsCount = document.getElementById("adultsCount");
-let adults = 2;
-const roomsCount = document.getElementById("roomsCount");
-let rooms = 1;
-const childrenCount = document.getElementById("childrenCount");
-let children = 0;
-
-document.querySelectorAll(".guest-btn").forEach((button) => {
-  button.addEventListener("click", () => {
-    const action = button.dataset.action;
-    const type = button.dataset.type;
-
-    // ======= Adults
-    if (type === "adults") {
-      if (action === "plus") {
-        adults++;
-      } else if (action === "minus" && adults > 1) {
-        adults--;
-      }
-    }
-    // ========= Children
-    if (type === "children") {
-      if (action === "plus") {
-        children++;
-      } else if (action === "minus" && children > 1) {
-        children--;
-      }
-    }
-
-    // ======= Rooms
-
-    if (type === "rooms") {
-      if (action === "plus") {
-        rooms++;
-      } else if (action === "minus" && rooms > 1) {
-        rooms--;
-      }
-    }
-    adultsCount.textContent = adults;
-    childrenCount.textContent = children;
-    roomsCount.textContent = rooms;
-  });
-  guestDone.addEventListener("click", () => {
-    guestsValue.textContent = `${adults} Adults  
-  ${children} Children  ${rooms} Rooms`;
-    guestsPanel.classList.remove("show");
-  });
-});
- const Hotels= [
+    const Hotels= [
         {
             id: 1,
             name: "Kabul Serena Hotel",
@@ -472,46 +342,264 @@ document.querySelectorAll(".guest-btn").forEach((button) => {
         },
     ];
 
-// =====Search ======
-const search = document.getElementById("search");
+    function displayHotels(Hotels) {
+        hotelResults.innerHTML = "";
 
-search.addEventListener("click", function () {
-  const destinationValue = document.getElementById("destinationValue").textContent.trim();
+        resultCount.textContent = Hotels.length;
+        if (Hotels.length === 0) {
+            hotelResults.innerHTML = `
+            <div class = "no-result">
+            <i class = "bi bi-search"></i>
+            <h3>No hotel found</h3>
+            <p>Try changing your filters.</p>
+            </div>
+            `;
+            return;
+        }
 
-  console.log("Destination value:", destinationValue);
-  if (destinationValue === "where are you going?" || destinationValue === "") {
-    alert("please select a destination");
-    return;
-  }
-  const result = Hotels.filter(function (Hotel) {
-    const hotelCity = Hotel.city.toLocaleLowerCase();
-    const searchCity = destinationValue.toLocaleLowerCase();
-    return hotelCity.includes(searchCity);
-  });
-  console.log("Destination:", destinationValue);
-  console.log(result);
+        // create hotel card
 
-  if (result.length === 0) {
-    console.log("hotel is not fount");
-    return;
-  }
+        Hotels.forEach((hotel) => {
+            const card = document.createElement("div");
+            card.className = "hotel-card";
 
-  localStorage.setItem("searchResults", JSON.stringify(result));
-  console.log("search");
-  localStorage.getItem("searchResults");
+            card.innerHTML = `
+          <div class = "hotel-image">
+<!-- Image -->
+          <img src="${hotel.image}" alt = "${hotel.name}">
+          ${hotel.discount
+                    ? `<span class = "discount">
+            ${hotel.discount}
+            </span>`
+                    : ""
+                }
 
-  window.location.href = "search-result.html";
+            <button class = "favorite-btn">
+            <i class = "bi bi-heart"></i>
+            </button>
+          </div>
+          
+<!-- Content -->
 
-});
+     <div class = "hotel-content">
+    <div> 
+       <h3>${hotel.name}</h3>
+    <div class = "location">
+       <i class = "bi bi-geo-alt"></i>
+       ${hotel.location}
+    </div>
+    <div class = "description">
+       ${hotel.description}
+    </div>
+    <div class = "hotel-rating">
+       <span>${"★".repeat(hotel.stars)}</span>
+       <strong>
+          ${hotel.rating}
+        </strong>
+        <small>
+           ${hotel.reviews} Reviews
+        </small>
+        <small>
+           Excellent
+        </small>
+         <small>
+           ${hotel.type}
+        </small>
+    </div>
+    <div class="amenities">
+      ${hotel.amenities ? hotel.amenities.map(item => `
+    <span>
+        <i class = "bi ${item.toLowerCase() === 'wi-fi' ? 'bi-wifi' :
+            item.toLowerCase() === 'breakfast' ? 'bi-cup-hot' :
+             item.toLowerCase() === 'parking' ? 'bi-p-square' :
+            item.toLowerCase() === 'pool' ? 'bi-water' : 'bi-check-circle'
+        }"></i>
+        ${item}
+    </span> `).join("") : ""}
 
-// offer book now
+ </div>
+ </div>
 
-const bookBtns = document.querySelectorAll("#bookBtn");
+<!-- Price -->
 
-bookBtns.forEach(button => {
-  button.addEventListener("click", () => {
-    localStorage.setItem("selectedHotel", "Kabul Serena Hotel");
-    window.location.href = "hotel-details.html";
-  });
-});
+ 
+   <div class="hotel-bottom">
+   <div class="price">
+     <strong>
+       $${hotel.price}
+    </strong>
+    <span>
+      / night
+    </span>
+    </div>
+    <a href="hotel-details.html?id=${hotel.id}" class="view-btn">
+       View Details
+    </a>
+  </div>
+  </div>
+        `;
+            hotelResults.appendChild(card);
 
+        });
+    }
+
+    displayHotels(Hotels);
+
+    sortHotels.addEventListener("change", function () {
+        let sortedHotels = [...Hotels];
+        if (this.value === "recommended") {
+            sortedHotels = [...Hotels];
+        }
+
+        if (this.value === "low") {
+            sortHotels.sort((a, b) => a.price - b.price);
+        }
+
+        if (this.value === "high") {
+            sortHotels.sort((a, b) => b.price - a.price);
+        }
+
+        if (this.value === "rating") {
+            sortHotels.sort((a, b) => b.rating - a.rating);
+        }
+
+        filteredDestinations = sortedHotels;
+        currentPage = 1;
+        getHotelsForPage();
+    });
+
+    applyFilters.addEventListener("click", function () {
+        let filterdeHotels = [...Hotels];
+
+        const maxPrice = Number(priceRange.value);
+        filterdeHotels = filterdeHotels.filter(hotel => hotel.price <= maxPrice);
+        const selectedStars = [...document.querySelectorAll('.filter-group input[type="checkbox"]'
+
+        )]
+            .filter(input => input.checked && ["3", "4", "5", "7", "8"].includes(input.value)).map(input => Number(input.value));
+
+        if (selectedStars.length > 0) {
+            filterdeHotels = filterdeHotels.filter(hotel => selectedStars.includes(Number(hotel.stars)));
+        }
+
+        const selectedAmenities = [
+            ...document.querySelectorAll(
+                '.filter-group input[type="checkbox"]'
+            )
+
+        ]
+            .filter(input =>
+                input.checked &&
+                !["3", "4", "5", "7", "8"].includes(input.value)
+            )
+            .map(input =>
+                input.value
+            );
+
+        if (selectedAmenities.length > 0) {
+            filterdeHotels = filterdeHotels.filter(
+                hotel => {
+
+                    if (!hotel.amenities) {
+                        return false;
+                    }
+                    return selectedAmenities.every(
+                        amenity =>
+                            hotel.amenities.includes(
+                                amenity
+                            )
+                    );
+                }
+            );
+        }
+        filteredDestinations = filterdeHotels;
+        currentPage = 1;
+        getHotelsForPage();
+
+    });
+    clearFilters.addEventListener("click", function () {
+        priceRange.value = 500;
+        document.querySelectorAll('.filter-group input[type="checkbox"]')
+            .forEach(input => {
+                input.checked = false;
+            });
+        sortHotels.value = "recommended";
+        currentPage = 1;
+        filteredDestinations = [...Hotels];
+        getHotelsForPage()
+    });
+
+    function getHotelsForPage() {
+        const grid = hotelResults;
+        const start = (currentPage - 1) * ITEMS_PER_PAGE;
+        const end = start + ITEMS_PER_PAGE;
+        const pageItems = filteredDestinations.slice(start, end);
+        displayHotels(pageItems);
+        renderPagination();
+    }
+    function renderPagination() {
+        const totalPages = Math.ceil(filteredDestinations.length / ITEMS_PER_PAGE);
+        pagination.innerHTML = "";
+        if (totalPages <= 1) {
+            return;
+        }
+        const previousButton = document.createElement("button");
+        previousButton.className = "pagination-btn";
+        previousButton.innerHTML = `
+            <i class="bi bi-chevron-left"></i>
+        `;
+        previousButton.disabled = currentPage === 1;
+        previousButton.addEventListener("click",
+            () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    getHotelsForPage(Hotels);
+                }
+            });
+        pagination.appendChild(previousButton);
+
+        for (let page = 1; page <= totalPages; page++) {
+            const button = document.createElement("button");
+            button.className = "pagination-btn";
+            button.textContent = page;
+            if (page === currentPage) {
+                button.classList.add("active");
+            }
+            button.addEventListener("click",
+                () => {
+                    currentPage = page;
+                    getHotelsForPage(Hotels);
+                }
+            );
+            pagination.appendChild(button);
+        }
+        const nextButton = document.createElement("button");
+
+        nextButton.className = "pagination-btn";
+        nextButton.innerHTML = `
+             <i class="bi bi-chevron-right"></i>
+        `;
+
+        nextButton.disabled = currentPage === totalPages;
+
+        nextButton.addEventListener("click", () => {
+            if (currentPage < totalPages) {
+                currentPage++;
+                getHotelsForPage(Hotels)
+                
+            }
+        });
+        pagination.appendChild(nextButton);
+
+    }
+   
+    const saveResults = JSON.parse(localStorage.getItem("searchResults"));
+    if(saveResults && saveResults.length >0){
+        filteredDestinations = saveResults;
+    }else{
+        filteredDestinations = [...Hotels];
+    }
+currentPage = 1;
+getHotelsForPage();
+
+})();

@@ -10,10 +10,6 @@ hoteLCards.forEach(function (card) {
         return hotelcity === cardcity;
     });
     console.log("Card:", cardcity, "Found:",found);
-
-        card.style.display = found ? "" : "none";
-    
-       
 });
 
 
