@@ -87,6 +87,40 @@ body {
     accent-color: #1769e0;
 }
 
+.filter-group {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.filter-group h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #000;
+}
+
+.filter-label span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #555 !important;
+    transition: color 0.2s ease;
+}
+
+.filter-label:hover {
+    color: #007bff;
+}
+
+.filter-label input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    accent-color: #007bff;
+}
 
 /* CHECKBOX */
 
@@ -174,6 +208,12 @@ body {
     outline: none;
 }
 
+.back-btn{
+    background-color: #fff;
+    border: none !important;
+    color: #1257bd;   
+    font-size: 12px;
+}
 
 
 /* ================= HOTEL RESULTS ================= */

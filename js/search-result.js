@@ -12,7 +12,7 @@
     const clearFilters = document.getElementById("clearFilters");
     const applyFilters = document.querySelector(".apply-filter");
 
-    const Hotels= [
+    const Hotels = [
         {
             id: 1,
             name: "Kabul Serena Hotel",
@@ -33,7 +33,7 @@
         {
             id: 2,
             name: "Intercontinental Kabul",
-           city: "Kabul ,Afghanistan",
+            city: "Kabul ,Afghanistan",
             location: "Wazir Akbar Khan Kabul",
             image: "images/Burj Al Arab.jpg",
             description:
@@ -116,7 +116,7 @@
         {
             id: 7,
             name: "New York USA",
-           city: "Plaza ,New York USA",
+            city: "Plaza ,New York USA",
             location: "Plaza Hotel",
             image: "images/plaza.jpg",
             description: "A historic luxury hotel right next to Central Park.",
@@ -132,7 +132,7 @@
         {
             id: 8,
             name: "Singapore",
-           city: "Marina , Singapor",
+            city: "Marina , Singapor",
             location: "Marina Bay Sands",
             image: "images/park hyatt tokyo.jpg",
             description: "Famous for its rooftop infinity pool and skyline views.",
@@ -273,13 +273,13 @@
             price: 300,
             discount: "20% OFF",
             type: "Hotel",
-            amenities: ["Wi-Fi", "Breakfast", "Parking", "Pool"],
+            amenities: ["Wi-Fi", "Parking", "Pool"],
         },
 
         {
             id: 17,
             name: "Tokyo Japan",
-           city: "Tokyo ,Japan",
+            city: "Tokyo ,Japan",
             location: "Aman Tokyo",
             image: "images/hassler roma.jpg",
             description:
@@ -322,7 +322,7 @@
             price: 330,
             discount: "20% OFF",
             type: "Resort",
-            amenities: ["Wi-Fi", "Breakfast", "Parking", "Pool"],
+            amenities: ["Wi-Fi", "Breakfast",  "Pool"],
         },
 
         {
@@ -410,10 +410,10 @@
       ${hotel.amenities ? hotel.amenities.map(item => `
     <span>
         <i class = "bi ${item.toLowerCase() === 'wi-fi' ? 'bi-wifi' :
-            item.toLowerCase() === 'breakfast' ? 'bi-cup-hot' :
-             item.toLowerCase() === 'parking' ? 'bi-p-square' :
-            item.toLowerCase() === 'pool' ? 'bi-water' : 'bi-check-circle'
-        }"></i>
+                        item.toLowerCase() === 'breakfast' ? 'bi-cup-hot' :
+                            item.toLowerCase() === 'parking' ? 'bi-p-square' :
+                                item.toLowerCase() === 'pool' ? 'bi-water' : 'bi-check-circle'
+                    }"></i>
         ${item}
     </span> `).join("") : ""}
 
@@ -482,35 +482,30 @@
             filterdeHotels = filterdeHotels.filter(hotel => selectedStars.includes(Number(hotel.stars)));
         }
 
-        const selectedAmenities = [
-            ...document.querySelectorAll(
-                '.filter-group input[type="checkbox"]'
-            )
+        //    type
+        const selectedTypes = [...document.querySelectorAll('.filter-group input[type="checkbox"]')]
+            .filter(input => input.checked && ["Hotel", "Resort", "Apartment"].includes(input.value))
+            .map(input => input.value);
 
-        ]
-            .filter(input =>
-                input.checked &&
-                !["3", "4", "5", "7", "8"].includes(input.value)
-            )
-            .map(input =>
-                input.value
-            );
+        if (selectedTypes.length > 0) {
+            filterdeHotels = filterdeHotels.filter(hotel => selectedTypes.includes(hotel.type));
+        }
+
+        //  amenities
+        const selectedAmenities = [...document.querySelectorAll('.filter-group input[type="checkbox"]')]
+            .filter(input => input.checked && !["3", "4", "5", "7", "8", "Hotel", "Resort", "Apartment"].includes(input.value))
+            .map(input => input.value);
 
         if (selectedAmenities.length > 0) {
-            filterdeHotels = filterdeHotels.filter(
-                hotel => {
+            filterdeHotels = filterdeHotels.filter(hotel => {
 
-                    if (!hotel.amenities) {
-                        return false;
-                    }
-                    return selectedAmenities.every(
-                        amenity =>
-                            hotel.amenities.includes(
-                                amenity
-                            )
-                    );
+                if (!hotel.amenities) {
+                    return false;
                 }
-            );
+                return selectedAmenities.every(
+                    amenity =>
+                        hotel.amenities.includes(amenity));
+            });
         }
         filteredDestinations = filterdeHotels;
         currentPage = 1;
@@ -586,20 +581,20 @@
             if (currentPage < totalPages) {
                 currentPage++;
                 getHotelsForPage(Hotels)
-                
+
             }
         });
         pagination.appendChild(nextButton);
 
     }
-   
+
     const saveResults = JSON.parse(localStorage.getItem("searchResults"));
-    if(saveResults && saveResults.length >0){
+    if (saveResults && saveResults.length > 0) {
         filteredDestinations = saveResults;
-    }else{
+    } else {
         filteredDestinations = [...Hotels];
     }
-currentPage = 1;
-getHotelsForPage();
+    currentPage = 1;
+    getHotelsForPage();
 
 })();
