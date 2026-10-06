@@ -273,46 +273,29 @@ img {
     margin-bottom: 10px;
 }
 
-.cart-review {
-    position: relative;
-    background: var(--bg-card);
-    max-width: 80%;
-    margin-top: 20px;
-    margin-left: 10%;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    border-radius: 10px;
+#reviewsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    width: 100%;
+    align-items: stretch;
+}
+
+.reviews-info{
+    background-color: #fff;
+    border-radius: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
+    height: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     transition: 0.3s;
-    overflow: hidden;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
-
-.cart-review:hover {
-    background-color: var(--bg-main);
+.reviews-info:hover{
+transform: translateY(-3px);
     cursor: pointer;
 }
-
-.left-arrow  {
-    position: absolute !important;
-    top: 50% !important;
-    transform: translateY(-50%) !important;
-    background-color: #fff !important;
-    border: none !important;
-    left: 10px !important;
-}
-
-.right-arrow {
-    position: absolute !important;
-    top: 50% !important;
-    transform: translateY(-50%) !important;
-    background-color: #fff !important;
-    border: none !important;
-    right: 10px !important;
-}
-
 .t-avatar {
     width: 52px;
     height: 52px;
@@ -332,7 +315,11 @@ img {
     font-size: 1.1rem;
     margin-left: 55px;
 }
-
+.reviews-info small{
+    font-size: 0.85rem;
+    margin-bottom: 2px;
+    color: #333;
+}
 .reviews-info p {
     font-family: "Sora", sans-serif;
     font-weight: 500;
@@ -341,11 +328,16 @@ img {
     color: #999;
 }
 
-.reviews-info span {
-    font-family: "Sora", sans-serif;
-    font-weight: 500;
-    font-size: 0.95rem;
-    margin-left: 55px;
+.reviews-info .stars {
+    display: flex;
+    gap: 3px;
+    margin-bottom: 8px;
+}
+.reviews-info .stars span{
+    color: #f59e0b;
+}
+.reviews-info .stars span.empty{
+    color: #d1d5db;
 }
 
 /* <!--==========hotel policies=========-->*/
@@ -379,4 +371,8 @@ img {
     border-radius: 8px;
     padding: 10px;
     margin-left: 50%;
+}
+.contactBtn a{
+    color: #8b5a04 !important;
+    text-decoration: none;
 }
