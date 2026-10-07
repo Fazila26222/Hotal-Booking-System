@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotal Booking System</title>
+    <title>Hotal Booking System - Login</title>
     <!--css and bootstrap file-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/variables.css">
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="icons/fonts/bootstrap-icons.woff">
     <link rel="stylesheet" href="fonts/Vazirmatn-Regular.ttf">
 </head>
-
+ 
 <body>
     <div class="form-container">
         <h1>Stayora</h1>
@@ -25,12 +25,12 @@
         </div>
         <H3>Welcome Back</H3>
         <p class="subtitle">Login to your account to continue</p>
-        <form id="loginForm">
+        <form id="loginForm" class="auth-box">
             <div class="field">
-                <input type="email" id="email" placeholder="Enter your email">
+                <input type="email" id="loginEmail" placeholder="Enter your email">
             </div>
             <div class="field">
-                <input type="password" id="password" placeholder="Create your password">
+                <input type="password" id="loginPassword" placeholder="Create your password">
             </div>
             <div class="terms">
                 <input type="checkbox" id="terms">
@@ -39,7 +39,7 @@
                 </label>
                 <a href="">Forgot password?</a>
             </div>
-            <button type="submit">Login <i class="bi bi-arrow-right"></i></button>
+            <button type="submit" id="loginBtn">Login <i class="bi bi-arrow-right"></i></button>
             <div id="successMessage"></div>
             <div class="register-line">
                 <span></span>
@@ -48,12 +48,12 @@
                 </p>
                 <span></span>
             </div>
-            <a href="register.html">Register here</a>
+            <a id="showRegisterForm" href="register.html">Register here</a>
         </form>
     </div>
+    <script src="js/login.js"></script>
 </body>
 <script src="js/bootstrap.bundle.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/login.js"></script>
 
 </html>

@@ -18,11 +18,8 @@ if (!selectedHotel) {
     // =========================
 
     document.getElementById("mainHotelImage").src = selectedHotel.image;
-
     document.getElementById("galleryImage1").src = selectedHotel.image;
-
     document.getElementById("galleryImage2").src =selectedHotel.image;
-
     document.getElementById("galleryImage3").src =selectedHotel.image;
 
 
@@ -30,20 +27,11 @@ if (!selectedHotel) {
     // Hotel Information
     // =========================
 
-    document.getElementById("hotelName").textContent =
-        selectedHotel.name;
-
-    document.getElementById("hotelLocation").textContent =
-        selectedHotel.city;
-
-    document.getElementById("hotelDistance").textContent =
-        selectedHotel.location;
-
-    document.getElementById("hotelDescription").textContent =
-        selectedHotel.description;
-
-    document.getElementById("hotelPrice").textContent =
-        selectedHotel.price;
+    document.getElementById("hotelName").textContent = selectedHotel.name;
+    document.getElementById("hotelLocation").textContent =selectedHotel.city;
+    document.getElementById("hotelDistance").textContent =selectedHotel.location;
+    document.getElementById("hotelDescription").textContent =selectedHotel.description;
+    document.getElementById("hotelPrice").textContent =selectedHotel.price;
 
 
     // =========================
@@ -59,7 +47,7 @@ if (!selectedHotel) {
         ratingContainer.innerHTML += 
           `  <i class="bi bi-star-fill"
                style="color: var(--warning);"></i>
-               `
+               `;
         ;
     }
 

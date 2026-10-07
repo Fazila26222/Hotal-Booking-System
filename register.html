@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotal Booking System</title>
+    <title>Hotal Booking System -Register</title>
     <!--css and bootstrap file-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/register.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!--icons and fonts file-->
     <link rel="stylesheet" href="icons/bootstrap-icons.min.css">
@@ -54,7 +55,7 @@
                                     <div class="input-box position-relative">
                                         <i class="bi bi-person position-absolute top-50 start-3 translate-middle-y ms-3
                                             "></i>
-                                        <input type="phone" class="form-control ps-5 text-start"
+                                        <input type="text" id="registerName" class="form-control ps-5 text-start"
                                             placeholder="Full Name *" required>
                                     </div>
                                 </div>
@@ -62,7 +63,7 @@
                                     <div class="input-box position-relative">
                                         <i class="bi bi-envelope position-absolute top-50 start-3 translate-middle-y ms-3
                                             "></i>
-                                        <input type="phone" class="form-control ps-5 text-start"
+                                        <input type="email" id="registerEmail" class="form-control ps-5 text-start"
                                             placeholder="Email Address *" required>
                                     </div>
                                 </div>
@@ -72,7 +73,7 @@
                                     <div class=" input-box position-relative">
                                         <i class="bi bi-telephone position-absolute top-50 start-3 translate-middle-y ms-3
                                             "></i>
-                                        <input type="phone" class="form-control ps-5 text-start"
+                                        <input type="tel" id="registerPhone" class="form-control ps-5 text-start"
                                             placeholder="Phone Number *" required>
                                     </div>
                                 </div>
@@ -80,22 +81,24 @@
                                     <div class="input-box position-relative">
                                         <i class="bi bi-lock-fill position-absolute top-50 start-3 translate-middle-y ms-3
                                             "></i>
-                                        <input type="phone" class="form-control ps-5 text-start" placeholder="Pasword *"
-                                            required>
+                                        <input type="password" id="registerPassword"
+                                            class="form-control ps-5 text-start" placeholder="Pasword *" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="input-box position-relative">
                                 <i class="bi bi-lock-fill position-absolute top-50 start-3 translate-middle-y ms-3
                                             "></i>
-                                <input type="phone" class="form-control ps-5 text-start" placeholder="Confirm Pasword *"
-                                    required>
+                                <input type="password" id="conformPassword" class="form-control ps-5 text-start"
+                                    placeholder="Confirm Pasword *" required>
                             </div>
+
                             <div class="input-box position-relative">
                                 <i class="bi bi-person-badge position-absolute top-50 start-3 translate-middle-y ms-3
                                             "></i>
-                                <select class="form-select form-select-lg form-control ps-5 text-start">
-                                    <option value="role" selected disabled>Select Role*</option>
+                                <select id="registerRole"
+                                    class="form-select form-select-lg form-control ps-5 text-start">
+                                    <option value="" selected disabled>Select Role*</option>
                                     <option value="guest">Guest</option>
                                     <option value="receptionist">Receptionist</option>
                                     <option value="manager">Manager</option>
@@ -105,7 +108,8 @@
                             <div class="input-box position-relative">
                                 <i class="bi bi-geo-alt-fill position-absolute top-50 start-3 translate-middle-y ms-3
                                             "></i>
-                                <input type="phone" class="form-control ps-5 text-start" placeholder="Address" required>
+                                <input type="text" id="registerAddress" class="form-control ps-5 text-start"
+                                    placeholder="Address" required>
                             </div>
                             <div class="terms">
                                 <input type="checkbox" id="terms">
@@ -113,23 +117,27 @@
                                     I agree to the Terms & Conditions
                                 </label>
                             </div>
-                            <button type="submit">
+                            <button type="submit" id="registerBtn">
                                 Register
                             </button>
+                            
                             <div class="login-line">
                                 <span></span>
-                                <p>Already have an account?
+                                <p>
+                                    Already have an account?
                                 </p>
                                 <span></span>
                             </div>
-                           <a href="login.html">Login here</a>
+                            <a id="showLoginForm" href="login.html">Login here</a>
                         </div>
                 </div>
                 </form>
             </div>
         </div>
     </section>
+    <script src="js/login.js"></script>
 </body>
 <script src="js/bootstrap.bundle.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+
 </html>
