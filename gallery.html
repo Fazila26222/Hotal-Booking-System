@@ -65,8 +65,35 @@
                         <i class="bi bi-moon-fill"></i>
                     </button>
                     <button class="btn btn-primary btn-sm login-btn" data-open-modal="login-modal">
-                        <span data-i18n="login_btn">Login</span>
+                        <span data-i18n="login_btn" id="loginLink" onclick="window.location.href = 'login.html'">
+                            Login
+                        </span>
                     </button>
+                    <div id="profileBox" class="d-none position-relative">
+                        <button id="profileToggle" class="profile-icon">
+                            <span id="profileAvatar" data-i18n="F">F</span>
+                        </button>
+                        <div id="profileMenu" class="profile-menu d-none">
+                            <div class="profile-header">
+                                <div class="profile-avatar-lg" id="menuAvatar" data-i18n="F">F</div>
+                                <div>
+                                    <strong id="menuUserName" data-i18n="Hello">Hello, Guest</strong>
+                                    <small><a href="dashboard.html" data-i18n="view">View your account</a></small>
+                                </div>
+                            </div>
+
+                            <a href="dashboard.html" data-i18n="dash" ><i class="bi bi-grid"></i> Dashboard</a>
+                            <a href="my-booking.html" data-i18n="dash"><i class="bi bi-calendar-check"></i> My Bookings</a>
+                            <a href="wishlist.html" data-i18n="dash"><i class="bi bi-heart"></i> Wishlist</a>
+                            <a href="profile.html" data-i18n="dash"><i class="bi bi-person-gear"></i> Account Settings</a>
+
+                            <button id="logoutBtn" class="logout-btn" data-i18n="log">
+                                <i class="bi bi-box-arrow-right"></i> Log Out
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
                     <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
                         دری
                     </button>
@@ -107,9 +134,36 @@
                 <button class="darkBtn" id="darkBtn">
                     <i class="bi bi-moon-fill"></i>
                 </button>
-                <button class="btn btn-primary btn-sm login-btn" data-open-modal="login-modal">
-                    <span data-i18n="login_btn">Login</span>
-                </button>
+              <button class="btn btn-primary btn-sm login-btn" data-open-modal="login-modal">
+                        <span data-i18n="login_btn" id="loginLink" onclick="window.location.href = 'login.html'">
+                            Login
+                        </span>
+                    </button>
+                    <div id="profileBox" class="d-none position-relative">
+                        <button id="profileToggle" class="profile-icon">
+                            <span id="profileAvatar" data-i18n="F">F</span>
+                        </button>
+                        <div id="profileMenu" class="profile-menu d-none">
+                            <div class="profile-header">
+                                <div class="profile-avatar-lg" id="menuAvatar" data-i18n="F">F</div>
+                                <div>
+                                    <strong id="menuUserName" data-i18n="Hello">Hello, Guest</strong>
+                                    <small><a href="dashboard.html" data-i18n="view">View your account</a></small>
+                                </div>
+                            </div>
+
+                            <a href="dashboard.html" data-i18n="dash" ><i class="bi bi-grid"></i> Dashboard</a>
+                            <a href="my-booking.html" data-i18n="dash"><i class="bi bi-calendar-check"></i> My Bookings</a>
+                            <a href="wishlist.html" data-i18n="dash"><i class="bi bi-heart"></i> Wishlist</a>
+                            <a href="profile.html" data-i18n="dash"><i class="bi bi-person-gear"></i> Account Settings</a>
+
+                            <button id="logoutBtn" class="logout-btn" data-i18n="log">
+                                <i class="bi bi-box-arrow-right"></i> Log Out
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
                 <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
                     دری
                 </button>
@@ -430,5 +484,5 @@
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/index.js"></script>
 <script src="js/darkmode.js"></script>
-
+<script src="js/login.js"></script>
 </html>

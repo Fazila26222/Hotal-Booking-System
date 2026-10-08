@@ -5,6 +5,12 @@ const Hotels = [
     city: "Kabul ,Afghanistan",
     location: "Shahr-Now Kabul",
     image: "images/kaubl-hotel.jpg",
+    images: [
+      "images/Kaubl-hotel.jpg",
+      "images/room.jpg",
+      "images/living1.jpg",
+      "images/bathroom4.jpg",
+    ],
     description:
       "Experience a comfortable and relaxing stay at Kabul Serena Hotel, offering modern rooms, excellent service, and convenient access to the city's popular attractions.",
     stars: 5,
@@ -22,6 +28,12 @@ const Hotels = [
     city: "Kabul ,Afghanistan",
     location: "Wazir Akbar Khan Kabul",
     image: "images/Burj Al Arab.jpg",
+    images: [
+      "images/Burj Al Arab.jpg",
+      "images/room5.jpg",
+      "images/rooms.jpg",
+      "images/bathroom3.jpg",
+    ],
     description:
       "A world-class hotel with elegant rooms, fine dining and beautiful views of the city and mountains.",
     stars: 5,
@@ -39,6 +51,12 @@ const Hotels = [
     city: "Kabul ,Afghanistan",
     location: "Dehmazand Kabul",
     image: "images/ciragan palace .jpg",
+    images: [
+      "images/ciragan palace .jpg",
+      "images/room8.jpg",
+      "images/San.jpg",
+      "images/restaurant.jpg",
+    ],
     description:
       "A comfortable stay with modern facilities, great service and a peaceful atmosphere.",
     stars: 4,
@@ -56,6 +74,12 @@ const Hotels = [
     city: "Kabul ,Afghanistan",
     location: "Taimani Kabul",
     image: "images/le meurice.jpg",
+    images: [
+      "images/le meurice.jpg",
+      "images/room6.jpg",
+      "images/room.jpg",
+      "images/room10.jpg",
+    ],
     description:
       "Modern rooms, friendly staff and a convenient location make Park Hotel a great choice for your stay.",
     stars: 4,
@@ -73,6 +97,12 @@ const Hotels = [
     city: "Dubai ,UAE",
     location: "Burj Al Arab",
     image: "images/hassler roma.jpg",
+    images: [
+      "images/hassler roma.jpg",
+      "images/room9.jpg",
+      "images/room12.jpg",
+      "images/Yala.jpg",
+    ],
     description: "The iconic 7-star sail-shaped hotel.",
     stars: 4,
     rating: 8.9,
@@ -89,6 +119,12 @@ const Hotels = [
     city: "Dubai ,UAE",
     location: "Atlantis The Palm",
     image: "images/savoy.jpg",
+    images: [
+      "images/savoy.jpg",
+      "images/wive.jpg",
+      "images/room4.jpg",
+      "images/room6.jpg",
+    ],
     description: "A massive luxury resort on the Palm Jumeirah.",
     stars: 4,
     rating: 8.3,
@@ -105,6 +141,12 @@ const Hotels = [
     city: "Plaza ,New York USA",
     location: "Plaza Hotel",
     image: "images/plaza.jpg",
+    images: [
+      "images/plaza.jpg",
+      "images/room13.jpg",
+      "images/rooms.jpg",
+      "images/savoy.jpg",
+    ],
     description: "A historic luxury hotel right next to Central Park.",
     stars: 4,
     rating: 8.8,
@@ -121,6 +163,12 @@ const Hotels = [
     city: "Marina , Singapor",
     location: "Marina Bay Sands",
     image: "images/park hyatt tokyo.jpg",
+    images: [
+      "images/park hyatt tokyo.jpg",
+      "images/room11.jpg",
+      "images/Riyadh.jpg",
+      "images/room9.jpg",
+    ],
     description: "Famous for its rooftop infinity pool and skyline views.",
     stars: 4,
     rating: 8.9,
@@ -132,10 +180,16 @@ const Hotels = [
   },
   {
     id: 9,
-    name: "London UK",
-    city: "London , UK",
-    location: "Ritz London",
+    name: "The Savoy",
+      city: "London , UK",
+      location: "Strand London",
     image: "images/mandarin.jpg",
+    images: [
+      "images/mandarin.jpg",
+      "images/Hotel4.jpg",
+      "images/Hotel5.jpg",
+      "images/Hotel6.jpg",
+    ],
     description: "One of the world's most famous and luxurious hotels.",
     stars: 4,
     rating: 8.9,
@@ -152,6 +206,12 @@ const Hotels = [
     city: "London , UK",
     location: "Brown's Hotel",
     image: "images/majestic.jpg",
+    images: [
+      "images/majestic.jpg",
+      "images/room3.jpg",
+      "images/room4.jpg",
+      "images/bathroaom1.jpg",
+    ],
     description: "A classic historic luxury hotel in Mayfair.",
     stars: 5,
     rating: 8.9,
@@ -168,6 +228,12 @@ const Hotels = [
     city: "Paris ,France",
     location: "Four Seasons Hotel George V",
     image: "images/park hyatt sydney.jpg",
+    images: [
+      "images/park hyatt sydney.jpg",
+      "images/room5.jpg",
+      "images/room6.jpg",
+      "images/bathroom3.jpg",
+    ],
     description:
       "A palace-level hotel known for its Michelin-starred dining.",
     stars: 4,
@@ -185,6 +251,12 @@ const Hotels = [
     city: "Paris ,France",
     location: "Ritz Paris",
     image: "images/baur au lac.jpg",
+    images: [
+      "images/baur au lac.jpg",
+      "images/room7.jpg",
+      "images/room8.jpg",
+      "images/bathroom4.jpg",
+    ],
     description: "Legendary luxury on Place Vendome.",
     stars: 8,
     rating: 8.9,
@@ -201,6 +273,12 @@ const Hotels = [
     city: "Us ,America",
     location: "La Mamounia",
     image: "images/majestic.jpg",
+    images: [
+      "images/majestic.jpg",
+      "images/room9.jpg",
+      "images/room10.jpg",
+      "images/bedroom.jpg",
+    ],
     description:
       "A legendary hotel blending Moorish architecture with modern luxury.",
     stars: 8,
@@ -218,6 +296,12 @@ const Hotels = [
     city: "Toronto , Canada",
     location: "Peninsula Hong Kong",
     image: "images/hall.jpg",
+    images: [
+      "images/hall.jpg",
+      "images/room12.jpg",
+      "images/room13.jpg",
+      "images/lobby.jpg",
+    ],
     description: "The Grande Dame of Hong Kong hotels with harbour views.",
     stars: 7,
     rating: 8.5,
@@ -234,6 +318,12 @@ const Hotels = [
     city: "Toronto , Canada",
     location: "Mandarin Oriental",
     image: "images/hamburg1.jpg",
+    images: [
+      "images/hamburg1.jpg",
+      "images/room14.jpg",
+      "images/Swimming pool.jpg",
+      "images/spa.jpg",
+    ],
     description:
       "A luxurious hotel famous for its exceptional service and views.",
     stars: 4,
@@ -251,6 +341,12 @@ const Hotels = [
     city: "Tokyo ,Japan",
     location: "The Ritz-Carlton Tokyo",
     image: "images/tukya.jpg",
+    images: [
+      "images/tukya.jpg",
+      "images/room15.jpg",
+      "images/reception.jpg",
+      "images/parking.jpg",
+    ],
     description:
       "Located in the tallest building in Tokyo with stunning city views.",
     stars: 7,
@@ -268,6 +364,12 @@ const Hotels = [
     city: "Tokyo ,Japan",
     location: "Aman Tokyo",
     image: "images/hassler roma.jpg",
+    images: [
+      "images/hassler roma.jpg",
+      "images/Punta.jpg",
+      "images/receptions.jpg",
+      "images/Park palace .jpg",
+    ],
     description:
       "A minimalist, serene luxury hotel in the heart of the city.",
     stars: 3,
@@ -285,6 +387,12 @@ const Hotels = [
     city: "Sydeny , Australia",
     location: "Hotel Danieli",
     image: "images/stayora-hotel.png",
+    images: [
+      "images/Park palace .jpg",
+      "images/Luxury room.jpeg",
+      "images/Lima.png",
+      "images/rooms.jpg",
+    ],
     description: "A historic, palatial hotel overlooking the Grand Canal.",
     stars: 4,
     rating: 8.3,
@@ -301,6 +409,12 @@ const Hotels = [
     city: "Sydeny , Australia",
     location: "Belmond Hotel Cipriani",
     image: "images/Serena.jpg",
+    images: [
+      "images/plaza.jpg",
+      "images/Riyadh.jpg",
+      "images/pool1.jpg",
+      "images/room4.jpg",
+    ],
     description: "A luxurious resort on Giudecca Island with a famous pool.",
     stars: 4,
     rating: 8.5,
@@ -317,6 +431,12 @@ const Hotels = [
     city: "Us ,America",
     location: "Peninsula Bangkok",
     image: "images/dining area.jpg",
+    images: [
+      "images/US.jpg",
+      "images/iving room.jpg",
+      "images/gym.jpg",
+      "images/guestroom.jpg",
+    ],
     description: "A riverside luxury hotel with incredible service.",
     stars: 3,
     rating: 8.8,
@@ -530,13 +650,13 @@ bookBtns.forEach(button => {
   button.addEventListener("click", (e) => {
 
     const hotelCard = button.closest(".hotel-card");
-    if(hotelCard){
+    if (hotelCard) {
       const hotelId = hotelCard.getAttribute("data-id");
-      if(hotelId){
+      if (hotelId) {
         window.location.href = `hotel-details.html?id=${hotelId}`;
       }
     }
-    
+
     window.location.href = "hotel-details.html?id=1";
   });
 });

@@ -65,13 +65,42 @@
                         <i class="bi bi-moon-fill"></i>
                     </button>
                     <button class="btn btn-primary btn-sm login-btn" data-open-modal="login-modal">
-                        <span data-i18n="login_btn">Login</span>
+                        <span data-i18n="login_btn" id="loginLink" onclick="window.location.href = 'login.html'">
+                            Login
+                        </span>
                     </button>
-                    <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
-                        دری
-                    </button>
+                    <div id="profileBox" class="d-none position-relative">
+                        <button id="profileToggle" class="profile-icon">
+                            <span id="profileAvatar" data-i18n="F">F</span>
+                        </button>
+                        <div id="profileMenu" class="profile-menu d-none">
+                            <div class="profile-header">
+                                <div class="profile-avatar-lg" id="menuAvatar" data-i18n="F">F</div>
+                                <div>
+                                    <strong id="menuUserName" data-i18n="Hello">Hello, Guest</strong>
+                                    <small><a href="dashboard.html" data-i18n="view">View your account</a></small>
+                                </div>
+                            </div>
+
+                            <a href="dashboard.html" data-i18n="dash"><i class="bi bi-grid"></i> Dashboard</a>
+                            <a href="my-booking.html" data-i18n="dash"><i class="bi bi-calendar-check"></i> My
+                                Bookings</a>
+                            <a href="wishlist.html" data-i18n="dash"><i class="bi bi-heart"></i> Wishlist</a>
+                            <a href="profile.html" data-i18n="dash"><i class="bi bi-person-gear"></i> Account
+                                Settings</a>
+
+                            <button id="logoutBtn" class="logout-btn" data-i18n="log">
+                                <i class="bi bi-box-arrow-right"></i> Log Out
+                            </button>
+                        </div>
+                    </div>
                 </div>
+
+                <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
+                    دری
+                </button>
             </div>
+        </div>
         </div>
     </nav>
     <!--===========
@@ -108,13 +137,40 @@
                     <i class="bi bi-moon-fill"></i>
                 </button>
                 <button class="btn btn-primary btn-sm login-btn" data-open-modal="login-modal">
-                    <span data-i18n="login_btn">Login</span>
+                    <span data-i18n="login_btn" id="loginLink" onclick="window.location.href = 'login.html'">
+                        Login
+                    </span>
                 </button>
-                <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
-                    دری
-                </button>
+                <div id="profileBox" class="d-none position-relative">
+                    <button id="profileToggle" class="profile-icon">
+                        <span id="profileAvatar" data-i18n="F">F</span>
+                    </button>
+                    <div id="profileMenu" class="profile-menu d-none">
+                        <div class="profile-header">
+                            <div class="profile-avatar-lg" id="menuAvatar" data-i18n="F">F</div>
+                            <div>
+                                <strong id="menuUserName" data-i18n="Hello">Hello, Guest</strong>
+                                <small><a href="dashboard.html" data-i18n="view">View your account</a></small>
+                            </div>
+                        </div>
+
+                        <a href="dashboard.html" data-i18n="dash"><i class="bi bi-grid"></i> Dashboard</a>
+                        <a href="my-booking.html" data-i18n="dash"><i class="bi bi-calendar-check"></i> My Bookings</a>
+                        <a href="wishlist.html" data-i18n="dash"><i class="bi bi-heart"></i> Wishlist</a>
+                        <a href="profile.html" data-i18n="dash"><i class="bi bi-person-gear"></i> Account Settings</a>
+
+                        <button id="logoutBtn" class="logout-btn" data-i18n="log">
+                            <i class="bi bi-box-arrow-right"></i> Log Out
+                        </button>
+                    </div>
+                </div>
             </div>
+
+            <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
+                دری
+            </button>
         </div>
+    </div>
     </div>
 
     <!--=============
@@ -130,30 +186,30 @@
                     <i class="bi bi-chevron-left"></i></span>
                 <span class="link-hero"><a href="hotel-details.html"> Hotel Details </a></span>
             </nav>
-            <div class="row g-0">
+            <div class="row g-3 my-4">
                 <!--=========Main Image=========-->
-                <div class="col-lg-6">
-                    <div class="img-left">
+                <div class="col-lg-8 col-md-12">
+                    <div class="main-image ">
                         <img id="mainHotelImage" src="" class="img-fluid" alt="Hotel">
                     </div>
                 </div>
 
                 <!--==========Gallery======-->
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="img-right">
-                                <img id="galleryImage1" src="" class="img-fluid" alt="Hotel">
-                            </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="side-images">
+                        <div class="small-image">
+                            <img id="galleryImage1" src="" class="img-fluid" alt="Hotel">
                         </div>
 
-                        <div class="col-6">
-                            <img id="galleryImage2" src="" class="img-fluid" alt="Hotel">
+
+                        <div class="small-image ">
+                            <img id="galleryImage2" src="" class="img-fluid " alt="Hotel">
                         </div>
 
-                        <div class="col-6">
+                        <div class="small-image ">
                             <img id="galleryImage3" src="" class="img-fluid" alt="Hotel">
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -219,12 +275,8 @@
                 <div class="col-lg-8">
                     <div class="cart-amenities flex-grow-1">
                         <div class="location h-100 d-flex flex-column">
-                            <iframe src="https://www.google.com/maps/embed?"
-                            width="100%"
-                            style="border: 0; flex-grow: 1; min-height: 200px;"
-                            allowfullscreen=""
-                            loading = "lazy"
-                            >
+                            <iframe src="https://www.google.com/maps/embed?" width="100%"
+                                style="border: 0; flex-grow: 1; min-height: 200px;" allowfullscreen="" loading="lazy">
                             </iframe>
                             <div class="locations">
                                 <a href=""> View on Map <i class="bi bi-arrow-right"></i></a>
@@ -268,7 +320,7 @@
                         </h4>
                         <p>Our support team ishere to help you 24/7.
                             <button class="contactBtn">
-                              <a href="contact.html">Contact Us</a>  
+                                <a href="contact.html">Contact Us</a>
                             </button>
                         </p>
                     </div>
@@ -366,5 +418,6 @@
 <script src="js/darkmode.js"></script>
 <script src="js/emailInput.js"></script>
 <script src="js/hotel-details.js"></script>
+<script src="js/login.js"></script>
 
 </html>

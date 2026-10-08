@@ -16,11 +16,15 @@ if (!selectedHotel) {
     // =========================
     // Hotel Images
     // =========================
-
-    document.getElementById("mainHotelImage").src = selectedHotel.image;
-    document.getElementById("galleryImage1").src = selectedHotel.image;
-    document.getElementById("galleryImage2").src =selectedHotel.image;
-    document.getElementById("galleryImage3").src =selectedHotel.image;
+if(selectedHotel.images && selectedHotel.images.length >= 4){
+    document.getElementById("mainHotelImage").src = selectedHotel.images[0];
+    document.getElementById("galleryImage1").src = selectedHotel.images[1];
+    document.getElementById("galleryImage2").src =selectedHotel.images[2];
+    document.getElementById("galleryImage3").src =selectedHotel.images[3];
+}else{
+    console.log("there not enough picture these hotel.")
+}
+    
 
 
     // =========================

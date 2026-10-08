@@ -64,14 +64,42 @@
                     <button class="darkBtn" id="darkBtn">
                         <i class="bi bi-moon-fill"></i>
                     </button>
+
                     <button class="btn btn-primary btn-sm login-btn" data-open-modal="login-modal">
-                        <span data-i18n="login_btn">Login</span>
+                        <span data-i18n="login_btn" id="loginLink" onclick="window.location.href = 'login.html'">
+                            Login
+                        </span>
                     </button>
-                    <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
-                        دری
-                    </button>
+                    <div id="profileBox" class="d-none position-relative">
+                        <button id="profileToggle" class="profile-icon">
+                            <span id="profileAvatar" data-i18n="F">F</span>
+                        </button>
+                        <div id="profileMenu" class="profile-menu d-none">
+                            <div class="profile-header">
+                                <div class="profile-avatar-lg" id="menuAvatar" data-i18n="F">F</div>
+                                <div>
+                                    <strong id="menuUserName" data-i18n="Hello">Hello, Guest</strong>
+                                    <small><a href="dashboard.html" data-i18n="view">View your account</a></small>
+                                </div>
+                            </div>
+
+                            <a href="dashboard.html" data-i18n="dash" ><i class="bi bi-grid"></i> Dashboard</a>
+                            <a href="my-booking.html" data-i18n="dash"><i class="bi bi-calendar-check"></i> My Bookings</a>
+                            <a href="wishlist.html" data-i18n="dash"><i class="bi bi-heart"></i> Wishlist</a>
+                            <a href="profile.html" data-i18n="dash"><i class="bi bi-person-gear"></i> Account Settings</a>
+
+                            <button id="logoutBtn" class="logout-btn" data-i18n="log">
+                                <i class="bi bi-box-arrow-right"></i> Log Out
+                            </button>
+                        </div>
+                    </div>
                 </div>
+
+                <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
+                    دری
+                </button>
             </div>
+        </div>
         </div>
     </nav>
     <!--===========
@@ -108,8 +136,35 @@
                     <i class="bi bi-moon-fill"></i>
                 </button>
                 <button class="btn btn-primary btn-sm login-btn" data-open-modal="login-modal">
-                    <span data-i18n="login_btn">Login</span>
-                </button>
+                        <span data-i18n="login_btn" id="loginLink" onclick="window.location.href = 'login.html'">
+                            Login
+                        </span>
+                    </button>
+                    <div id="profileBox" class="d-none position-relative">
+                        <button id="profileToggle" class="profile-icon">
+                            <span id="profileAvatar" data-i18n="F">F</span>
+                        </button>
+                        <div id="profileMenu" class="profile-menu d-none">
+                            <div class="profile-header">
+                                <div class="profile-avatar-lg" id="menuAvatar" data-i18n="F">F</div>
+                                <div>
+                                    <strong id="menuUserName" data-i18n="Hello">Hello, Guest</strong>
+                                    <small><a href="dashboard.html" data-i18n="view">View your account</a></small>
+                                </div>
+                            </div>
+
+                            <a href="dashboard.html" data-i18n="dash" ><i class="bi bi-grid"></i> Dashboard</a>
+                            <a href="my-booking.html" data-i18n="dash"><i class="bi bi-calendar-check"></i> My Bookings</a>
+                            <a href="wishlist.html" data-i18n="dash"><i class="bi bi-heart"></i> Wishlist</a>
+                            <a href="profile.html" data-i18n="dash"><i class="bi bi-person-gear"></i> Account Settings</a>
+
+                            <button id="logoutBtn" class="logout-btn" data-i18n="log">
+                                <i class="bi bi-box-arrow-right"></i> Log Out
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
                 <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
                     دری
                 </button>
@@ -280,7 +335,7 @@
             </div>
             <div class="card-offer" data-id="1">
                 <div class="row g-0">
-                    <div class="col-12 col-md-5" >
+                    <div class="col-12 col-md-5">
                         <div class="hotel-image">
                             <img src="images/Kabul_Grand.jpg" class="img-fluid" alt="">
                             <button id="offerBtn">20% OFF</button>
@@ -316,7 +371,8 @@
                                     night</span>
                             </div>
                             <p style="color: #1c9503; font-weight: bold;" data-i18n="price-info">you save $30(20%)
-                                <button class="btn bookBtn" id="bookBtn"data-hotel="kabul Serena Hotel" data-i18n="book-but">Book Now</button>
+                                <button class="btn bookBtn" id="bookBtn" data-hotel="kabul Serena Hotel"
+                                    data-i18n="book-but">Book Now</button>
                             </p>
 
                         </div>
@@ -335,7 +391,7 @@
                         <div class="hotel-info">
                             <h3 data-i18n="hotel-kabul">Burj Al Arab Hotel</h3>
                             <p data-i18n="hotel-city"><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i>
-                            Dubai UAE
+                                Dubai UAE
                             </p>
                             <p data-i18n="Reviews"><i class="bi bi-star-fill" style="color: #F59E0B;"></i>
                                 <i class="bi bi-star-fill" style="color: #F59E0B;"></i>
@@ -360,7 +416,8 @@
                                     night</span>
                             </div>
                             <p style="color: #1c9503; font-weight: bold;" data-i18n="price-info">you save $20(15%)
-                                <button class="btn bookBtn" id="bookBtn" data-hotel="Burj Al Arab Hotel" data-i18n="book-but">Book Now</button>
+                                <button class="btn bookBtn" id="bookBtn" data-hotel="Burj Al Arab Hotel"
+                                    data-i18n="book-but">Book Now</button>
                             </p>
                         </div>
                     </div>
@@ -450,7 +507,7 @@
                     </div>
                 </div>
             </div>
-           <!-- hidden page hotel -->
+            <!-- hidden page hotel -->
             <div id="hotelPage">
                 <div class="hotel-header">
                     <button class="back-btn" onclick="closeHotelPage()">&#8592;</button>
@@ -464,7 +521,7 @@
 
             <div id="galleryPage">
                 <div class="hotel-header">
-                    <button class="back-btn"onclick="closeGalleryPage()">&#8592;</button>
+                    <button class="back-btn" onclick="closeGalleryPage()">&#8592;</button>
                     <h2 id="galleryPageTitle" data-i18n="gallery">Gallery</h2>
                 </div>
                 <div class="gallery-list" id="galleryContainer">
@@ -506,13 +563,14 @@
                     <button class="filter-btn " data-i18n="country" data-filter="middle East">Middle East</button>
                     <button class="filter-btn " data-i18n="country" data-filter="south america">South America</button>
                     <button class="filter-btn " data-i18n="country" data-filter="caribbean">Caribbean</button>
-                    <button class="filter-btn " data-i18n="country" data-filter="central america">Central America</button>
+                    <button class="filter-btn " data-i18n="country" data-filter="central america">Central
+                        America</button>
                 </div>
             </div>
             <div class="row g-4" id="city-container">
                 <!-- add to javascrept -->
             </div>
-            
+
         </div>
     </section>
 
@@ -774,4 +832,5 @@
 <script src="js/searchResult.js"></script>
 <script src="js/filterDestination.js"></script>
 <script src="js/emailInput.js"></script>
+<script src= "js/login.js"></script>
 </html>

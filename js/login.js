@@ -189,8 +189,8 @@ if (loginForm) {
         if (!user) {
             Swal.fire({
                 icon: "error",
-                title: "Login Filed",
-                text: "Invild email or password",
+                title: "Login Failed",
+                text: "Invalid email or password",
                 confirmButtonText: "Try Again",
                 confirmButtonColor: "#fa4312",
 
@@ -239,3 +239,61 @@ function requireLogin() {
     });
     return false;
 }
+
+// navigate to profile page
+
+document.addEventListener("DOMContentLoaded", () => {
+  const loginLink     = document.getElementById("loginLink");
+  const profileBox    = document.getElementById("profileBox");
+  const profileToggle = document.getElementById("profileToggle");
+  const profileMenu   = document.getElementById("profileMenu");
+  const profileAvatar = document.getElementById("profileAvatar");
+  const menuAvatar    = document.getElementById("menuAvatar");
+  const menuUserName  = document.getElementById("menuUserName");
+  const logoutBtn     = document.getElementById("logoutBtn");
+
+  const currentUser = getCurrentUser();
+
+  if (currentUser) {
+    
+    if (loginLink)  loginLink.classList.add("d-none");
+    if (profileBox) profileBox.classList.remove("d-none");
+
+    const initial = currentUser.name
+      ? currentUser.name.charAt(0).toUpperCase()
+      : "U";
+
+    if (profileAvatar) profileAvatar.textContent = initial;
+    if (menuAvatar)    menuAvatar.textContent    = initial;
+    if (menuUserName)
+      menuUserName.textContent =` Hello, ${currentUser.name.split(" ")[0]}`;
+  } else {
+    // login hedeein
+    if (loginLink)  loginLink.classList.remove("d-none");
+    if (profileBox) profileBox.classList.add("d-none");
+  }
+
+  // open/close profile menu
+  if (profileToggle && profileMenu) {
+    profileToggle.addEventListener("click", (e) => {
+      e.stopPropagation();
+      profileMenu.classList.toggle("d-none");
+    });
+
+    document.addEventListener("click", (e) => {
+      if (
+        !profileMenu.contains(e.target) &&
+        !profileToggle.contains(e.target)
+      ) {
+        profileMenu.classList.add("d-none");
+      }
+    });
+  }
+
+  // logout
+  if (logoutBtn) {
+    logoutBtn.addEventListener("click", () => {
+      logoutUser();
+    });
+  }
+});

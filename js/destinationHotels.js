@@ -190,9 +190,9 @@ const hotelsData = {
       price: "$320 / night",
       img: "images/London1.jpg",
       images: [
-        "images/Hotel4.jpg",
-        "images/Hotel5.jpg",
-        "images/Hotel6.jpg",
+        "images/hall.jpg",
+        "images/gym.jpg",
+        "images/Hotel7.jpg",
       ]
     },
   ],
