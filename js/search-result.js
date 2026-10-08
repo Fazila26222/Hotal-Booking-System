@@ -577,7 +577,7 @@
   }
 
   displayHotels(Hotels);
-
+// sort
   sortHotels.addEventListener("change", function () {
     let sortedHotels = [...Hotels];
     if (this.value === "recommended") {
@@ -585,15 +585,15 @@
     }
 
     if (this.value === "low") {
-      sortHotels.sort((a, b) => a.price - b.price);
+      sortedHotels.sort((a, b) => a.price - b.price);
     }
 
     if (this.value === "high") {
-      sortHotels.sort((a, b) => b.price - a.price);
+      sortedHotels.sort((a, b) => b.price - a.price);
     }
 
     if (this.value === "rating") {
-      sortHotels.sort((a, b) => b.rating - a.rating);
+      sortedHotels.sort((a, b) => b.rating - a.rating);
     }
 
     filteredDestinations = sortedHotels;
@@ -665,6 +665,7 @@
     currentPage = 1;
     getHotelsForPage();
   });
+//   clear
   clearFilters.addEventListener("click", function () {
     priceRange.value = 500;
     document
@@ -674,10 +675,16 @@
       });
     sortHotels.value = "recommended";
     currentPage = 1;
+    
+// clear localstorage
+
+    localStorage.removeItem("destination");
+    localStorage.removeItem("searchResults");
+    
     filteredDestinations = [...Hotels];
     getHotelsForPage();
   });
-
+// pagenation
   function getHotelsForPage() {
     const grid = hotelResults;
     const start = (currentPage - 1) * ITEMS_PER_PAGE;
@@ -701,7 +708,7 @@
     previousButton.addEventListener("click", () => {
       if (currentPage > 1) {
         currentPage--;
-        getHotelsForPage(Hotels);
+        getHotelsForPage();
       }
     });
     pagination.appendChild(previousButton);
@@ -715,7 +722,7 @@
       }
       button.addEventListener("click", () => {
         currentPage = page;
-        getHotelsForPage(Hotels);
+        getHotelsForPage();
       });
       pagination.appendChild(button);
     }
@@ -731,16 +738,29 @@
     nextButton.addEventListener("click", () => {
       if (currentPage < totalPages) {
         currentPage++;
-        getHotelsForPage(Hotels);
+        getHotelsForPage();
       }
     });
     pagination.appendChild(nextButton);
   }
-
+  
+  const searchedDestanition = localStorage.getItem("destination");
   const saveResults = JSON.parse(localStorage.getItem("searchResults"));
   if (saveResults && saveResults.length > 0) {
     filteredDestinations = saveResults;
-  } else {
+  }else if(searchedDestanition){
+    const searchTerm = searchedDestanition.toLocaleLowerCase().trim();
+    filteredDestinations = Hotels.filter(hotel =>
+        hotel.city.toLocaleLowerCase().includes(searchTerm) ||
+        hotel.name.toLocaleLowerCase().includes(searchTerm) ||
+        hotel.location.toLocaleLowerCase().includes(searchTerm)
+    );
+        if(filteredDestinations.length === 0){
+            filteredDestinations = [...Hotels];
+        }
+    }
+  
+   else {
     filteredDestinations = [...Hotels];
   }
   currentPage = 1;
