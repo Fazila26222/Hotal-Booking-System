@@ -55,7 +55,6 @@ function displayhotels(hotelList) {
 
       if (selectHotel) {
         localStorage.setItem("selectHotle", JSON.stringify(selectHotel));
-        console.log("btn");
         window.location.href = "room-details.html";
       }
     });

@@ -24,9 +24,6 @@ if(selectedHotel.images && selectedHotel.images.length >= 4){
 }else{
     console.log("there not enough picture these hotel.")
 }
-    
-
-
     // =========================
     // Hotel Information
     // =========================

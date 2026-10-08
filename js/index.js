@@ -181,8 +181,8 @@ const Hotels = [
   {
     id: 9,
     name: "The Savoy",
-      city: "London , UK",
-      location: "Strand London",
+    city: "London , UK",
+    location: "Strand London",
     image: "images/mandarin.jpg",
     images: [
       "images/mandarin.jpg",
@@ -643,34 +643,35 @@ search.addEventListener("click", function () {
 });
 
 const results = JSON.parse(localStorage.getItem("searchResults")) || [];
-console.log("Saved Results:",results);
+console.log("Saved Results:", results);
 
 const hoteLCards = document.querySelectorAll(".hotel-card");
 hoteLCards.forEach(function (card) {
-    const cardcity = (card.dataset.city || "").split(",")[0].trim().toLowerCase();
+  const cardcity = (card.dataset.city || "").split(",")[0].trim().toLowerCase();
 
-    const found = results.some(function (hotel) {
-        const hotelcity = (hotel.city || "").split(",")[0].trim().toLowerCase();
-        return hotelcity === cardcity;
-    });
-    console.log("Card:", cardcity, "Found:",found);
+  const found = results.some(function (hotel) {
+    const hotelcity = (hotel.city || "").split(",")[0].trim().toLowerCase();
+    return hotelcity === cardcity;
+  });
+  console.log("Card:", cardcity, "Found:", found);
 });
 // offer book now
 
-const bookBtns = document.querySelectorAll("#bookBtn");
+const bookBtns = document.querySelectorAll(".bookBtn");
 
 bookBtns.forEach(button => {
   button.addEventListener("click", (e) => {
+    e.preventDefault();
 
-    const hotelCard = button.closest(".hotel-card");
-    if (hotelCard) {
-      const hotelId = hotelCard.getAttribute("data-id");
+      const hotelId = button.getAttribute("data-id");
       if (hotelId) {
         window.location.href = `hotel-details.html?id=${hotelId}`;
+      } else {
+        console.log("Hotel ID not found for this card.");
       }
-    }
 
-    window.location.href = "hotel-details.html?id=1";
+        window.location.href = `hotel-details.html?id=${direcId}`;
+      
   });
 });
 
