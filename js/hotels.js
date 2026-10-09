@@ -523,11 +523,20 @@ const Hotels = [
             hotelListContainer.appendChild(card);
         });
 // active viewBtn and bookBtn
-        document.querySelectorAll(".viewBtn, .bookBtn").forEach(button => {
+        document.querySelectorAll(".viewBtn").forEach(button => {
             button.addEventListener("click", function () {
                 const hotelId = this.getAttribute("data-id");
                 if (hotelId) {
                     window.location.href = `hotel-details.html?id=${hotelId}`;
+                }
+            });
+        });
+
+        document.querySelectorAll(".bookBtn").forEach(button => {
+            button.addEventListener("click", function () {
+                const hotelId = this.getAttribute("data-id");
+                if (hotelId) {
+                    window.location.href = `booking.html?id=${hotelId}`;
                 }
             });
         });

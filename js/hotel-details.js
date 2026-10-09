@@ -34,6 +34,13 @@ if(selectedHotel.images && selectedHotel.images.length >= 4){
     document.getElementById("hotelDescription").textContent =selectedHotel.description;
     document.getElementById("hotelPrice").textContent =selectedHotel.price;
 
+    // Hotel Booking Button
+  const bookBtn = document.getElementById("bookNowBtn");
+  if (bookBtn) {
+    bookBtn.addEventListener("click", function () {
+      window.location.href = `booking.html?id=${hotelId}`;
+    });
+}
 
     // =========================
     // Rating & Stars
