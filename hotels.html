@@ -24,7 +24,7 @@
      ==============-->
     <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
         <div class="container">
-            <a href="" class="navbar-brand">Stay<span>ora</span></a>
+            <a href="" class="navbar-brand" data-i18n="logo">Stay<span>ora</span></a>
 
             <!-- Mobile Toggle -->
 
@@ -64,7 +64,7 @@
                     <button class="darkBtn" id="darkBtn">
                         <i class="bi bi-moon-fill"></i>
                     </button>
-                     <button class="btn btn-primary btn-sm login-btn" data-open-modal="login-modal">
+                    <button class="btn btn-primary btn-sm login-btn" data-open-modal="login-modal">
                         <span data-i18n="login_btn" id="loginLink" onclick="window.location.href = 'login.html'">
                             Login
                         </span>
@@ -82,10 +82,12 @@
                                 </div>
                             </div>
 
-                            <a href="dashboard.html" data-i18n="dash" ><i class="bi bi-grid"></i> Dashboard</a>
-                            <a href="my-booking.html" data-i18n="dash"><i class="bi bi-calendar-check"></i> My Bookings</a>
+                            <a href="dashboard.html" data-i18n="dash"><i class="bi bi-grid"></i> Dashboard</a>
+                            <a href="my-booking.html" data-i18n="dash"><i class="bi bi-calendar-check"></i> My
+                                Bookings</a>
                             <a href="wishlist.html" data-i18n="dash"><i class="bi bi-heart"></i> Wishlist</a>
-                            <a href="profile.html" data-i18n="dash"><i class="bi bi-person-gear"></i> Account Settings</a>
+                            <a href="profile.html" data-i18n="dash"><i class="bi bi-person-gear"></i> Account
+                                Settings</a>
 
                             <button id="logoutBtn" class="logout-btn" data-i18n="log">
                                 <i class="bi bi-box-arrow-right"></i> Log Out
@@ -94,11 +96,11 @@
                     </div>
                 </div>
 
-                    <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
-                        دری
-                    </button>
-                </div>
+                <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
+                    دری
+                </button>
             </div>
+        </div>
         </div>
     </nav>
     <!--===========
@@ -139,40 +141,40 @@
                     <i class="bi bi-moon-fill"></i>
                 </button>
                 <button class="btn btn-primary btn-sm login-btn" data-open-modal="login-modal">
-                        <span data-i18n="login_btn" id="loginLink" onclick="window.location.href = 'login.html'">
-                            Login
-                        </span>
+                    <span data-i18n="login_btn" id="loginLink" onclick="window.location.href = 'login.html'">
+                        Login
+                    </span>
+                </button>
+                <div id="profileBox" class="d-none position-relative">
+                    <button id="profileToggle" class="profile-icon">
+                        <span id="profileAvatar" data-i18n="F">F</span>
                     </button>
-                    <div id="profileBox" class="d-none position-relative">
-                        <button id="profileToggle" class="profile-icon">
-                            <span id="profileAvatar" data-i18n="F">F</span>
-                        </button>
-                        <div id="profileMenu" class="profile-menu d-none">
-                            <div class="profile-header">
-                                <div class="profile-avatar-lg" id="menuAvatar" data-i18n="F">F</div>
-                                <div>
-                                    <strong id="menuUserName" data-i18n="Hello">Hello, Guest</strong>
-                                    <small><a href="dashboard.html" data-i18n="view">View your account</a></small>
-                                </div>
+                    <div id="profileMenu" class="profile-menu d-none">
+                        <div class="profile-header">
+                            <div class="profile-avatar-lg" id="menuAvatar" data-i18n="F">F</div>
+                            <div>
+                                <strong id="menuUserName" data-i18n="Hello">Hello, Guest</strong>
+                                <small><a href="dashboard.html" data-i18n="view">View your account</a></small>
                             </div>
-
-                            <a href="dashboard.html" data-i18n="dash" ><i class="bi bi-grid"></i> Dashboard</a>
-                            <a href="my-booking.html" data-i18n="dash"><i class="bi bi-calendar-check"></i> My Bookings</a>
-                            <a href="wishlist.html" data-i18n="dash"><i class="bi bi-heart"></i> Wishlist</a>
-                            <a href="profile.html" data-i18n="dash"><i class="bi bi-person-gear"></i> Account Settings</a>
-
-                            <button id="logoutBtn" class="logout-btn" data-i18n="log">
-                                <i class="bi bi-box-arrow-right"></i> Log Out
-                            </button>
                         </div>
+
+                        <a href="dashboard.html" data-i18n="dash"><i class="bi bi-grid"></i> Dashboard</a>
+                        <a href="my-booking.html" data-i18n="dash"><i class="bi bi-calendar-check"></i> My Bookings</a>
+                        <a href="wishlist.html" data-i18n="dash"><i class="bi bi-heart"></i> Wishlist</a>
+                        <a href="profile.html" data-i18n="dash"><i class="bi bi-person-gear"></i> Account Settings</a>
+
+                        <button id="logoutBtn" class="logout-btn" data-i18n="log">
+                            <i class="bi bi-box-arrow-right"></i> Log Out
+                        </button>
                     </div>
                 </div>
-
-                <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
-                    دری
-                </button>
             </div>
+
+            <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
+                دری
+            </button>
         </div>
+    </div>
     </div>
     <!--=============
       Hero Slider
@@ -257,689 +259,148 @@
         <div class="container">
             <div class="row g-2">
                 <!--Filter-->
+
                 <div class="col-lg-3 col-md-4">
-                    <div class=" filter-card ">
-                        <!--Check Box-->
+                    <div class="filter-card">
+<!-- clear All -->
                         <div class="heading">
-                            <span> Filter By </span>
-                            <span style="color: blue;"> Clear All </span>
+                            <span data-i18n="filter">Filter By</span>
+                            <span id="clearFilters" style="color: blue; cursor: pointer;">Clear All</span>
                         </div>
+<!-- ===== Destination======= -->
                         <div class="head">
-                            <h1>Destination</h1>
+                            <h1 data-i18n="destination">Destination</h1>
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="All Destination">
-                                <label for="All Destination">All Destination</label>
+                                <input type="checkbox" class="form-check-input" id="allDestination"
+                                    value="All Destination">
+                                <label for="allDestination" data-i18n="destination">All Destination</label>
                             </div>
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="Kabul">
-                                <label for="Kabul">Kabul</label>
+                                <input type="checkbox" class="form-check-input" id="kabul" value="Kabul">
+                                <label for="kabul" data-i18n="kabul">Kabul</label>
                             </div>
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="Dubai">
-                                <label for="Dubai">Dubai</label>
+                                <input type="checkbox" class="form-check-input" id="dubai" value="Dubai">
+                                <label for="dubai" data-i18n="dubai">Dubai</label>
                             </div>
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="Istanbul">
-                                <label for="Istanbul">Istanbul</label>
+                                <input type="checkbox" class="form-check-input" id="london" value="London">
+                                <label for="london" data-i18n="london">London</label>
                             </div>
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="Bangkok">
-                                <label for="Bangkok">Bangkok</label>
+                                <input type="checkbox" class="form-check-input" id="paris" value="Paris">
+                                <label for="paris" data-i18n="paris">Paris</label>
                             </div>
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="London">
-                                <label for="London">London</label>
-                            </div>
-                            <button class="showBtn" id="showBtn">Show more</button>
+                            
                         </div>
-                        <!--Radio Button-->
+
+                        <!-- ===Price Range===== -->
                         <div class="head1">
-                            <h1>Price Range</h1>
-                            <span>$50</span>
-                            <span>$500</span>
-                            <div class="form-radio">
-                                <input type="radio" name="radio">
-                                <label>$50 - $100</label>
+                            <h1 data-i18n="head1">Price Range</h1>
+                            <div class="d-flex justify-content-between">
+                                <span>$50</span>
+                                <span>$500+</span>
                             </div>
                             <div class="form-radio">
-                                <input type="radio" name="radio">
-                                <label>$100 - $200</label>
+                                <input type="radio" name="priceRange" id="price1" value="50-100">
+                                <label for="price1">$50 - $100</label>
                             </div>
                             <div class="form-radio">
-                                <input type="radio" name="radio">
-                                <label>$200 - $300</label>
+                                <input type="radio" name="priceRange" id="price2" value="100-200">
+                                <label for="price2">$100 - $200</label>
                             </div>
                             <div class="form-radio">
-                                <input type="radio" name="radio">
-                                <label>$300 - $400</label>
+                                <input type="radio" name="priceRange" id="price3" value="200-300">
+                                <label for="price3">$200 - $300</label>
                             </div>
                             <div class="form-radio">
-                                <input type="radio" name="radio">
-                                <label>$500</label>
+                                <input type="radio" name="priceRange" id="price4" value="300-400">
+                                <label for="price4">$300 - $400</label>
+                            </div>
+                            <div class="form-radio">
+                                <input type="radio" name="priceRange" id="price5" value="400-500">
+                                <label for="price5">$400 - $500+</label>
                             </div>
                         </div>
-                        <!--Hotel Type-->
+
+                        <!-- ===== Hotel Type===== -->
                         <div class="head2">
-                            <h1>Hotel Type</h1>
+                            <h1 data-i18n="hotel-type">Hotel Type</h1>
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="All Type">
-                                <label for="All Type">All Type</label>
+                                <input type="checkbox" class="form-check-input" id="allType" value="All Type">
+                                <label for="allType " data-i18n="hotel-type">All Type</label>
                             </div>
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="Luxury">
-                                <label for="Luxury">Luxury</label>
+                                <input type="checkbox" class="form-check-input" id="Hotel" value="Hotel">
+                                <label for="Hotel" data-i18n="hotel-type">Hotel</label>
                             </div>
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="budget">
-                                <label for="budget">Budget</label>
+                                <input type="checkbox" class="form-check-input" id="Apartment" value="Apartment">
+                                <label for="Apartment" data-i18n="hotel-type">Apartment</label>
                             </div>
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="resort">
-                                <label for="resort">Resort</label>
+                                <input type="checkbox" class="form-check-input" id="resort" value="Resort">
+                                <label for="resort" data-i18n="hotel-type">Resort</label>
                             </div>
                         </div>
-                        <!--Amenities-->
+
+                        <!-- ===== Amenities===== -->
                         <div class="head3">
-                            <h1>Amenities</h1>
+                            <h1 data-i18n="head1">Amenities</h1>
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="Wi-Fi">
-                                <label for="Wi-Fi">Wi-Fi</label>
+                                <input type="checkbox" class="form-check-input" id="wifi" value="Wi-Fi">
+                                <label for="wifi" data-i18n="hotel-type">Wi-Fi</label>
                             </div>
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="Pool">
-                                <label for="Pool">Pool</label>
+                                <input type="checkbox" class="form-check-input" id="pool" value="Pool">
+                                <label for="pool" data-i18n="hotel-type">Pool</label>
                             </div>
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="Breakfast">
-                                <label for="Breakfast">Breakfast</label>
+                                <input type="checkbox" class="form-check-input" id="breakfast" value="Breakfast">
+                                <label for="breakfast" data-i18n="hotel-type">Breakfast</label>
                             </div>
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="Parking">
-                                <label for="Parking">Parking</label>
+                                <input type="checkbox" class="form-check-input" id="parking" value="Parking">
+                                <label for="parking" data-i18n="hotel-type">Parking</label>
                             </div>
                         </div>
-                        <button class="apllyBtn" id="applyFilterBtn">Apply Filter</button>
+                        <button class="applyFilterBtn" id="applyFilterBtn"data-i18n="hotel-type">Apply Filter</button>
                     </div>
                 </div>
-                <!--Hotels-->
+
+                <!-- Hotels -->
                 <div class="col-lg-9 col-md-8">
                     <div id="hotelBtn">
                         <div class="d-flex align-items-center gap-1 hotelBtn-scroll">
-                            <button class="HotelBtn" id="hotelBtn">All</button>
-                            <button class="HotelBtn" id="hotelBtn">Kabul</button>
-                            <button class="HotelBtn" id="hotelBtn">Dubai</button>
-                            <button class="HotelBtn" id="hotelBtn">Istanbul</button>
-                            <button class="HotelBtn" id="hotelBtn">Bangkok</button>
-                            <button class="HotelBtn" id="hotelBtn">London</button>
+                            <button class="HotelBtn active" data-filter="all" data-i18n="hotel">All</button>
+                            <button class="HotelBtn" data-filter="Kabul"data-i18n="hotel-kabul">Kabul</button>
+                            <button class="HotelBtn" data-filter="Dubai" data-i18n="hotel-dubai">Dubai</button>
+                            <button class="HotelBtn" data-filter="paris" data-i18n="hotel-paris">Paris</button>
+                            <button class="HotelBtn" data-filter="London" data-i18n="hotel-london">London</button>
 
                             <div class="ms-auto d-none d-md-flex align-items-center g-0">
-                                <span class="filter-lable">Sort:</span>
-                                <select class="sort-select">
-                                    <option value="recommended">Recommended</option>
-                                    <option value="rating">Highest Rated</option>
-                                    <option value="price-Low">Price: Low to High</option>
-                                    <option value="price-High">Price: High to Low</option>
+                                <span class="filter-lable"data-i18n="hotel-sort">Sort:</span>
+                                <select class="sort-select" id="sortHotels">
+                                    <option value="recommended"data-i18n="recommended">Recommended</option>
+                                    <option value="rating" data-i18n="Highest">Highest Rated</option>
+                                    <option value="price-Low" data-i18n="price-Low">Price: Low to High</option>
+                                    <option value="price-High" data-i18n="price-High">Price: High to Low</option>
                                 </select>
                             </div>
                         </div>
                     </div>
-                    <!--Card Hotel card 1-->
-                    <div class="hotel-card" data-city="Kabul ,Afghanistan">
-                        <div class="row g-3">
-                            <!--iamge-->
-                            <div class="col-lg-4 image-hotel">
-                                <img src="images/kaubl-hotel.jpg" class="img-fluid" alt="">
-                            </div>
-                            <!--hotel information-->
-                            <div class="col-lg-5 hotel-info">
-                                <div class="hotel-information">
-                                    <h3>Kabul Serena Hotel</h3>
-                                    <p>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star" style="color: var(--warning);"></i>
-                                        4.5 <span style="color: blue;">(230 Reviews)</span>
-                                    </p>
-                                    <p><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i> Kabul Afghanistan</p>
-                                    <p>
-                                        Experience a comfortable and relaxing stay at Kabul Serena Hotel, offering
-                                        modern rooms,excellent service,and convenient access to the city's
-                                        popular attractions.
-                                    </p>
-                                    <p class="d-flex gap-3"><span> <i class="bi bi-wifi" style="color: #0f2d3d;"></i>
-                                            Wi-Fi
-                                        </span>
-                                        <span> <i class="bi bi-cup-hot" style="color: #f45e13;"></i> Breakfast </span>
-                                        <span> <i class="bi bi-p-square" style="color: #0f2d3d;"></i>Parking
-                                        </span>
-                                        <span> <i class="bi bi-water" style="color: #0f2d3d;"></i> Pool </span>
-                                    </p>
-                                </div>
-                            </div>
-                            <!--price-->
-                            <div class="col-lg-3 hotel-price">
-                                <span style="font-weight: bold;">$120</span>
-                                <span>/night</span>
-                                <h6>Taxes & fees included</h6>
-                                <button class="btn viewBtn" id="viewBtn">view Details</button>
-                                <button class="btn bookBtn" id="bookBtn">Book Now</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!--card 2-->
-                    <div class="hotel-card" data-city="Dubai ,UAE">
-                        <div class="row g-3">
-                            <!--iamge-->
-                            <div class="col-lg-4 image-hotel">
-                                <img src="images/Burj Al Arab.jpg" class="img-fluid" alt="">
-                            </div>
-                            <!--hotel information-->
-                            <div class="col-lg-5 hotel-info">
-                                <div class="hotel-information">
-                                    <h3>Burj Al Arab</h3>
-                                    <p>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star" style="color: var(--warning);"></i>
-                                        4.5 <span style="color: blue;">(230 Reviews)</span>
-                                    </p>
-                                    <p><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i> Dubai UAE</p>
-                                    <p>
-                                        enjoy a comfortable stay with modern rooms, friendly service, and a convenient
-                                        location in Dubai.
-                                    </p>
-                                    <p class="d-flex gap-3"><span> <i class="bi bi-wifi" style="color: #0f2d3d;"></i>
-                                            Wi-Fi
-                                        </span>
-                                        <span> <i class="bi bi-cup-hot" style="color: #f45e13;"></i> Breakfast </span>
-                                        <span> <i class="bi bi-p-square" style="color: #0f2d3d;"></i>Parking
-                                        </span>
-                                        <span> <i class="bi bi-water" style="color: #0f2d3d;"></i> Pool </span>
-                                    </p>
-                                </div>
-                            </div>
-                            <!--price-->
-                            <div class="col-lg-3 hotel-price">
-                                <span style="font-weight: bold;">$120</span>
-                                <span>/night</span>
-                                <h6>Taxes & fees included</h6>
-                                <button class="btn viewBtn" id="viewBtn">view Details</button>
-                                <button class="btn bookBtn" id="bookBtn">Book Now</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!--card 3-->
-                    <div class="hotel-card" data-city="Plaza ,New York USA">
-                        <div class="row g-3">
-                            <!--iamge-->
-                            <div class="col-lg-4 image-hotel">
-                                <img src="images/ciragan palace .jpg" class="img-fluid" alt="">
-                            </div>
-                            <!--hotel information-->
-                            <div class="col-lg-5 hotel-info">
-                                <div class="hotel-information">
-                                    <h3>Ciragan Palace Kempinski</h3>
-                                    <p>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star" style="color: var(--warning);"></i>
-                                        4.5 <span style="color: blue;">(230 Reviews)</span>
-                                    </p>
-                                    <p><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i> Istanbul Turkey</p>
-                                    <p>
-                                        Experience a comfort and convenientce with modern rooms, professional service
-                                        and a central location.
-                                    </p>
-                                    <p class="d-flex gap-3"><span> <i class="bi bi-wifi" style="color: #0f2d3d;"></i>
-                                            Wi-Fi
-                                        </span>
-                                        <span> <i class="bi bi-cup-hot" style="color: #f45e13;"></i> Breakfast </span>
-                                        <span> <i class="bi bi-p-square" style="color: #0f2d3d;"></i>Parking
-                                        </span>
-                                        <span> <i class="bi bi-water" style="color: #0f2d3d;"></i> Pool </span>
-                                    </p>
-                                </div>
-                            </div>
-                            <!--price-->
-                            <div class="col-lg-3 hotel-price">
-                                <span style="font-weight: bold;">$120</span>
-                                <span>/night</span>
-                                <h6>Taxes & fees included</h6>
-                                <button class="btn viewBtn" id="viewBtn">view Details</button>
-                                <button class="btn bookBtn" id="bookBtn">Book Now</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!--card 4-->
-                    <div class="hotel-card" data-city=" London , UK">
-                        <div class="row g-3">
-                            <!--iamge-->
-                            <div class="col-lg-4 image-hotel">
-                                <img src="images/le meurice.jpg" class="img-fluid" alt="">
-                            </div>
-                            <!--hotel information-->
-                            <div class="col-lg-5 hotel-info">
-                                <div class="hotel-information">
-                                    <h3>Le Meurice</h3>
-                                    <p>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star" style="color: var(--warning);"></i>
-                                        4.5 <span style="color: blue;">(230 Reviews)</span>
-                                    </p>
-                                    <p><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i>Paris France</p>
-                                    <p>
-                                        Enjoy comfortable rooms, helpful Services, and easy access to important
-                                        Destinations
-                                        around Le Meurice.
-                                    </p>
-                                    <p class="d-flex gap-3"><span> <i class="bi bi-wifi" style="color: #0f2d3d;"></i>
-                                            Wi-Fi
-                                        </span>
-                                        <span> <i class="bi bi-cup-hot" style="color: #f45e13;"></i> Breakfast </span>
-                                        <span> <i class="bi bi-p-square" style="color: #0f2d3d;"></i>Parking
-                                        </span>
-                                        <span> <i class="bi bi-water" style="color: #0f2d3d;"></i> Pool </span>
-                                    </p>
-                                </div>
-                            </div>
-                            <!--price-->
-                            <div class="col-lg-3 hotel-price">
-                                <span style="font-weight: bold;">$120</span>
-                                <span>/night</span>
-                                <h6>Taxes & fees included</h6>
-                                <button class="btn viewBtn" id="viewBtn">view Details</button>
-                                <button class="btn bookBtn" id="bookBtn">Book Now</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!--card 5-->
-                    <div class="hotel-card" data-city="Us ,America">
-                        <div class="row g-3">
-                            <!--iamge-->
-                            <div class="col-lg-4 image-hotel">
-                                <img src="images/hassler roma.jpg" class="img-fluid" alt="">
-                            </div>
-                            <!--hotel information-->
-                            <div class="col-lg-5 hotel-info">
-                                <div class="hotel-information">
-                                    <h3>Hotel Hassler Roma</h3>
-                                    <p>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star" style="color: var(--warning);"></i>
-                                        4.5 <span style="color: blue;">(230 Reviews)</span>
-                                    </p>
-                                    <p><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i>Rome Italy</p>
-                                    <p>
-                                        Experience a relaxing stay with well-equipped rooms, friendly service,
-                                        and a convenient location.
-                                    </p>
-                                    <p class="d-flex gap-3"><span> <i class="bi bi-wifi" style="color: #0f2d3d;"></i>
-                                            Wi-Fi
-                                        </span>
-                                        <span> <i class="bi bi-cup-hot" style="color: #f45e13;"></i> Breakfast </span>
-                                        <span> <i class="bi bi-p-square" style="color: #0f2d3d;"></i>Parking
-                                        </span>
-                                        <span> <i class="bi bi-water" style="color: #0f2d3d;"></i> Pool </span>
-                                    </p>
-                                </div>
-                            </div>
-                            <!--price-->
-                            <div class="col-lg-3 hotel-price">
-                                <span style="font-weight: bold;">$120</span>
-                                <span>/night</span>
-                                <h6>Taxes & fees included</h6>
-                                <button class="btn viewBtn" id="viewBtn">view Details</button>
-                                <button class="btn bookBtn" id="bookBtn">Book Now</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!--card 6-->
-                    <div class="hotel-card" data-city="Us ,America">
-                        <div class="row g-3">
-                            <!--iamge-->
-                            <div class="col-lg-4 image-hotel">
-                                <img src="images/savoy.jpg" class="img-fluid" alt="">
-                            </div>
-                            <!--hotel information-->
-                            <div class="col-lg-5 hotel-info">
-                                <div class="hotel-information">
-                                    <h3>The Savoy</h3>
-                                    <p>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star" style="color: var(--warning);"></i>
-                                        4.5 <span style="color: blue;">(230 Reviews)</span>
-                                    </p>
-                                    <p><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i>London UK</p>
-                                    <p>
-                                        A modern and welcoming hotel providing comfortable accommodation and convenient
-                                        Services for travelers.
-                                    </p>
-                                    <p class="d-flex gap-3"><span> <i class="bi bi-wifi" style="color: #0f2d3d;"></i>
-                                            Wi-Fi
-                                        </span>
-                                        <span> <i class="bi bi-cup-hot" style="color: #f45e13;"></i> Breakfast </span>
-                                        <span> <i class="bi bi-p-square" style="color: #0f2d3d;"></i>Parking
-                                        </span>
-                                        <span> <i class="bi bi-water" style="color: #0f2d3d;"></i> Pool </span>
-                                    </p>
-                                </div>
-                            </div>
-                            <!--price-->
-                            <div class="col-lg-3 hotel-price">
-                                <span style="font-weight: bold;">$120</span>
-                                <span>/night</span>
-                                <h6>Taxes & fees included</h6>
-                                <button class="btn viewBtn" id="viewBtn">view Details</button>
-                                <button class="btn bookBtn" id="bookBtn">Book Now</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!--card 7-->
-                    <div class="hotel-card" data-city="Plaza ,New York USA">
-                        <div class="row g-3">
-                            <!--iamge-->
-                            <div class="col-lg-4 image-hotel">
-                                <img src="images/plaza.jpg" class="img-fluid" alt="">
-                            </div>
-                            <!--hotel information-->
-                            <div class="col-lg-5 hotel-info">
-                                <div class="hotel-information">
-                                    <h3>Plaza Hotel</h3>
-                                    <p>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star" style="color: var(--warning);"></i>
-                                        4.5 <span style="color: blue;">(230 Reviews)</span>
-                                    </p>
-                                    <p><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i>New York USA</p>
-                                    <p>
-                                        Enjoy a peaceful stay with clean rooms, excellent service, and comfortable
-                                        facilities for every guest.
-                                    </p>
-                                    <p class="d-flex gap-3"><span> <i class="bi bi-wifi" style="color: #0f2d3d;"></i>
-                                            Wi-Fi
-                                        </span>
-                                        <span> <i class="bi bi-cup-hot" style="color: #f45e13;"></i> Breakfast </span>
-                                        <span> <i class="bi bi-p-square" style="color: #0f2d3d;"></i>Parking
-                                        </span>
-                                        <span> <i class="bi bi-water" style="color: #0f2d3d;"></i> Pool </span>
-                                    </p>
-                                </div>
-                            </div>
-                            <!--price-->
-                            <div class="col-lg-3 hotel-price">
-                                <span style="font-weight: bold;">$120</span>
-                                <span>/night</span>
-                                <h6>Taxes & fees included</h6>
-                                <button class="btn viewBtn" id="viewBtn">view Details</button>
-                                <button class="btn bookBtn" id="bookBtn">Book Now</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!--card 8-->
-                    <div class="hotel-card" data-city=" Tokyo ,Japan">
-                        <div class="row g-3">
-                            <!--iamge-->
-                            <div class="col-lg-4 image-hotel">
-                                <img src="images/park hyatt tokyo.jpg" class="img-fluid" alt="">
-                            </div>
-                            <!--hotel information-->
-                            <div class="col-lg-5 hotel-info">
-                                <div class="hotel-information">
-                                    <h3>Park Hyatt Tokyo</h3>
-                                    <p>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star" style="color: var(--warning);"></i>
-                                        4.5 <span style="color: blue;">(230 Reviews)</span>
-                                    </p>
-                                    <p><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i>Tokyo Japan</p>
-                                    <p>
-                                        Offering a comfortable atmosphere, quality accommodation,and convenient
-                                        access to the city's attractions.
-                                    </p>
-                                    <p class="d-flex gap-3"><span> <i class="bi bi-wifi" style="color: #0f2d3d;"></i>
-                                            Wi-Fi
-                                        </span>
-                                        <span> <i class="bi bi-cup-hot" style="color: #f45e13;"></i> Breakfast </span>
-                                        <span> <i class="bi bi-p-square" style="color: #0f2d3d;"></i>Parking
-                                        </span>
-                                        <span> <i class="bi bi-water" style="color: #0f2d3d;"></i> Pool </span>
-                                    </p>
-                                </div>
-                            </div>
-                            <!--price-->
-                            <div class="col-lg-3 hotel-price">
-                                <span style="font-weight: bold;">$120</span>
-                                <span>/night</span>
-                                <h6>Taxes & fees included</h6>
-                                <button class="btn viewBtn" id="viewBtn">view Details</button>
-                                <button class="btn bookBtn" id="bookBtn">Book Now</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!--card 9-->
-                    <div class="hotel-card" data-city=" Marina , Singapor">
-                        <div class="row g-3">
-                            <!--iamge-->
-                            <div class="col-lg-4 image-hotel">
-                                <img src="images/mandarin.jpg" class="img-fluid" alt="">
-                            </div>
-                            <!--hotel information-->
-                            <div class="col-lg-5 hotel-info">
-                                <div class="hotel-information">
-                                    <h3>Mandarin Oriental</h3>
-                                    <p>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star" style="color: var(--warning);"></i>
-                                        4.5 <span style="color: blue;">(230 Reviews)</span>
-                                    </p>
-                                    <p><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i>Bangkok Thailand</p>
-                                    <p>
-                                        Stay in a convenient location with comfortable rooms, modern
-                                        facilities, and friendly hotel Services.
-                                    </p>
-                                    <p class="d-flex gap-3"><span> <i class="bi bi-wifi" style="color: #0f2d3d;"></i>
-                                            Wi-Fi
-                                        </span>
-                                        <span> <i class="bi bi-cup-hot" style="color: #f45e13;"></i> Breakfast </span>
-                                        <span> <i class="bi bi-p-square" style="color: #0f2d3d;"></i>Parking
-                                        </span>
-                                        <span> <i class="bi bi-water" style="color: #0f2d3d;"></i> Pool </span>
-                                    </p>
-                                </div>
-                            </div>
-                            <!--price-->
-                            <div class="col-lg-3 hotel-price">
-                                <span style="font-weight: bold;">$120</span>
-                                <span>/night</span>
-                                <h6>Taxes & fees included</h6>
-                                <button class="btn viewBtn" id="viewBtn">view Details</button>
-                                <button class="btn bookBtn" id="bookBtn">Book Now</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!--card 10-->
-                    <div class="hotel-card" data-city=" London , UK">
-                        <div class="row g-3">
-                            <!--iamge-->
-                            <div class="col-lg-4 image-hotel">
-                                <img src="images/majestic.jpg" class="img-fluid" alt="">
-                            </div>
-                            <!--hotel information-->
-                            <div class="col-lg-5 hotel-info">
-                                <div class="hotel-information">
-                                    <h3>The Majestic Hotel</h3>
-                                    <p>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star" style="color: var(--warning);"></i>
-                                        4.5 <span style="color: blue;">(230 Reviews)</span>
-                                    </p>
-                                    <p><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i>Kuala Lumpur Malaysia
-                                    </p>
-                                    <p>
-                                        A welcoming hotel with comfortable accommodation, helpful staff, and a
-                                        peaceful environment for travelers.
-                                    </p>
-                                    <p class="d-flex gap-3"><span> <i class="bi bi-wifi" style="color: #0f2d3d;"></i>
-                                            Wi-Fi
-                                        </span>
-                                        <span> <i class="bi bi-cup-hot" style="color: #f45e13;"></i> Breakfast </span>
-                                        <span> <i class="bi bi-p-square" style="color: #0f2d3d;"></i>Parking
-                                        </span>
-                                        <span> <i class="bi bi-water" style="color: #0f2d3d;"></i> Pool </span>
-                                    </p>
-                                </div>
-                            </div>
-                            <!--price-->
-                            <div class="col-lg-3 hotel-price">
-                                <span style="font-weight: bold;">$120</span>
-                                <span>/night</span>
-                                <h6>Taxes & fees included</h6>
-                                <button class="btn viewBtn" id="viewBtn">view Details</button>
-                                <button class="btn bookBtn" id="bookBtn">Book Now</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!--card 11-->
-                    <div class="hotel-card" data-city=" Sydeny , Australia">
-                        <div class="row g-3">
-                            <!--iamge-->
-                            <div class="col-lg-4 image-hotel">
-                                <img src="images/park hyatt sydney.jpg" class="img-fluid" alt="">
-                            </div>
-                            <!--hotel information-->
-                            <div class="col-lg-5 hotel-info">
-                                <div class="hotel-information">
-                                    <h3>Park Hyatt Sydney</h3>
-                                    <p>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star" style="color: var(--warning);"></i>
-                                        4.5 <span style="color: blue;">(230 Reviews)</span>
-                                    </p>
-                                    <p><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i>Sydney Australia</p>
-                                    <p>
-                                        Enjoy a pleasant stay with spacious rooms, excellent hospitality, and a
-                                        range of convenient hotel facilities.
-                                    </p>
-                                    <p class="d-flex gap-3"><span> <i class="bi bi-wifi" style="color: #0f2d3d;"></i>
-                                            Wi-Fi
-                                        </span>
-                                        <span> <i class="bi bi-cup-hot" style="color: #f45e13;"></i> Breakfast </span>
-                                        <span> <i class="bi bi-p-square" style="color: #0f2d3d;"></i>Parking
-                                        </span>
-                                        <span> <i class="bi bi-water" style="color: #0f2d3d;"></i> Pool </span>
-                                    </p>
-                                </div>
-                            </div>
-                            <!--price-->
-                            <div class="col-lg-3 hotel-price">
-                                <span style="font-weight: bold;">$120</span>
-                                <span>/night</span>
-                                <h6>Taxes & fees included</h6>
-                                <button class="btn viewBtn" id="viewBtn">view Details</button>
-                                <button class="btn bookBtn" id="bookBtn">Book Now</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!--card 12-->
-                    <div class="hotel-card" data-city="Us ,America">
-                        <div class="row g-3">
-                            <!--iamge-->
-                            <div class="col-lg-4 image-hotel">
-                                <img src="images/baur au lac.jpg" class="img-fluid" alt="">
-                            </div>
-                            <!--hotel information-->
-                            <div class="col-lg-5 hotel-info">
-                                <div class="hotel-information">
-                                    <h3>Baur Au Lac</h3>
-                                    <p>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star-fill" style="color: var(--warning);"></i>
-                                        <i class="bi bi-star" style="color: var(--warning);"></i>
-                                        4.5 <span style="color: blue;">(230 Reviews)</span>
-                                    </p>
-                                    <p><i class="bi bi-geo-alt-fill" style="color: #0f2d3d;"></i>Zurich Switzerland</p>
-                                    <p>
-                                        Experience a comfort and convenientce with modern rooms, professional service
-                                        and a central location.
-                                    </p>
-                                    <p class="d-flex gap-3"><span> <i class="bi bi-wifi" style="color: #0f2d3d;"></i>
-                                            Wi-Fi
-                                        </span>
-                                        <span> <i class="bi bi-cup-hot" style="color: #f45e13;"></i> Breakfast </span>
-                                        <span> <i class="bi bi-p-square" style="color: #0f2d3d;"></i>Parking
-                                        </span>
-                                        <span> <i class="bi bi-water" style="color: #0f2d3d;"></i> Pool </span>
-                                    </p>
-                                </div>
-                            </div>
-                            <!--price-->
-                            <div class="col-lg-3 hotel-price">
-                                <span style="font-weight: bold;">$120</span>
-                                <span>/night</span>
-                                <h6>Taxes & fees included</h6>
-                                <button class="btn viewBtn" id="viewBtn">view Details</button>
-                                <button class="btn bookBtn" id="bookBtn">Book Now</button>
-                            </div>
-                        </div>
-                    </div>
+
+
+                    <div id="hotelListContainer"></div>
+                    <!-- add to javascirpt -->
+
+                    <div id="paginationContainer" class="d-flex justify-content-center mt-4"></div>
+                    <!-- add to javascirpt -->
                 </div>
             </div>
         </div>
     </section>
-    <!--==========pagination===========-->
-    <section id="pagination">
-        <div class="container">
-            <ul class="pagination justify-content-center">
-                <li class="page-item">
-                    <a class="page-link" href="#">previous</a>
-                </li>
-                <li class="page-item active">
-                    <a class="page-link" href="#">1</a>
-                </li>
-                <li class="page-item">
-                    <a class="page-link" href="#">2</a>
-                </li>
-                <li class="page-item">
-                    <a class="page-link" href="#">3</a>
-                </li>
-                <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
-                </li>
-            </ul>
-        </div>
-    </section>
+
 
     <!-- Footer -->
     <footer id="footer">
@@ -1030,4 +491,5 @@
 <script src="js/slide.js"></script>
 <script src="js/emailInput.js"></script>
 <script src="js/login.js"></script>
+<script src="js/hotels.js"></script>
 </html>

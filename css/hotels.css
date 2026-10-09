@@ -10,6 +10,19 @@ h1, h2, h3, h4, h5, p{
 }
 /*=================Destination================*/
 /* left destination*/
+.applyFilterBtn{
+    background-color: var(--primary);
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 50%;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.applyFilterBtn:hover{
+    background-color: var(--bg-main);
+    color: #000;
+}
 .filter-card {
     position: relative;
     background: var(--bg-card);
@@ -251,29 +264,41 @@ h1, h2, h3, h4, h5, p{
     background-color: var(--primary-hover);
 }
 /*==========pagination===========*/
-#pagination{
-    margin-top: 25px;
-    margin-bottom: 30px;
-}
-#pagination .pagination{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.89rem;
+
+#paginationContainer {
     display: flex;
-    justify-content: center;
-    gap: 5px;
-    
+    gap: 8px;
+    align-items: center;
 }
-#pagination .page-link{
-    color: #000 !important;
-    border-radius: 5px;
-    background-color: #fff;
+
+.pagination-btn {
     border: 1px solid #ddd;
+    background: #fff;
+    color: #333;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
 }
-#pagination .page-item.active .page-link{
-    background: var(--text-primary) !important;
+
+.pagination-btn:hover:not(:disabled) {
+    background: #0d6efd;
     color: #fff;
-    border-color: var(--primary) !important;
+    border-color: #0d6efd;
 }
+
+.pagination-btn.active {
+    background: #0d6efd;
+    color: #fff;
+    border-color: #0d6efd;
+}
+
+.pagination-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
 
   @media (max-width: 991px) {
     #hotelBtn {
