@@ -164,6 +164,12 @@ if(selectedHotel.images && selectedHotel.images.length >= 4){
         </div>
         `;
     });
+
+    const selectBtn = document.getElementById("selectBtn");
+    selectBtn.addEventListener("click", () => {
+        window.location.href = `room.html?id=${hotelId}`;
+    });
+    
     const reviews = [
         {
             name: "Fazila Ahmadi",

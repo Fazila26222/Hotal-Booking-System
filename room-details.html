@@ -64,7 +64,7 @@
                     <button class="darkBtn" id="darkBtn">
                         <i class="bi bi-moon-fill"></i>
                     </button>
-                     <button class="btn btn-primary btn-sm login-btn" data-open-modal="login-modal">
+                    <button class="btn btn-primary btn-sm login-btn" data-open-modal="login-modal">
                         <span data-i18n="login_btn" id="loginLink" onclick="window.location.href = 'login.html'">
                             Login
                         </span>
@@ -82,10 +82,12 @@
                                 </div>
                             </div>
 
-                            <a href="dashboard.html" data-i18n="dash" ><i class="bi bi-grid"></i> Dashboard</a>
-                            <a href="my-booking.html" data-i18n="dash"><i class="bi bi-calendar-check"></i> My Bookings</a>
+                            <a href="dashboard.html" data-i18n="dash"><i class="bi bi-grid"></i> Dashboard</a>
+                            <a href="my-booking.html" data-i18n="dash"><i class="bi bi-calendar-check"></i> My
+                                Bookings</a>
                             <a href="wishlist.html" data-i18n="dash"><i class="bi bi-heart"></i> Wishlist</a>
-                            <a href="profile.html" data-i18n="dash"><i class="bi bi-person-gear"></i> Account Settings</a>
+                            <a href="profile.html" data-i18n="dash"><i class="bi bi-person-gear"></i> Account
+                                Settings</a>
 
                             <button id="logoutBtn" class="logout-btn" data-i18n="log">
                                 <i class="bi bi-box-arrow-right"></i> Log Out
@@ -94,11 +96,11 @@
                     </div>
                 </div>
 
-                    <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
-                        دری
-                    </button>
-                </div>
+                <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
+                    دری
+                </button>
             </div>
+        </div>
         </div>
     </nav>
     <!--===========
@@ -134,41 +136,41 @@
                 <button class="darkBtn" id="darkBtn">
                     <i class="bi bi-moon-fill"></i>
                 </button>
-                 <button class="btn btn-primary btn-sm login-btn" data-open-modal="login-modal">
-                        <span data-i18n="login_btn" id="loginLink" onclick="window.location.href = 'login.html'">
-                            Login
-                        </span>
+                <button class="btn btn-primary btn-sm login-btn" data-open-modal="login-modal">
+                    <span data-i18n="login_btn" id="loginLink" onclick="window.location.href = 'login.html'">
+                        Login
+                    </span>
+                </button>
+                <div id="profileBox" class="d-none position-relative">
+                    <button id="profileToggle" class="profile-icon">
+                        <span id="profileAvatar" data-i18n="F">F</span>
                     </button>
-                    <div id="profileBox" class="d-none position-relative">
-                        <button id="profileToggle" class="profile-icon">
-                            <span id="profileAvatar" data-i18n="F">F</span>
-                        </button>
-                        <div id="profileMenu" class="profile-menu d-none">
-                            <div class="profile-header">
-                                <div class="profile-avatar-lg" id="menuAvatar" data-i18n="F">F</div>
-                                <div>
-                                    <strong id="menuUserName" data-i18n="Hello">Hello, Guest</strong>
-                                    <small><a href="dashboard.html" data-i18n="view">View your account</a></small>
-                                </div>
+                    <div id="profileMenu" class="profile-menu d-none">
+                        <div class="profile-header">
+                            <div class="profile-avatar-lg" id="menuAvatar" data-i18n="F">F</div>
+                            <div>
+                                <strong id="menuUserName" data-i18n="Hello">Hello, Guest</strong>
+                                <small><a href="dashboard.html" data-i18n="view">View your account</a></small>
                             </div>
-
-                            <a href="dashboard.html" data-i18n="dash" ><i class="bi bi-grid"></i> Dashboard</a>
-                            <a href="my-booking.html" data-i18n="dash"><i class="bi bi-calendar-check"></i> My Bookings</a>
-                            <a href="wishlist.html" data-i18n="dash"><i class="bi bi-heart"></i> Wishlist</a>
-                            <a href="profile.html" data-i18n="dash"><i class="bi bi-person-gear"></i> Account Settings</a>
-
-                            <button id="logoutBtn" class="logout-btn" data-i18n="log">
-                                <i class="bi bi-box-arrow-right"></i> Log Out
-                            </button>
                         </div>
+
+                        <a href="dashboard.html" data-i18n="dash"><i class="bi bi-grid"></i> Dashboard</a>
+                        <a href="my-booking.html" data-i18n="dash"><i class="bi bi-calendar-check"></i> My Bookings</a>
+                        <a href="wishlist.html" data-i18n="dash"><i class="bi bi-heart"></i> Wishlist</a>
+                        <a href="profile.html" data-i18n="dash"><i class="bi bi-person-gear"></i> Account Settings</a>
+
+                        <button id="logoutBtn" class="logout-btn" data-i18n="log">
+                            <i class="bi bi-box-arrow-right"></i> Log Out
+                        </button>
                     </div>
                 </div>
-
-                <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
-                    دری
-                </button>
             </div>
+
+            <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
+                دری
+            </button>
         </div>
+    </div>
     </div>
 
     <!--=============
@@ -191,25 +193,25 @@
             <div class="row">
                 <div class="col-lg-8 col-md-6 col-12">
                     <div class="image">
-                        <img src="images/Deluxe room.jpg" class="img-fluid" alt="">
+                        <img id="mainRoomImage" src="" class="img-fluid" alt="Room Image">
                     </div>
                     <div class="row mt-3 g-2">
                         <div class="images">
                             <div class="col-lg-3">
-                                <img src="images/Deluxe room.jpg" class="img-fluid" alt="Bedroom">
+                                <img id="roomImage1" src="" class="img-fluid" alt="Bedroom">
                                 <div class="img-name">Bedroom</div>
                             </div>
                             <div class="col-lg-3">
-                                <img src="images/Bathroom.jpg" class="img-fluid" alt="Bathroom">
+                                <img id="roomImage2" src="" class="img-fluid" alt="Bathroom">
                                 <div class="img-name">Bathroom</div>
                             </div>
                             <div class="col-lg-3">
-                                <img src="images/hall.jpg" class="img-fluid" alt="hall">
+                                <img id="roomImage3" src="" class="img-fluid" alt="hall">
                                 <div class="img-name">hall</div>
                             </div>
                             <div class="col-lg-3">
                                 <a href="gallery.html" class="gallery-more">
-                                    <img src="images/iving room.jpg" class="img-fluid" alt="Living">
+                                    <img id="roomImage4" src="" class="img-fluid" alt="Living">
                                     <span>+20</span>
                                 </a>
                                 <div class="img-name">Living</div>
@@ -219,67 +221,38 @@
                 </div>
                 <!--======Right=======-->
                 <div class="col-lg-4 col-md-6 col-12">
-                    <div class="heading ">
+                    <div class="heading">
                         <h2>ROOMS Details</h2>
-                        <h1>Deluxe Lake View</h1>
-                        <p>A perfect blend of comfort and Luxury with breathtaking lake view.
-                            ldeal for couples and solo travelers.
-                        </p>
+                        <h1 id="roomName">Room Name</h1>
+                        <p id="roomDescription">Room Description</p>
                     </div>
                     <div class="row g-0">
                         <div class="col-3">
                             <div class="room-Info">
                                 <i class="bi bi-bounding-box"></i><br>
-                                <span>32 m <sub>2</sub></span>
+                                <span id="roomSize">0 m²</span>
                                 <p>Room Size</p>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="room-Info">
                                 <i class="bi bi-truck-front-fill"></i><br>
-                                <span>King Bed</span>
-                                <p>1 Bed</p>
+                                <span id="roomBeds">0 Bed</span>
+                                <p>Beds</p>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="room-Info">
                                 <i class="bi bi-people-fill"></i><br>
-                                <span>2 Guests</span>
+                                <span id="roomGuests">0 Guests</span>
                                 <p>Max</p>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="room-Info">
                                 <i class="bi bi-arrows-angle-expand"></i><br>
-                                <span>Lake View</span>
+                                <span id="roomView">View</span>
                                 <p>Scenic</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <h4 class="head">AMENITIES</h4>
-                        <div class="amenities">
-                            <div class="col-6">
-                                <div class="amenity">
-                                    <span><i class="bi bi-wifi"></i>Fee Wi-Fi</span>
-                                </div>
-                                <div class="amenity">
-                                    <span><i class="bi bi-snow"></i>Air Conditioning</span>
-                                </div>
-                                <div class="amenity">
-                                    <span><i class="bi bi-cup-hot"></i>Coffee Maker</span>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="amenity">
-                                    <span><i class="bi bi-tv"></i>Smart TV</span>
-                                </div>
-                                <div class="amenity">
-                                    <span><i class="bi bi-cup-straw"></i>Mini Bar</span>
-                                </div>
-                                <div class="amenity">
-                                    <span><i class="bi bi-safe"></i>Safe Box</span>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -287,10 +260,10 @@
                         <div class="price">
                             <h5>PRICE / NIGHT</h5>
                             <div class="prIce">
-                                <span style="font-weight: bold;font-size: 20px;">$189</span><span>/night</span>
+                                <span style="font-weight: bold; font-size: 20px;"
+                                    id="roomPrice">$0</span><span>/night</span>
                                 <span>
-                                    <button id="bookBtn">Book Now</button>
-                                    <!--<i class="bi bi-heart heart-icon"></i>-->
+                                    <button id="bookNowBtn">Book Now</button>
                                 </span>
                             </div>
                         </div>
@@ -299,19 +272,6 @@
             </div>
         </div>
     </section>
-    <section class="luxury-room">
-        <div class="container">
-            <div class="row g-4">
-                <div class="room-info">
-                    <h6>Good to know</h6>
-                    <span><span class="dot"></span> Check-in: 2:00 PM </span>
-                    <span><span class="dot"></span> Check-out: 12:00 PM </span>
-                    <span><span class="dot"></span> Feer Cancellation up to 24 hours befor check-in. </span>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer id="footer">
         <div class="container">
@@ -397,7 +357,8 @@
 </body>
 <script src="js/bootstrap.bundle.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/index.js"></script>
+<script src="js/room.js"></script>
+<script src="js/room-details.js"></script>
 <script src="js/darkmode.js"></script>
 <script src="js/emailInput.js"></script>
 <script src="js/login.js"></script>
