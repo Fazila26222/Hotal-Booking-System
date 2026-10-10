@@ -48,17 +48,14 @@ function displayhotels(hotelList) {
 
     hotelContainer.appendChild(hotelCard);
   });
-  document.querySelectorAll(".viewBtn").forEach((btn) => {
-    btn.addEventListener("click", function () {
-      const hotelId = parseInt(this.dataset.id);
-      const selectHotel = hotels.find((h) => h.id === hotelId);
-
-      if (selectHotel) {
-        localStorage.setItem("selectHotle", JSON.stringify(selectHotel));
-        window.location.href = "room-details.html";
-      }
-    });
-  });
+  document.querySelectorAll(".viewBtn").forEach(button => {
+            button.addEventListener("click", function () {
+                const hotelId = this.getAttribute("data-id");
+                if (hotelId) {
+                    window.location.href = `hotel-details.html?id=${hotelId}`;
+                }
+            });
+        });
 }
 displayhotels(hotels);
 

@@ -122,6 +122,8 @@ if (roomTypeSelect) {
             const email = document.getElementById("email")?.value || "";
             const phone = document.getElementById("phone")?.value || "";
             const specialRequests = document.getElementById("specialRequests")?.value || "";
+            const checkinDate = document.getElementById("checkinDate")?.value || "";
+            const checkoutDate = document.getElementById("checkoutDate")?.value || "";
 
             
             if (!firstName || !lastName || !email || !phone) {
@@ -139,6 +141,8 @@ if (roomTypeSelect) {
                 nights: nights,
                 totalPrice: totalPrice,
                 rooms: roomCount,
+                checkinDate: checkinDate,
+                checkoutDate: checkoutDate,
                 guest: {
                     firstName: firstName,
                     lastName: lastName,

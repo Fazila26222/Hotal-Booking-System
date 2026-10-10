@@ -182,16 +182,17 @@
             <h2> Booking Confirmed!</h2>
             <p class="success-text">Your hotel booking has been successfully confirmed.</p>
             <div class="booking-info">
-                <p><strong>Booking ID:</strong> #STY20260913</p>
-                <p><strong>Hotel:</strong>Stayora Luxury Hotel</p>
-                <p><strong>Check-in:</strong>20 Sep 2026</p>
-                <p><strong>Check-out:</strong>23 Sep 2026</p>
-                <p><strong>Guests:</strong>2 Adults</p>
+                <p><strong>Booking ID:</strong><span id="confirmBookingId">#STY20260913</span> </p>
+                <p><strong>Hotel:</strong><span id="confirmHotelName">Hotel Name</span></p>
+                <p><strong>Check-in:</strong><span id="confirmCheckin">-</span></p>
+                <p><strong>Check-out:</strong><span id="confirmCheckout">-</span></p>
+                <p><strong>Guests:</strong><span id="confirmGuests">-</span></p>
+                <p><strong>Total Price:</strong><span id="confirmTotalPrice">$0.00</span></p>
             </div>
             <p class="download-text">
                 Your booking confirmtion is ready.
             </p>
-            <button class="download-btn">
+            <button class="download-btn" id="downloadPdfBtn">
                 <i class="bi bi-file-earmark-pdf"></i>
                 Download PDF
             </button>
@@ -284,10 +285,12 @@
             </div>
         </div>
     </footer>
+   
 </body>
 <script src="js/bootstrap.bundle.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/index.js"></script>
+<script src="js/data.js"></script>
+<script src="js/confirm.js"></script>
 <script src="js/darkmode.js"></script>
 <script src="js/emailInput.js"></script>
 <script src="js/login.js"></script>
