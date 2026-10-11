@@ -165,11 +165,23 @@ if(selectedHotel.images && selectedHotel.images.length >= 4){
         `;
     });
 
-    const selectBtn = document.getElementById("selectBtn");
-    selectBtn.addEventListener("click", () => {
-        window.location.href = `room.html?id=${hotelId}`;
+    const selectBtn = document.querySelectorAll(".selectBtn").forEach(btn =>{
+        btn.addEventListener("click", function(){
+            // read room info
+            const roomName = this.getAttribute("data-price");
+            const roomPrice = Number(this.getAttribute("data-price"));
+
+            // save room to local storage
+            localStorage.setItem("selectedRoom",JSON.stringify({
+                name: roomName,
+                price: roomPrice,
+                hotelId: hotelId
+            }));
+             window.location.href = `room.html?id=${hotelId}`;
+        });
     });
-    
+   
+    // review
     const reviews = [
         {
             name: "Fazila Ahmadi",

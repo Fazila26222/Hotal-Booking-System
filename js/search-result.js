@@ -11,7 +11,6 @@
   const clearFilters = document.getElementById("clearFilters");
   const applyFilters = document.querySelector(".apply-filter");
 
- 
   function displayHotels(Hotels) {
     hotelResults.innerHTML = "";
 
@@ -44,8 +43,7 @@
             </span>`
               : ""
           }
-
-            <button class = "favorite-btn">
+            <button class = "favorite-btn" data-id = "${hotel.id}">
             <i class = "bi bi-heart"></i>
             </button>
           </div>
@@ -125,6 +123,54 @@
         `;
       hotelResults.appendChild(card);
     });
+
+
+    // active favorite button
+    document.querySelectorAll(".favorite-btn").forEach(btn => {
+    // check if the hotel is already in favorites
+    const hotelId = Number(btn.getAttribute("data-id"));
+
+    // read hotels form local storage
+    const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+    const isFavorite = favorites.find(h => h.id === hotelId);
+
+    if(isFavorite){
+        btn.classList.add("active");
+        btn.innerHTML = `<i class = "bi bi-heart-fill"></i>`;
+    }else{
+      btn.classList.remove("active");
+      btn.innerHTML = `<i class = "bi bi-heart"></i>`;
+    }
+
+    // click
+
+    btn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        const hotelId = Number(this.getAttribute("data-id"));
+        const hotel = Hotels.find(h => h.id === hotelId);
+        
+        if (!hotel) return;
+
+        let currentFavorites = JSON.parse(localStorage.getItem("favorites")) || [];
+        const exists = currentFavorites.find(h =>h.id === hotelId);
+
+        // remove favorit
+        if (exists) {
+            currentFavorites = currentFavorites.filter(h => h.id !== hotelId);
+            this.classList.remove("active");
+            this.innerHTML = `<i class = "bi bi-heart"></i>`;
+        } else {
+            // push favorit
+            currentFavorites.push(hotel);
+            this.classList.add("active");
+             this.innerHTML = `<i class = "bi bi-heart-fill"></i>`;
+        }
+        
+        localStorage.setItem("favorites", JSON.stringify(currentFavorites));
+        console.log("favorites hotel",currentFavorites);
+        
+    });
+});
   }
 
   displayHotels(Hotels);

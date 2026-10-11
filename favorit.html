@@ -177,110 +177,11 @@
     <section class="favorites-section">
         <div class="container">
             <div class="page-heading text-center">
-                <h1>My Favorites</h1>
-                <p>Your favorite hotels are saved here for easy access.</p>
+                <h1 data-i18n="my_wishlist">My Favorites</h1>
+                <p data-i18n="my_wishlist_subtitle">Your favorite hotels are saved here for easy access.</p>
             </div>
-            <div class="row g-4">
-                <!-- Hotel 1 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="favorite-card">
-                        <div class="favorite-image">
-                            <img src="images/kabul star.jpg" alt="Kabul Hotel">
-                            <button class="heart-btn">
-                                <i class="bi bi-heart-fill"></i>
-                            </button>
-                        </div>
-                        <div class="favorite-content">
-                            <div class="d-flex justify-content-between">
-                                <h3>Kabul Grand Hotel</h3>
-                                <span class="rating">
-                                    <i class="bi bi-star-fill"></i>
-                                    4.8
-                                </span>
-                            </div>
-                            <p class="location">
-                                <i class="bi bi-geo-alt"></i>
-                                Kabul, Afghanistan
-                            </p>
-                            <div class="favorite-bottom">
-                                <div>
-                                    <strong>$120</strong>
-                                    <span>/ Night</span>
-                                </div>
-                                <a href="#" class="view-btn">
-                                    View Hotel
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Hotel 2 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="favorite-card">
-                        <div class="favorite-image">
-                            <img src="images/istanbul1.jpg" alt="Istanbul Hotel">
-                            <button class="heart-btn">
-                                <i class="bi bi-heart-fill"></i>
-                            </button>
-                        </div>
-                        <div class="favorite-content">
-                            <div class="d-flex justify-content-between">
-                                <h3>Istanbul Royal Hotel</h3>
-                                <span class="rating">
-                                    <i class="bi bi-star-fill"></i>
-                                    4.7
-                                </span>
-                            </div>
-                            <p class="location">
-                                <i class="bi bi-geo-alt"></i>
-                                Istanbul, Turkey
-                            </p>
-                            <div class="favorite-bottom">
-                                <div>
-                                    <strong>$150</strong>
-                                    <span>/ Night</span>
-                                </div>
-                                <a href="#" class="view-btn">
-                                    View Hotel
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Hotel 3 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="favorite-card">
-                        <div class="favorite-image">
-                            <img src="images/paris.jpg" alt="Paris Hotel">
-                            <button class="heart-btn">
-                                <i class="bi bi-heart-fill"></i>
-                            </button>
-                        </div>
-                        <div class="favorite-content">
-                            <div class="d-flex justify-content-between">
-                                <h3>Paris Luxury Hotel</h3>
-                                <span class="rating">
-                                    <i class="bi bi-star-fill"></i>
-                                    4.9
-                                </span>
-                            </div>
-                            <p class="location">
-                                <i class="bi bi-geo-alt"></i>
-                                Paris, France
-                            </p>
-                            <div class="favorite-bottom">
-                                <div>
-                                    <strong>$180</strong>
-                                    <span>/ Night</span>
-                                </div>
-                                <a href="#" class="view-btn">
-                                    View Hotel
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div id="favoritContainer" class="row g-4"></div>
+           
         </div>
     </section>
 
@@ -369,7 +270,8 @@
 </body>
 <script src="js/bootstrap.bundle.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/index.js"></script>
+<script src="js/data.js"></script>
+<script src="js/favorit.js"></script>
 <script src="js/darkmode.js"></script>
 <script src="js/emailInput.js"></script>
 <script src="js/login.js"></script>
