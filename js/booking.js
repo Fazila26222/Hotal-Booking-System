@@ -152,10 +152,19 @@ if (roomTypeSelect) {
                 }
             };
 
-            localStorage.setItem("currentBooking", JSON.stringify(bookingData));
-            console.log("Booking data saved:", bookingData);
+            // get
+            let existingBookings = JSON.parse(localStorage.getItem("myBookings"));
+            if(!existingBookings || !Array.isArray(existingBookings)){
+                existingBookings = [];
+            }
+            // add
+            existingBookings.push(bookingData);
 
-           
+            // save
+            localStorage.setItem("myBookings", JSON.stringify(existingBookings));
+            localStorage.setItem("currentBooking",JSON.stringify(bookingData));
+            console.log("Booking save to list:", bookingData);
+            console.log("hotel list",existingBookings);
             window.location.href = "confirm.html";
         });
     }

@@ -534,3 +534,58 @@ body.darkBtn .footer-social i {
     align-items: center;
     display: flex;
 }
+/* my booking */
+body.darkBtn {
+    background: #0f172a;
+}
+
+body.darkBtn .bookings-section {
+    background: #0f172a;
+}
+
+body.darkBtn .booking-card-vertical {
+    background: #1a1a2e !important;
+}
+
+body.darkBtn .booking-card-body h3 {
+    color: #ffffff;
+}
+
+body.darkBtn .booking-card-body .location {
+    color: #b0b0b0;
+}
+
+body.darkBtn .booking-info-grid {
+    background: #16213e;
+}
+
+body.darkBtn .info-item strong {
+    color: #ffffff;
+}
+
+body.darkBtn .info-item span {
+    color: #b0b0b0;
+}
+
+body.darkBtn .booking-tabs button {
+    background: #1a1a2e;
+    border-color: #2c3e50;
+    color: #b0b0b0;
+}
+
+body.darkBtn .booking-tabs button.active {
+    background: #0d6efd;
+    color: #ffffff;
+}
+
+body.darkBtn .page-heading h1 {
+    color: #ffffff;
+}
+
+body.darkBtn .empty-state {
+    background: #1a1a2e;
+}
+
+body.darkBtn .empty-state h3 {
+    color: #ffffff;
+}

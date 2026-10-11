@@ -59,12 +59,12 @@
                         <a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact</a>
                     </li>
                 </ul>
-                 <!-- navbar Button-->
+                <!-- navbar Button-->
                 <div class="nav-buttons">
-                <button class="darkBtn" id="darkBtn">
-                    <i class="bi bi-moon-fill"></i>
-                </button>
-               <button class="btn btn-primary btn-sm login-btn" data-open-modal="login-modal">
+                    <button class="darkBtn" id="darkBtn">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                    <button class="btn btn-primary btn-sm login-btn" data-open-modal="login-modal">
                         <span data-i18n="login_btn" id="loginLink" onclick="window.location.href = 'login.html'">
                             Login
                         </span>
@@ -82,10 +82,12 @@
                                 </div>
                             </div>
 
-                            <a href="dashboard.html" data-i18n="dash" ><i class="bi bi-grid"></i> Dashboard</a>
-                            <a href="my-booking.html" data-i18n="dash"><i class="bi bi-calendar-check"></i> My Bookings</a>
+                            <a href="dashboard.html" data-i18n="dash"><i class="bi bi-grid"></i> Dashboard</a>
+                            <a href="my-booking.html" data-i18n="dash"><i class="bi bi-calendar-check"></i> My
+                                Bookings</a>
                             <a href="favorit.html" data-i18n="dash"><i class="bi bi-heart"></i> Favorit</a>
-                            <a href="profile.html" data-i18n="dash"><i class="bi bi-person-gear"></i> Account Settings</a>
+                            <a href="profile.html" data-i18n="dash"><i class="bi bi-person-gear"></i> Account
+                                Settings</a>
 
                             <button id="logoutBtn" class="logout-btn" data-i18n="log">
                                 <i class="bi bi-box-arrow-right"></i> Log Out
@@ -97,8 +99,8 @@
                 <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
                     دری
                 </button>
-                </div>
             </div>
+        </div>
         </div>
     </nav>
     <!--===========
@@ -129,46 +131,46 @@
                     <a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact</a>
                 </li>
             </ul>
-             <!-- navbar Button-->
-                <div class="nav-buttons">
-            <button class="darkBtn" id="darkBtn">
-                <i class="bi bi-moon-fill"></i>
-            </button>
-            <button class="btn btn-primary btn-sm login-btn" data-open-modal="login-modal">
-                        <span data-i18n="login_btn" id="loginLink" onclick="window.location.href = 'login.html'">
-                            Login
-                        </span>
+            <!-- navbar Button-->
+            <div class="nav-buttons">
+                <button class="darkBtn" id="darkBtn">
+                    <i class="bi bi-moon-fill"></i>
+                </button>
+                <button class="btn btn-primary btn-sm login-btn" data-open-modal="login-modal">
+                    <span data-i18n="login_btn" id="loginLink" onclick="window.location.href = 'login.html'">
+                        Login
+                    </span>
+                </button>
+                <div id="profileBox" class="d-none position-relative">
+                    <button id="profileToggle" class="profile-icon">
+                        <span id="profileAvatar" data-i18n="F">F</span>
                     </button>
-                    <div id="profileBox" class="d-none position-relative">
-                        <button id="profileToggle" class="profile-icon">
-                            <span id="profileAvatar" data-i18n="F">F</span>
-                        </button>
-                        <div id="profileMenu" class="profile-menu d-none">
-                            <div class="profile-header">
-                                <div class="profile-avatar-lg" id="menuAvatar" data-i18n="F">F</div>
-                                <div>
-                                    <strong id="menuUserName" data-i18n="Hello">Hello, Guest</strong>
-                                    <small><a href="dashboard.html" data-i18n="view">View your account</a></small>
-                                </div>
+                    <div id="profileMenu" class="profile-menu d-none">
+                        <div class="profile-header">
+                            <div class="profile-avatar-lg" id="menuAvatar" data-i18n="F">F</div>
+                            <div>
+                                <strong id="menuUserName" data-i18n="Hello">Hello, Guest</strong>
+                                <small><a href="dashboard.html" data-i18n="view">View your account</a></small>
                             </div>
-
-                            <a href="dashboard.html" data-i18n="dash" ><i class="bi bi-grid"></i> Dashboard</a>
-                            <a href="my-booking.html" data-i18n="dash"><i class="bi bi-calendar-check"></i> My Bookings</a>
-                            <a href="favorit.html" data-i18n="dash"><i class="bi bi-heart"></i> Favorit</a>
-                            <a href="profile.html" data-i18n="dash"><i class="bi bi-person-gear"></i> Account Settings</a>
-
-                            <button id="logoutBtn" class="logout-btn" data-i18n="log">
-                                <i class="bi bi-box-arrow-right"></i> Log Out
-                            </button>
                         </div>
+
+                        <a href="dashboard.html" data-i18n="dash"><i class="bi bi-grid"></i> Dashboard</a>
+                        <a href="my-booking.html" data-i18n="dash"><i class="bi bi-calendar-check"></i> My Bookings</a>
+                        <a href="favorit.html" data-i18n="dash"><i class="bi bi-heart"></i> Favorit</a>
+                        <a href="profile.html" data-i18n="dash"><i class="bi bi-person-gear"></i> Account Settings</a>
+
+                        <button id="logoutBtn" class="logout-btn" data-i18n="log">
+                            <i class="bi bi-box-arrow-right"></i> Log Out
+                        </button>
                     </div>
                 </div>
+            </div>
 
             <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
                 دری
             </button>
-            </div>
         </div>
+    </div>
     </div>
 
     <!--=============
@@ -177,138 +179,19 @@
     <section class="bookings-section">
         <div class="container">
             <div class="page-heading text-center">
-                <h1>My Bookings</h1>
-                <p>Manage and view your hotel reservations</p>
+                <h1 data-i18n="my_booking_title">My Bookings</h1>
+                <p data-i18n="my_booking_subtitle">Manage and view your hotel reservations</p>
             </div>
             <!-- Booking Tabs -->
             <div class="booking-tabs">
-                <button class="active">All</button>
-                <button>Upcoming</button>
-                <button>Completed</button>
-                <button>Cancelled</button>
+                <button class="active" data-filter="all" data-i18n="tab_all">All</button>
+                <button data-filter="upcoming" data-i18n="tab_upcoming">Upcoming</button>
+                <button data-filter="completed" data-i18n="tab_completed">Completed</button>
+                <button data-filter="cancelled" data-i18n="tab_cancelled">Cancelled</button>
             </div>
             <!-- Booking Card -->
-            <div class="booking-card">
-                <div class="row g-0">
-                    <div class="col-lg-4">
-                        <img src="images/restaurant.jpg" class="booking-img" alt="Hotel">
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="booking-content">
-                            <div class="d-flex justify-content-between align-items-start">
-                                <div>
-                                    <h3>Kabul Grand Hotel</h3>
-                                    <p class="location">
-                                        <i class="bi bi-geo-alt"></i>
-                                        Kabul, Afghanistan
-                                    </p>
-                                </div>
-                                <span class="status">
-                                    <i class="bi bi-check-circle"></i>
-                                    Confirmed
-                                </span>
-                            </div>
-                            <div class="booking-info">
-                                <div>
-                                    <i class="bi bi-calendar-check"></i>
-                                    <span>Check-in</span>
-                                    <strong>Sep 20, 2026</strong>
-                                </div>
-                                <div>
-                                    <i class="bi bi-calendar-x"></i>
-                                    <span>Check-out</span>
-                                    <strong>Sep 23, 2026</strong>
-                                </div>
-                                <div>
-                                    <i class="bi bi-people"></i>
-                                    <span>Guests</span>
-                                    <strong>2 Adults</strong>
-                                </div>
-                                <div>
-                                    <i class="bi bi-house"></i>
-                                    <span>Room</span>
-                                    <strong>Deluxe Room</strong>
-                                </div>
-                            </div>
-                            <div class="booking-bottom">
-                                <div>
-                                    <small>Total Price</small>
-                                    <h4>$360</h4>
-                                </div>
-                                <div class="booking-buttons">
-                                    <a href="#" class="details-btn">
-                                        View Details
-                                    </a>
-                                    <a href="#" class="cancel-btn">
-                                        Cancel Booking
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Second Booking -->
-            <div class="booking-card">
-                <div class="row g-0">
-                    <div class="col-lg-4">
-                        <img src="images/hall.jpg" class="booking-img" alt="Hotel">
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="booking-content">
-                            <div class="d-flex justify-content-between align-items-start">
-                                <div>
-                                    <h3>Istanbul Royal Hotel</h3>
-                                    <p class="location">
-                                        <i class="bi bi-geo-alt"></i>
-                                        Istanbul, Turkey
-                                    </p>
-                                </div>
-                                <span class="status">
-                                    <i class="bi bi-check-circle"></i>
-                                    Confirmed
-                                </span>
-                            </div>
-                            <div class="booking-info">
-                                <div>
-                                    <i class="bi bi-calendar-check"></i>
-                                    <span>Check-in</span>
-                                    <strong>Oct 05, 2026</strong>
-                                </div>
-                                <div>
-                                    <i class="bi bi-calendar-x"></i>
-                                    <span>Check-out</span>
-                                    <strong>Oct 08, 2026</strong>
-                                </div>
-                                <div>
-                                    <i class="bi bi-people"></i>
-                                    <span>Guests</span>
-                                    <strong>2 Adults</strong>
-                                </div>
-                                <div>
-                                    <i class="bi bi-house"></i>
-                                    <span>Room</span>
-                                    <strong>Luxury Room</strong>
-                                </div>
-                            </div>
-                            <div class="booking-bottom">
-                                <div>
-                                    <small>Total Price</small>
-                                    <h4>$450</h4>
-                                </div>
-                                <div class="booking-buttons">
-                                    <a href="#" class="details-btn">
-                                        View Details
-                                    </a>
-                                    <a href="#" class="cancel-btn">
-                                        Cancel Booking
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div id="bookingContainer" class="row g-4"></div>
+            <!-- add to javascirpt card -->
         </div>
     </section>
 
@@ -397,8 +280,9 @@
 </body>
 <script src="js/bootstrap.bundle.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/index.js"></script>
+<script src="js/my-booking.js"></script>
 <script src="js/darkmode.js"></script>
 <script src="js/emailInput.js"></script>
 <script src="js/login.js"></script>
+
 </html>
