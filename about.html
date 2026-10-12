@@ -38,10 +38,10 @@
             <div class="collapse navbar-collapse justify-content-end">
                 <ul class="navbar-nav align-items-center gap-1 me-3">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link" data-i18n="nav_home">Home</a>
+                        <a href="index.html" class="nav-link active" data-i18n="nav_home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="hotels.html" class="nav-link data-i18n=" nav_hotels>Hotels</a>
+                        <a href="hotels.html" class="nav-link" data-i18n="nav_hotels">Hotels</a>
                     </li>
                     <li class="nav-item">
                         <a href="room.html" class="nav-link" data-i18n="nav_rooms">Rooms</a>
@@ -53,7 +53,7 @@
                         <a href="services.html" class="nav-link" data-i18n="nav_services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a href="about.html" class="nav-link active" data-i18n="nav_about">About</a>
+                        <a href="about.html" class="nav-link" data-i18n="nav_about">About</a>
                     </li>
                     <li class="nav-item">
                         <a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact</a>
@@ -64,10 +64,10 @@
                     <button class="darkBtn" id="darkBtn">
                         <i class="bi bi-moon-fill"></i>
                     </button>
-                    <button class="btn btn-primary btn-sm login-btn" data-open-modal="login-modal">
-                        <span data-i18n="login_btn" id="loginLink" onclick="window.location.href = 'login.html'">
-                            Login
-                        </span>
+
+                    <button type="button" id="loginLink" class="btn btn-primary btn-sm login-btn"
+                        onclick="window.location.href='login.html'">
+                        Login
                     </button>
                     <div id="profileBox" class="d-none position-relative">
                         <button id="profileToggle" class="profile-icon">
@@ -82,10 +82,13 @@
                                 </div>
                             </div>
 
-                            <a href="dashboard.html" data-i18n="dash" ><i class="bi bi-grid"></i> Dashboard</a>
-                            <a href="my-booking.html" data-i18n="dash"><i class="bi bi-calendar-check"></i> My Bookings</a>
+                            <a href="dashboard.html" data-i18n="dash"><i class="bi bi-grid"></i> Dashboard</a>
+                            <a href="my-booking.html" data-i18n="dash"><i class="bi bi-calendar-check"></i> My
+                                Bookings</a>
                             <a href="favorit.html" data-i18n="dash"><i class="bi bi-heart"></i> Favorit</a>
-                            <a href="profile.html" data-i18n="dash"><i class="bi bi-person-gear"></i> Account Settings</a>
+                            <a href="payment.html"><i class="bi bi-credit-card"></i> Payment</a>
+                            <a href="profile.html" data-i18n="dash"><i class="bi bi-person-gear"></i> Account
+                                Settings</a>
 
                             <button id="logoutBtn" class="logout-btn" data-i18n="log">
                                 <i class="bi bi-box-arrow-right"></i> Log Out
@@ -94,11 +97,11 @@
                     </div>
                 </div>
 
-                    <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
-                        دری
-                    </button>
-                </div>
+                <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
+                    دری
+                </button>
             </div>
+        </div>
         </div>
     </nav>
     <!--===========
@@ -108,7 +111,7 @@
         <div class="offcanvas-body">
             <ul class="navbar-nav gap-1 mb-4">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link" data-i18n="nav_home">Home</a>
+                    <a href="index.html" class="nav-link active" data-i18n="nav_home">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="hotels.html" class="nav-link" data-i18n="nav_hotels">Hotels</a>
@@ -134,41 +137,41 @@
                 <button class="darkBtn" id="darkBtn">
                     <i class="bi bi-moon-fill"></i>
                 </button>
-                <button class="btn btn-primary btn-sm login-btn" data-open-modal="login-modal">
-                        <span data-i18n="login_btn" id="loginLink" onclick="window.location.href = 'login.html'">
-                            Login
-                        </span>
+                <button type="button" id="loginLink" class="btn btn-primary btn-sm login-btn"
+                    onclick="window.location.href='login.html'">
+                    Login
+                </button>
+                <div id="profileBox" class="d-none position-relative">
+                    <button id="profileToggle" class="profile-icon">
+                        <span id="profileAvatar" data-i18n="F">F</span>
                     </button>
-                    <div id="profileBox" class="d-none position-relative">
-                        <button id="profileToggle" class="profile-icon">
-                            <span id="profileAvatar" data-i18n="F">F</span>
-                        </button>
-                        <div id="profileMenu" class="profile-menu d-none">
-                            <div class="profile-header">
-                                <div class="profile-avatar-lg" id="menuAvatar" data-i18n="F">F</div>
-                                <div>
-                                    <strong id="menuUserName" data-i18n="Hello">Hello, Guest</strong>
-                                    <small><a href="dashboard.html" data-i18n="view">View your account</a></small>
-                                </div>
+                    <div id="profileMenu" class="profile-menu d-none">
+                        <div class="profile-header">
+                            <div class="profile-avatar-lg" id="menuAvatar" data-i18n="F">F</div>
+                            <div>
+                                <strong id="menuUserName" data-i18n="Hello">Hello, Guest</strong>
+                                <small><a href="dashboard.html" data-i18n="view">View your account</a></small>
                             </div>
-
-                            <a href="dashboard.html" data-i18n="dash" ><i class="bi bi-grid"></i> Dashboard</a>
-                            <a href="my-booking.html" data-i18n="dash"><i class="bi bi-calendar-check"></i> My Bookings</a>
-                            <a href="favorit.html" data-i18n="dash"><i class="bi bi-heart"></i> Favorit</a>
-                            <a href="profile.html" data-i18n="dash"><i class="bi bi-person-gear"></i> Account Settings</a>
-
-                            <button id="logoutBtn" class="logout-btn" data-i18n="log">
-                                <i class="bi bi-box-arrow-right"></i> Log Out
-                            </button>
                         </div>
+
+                        <a href="dashboard.html" data-i18n="dash"><i class="bi bi-grid"></i> Dashboard</a>
+                        <a href="my-booking.html" data-i18n="dash"><i class="bi bi-calendar-check"></i> My Bookings</a>
+                        <a href="favorit.html" data-i18n="dash"><i class="bi bi-heart"></i> Favorit</a>
+                        <a href="payment.html"><i class="bi bi-credit-card"></i> Payment</a>
+                        <a href="profile.html" data-i18n="dash"><i class="bi bi-person-gear"></i> Account Settings</a>
+
+                        <button id="logoutBtn" class="logout-btn" data-i18n="log">
+                            <i class="bi bi-box-arrow-right"></i> Log Out
+                        </button>
                     </div>
                 </div>
-
-                <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
-                    دری
-                </button>
             </div>
+
+            <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
+                دری
+            </button>
         </div>
+    </div>
     </div>
 
     <!--=============
