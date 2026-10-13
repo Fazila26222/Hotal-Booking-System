@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/darkmode.css">
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/contact.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!--icons and fonts file-->
     <link rel="stylesheet" href="icons/bootstrap-icons.min.css">
@@ -133,7 +134,7 @@
                 </li>
             </ul>
             <!-- navbar Button-->
-           <div class="nav-buttons">
+            <div class="nav-buttons">
                 <button class="darkBtn" id="darkBtnMobile">
                     <i class="bi bi-moon-fill"></i>
                 </button>
@@ -210,56 +211,60 @@
                                 Fill out the form below and our team will get back to you shortly.
                             </p>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="position-relative">
-                                    <i class="bi bi-person position-absolute top-50 start-3 translate-middle-y ms-3
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="position-relative">
+                                        <i class="bi bi-person position-absolute top-50 start-3 translate-middle-y ms-3
                                             "></i>
-                                    <input type="text" class="form-control ps-5 text-start" placeholder="Full Name *"
-                                        required>
+                                        <input type="text" id="contactName" class="form-control ps-5 text-start"
+                                            placeholder="Full Name *" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="position-relative">
+                                        <i class="bi bi-envelope position-absolute top-50 start-3 translate-middle-y ms-3
+                                            "></i>
+                                        <input type="email" id="contactEmail" class="form-control ps-5 text-start"
+                                            placeholder="Email Address *" required>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="position-relative">
-                                    <i class="bi bi-envelope position-absolute top-50 start-3 translate-middle-y ms-3
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="position-relative">
+                                        <i class="bi bi-telephone position-absolute top-50 start-3 translate-middle-y ms-3
                                             "></i>
-                                    <input type="email" class="form-control ps-5 text-start"
-                                        placeholder="Email Address *" required>
+                                        <input type="tel" id="contactPhone" class="form-control ps-5 text-start"
+                                            placeholder="Phone Number *" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="position-relative">
+                                        <i class="bi bi-card-text position-absolute top-50 start-3 translate-middle-y ms-3
+                                            "></i>
+                                        <select name="hotel" id="contactSubject"
+                                            class="form-select form-select-lg form-control ps-5 text-start">
+                                            <option value="" selected disabled>Select Subject</option>
+                                            <option value="room booking">Room booking</option>
+                                            <option value="hotel services">Hotel services</option>
+                                            <option value="complaint">Complaint</option>
+                                            <option value="pricr inquir">Pricr inquir</option>
+                                            <option value="reservation inquir">Reservation inquir</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="position-relative">
-                                    <i class="bi bi-telephone position-absolute top-50 start-3 translate-middle-y ms-3
-                                            "></i>
-                                    <input type="tel" class="form-control ps-5 text-start"
-                                        placeholder="Phone Number *" required>
-                                </div>
+                            <div class="message">
+                                <i class="bi bi-chat-left-text"></i>
+                                <textarea class="form-control w-100" rows="4" id="contactMessage"
+                                    placeholder="  Your Message*"></textarea>
                             </div>
-                            <div class="col-md-6">
-                                <div class="position-relative">
-                                    <i class="bi bi-card-text position-absolute top-50 start-3 translate-middle-y ms-3
-                                            "></i>
-                                    <select name="hotel" id="hotel"
-                                        class="form-select form-select-lg form-control ps-5 text-start">
-                                        <option value="subject" selected disabled>Select Subject</option>
-                                        <option value="room booking">Room booking</option>
-                                        <option value="hotel services">Hotel services</option>
-                                        <option value="complaint">Complaint</option>
-                                        <option value="pricr inquir">Pricr inquir</option>
-                                        <option value="reservation inquir">Reservation inquir</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="message">
-                            <i class="bi bi-chat-left-text"></i>
-                            <textarea class="form-control w-100" rows="4" placeholder="  Your Message*"></textarea>
-                        </div>
-                        <button class="sendBtn" id="sendBtn"><i class="bi bi-telegram"></i> Send Message <i
-                                class="bi bi-arrow-right"></i></button>
+                            <button type="submit" class="sendBtn" id="sendBtn"><i class="bi bi-telegram"></i> Send
+                                Message <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </form>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -451,9 +456,10 @@
         </div>
     </footer>
 </body>
-<script src="js/bootstrap.bundle.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/contact.js"></script>
 <script src="js/darkmode.js"></script>
 <script src="js/emailInput.js"></script>
 <script src="js/login.js"></script>
+
 </html>
