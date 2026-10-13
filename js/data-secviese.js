@@ -1,0 +1,75 @@
+const servicesData = [
+  {
+    id: 1,
+    title: "Complimentary Breakfast",
+    icon: "bi-bell",
+    image: "images/breakfast.png",
+    description: "Start your day with a variety of fresh and delicious breakfast options.",
+    category: "food",
+  },
+  {
+    id: 2,
+    title: "High Speed Wi-Fi",
+    icon: "bi-wifi",
+    image: "images/wi-fi.png",
+    description: "Stay connected with fast and reliable internet access in all areas of the hotel.",
+    category: "internet",
+  },
+  {
+    id: 3,
+    title: "Free Parking",
+    icon: "bi-p-circle",
+    image: "images/free parking.png",
+    description: "Enjoy free and convenient parking with 24/7 access and security.",
+    category: "transport",
+  },
+  {
+    id: 4,
+    title: "Daily Housekeeping",
+    icon: "bi-person-workspace",
+    image: "images/daily housekeeping.png",
+    description: "We ensure your room is always clean, fresh, and ready for your comfort.",
+    category: "housekeeping",
+  },
+  {
+    id: 5,
+    title: "Airport Transfer",
+    icon: "bi-car-front",
+    image: "images/Airport transfer.png",
+    description: "Comfortable and reliable transfer to and from the airport on request.",
+    category: "transport",
+  },
+  {
+    id: 6,
+    title: "Fitness Center",
+    icon: "bi-universal-access",
+    image: "images/fitness center.png",
+    description: "Stay active during your stay with our modern and fully equipped gym.",
+    category: "wellness",
+  },
+  {
+    id: 7,
+    title: "Laundry Service",
+    icon: "bi-basket",
+    image: "images/laundry.png",
+    description: "Professional laundry and ironing service for a hassle-free experience.",
+    category: "housekeeping",
+  },
+  {
+    id: 8,
+    title: "Concierge Service",
+    icon: "bi-person-badge",
+    image: "images/concierge service.png",
+    description: "Our concierge team is here to assist with tours, tickets, and more.",
+    category: "help",
+  },
+];
+
+/* سرویس‌های کوچک (بالای صفحه) */
+const smallServicesData = [
+  { icon: "bi-p-circle",        title: "Free Parking" },
+  { icon: "bi-shield-check",    title: "24/7 Security" },
+  { icon: "bi-person-badge",    title: "24/7 Front Desk" },
+  { icon: "bi-bell",            title: "Room Service" },
+  { icon: "bi-wifi",            title: "Free Wi-Fi" },
+];

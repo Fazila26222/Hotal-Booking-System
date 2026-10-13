@@ -1,5 +1,3 @@
-
-
 // ========== Destination  ==============
 const destinationItem = document.getElementById("destinationItem");
 const destinationValue = document.getElementById("destinationValue");
@@ -12,7 +10,6 @@ destinationItem.addEventListener("click", function () {
 
 // Open Dropdown
 function dropdownDestinations() {
-
   const uniqueCities = [];
   Hotels.forEach(function (hotel) {
     const cityName = hotel.city.split(",")[0].trim();
@@ -162,12 +159,13 @@ document.querySelectorAll(".guest-btn").forEach((button) => {
   });
 });
 
-
 // =====Search ======
 const search = document.getElementById("search");
 
 search.addEventListener("click", function () {
-  const destinationValue = document.getElementById("destinationValue").textContent.trim();
+  const destinationValue = document
+    .getElementById("destinationValue")
+    .textContent.trim();
 
   console.log("Destination value:", destinationValue);
   if (destinationValue === "where are you going?" || destinationValue === "") {
@@ -192,7 +190,6 @@ search.addEventListener("click", function () {
   localStorage.getItem("searchResults");
 
   window.location.href = "search-result.html";
-
 });
 
 const results = JSON.parse(localStorage.getItem("searchResults")) || [];
@@ -212,19 +209,17 @@ hoteLCards.forEach(function (card) {
 
 const bookBtns = document.querySelectorAll(".bookBtn");
 
-bookBtns.forEach(button => {
+bookBtns.forEach((button) => {
   button.addEventListener("click", (e) => {
     e.preventDefault();
 
-      const hotelId = button.getAttribute("data-id");
-      if (hotelId) {
-        window.location.href = `hotel-details.html?id=${hotelId}`;
-      } else {
-        console.log("Hotel ID not found for this card.");
-      }
+    const hotelId = button.getAttribute("data-id");
+    if (hotelId) {
+      window.location.href = `hotel-details.html?id=${hotelId}`;
+    } else {
+      console.log("Hotel ID not found for this card.");
+    }
 
-        window.location.href = `hotel-details.html?id=${direcId}`;
-      
+    window.location.href = `hotel-details.html?id=${direcId}`;
   });
 });
-
