@@ -19,38 +19,38 @@
  
 <body>
     <div class="form-container">
-        <h1>Stayora</h1>
-        <div class="login-lable">
-            <span>HOTEL & RESORT</span>
-        </div>
-        <H3>Welcome Back</H3>
-        <p class="subtitle">Login to your account to continue</p>
-        <form id="loginForm" class="auth-box">
-            <div class="field">
-                <input type="email" id="loginEmail" placeholder="Enter your email">
-            </div>
-            <div class="field">
-                <input type="password" id="loginPassword" placeholder="Create your password">
-            </div>
-            <div class="terms">
-                <input type="checkbox" id="terms">
-                <label for="terms">
-                    Remember me
-                </label>
-                <a href="forgot-password.html">Forgot password?</a>
-            </div>
-            <button type="submit" id="loginBtn">Login <i class="bi bi-arrow-right"></i></button>
-            <div id="successMessage"></div>
-            <div class="register-line">
-                <span></span>
-                <p>
-                    Don't have an account
-                </p>
-                <span></span>
-            </div>
-            <a id="showRegisterForm" href="register.html">Register here</a>
-        </form>
+    <h1>Stayora</h1>
+    <div class="login-lable">
+        <span data-i18n="login_label">HOTEL & RESORT</span>
     </div>
+    <h3 data-i18n="login_welcome">Welcome Back</h3>
+    <p class="subtitle" data-i18n="login_subtitle">Login to your account to continue</p>
+
+    <form id="loginForm" class="auth-box">
+        <div class="field">
+            <input type="email" id="loginEmail" data-i18n="login_email_ph" placeholder="Enter your email">
+        </div>
+        <div class="field">
+            <input type="password" id="loginPassword" data-i18n="login_pass_ph" placeholder="Enter your password">
+        </div>
+
+        <div class="terms">
+            <input type="checkbox" id="terms">
+            <label for="terms" data-i18n="remember_me">Remember me</label>
+            <a href="forgot-password.html" data-i18n="forgot_password">Forgot password?</a>
+        </div>
+
+        <button type="submit" id="loginBtn" data-i18n="login_btn2">Login</button>
+        <div id="successMessage"></div>
+
+        <div class="register-line">
+            <span></span>
+            <p data-i18n="no_account">Don't have an account</p>
+            <span></span>
+        </div>
+        <a id="showRegisterForm" href="register.html" data-i18n="register_here">Register here</a>
+    </form>
+</div>
     <script src="js/login.js"></script>
 </body>
 <script src="js/bootstrap.bundle.js"></script>

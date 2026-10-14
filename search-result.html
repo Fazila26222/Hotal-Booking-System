@@ -78,24 +78,26 @@
                             <div class="profile-avatar-lg" id="menuAvatarMobile" data-i18n="F">F</div>
                             <div>
                                 <strong id="menuUserNameMobile" data-i18n="Hello">Hello, Guest</strong>
-                                <small><a href="dashboard.html" data-i18n="view">View your account</a></small>
+                              <small><a href="dashboard.html" data-i18n="view_accont">View your account</a></small>
+                                </div>
                             </div>
-                        </div>
 
-                        <a href="dashboard.html" data-i18n="dash"><i class="bi bi-grid"></i> Dashboard</a>
-                        <a href="my-booking.html" data-i18n="dash"><i class="bi bi-calendar-check"></i> My Bookings</a>
-                        <a href="favorit.html" data-i18n="dash"><i class="bi bi-heart"></i> Favorit</a>
-                        <a href="payment.html"><i class="bi bi-credit-card"></i> Payment</a>
-                        <a href="profile.html" data-i18n="dash"><i class="bi bi-person-gear"></i> Account Settings</a>
+                            <a href="dashboard.html" data-i18n="dash"><i class="bi bi-grid"></i> Dashboard</a>
+                            <a href="my-booking.html" data-i18n="my_booking_menu"><i class="bi bi-calendar-check"></i> My
+                                Bookings</a>
+                            <a href="favorit.html" data-i18n="favorit"><i class="bi bi-heart"></i> Favorit</a>
+                            <a href="payment.html" data-i18n="payment_menu"><i class="bi bi-credit-card"></i> Payment</a>
+                            <a href="profile.html" data-i18n="account_settings"><i class="bi bi-person-gear"></i> Account
+                                Settings</a>
 
-                        <button id="logoutBtnMobile" class="logout-btn" data-i18n="log">
-                            <i class="bi bi-box-arrow-right"></i> Log Out
-                        </button>
+                            <button id="logoutBtn" class="logout-btn" data-i18n="log_out">
+                                <i class="bi bi-box-arrow-right"></i> Log Out
+                            </button>
                     </div>
                 </div>
             </div>
 
-                <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
+                <button class="btn btn-outline btn-sm d-none" data-lang-toggle aria-label="Switch language">
                     دری
                 </button>
             </div>
@@ -148,24 +150,26 @@
                             <div class="profile-avatar-lg" id="menuAvatar" data-i18n="F">F</div>
                             <div>
                                 <strong id="menuUserName" data-i18n="Hello">Hello, Guest</strong>
-                                <small><a href="dashboard.html" data-i18n="view">View your account</a></small>
+                           <small><a href="dashboard.html" data-i18n="view_accont">View your account</a></small>
+                                </div>
                             </div>
-                        </div>
 
-                        <a href="dashboard.html" data-i18n="dash"><i class="bi bi-grid"></i> Dashboard</a>
-                        <a href="my-booking.html" data-i18n="dash"><i class="bi bi-calendar-check"></i> My Bookings</a>
-                        <a href="favorit.html" data-i18n="dash"><i class="bi bi-heart"></i> Favorit</a>
-                        <a href="payment.html"><i class="bi bi-credit-card"></i> Payment</a>
-                        <a href="profile.html" data-i18n="dash"><i class="bi bi-person-gear"></i> Account Settings</a>
+                            <a href="dashboard.html" data-i18n="dash"><i class="bi bi-grid"></i> Dashboard</a>
+                            <a href="my-booking.html" data-i18n="my_booking_menu"><i class="bi bi-calendar-check"></i> My
+                                Bookings</a>
+                            <a href="favorit.html" data-i18n="favorit"><i class="bi bi-heart"></i> Favorit</a>
+                            <a href="payment.html" data-i18n="payment_menu"><i class="bi bi-credit-card"></i> Payment</a>
+                            <a href="profile.html" data-i18n="account_settings"><i class="bi bi-person-gear"></i> Account
+                                Settings</a>
 
-                        <button id="logoutBtn" class="logout-btn" data-i18n="log">
-                            <i class="bi bi-box-arrow-right"></i> Log Out
-                        </button>
+                            <button id="logoutBtn" class="logout-btn" data-i18n="log_out">
+                                <i class="bi bi-box-arrow-right"></i> Log Out
+                            </button>
                     </div>
                 </div>
             </div>
 
-            <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
+            <button class="btn btn-outline btn-sm d-none" data-lang-toggle aria-label="Switch language">
                 دری
             </button>
         </div>
@@ -229,15 +233,15 @@
                         <div class="filter-title">
                             <h4>
                                 <i class="bi bi-funnel"></i>
-                                Filters
+                               <span data-i18n="filters">Filters</span> 
                             </h4>
-                            <button id="clearFilters">
-                                Clear All
+                            <button id="clearFilters"data-i18n="clear_all">
+                               Clear All
                             </button>
                         </div>
                         <!-- PRICE -->
                         <div class="filter-group">
-                            <h5>Price Range</h5>
+                            <h5 data-i18n="price_range">Price Range</h5>
                             <div class="price-line"></div>
                             <div class="price-values">
                                 <span>$50</span>
@@ -247,7 +251,7 @@
                         </div>
                         <!-- STAR RATING -->
                         <div class="filter-group">
-                            <h5>Star Rating</h5>
+                            <h5 data-i18n="star_rating">Star Rating</h5>
                             <label>
                                 <input type="checkbox" value="8">
                                 <span>★★★★★★★★</span>
@@ -276,49 +280,50 @@
                         </div>
                         <!-- TYPE -->
                         <div class="filter-group">
-                            <h4>Property Type</h4>
+                            <h4 data-i18n="property_type">Property Type</h4>
 
                             <label class="filter-label">
                                 <input type="checkbox" value="Hotel">
-                                <span>Hotel</span>
+                                <span data-i18n="hotel">Hotel</span>
                             </label>
 
                             <label class="filter-label">
                                 <input type="checkbox" value="Resort">
-                                <span>Resort</span>
+                                <span data-i18n="resort">Resort</span>
                             </label>
 
                             <label class="filter-label">
                                 <input type="checkbox" value="Apartment">
-                                <span>Apartment</span>
+                                <span data-i18n="apartment">Apartment</span>
                             </label>
                         </div>
                         <!-- AMENITIES -->
 
                         <div class="filter-group">
-                            <h5>Amenities</h5>
+                            <h5 data-i18n="amenities">Amenities</h5>
                             <label>
                                 <input type="checkbox" value="Parking">
                                 <i class="bi bi-airplane"></i>
-                                Airport Transfer
+                               <span data-i18n="airport_transfer">Airport Transfer</span> 
                             </label>
                             <label>
                                 <input type="checkbox" value="Pool">
                                 <i class="bi bi-heart-pulse"></i>
-                                Fitness Center
+                               <span data-i18n="fitness_center">Fitness Center</span>  
                             </label>
                             <label>
                                 <input type="checkbox" value="Wi-Fi">
                                 <i class="bi bi-wifi"></i>
-                                Free Wi-Fi
+                                <span data-i18n="free_wifi">Free Wi-Fi</span> 
                             </label>
                             <label>
                                 <input type="checkbox" value="Breakfast">
                                 <i class="bi bi-cup-hot"></i>
-                                Restaurant
+                                <span data-i18n="restaurant">Restaurant</span> 
+                              
                             </label>
                         </div>
-                        <button class="apply-filter">
+                        <button class="apply-filter" data-i18n="apply_filter">
                             Apply Filter
                         </button>
                     </div>
@@ -330,28 +335,28 @@
                     <!-- RESULT TOP -->
                     <div class="results-top">
                         <div>
-                            <h2>Search Results</h2>
+                            <h2 data-i18n="search_reslut">Search Results</h2>
                             <p>
                                 <span id="resultCount">20</span>
-                                hotels found
+                               <span data-i18n="hotel_fount">hotels found</span> 
                             </p>
                         </div>
-                        <a href="index.html"><button class="back-btn">Back To Home</button></a>
+                        <a href="index.html"><button class="back-btn" data-i18n="back_home">Back To Home</button></a>
                         <div class="sort-box">
-                            <label for="sortHotels">
+                            <label for="sortHotels" data-i18n="sort_by">
                                 Sort by:
                             </label>
                             <select id="sortHotels">
-                                <option value="recommended">
+                                <option value="recommended" data-i18n="recommended">
                                     Recommended
                                 </option>
-                                <option value="low">
+                                <option value="low" data-i18n="price_low">
                                     Price: Low to High
                                 </option>
-                                <option value="high">
+                                <option value="high" data-i18n="price_high">
                                     Price: High to Low
                                 </option>
-                                <option value="rating">
+                                <option value="rating" data-i18n="Highest_rated">
                                     Highest Rating
                                 </option>
                             </select>
@@ -383,8 +388,8 @@
                     <div class="footer-brand" data-i18n="brand">
                         Stay<span>ora</span>
                     </div>
-                    <p class="footer-info" data-i18n="brand-info">Your perfect stay starts here. </p>
-                    <p class="footer-info" data-i18n="brand-info">Discover yhe best hotel,amazing experiences
+                    <p class="footer-info" data-i18n="brand_info">Your perfect stay starts here. </p>
+                    <p class="footer-info" data-i18n="brand_info_desc">Discover yhe best hotel,amazing experiences
                         and unforgettable stays around the world
                     </p>
                     <div class="news-box">
@@ -399,32 +404,32 @@
                 <div class="col-lg-2 col-md-6 col-sm-6">
                     <div class="footer-heading" data-i18n="links">Quick Links</div>
                     <ul class="footer-links">
-                        <li><a href="index.html" class="link" data-i18n="link-home"><span>></span>Home</a></li>
-                        <li><a href="room.html" class="link" data-i18n="link-rooms"><span>></span>Rooms</a></li>
-                        <li><a href="booking.html" class="link" data-i18n="link-booking"><span>></span>Booking</a></li>
-                        <li><a href="services.html" class="link" data-i18n="link-services"><span>></span>Services</a>
+                        <li><a href="index.html" class="link" data-i18n="link_home"><span>></span>Home</a></li>
+                        <li><a href="room.html" class="link" data-i18n="link_rooms"><span>></span>Rooms</a></li>
+                        <li><a href="booking.html" class="link" data-i18n="link_booking"><span>></span>Booking</a></li>
+                        <li><a href="services.html" class="link" data-i18n="link_services"><span>></span>Services</a>
                         </li>
-                        <li><a href="about.html" class="link" data-i18n="link-about"><span>></span>About</a></li>
-                        <li><a href="contact.html" class="link" data-i18n="link-contact"><span>></span>Contact</a></li>
+                        <li><a href="about.html" class="link" data-i18n="link_about"><span>></span>About</a></li>
+                        <li><a href="contact.html" class="link" data-i18n="link_contact"><span>></span>Contact</a></li>
                     </ul>
                 </div>
                 <!-- Col 3: Support -->
                 <div class="col-lg-2 col-md-6 col-sm-6">
-                    <div class="footer-heading" data-i18n="link">Booking</div>
+                    <div class="footer-heading" data-i18n="link_booking">Booking</div>
                     <ul class="footer-links">
-                        <li><a href="favorit.html" class="link" data-i18n="link-favorite"><span>></span>Favorite</a>
+                        <li><a href="favorit.html" class="link" data-i18n="link_favorite"><span>></span>Favorite</a>
                         </li>
-                        <li><a href="my-booking.html" class="link" data-i18n="link-my-booking"><span>></span>My Booking
+                        <li><a href="my-booking.html" class="link" data-i18n="link_my_booking"><span>></span>My Booking
                             </a></li>
-                        <li><a href="search-reslut.html" class="link" data-i18n="link-search-hotel"><span>></span>Search
+                        <li><a href="search-reslut.html" class="link" data-i18n="link_search_hotel"><span>></span>Search
                                 Hotel</a></li>
-                        <li><a href="" class="link" data-i18n="link-offer"><span>></span>Offers</a></li>
-                        <li><a href="payment.html" class="link" data-i18n="link-payment"><span>></span>Payment</a></li>
+                        <li><a href="" class="link" data-i18n="link_offer"><span>></span>Offers</a></li>
+                        <li><a href="payment.html" class="link" data-i18n="link_payment"><span>></span>Payment</a></li>
                     </ul>
                 </div>
                 <!-- Col 4: Contact -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="footer-heading" data-i18n="link">Contact Us</div>
+                    <div class="footer-heading" data-i18n="link_contact">Contact Us</div>
                     <div class="footer-contact-item">
                         <i class="bi bi-geo-alt-fill"></i>
                         <span data-i18n="country">Kabul Afghanistan</span>
@@ -437,7 +442,7 @@
                         <i class="bi bi-telephone-fill"></i>
                         <span>+93 778 944 506</span>
                     </div>
-                    <div class="footer-heading">Follow Us</div>
+                    <div class="footer-heading" data-i18n="link_follow">Follow Us</div>
                     <div class="footer-social">
                         <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
                         <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
@@ -448,17 +453,15 @@
             </div>
             <!-- Bottom Footer -->
             <div class="footer-bottom d-flex flex-wrap align-items-center justify-content-between gap-2">
-                <p data-i18n="bottom-footer">&copy; 2024 <a href="#">Stayora</a>. All Rights Reserved.</p>
+                <p data-i18n="bottom-footer">&copy; 2024 <a href="#" data-i18n="bottom_footer">Stayora</a>. All Rights Reserved.</p>
                 <p>
-                    <a href="#" class="me-3">Privacy Policy</a>
-                    <a href="#" class="me-3">Terms of Conditions</a>
+                    <a href="#" class="me-3" data-i18n="privacy">Privacy Policy</a>
+                    <a href="#" class="me-3" data-i18n="terms">Terms of Conditions</a>
                 </p>
             </div>
         </div>
     </footer>
 </body>
-
-<script src="js/bootstrap.bundle.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/data.js"></script>
 <script src="js/search-result.js"></script>

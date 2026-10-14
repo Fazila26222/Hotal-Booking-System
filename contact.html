@@ -79,26 +79,26 @@
                                 <div class="profile-avatar-lg" id="menuAvatar" data-i18n="F">F</div>
                                 <div>
                                     <strong id="menuUserName" data-i18n="Hello">Hello, Guest</strong>
-                                    <small><a href="dashboard.html" data-i18n="view">View your account</a></small>
+                                <small><a href="dashboard.html" data-i18n="view_accont">View your account</a></small>
                                 </div>
                             </div>
 
                             <a href="dashboard.html" data-i18n="dash"><i class="bi bi-grid"></i> Dashboard</a>
-                            <a href="my-booking.html" data-i18n="dash"><i class="bi bi-calendar-check"></i> My
+                            <a href="my-booking.html" data-i18n="my_booking_menu"><i class="bi bi-calendar-check"></i> My
                                 Bookings</a>
-                            <a href="favorit.html" data-i18n="dash"><i class="bi bi-heart"></i> Favorit</a>
-                            <a href="payment.html"><i class="bi bi-credit-card"></i> Payment</a>
-                            <a href="profile.html" data-i18n="dash"><i class="bi bi-person-gear"></i> Account
+                            <a href="favorit.html" data-i18n="favorit"><i class="bi bi-heart"></i> Favorit</a>
+                            <a href="payment.html" data-i18n="payment_menu"><i class="bi bi-credit-card"></i> Payment</a>
+                            <a href="profile.html" data-i18n="account_settings"><i class="bi bi-person-gear"></i> Account
                                 Settings</a>
 
-                            <button id="logoutBtn" class="logout-btn" data-i18n="log">
+                            <button id="logoutBtn" class="logout-btn" data-i18n="log_out">
                                 <i class="bi bi-box-arrow-right"></i> Log Out
                             </button>
                         </div>
                     </div>
                 </div>
 
-                <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
+                <button class="btn btn-outline btn-sm d-none" data-lang-toggle aria-label="Switch language">
                     دری
                 </button>
             </div>
@@ -151,24 +151,26 @@
                             <div class="profile-avatar-lg" id="menuAvatarMobile" data-i18n="F">F</div>
                             <div>
                                 <strong id="menuUserNameMobile" data-i18n="Hello">Hello, Guest</strong>
-                                <small><a href="dashboard.html" data-i18n="view">View your account</a></small>
+                              <small><a href="dashboard.html" data-i18n="view_accont">View your account</a></small>
+                                </div>
                             </div>
-                        </div>
 
-                        <a href="dashboard.html" data-i18n="dash"><i class="bi bi-grid"></i> Dashboard</a>
-                        <a href="my-booking.html" data-i18n="dash"><i class="bi bi-calendar-check"></i> My Bookings</a>
-                        <a href="favorit.html" data-i18n="dash"><i class="bi bi-heart"></i> Favorit</a>
-                        <a href="payment.html"><i class="bi bi-credit-card"></i> Payment</a>
-                        <a href="profile.html" data-i18n="dash"><i class="bi bi-person-gear"></i> Account Settings</a>
+                            <a href="dashboard.html" data-i18n="dash"><i class="bi bi-grid"></i> Dashboard</a>
+                            <a href="my-booking.html" data-i18n="my_booking_menu"><i class="bi bi-calendar-check"></i> My
+                                Bookings</a>
+                            <a href="favorit.html" data-i18n="favorit"><i class="bi bi-heart"></i> Favorit</a>
+                            <a href="payment.html" data-i18n="payment_menu"><i class="bi bi-credit-card"></i> Payment</a>
+                            <a href="profile.html" data-i18n="account_settings"><i class="bi bi-person-gear"></i> Account
+                                Settings</a>
 
-                        <button id="logoutBtnMobile" class="logout-btn" data-i18n="log">
-                            <i class="bi bi-box-arrow-right"></i> Log Out
-                        </button>
+                            <button id="logoutBtn" class="logout-btn" data-i18n="log_out">
+                                <i class="bi bi-box-arrow-right"></i> Log Out
+                            </button>
                     </div>
                 </div>
             </div>
 
-            <button class="btn btn-outline btn-sm" data-lang-toggle aria-label="Switch language">
+            <button class="btn btn-outline btn-sm d-none" data-lang-toggle aria-label="Switch language">
                 دری
             </button>
         </div>
@@ -183,11 +185,11 @@
             <div class="col-lg-6">
                 <div class="about-heading">
                     <div class="about-lable">
-                        <span>GET IN TOUCH</span>
+                        <span data-i18n="touch_label">GET IN TOUCH</span>
                         <i></i>
                     </div>
-                    <h1>Contact Us</h1>
-                    <p>We're here to help you plan your perfect stay.
+                    <h1 data-i18n="contact_label">Contact Us</h1>
+                    <p data-i18n="contact_desc">We're here to help you plan your perfect stay.
                     </p>
                 </div>
             </div>
@@ -202,12 +204,12 @@
                 <div class="col-lg-8 col-md-6">
                     <div class="cart-contact">
                         <div class="cantact-lable">
-                            <span>SEND US A MESSAGE</span>
+                            <span data-i18n="message_label">SEND US A MESSAGE</span>
                             <i></i>
                         </div>
                         <div class="cantact-head">
-                            <h1>We'd Love to Hear From You</h1>
-                            <p>Have a question, specical,or need assistance? <br>
+                            <h1 data-i18n="message_title">We'd Love to Hear From You</h1>
+                            <p data-i18n="message_info">Have a question, specical,or need assistance? <br>
                                 Fill out the form below and our team will get back to you shortly.
                             </p>
                         </div>
@@ -217,7 +219,7 @@
                                     <div class="position-relative">
                                         <i class="bi bi-person position-absolute top-50 start-3 translate-middle-y ms-3
                                             "></i>
-                                        <input type="text" id="contactName" class="form-control ps-5 text-start"
+                                        <input type="text" data-i18n="full_name" id="contactName" class="form-control ps-5 text-start"
                                             placeholder="Full Name *" required>
                                     </div>
                                 </div>
@@ -225,7 +227,7 @@
                                     <div class="position-relative">
                                         <i class="bi bi-envelope position-absolute top-50 start-3 translate-middle-y ms-3
                                             "></i>
-                                        <input type="email" id="contactEmail" class="form-control ps-5 text-start"
+                                        <input type="email" data-i18n="email_addr" id="contactEmail" class="form-control ps-5 text-start"
                                             placeholder="Email Address *" required>
                                     </div>
                                 </div>
@@ -235,7 +237,7 @@
                                     <div class="position-relative">
                                         <i class="bi bi-telephone position-absolute top-50 start-3 translate-middle-y ms-3
                                             "></i>
-                                        <input type="tel" id="contactPhone" class="form-control ps-5 text-start"
+                                        <input type="tel" data-i18n="phone_num" id="contactPhone" class="form-control ps-5 text-start"
                                             placeholder="Phone Number *" required>
                                     </div>
                                 </div>
@@ -245,23 +247,23 @@
                                             "></i>
                                         <select name="hotel" id="contactSubject"
                                             class="form-select form-select-lg form-control ps-5 text-start">
-                                            <option value="" selected disabled>Select Subject</option>
-                                            <option value="room booking">Room booking</option>
-                                            <option value="hotel services">Hotel services</option>
-                                            <option value="complaint">Complaint</option>
-                                            <option value="pricr inquir">Pricr inquir</option>
-                                            <option value="reservation inquir">Reservation inquir</option>
-                                            <option value="other">Other</option>
+                                            <option value="" selected disabled data-i18n="subject">Select Subject</option>
+                                            <option value="room booking" data-i18n="room_booking">Room booking</option>
+                                            <option value="hotel services" data-i18n="hotel_services">Hotel services</option>
+                                            <option value="complaint" data-i18n="complaint">Complaint</option>
+                                            <option value="pricr inquir" data-i18n="price_inq">Price inquir</option>
+                                            <option value="reservation inquir" data-i18n="res_inq">Reservation inquir</option>
+                                            <option value="other" data-i18n="other">Other</option>
                                         </select>
                                     </div>
                                 </div>
                             </div>
                             <div class="message">
                                 <i class="bi bi-chat-left-text"></i>
-                                <textarea class="form-control w-100" rows="4" id="contactMessage"
+                                <textarea data-i18n="your_mag" class="form-control w-100" rows="4" id="contactMessage"
                                     placeholder="  Your Message*"></textarea>
                             </div>
-                            <button type="submit" class="sendBtn" id="sendBtn"><i class="bi bi-telegram"></i> Send
+                            <button data-i18n="send_msg" type="submit" class="sendBtn" id="sendBtn"><i class="bi bi-telegram"></i> Send
                                 Message <i class="bi bi-arrow-right"></i>
                             </button>
                         </form>
@@ -270,11 +272,11 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="card-contact-left">
                         <div class="cantact-lable">
-                            <span>OUR CONTACT DETAILS</span>
+                            <span data-i18n="contact_details">OUR CONTACT DETAILS</span>
                             <i></i>
                         </div>
                         <div class="cantact-head">
-                            <h1>We're Here 24/7</h1>
+                            <h1 data-i18n="here_247">We're Here 24/7</h1>
                         </div>
                         <div class="cantact-details">
                             <div class="cantact-item">
@@ -282,8 +284,8 @@
                                     <i class="bi bi-geo-alt"></i>
                                 </div>
                                 <div class="cantact-text">
-                                    <h6>Address</h6>
-                                    <p>123 Hotel Street, Kabul Afghanistan <br>
+                                    <h6 data-i18n="address">Address</h6>
+                                    <p data-i18n="address_info">123 Hotel Street, Kabul Afghanistan <br>
                                         P.O.Box 1001
                                     </p>
                                 </div>
@@ -293,7 +295,7 @@
                                     <i class="bi bi-telephone"></i>
                                 </div>
                                 <div class="cantact-text">
-                                    <h6>Phone</h6>
+                                    <h6 data-i18n="phone">Phone</h6>
                                     <p>+93 774 480 184 <br>
                                         +93 791 456 567
                                     </p>
@@ -304,7 +306,7 @@
                                     <i class="bi bi-envelope"></i>
                                 </div>
                                 <div class="cantact-text">
-                                    <h6>Email</h6>
+                                    <h6 data-i18n="email">Email</h6>
                                     <p>info@stayora.com <br>
                                         reservation@stayora.com
                                     </p>
@@ -315,14 +317,14 @@
                                     <i class="bi bi-clock"></i>
                                 </div>
                                 <div class="cantact-text">
-                                    <h6>24/7 Support</h6>
-                                    <p>
+                                    <h6 data-i18n="support_247_c">24/7 Support</h6>
+                                    <p data-i18n="support_info_c">
                                         We are available around the clock to assist you.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <p class="comfort-text">
+                        <p class="comfort-text" data-i18n="comfort-text">
                             Your Comfort <br> Our Priority
                         </p>
                     </div>
@@ -334,12 +336,12 @@
     <section class="contact-section">
         <div class="container">
             <div class="cantact-lable">
-                <span>OUR LOCATION</span>
+                <span data-i18n="loc_label">OUR LOCATION</span>
                 <i></i>
             </div>
             <div class="cantact-head">
-                <h1>Find Us on the Map</h1>
-                <p>Our hotel is conveniently located in the heart of the city, close to major attractions <br>
+                <h1 data-i18n="loc_title">Find Us on the Map</h1>
+                <p data-i18n="desc">Our hotel is conveniently located in the heart of the city, close to major attractions <br>
                     and transportation hubs.
                 </p>
             </div>
@@ -350,8 +352,8 @@
                 <div class="map-card">
                     <div class="map-card-top">
                         <div>
-                            <h4>Stayora Hotal & Resort</h4>
-                            <p>Kabul Afghanistan</p>
+                            <h4 data-i18n="stayora">Stayora Hotal & Resort</h4>
+                            <p data-i18n="k_afghanistan">Kabul Afghanistan</p>
                             <div class="rating">
                                 <span>4.8</span>
                                 <span>
@@ -362,9 +364,9 @@
                                 </span>
                                 <span>(245)</span>
                             </div>
-                            <a href="#">View larger map</a>
+                            <a href="#" data-i18n="view_map">View larger map</a>
                         </div>
-                        <a href="#" class="directions"><i class="bi bi-arrow-up-right"></i>
+                        <a href="#" class="directions"><i class="bi bi-arrow-up-right" data-i18n="directions"></i>
                             Directions
                         </a>
                     </div>
@@ -382,8 +384,8 @@
                     <div class="footer-brand" data-i18n="brand">
                         Stay<span>ora</span>
                     </div>
-                    <p class="footer-info" data-i18n="brand-info">Your perfect stay starts here. </p>
-                    <p class="footer-info" data-i18n="brand-info">Discover yhe best hotel,amazing experiences
+                    <p class="footer-info" data-i18n="brand_info">Your perfect stay starts here. </p>
+                    <p class="footer-info" data-i18n="brand_info_desc">Discover yhe best hotel,amazing experiences
                         and unforgettable stays around the world
                     </p>
                     <div class="news-box">
@@ -398,32 +400,32 @@
                 <div class="col-lg-2 col-md-6 col-sm-6">
                     <div class="footer-heading" data-i18n="links">Quick Links</div>
                     <ul class="footer-links">
-                        <li><a href="index.html" class="link" data-i18n="link-home"><span>></span>Home</a></li>
-                        <li><a href="room.html" class="link" data-i18n="link-rooms"><span>></span>Rooms</a></li>
-                        <li><a href="booking.html" class="link" data-i18n="link-booking"><span>></span>Booking</a></li>
-                        <li><a href="services.html" class="link" data-i18n="link-services"><span>></span>Services</a>
+                        <li><a href="index.html" class="link" data-i18n="link_home"><span>></span>Home</a></li>
+                        <li><a href="room.html" class="link" data-i18n="link_rooms"><span>></span>Rooms</a></li>
+                        <li><a href="booking.html" class="link" data-i18n="link_booking"><span>></span>Booking</a></li>
+                        <li><a href="services.html" class="link" data-i18n="link_services"><span>></span>Services</a>
                         </li>
-                        <li><a href="about.html" class="link" data-i18n="link-about"><span>></span>About</a></li>
-                        <li><a href="contact.html" class="link" data-i18n="link-contact"><span>></span>Contact</a></li>
+                        <li><a href="about.html" class="link" data-i18n="link_about"><span>></span>About</a></li>
+                        <li><a href="contact.html" class="link" data-i18n="link_contact"><span>></span>Contact</a></li>
                     </ul>
                 </div>
                 <!-- Col 3: Support -->
                 <div class="col-lg-2 col-md-6 col-sm-6">
-                    <div class="footer-heading" data-i18n="link">Booking</div>
+                    <div class="footer-heading" data-i18n="link_booking">Booking</div>
                     <ul class="footer-links">
-                        <li><a href="favorit.html" class="link" data-i18n="link-favorite"><span>></span>Favorite</a>
+                        <li><a href="favorit.html" class="link" data-i18n="link_favorite"><span>></span>Favorite</a>
                         </li>
-                        <li><a href="my-booking.html" class="link" data-i18n="link-my-booking"><span>></span>My Booking
+                        <li><a href="my-booking.html" class="link" data-i18n="link_my_booking"><span>></span>My Booking
                             </a></li>
-                        <li><a href="search-reslut.html" class="link" data-i18n="link-search-hotel"><span>></span>Search
+                        <li><a href="search-reslut.html" class="link" data-i18n="link_search_hotel"><span>></span>Search
                                 Hotel</a></li>
-                        <li><a href="" class="link" data-i18n="link-offer"><span>></span>Offers</a></li>
-                        <li><a href="payment.html" class="link" data-i18n="link-payment"><span>></span>Payment</a></li>
+                        <li><a href="" class="link" data-i18n="link_offer"><span>></span>Offers</a></li>
+                        <li><a href="payment.html" class="link" data-i18n="link_payment"><span>></span>Payment</a></li>
                     </ul>
                 </div>
                 <!-- Col 4: Contact -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="footer-heading" data-i18n="link">Contact Us</div>
+                    <div class="footer-heading" data-i18n="link_contact">Contact Us</div>
                     <div class="footer-contact-item">
                         <i class="bi bi-geo-alt-fill"></i>
                         <span data-i18n="country">Kabul Afghanistan</span>
@@ -436,7 +438,7 @@
                         <i class="bi bi-telephone-fill"></i>
                         <span>+93 778 944 506</span>
                     </div>
-                    <div class="footer-heading">Follow Us</div>
+                    <div class="footer-heading" data-i18n="link_follow">Follow Us</div>
                     <div class="footer-social">
                         <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
                         <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
@@ -447,10 +449,10 @@
             </div>
             <!-- Bottom Footer -->
             <div class="footer-bottom d-flex flex-wrap align-items-center justify-content-between gap-2">
-                <p data-i18n="bottom-footer">&copy; 2024 <a href="#">Stayora</a>. All Rights Reserved.</p>
+                <p data-i18n="bottom-footer">&copy; 2024 <a href="#" data-i18n="bottom_footer">Stayora</a>. All Rights Reserved.</p>
                 <p>
-                    <a href="#" class="me-3">Privacy Policy</a>
-                    <a href="#" class="me-3">Terms of Conditions</a>
+                    <a href="#" class="me-3" data-i18n="privacy">Privacy Policy</a>
+                    <a href="#" class="me-3" data-i18n="terms">Terms of Conditions</a>
                 </p>
             </div>
         </div>

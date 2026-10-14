@@ -60,21 +60,29 @@
                                 <div class="profile-avatar-lg" id="menuAvatar">F</div>
                                 <div>
                                     <strong id="menuUserName">Hello, Guest</strong>
-                                    <small><a href="dashboard.html">View your account</a></small>
+                                    <small><a href="dashboard.html" data-i18n="view_accont">View your
+                                            account</a></small>
                                 </div>
                             </div>
-                            <a href="dashboard.html"><i class="bi bi-grid"></i> Dashboard</a>
-                            <a href="my-booking.html"><i class="bi bi-calendar-check"></i> My Bookings</a>
-                            <a href="favorit.html"><i class="bi bi-heart"></i> Favorite</a>
-                            <a href="payment.html"><i class="bi bi-credit-card"></i> Payment</a>
-                            <a href="profile.html"><i class="bi bi-person-gear"></i> Account Settings</a>
-                            <button id="logoutBtn" class="logout-btn">
+
+                            <a href="dashboard.html" data-i18n="dash"><i class="bi bi-grid"></i> Dashboard</a>
+                            <a href="my-booking.html" data-i18n="my_booking_menu"><i class="bi bi-calendar-check"></i>
+                                My
+                                Bookings</a>
+                            <a href="favorit.html" data-i18n="favorit"><i class="bi bi-heart"></i> Favorit</a>
+                            <a href="payment.html" data-i18n="payment_menu"><i class="bi bi-credit-card"></i>
+                                Payment</a>
+                            <a href="profile.html" data-i18n="account_settings"><i class="bi bi-person-gear"></i>
+                                Account
+                                Settings</a>
+
+                            <button id="logoutBtn" class="logout-btn" data-i18n="log_out">
                                 <i class="bi bi-box-arrow-right"></i> Log Out
                             </button>
                         </div>
                     </div>
                 </div>
-                <button class="btn btn-outline btn-sm ms-2" data-lang-toggle>دری</button>
+                <button class="btn btn-outline btn-sm ms-2 d-none" data-lang-toggle>دری</button>
             </div>
         </div>
     </nav>
@@ -111,21 +119,25 @@
                             <div class="profile-avatar-lg" id="menuAvatarMobile">F</div>
                             <div>
                                 <strong id="menuUserNameMobile">Hello, Guest</strong>
-                                <small><a href="dashboard.html">View your account</a></small>
+                                <small><a href="dashboard.html" data-i18n="view_accont">View your account</a></small>
                             </div>
                         </div>
-                        <a href="dashboard.html"><i class="bi bi-grid"></i> Dashboard</a>
-                        <a href="my-booking.html"><i class="bi bi-calendar-check"></i> My Bookings</a>
-                        <a href="favorit.html"><i class="bi bi-heart"></i> Favorite</a>
-                        <a href="payment.html"><i class="bi bi-credit-card"></i> Payment</a>
-                        <a href="profile.html"><i class="bi bi-person-gear"></i> Account Settings</a>
-                        <button id="logoutBtnMobile" class="logout-btn">
+
+                        <a href="dashboard.html" data-i18n="dash"><i class="bi bi-grid"></i> Dashboard</a>
+                        <a href="my-booking.html" data-i18n="my_booking_menu"><i class="bi bi-calendar-check"></i> My
+                            Bookings</a>
+                        <a href="favorit.html" data-i18n="favorit"><i class="bi bi-heart"></i> Favorit</a>
+                        <a href="payment.html" data-i18n="payment_menu"><i class="bi bi-credit-card"></i> Payment</a>
+                        <a href="profile.html" data-i18n="account_settings"><i class="bi bi-person-gear"></i> Account
+                            Settings</a>
+
+                        <button id="logoutBtn" class="logout-btn" data-i18n="log_out">
                             <i class="bi bi-box-arrow-right"></i> Log Out
                         </button>
                     </div>
                 </div>
 
-                <button class="btn btn-outline btn-sm" data-lang-toggle>دری</button>
+                <button class="btn btn-outline btn-sm d-none" data-lang-toggle>دری</button>
             </div>
         </div>
     </div>
@@ -136,10 +148,10 @@
             <div class="col-lg-6">
                 <div class="payment-head">
                     <div class="payment-lable">
-                        <span>Payment</span>
+                        <span data-i18n="pay_titel">Payment</span>
                         <i></i>
                     </div>
-                    <p>Secure your booking with confidence</p>
+                    <p data-i18n="pay_desc">Secure your booking with confidence</p>
                 </div>
             </div>
         </div>
@@ -155,11 +167,11 @@
                     <div class="payment-card">
                         <div class="payment-heading">
                             <i class="bi bi-credit-card"></i>
-                            <h3>Payment Method <br>
-                                <span>Please enter your card details to complete the booking.</span>
+                            <h3 data-i18n="pay_method">Payment Method <br>
+                                <span data-i18n="pay_info">Please enter your card details to complete the booking.</span>
                             </h3>
                         </div>
-                    
+
                         <div class="row">
                             <div class="col-lg-3">
                                 <div class="card-pay d-flex">
@@ -168,7 +180,7 @@
                                             <input type="radio" name="paymentMethod" value="card" checked>
                                             <i class="bi bi-credit-card"></i>
                                         </div>
-                                        <h6>Credit/Debit Card</h6>
+                                        <h6 data-i18n="card">Credit/Debit Card</h6>
                                     </div>
                                 </div>
                             </div>
@@ -183,7 +195,7 @@
                                                 </span>
                                             </i>
                                         </div>
-                                        <h6>PayPal</h6>
+                                        <h6 data-i18n="paypal">PayPal</h6>
                                     </div>
                                 </div>
                             </div>
@@ -196,7 +208,7 @@
                                                 <span style="color: black; font-weight: bold;">Pay </span>
                                             </i>
                                         </div>
-                                        <h6>Apple Pay</h6>
+                                        <h6 data-i18n="apple_pay">Apple Pay</h6>
                                     </div>
                                 </div>
                             </div>
@@ -209,15 +221,15 @@
                                                 <span style="color: #323149;">Pay </span>
                                             </i>
                                         </div>
-                                        <h6>Google Pay</h6>
+                                        <h6 data-i18n="google_pay">Google Pay</h6>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        
+
                         <div class="input">
-                            <label>Card Number *</label><br>
+                            <label data-i18n="card_num">Card Number *</label><br>
                             <input type="text" id="cardNumber" inputmode="numeric" maxlength="19"
                                 placeholder="1234 5678 9012 3456" required>
                         </div>
@@ -225,13 +237,13 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="input">
-                                    <label>Card Holder Name *</label><br>
+                                    <label data-i18n="card_holder">Card Holder Name *</label><br>
                                     <input type="text" id="cardHolder" placeholder="Fazila Ahmadi" required>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="input">
-                                    <label>Expiry Date *</label><br>
+                                    <label data-i18n="expiry">Expiry Date *</label><br>
                                     <input type="text" id="expiryDate" maxlength="5" placeholder="MM/YY" required>
                                 </div>
                             </div>
@@ -240,14 +252,14 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="input">
-                                    <label>CVV *</label><br>
+                                    <label data-i18n="cvv">CVV *</label><br>
                                     <input type="text" id="cvv" inputmode="numeric" maxlength="4" placeholder="123"
                                         required>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="input">
-                                    <label>Billing Address</label><br>
+                                    <label data-i18n="billing">Billing Address</label><br>
                                     <input type="text" id="billingAddress" placeholder="Street, city" required>
                                 </div>
                             </div>
@@ -255,10 +267,10 @@
 
                         <div class="pay-icon">
                             <i class="bi bi-lock-fill"></i>
-                            <p>Your payment information is secure and encrypted.</p>
+                            <p data-i18n="secure_info">Your payment information is secure and encrypted.</p>
                         </div>
 
-                        <button type="button" class="payBtn" id="payBtn">
+                        <button type="button" class="payBtn" id="payBtn" data-i18n="pay_btn">
                             Pay Now <i class="bi bi-arrow-right"></i>
                         </button>
                     </div>
@@ -268,48 +280,48 @@
                     <div class="payment-card">
                         <img src="images/contact_hero-background.png" class="img-fluid" alt="payment">
                         <div class="pay-summary">
-                            <h3>Booking Summary</h3>
+                            <h3 data-i18n="summery">Booking Summary</h3>
                             <div class="description">
                                 <p>
-                                    <i class="bi bi-house-door"></i> Hotel Name
-                                    <span id="summaryHotel">Kabul Grand Hotel</span>
+                                    <i class="bi bi-house-door" data-i18n="hotel_name"></i> Hotel Name
+                                    <span id="summaryHotel" data-i18n="hotel_info">Kabul Grand Hotel</span>
                                 </p>
                                 <p>
-                                    <i class="bi bi-house"></i> Room Type
-                                    <span id="summaryRoom">Deluxe Room</span>
+                                    <i class="bi bi-house" data-i18n="room_type"></i> Room Type
+                                    <span id="summaryRoom" data-i18n="Deluxe_room">Deluxe Room</span>
                                 </p>
                                 <p>
-                                    <i class="bi bi-calendar-check"></i> Check-in
-                                    <span id="summaryCheckIn">15 Oct 2025</span>
+                                    <i class="bi bi-calendar-check" data-i18n="Check_in"></i> Check-in
+                                    <span id="summaryCheckIn" data-i18n="date_in">15 Oct 2025</span>
                                 </p>
                                 <p>
-                                    <i class="bi bi-calendar3"></i> Check-out
-                                    <span id="summaryCheckOut">18 Oct 2025</span>
+                                    <i class="bi bi-calendar3" data-i18n="Check_out"></i> Check-out
+                                    <span id="summaryCheckOut" data-i18n="date_out">18 Oct 2025</span>
                                 </p>
                                 <p>
-                                    <i class="bi bi-people"></i> Guests
-                                    <span id="summaryGuests">2 Adults, 1 Child</span>
+                                    <i class="bi bi-people" data-i18n="Guest"></i> Guests
+                                    <span id="summaryGuests" data-i18n="Guest_labl">2 Adults, 1 Child</span>
                                 </p>
                             </div>
                             <div class="room-price">
-                                <p>Room Price (3 nights) <span id="summaryRoomPrice">$450</span></p>
-                                <p>Taxes &amp; Fees <span id="summaryTax">$45</span></p>
+                                <p data-i18n="room_price">Room Price (3 nights) <span id="summaryRoomPrice">$450</span></p>
+                                <p data-i18n="taxes">Taxes &amp; Fees <span id="summaryTax">$45</span></p>
                             </div>
                             <div class="total">
-                                <h6>Total Price <span id="summaryTotal">$495</span></h6>
+                                <h6 data-i18n="total_price">Total Price <span id="summaryTotal">$495</span></h6>
                             </div>
                             <div class="pay-icon">
                                 <i class="bi bi-shield-check"></i>
-                                <p>Secure Payment</p>
+                                <p data-i18n="secure" >Secure Payment</p>
                             </div>
                             <div class="pay-methods">
-                                <span class="visa">VISA</span>
+                                <span class="visa" data-i18n="visa">VISA</span>
                                 <span class="mastercard">
                                     <i class="bi bi-circle-fill"></i>
                                     <i class="bi bi-circle-fill"></i>
                                 </span>
-                                <span class="amex">AMERICAN <br>EXPRESS</span>
-                                <span class="paypal">P PayPal</span>
+                                <span class="amex" data-i18n="american">AMERICAN <br>EXPRESS</span>
+                                <span class="paypal" data-i18n="paypal">P PayPal</span>
                             </div>
                         </div>
                     </div>
@@ -323,66 +335,80 @@
     <footer id="footer">
         <div class="container">
             <div class="row g-5">
+                <!--Col 1: info-->
                 <div class="col-lg-4 col-md-6">
-                    <div class="footer-brand">Stay<span>ora</span></div>
-                    <p class="footer-info">Your perfect stay starts here.</p>
-                    <p class="footer-info">Discover the best hotels, amazing experiences and unforgettable stays around
-                        the world.</p>
+                    <div class="footer-brand" data-i18n="brand">
+                        Stay<span>ora</span>
+                    </div>
+                    <p class="footer-info" data-i18n="brand_info">Your perfect stay starts here. </p>
+                    <p class="footer-info" data-i18n="brand_info_desc">Discover yhe best hotel,amazing experiences
+                        and unforgettable stays around the world
+                    </p>
                     <div class="news-box">
                         <i class="bi bi-envelope"></i>
                         <input type="email" id="subEmail" placeholder="Enter your email address">
-                        <button id="subBtn" type="submit"><i class="bi bi-arrow-right"></i></button>
+                        <button id="subBtn" type="submit">
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
                     </div>
                 </div>
-
+                <!-- Col 2: Quick Links -->
                 <div class="col-lg-2 col-md-6 col-sm-6">
-                    <div class="footer-heading">Quick Links</div>
+                    <div class="footer-heading" data-i18n="links">Quick Links</div>
                     <ul class="footer-links">
-                        <li><a href="index.html" class="link"><span>></span>Home</a></li>
-                        <li><a href="room.html" class="link"><span>></span>Rooms</a></li>
-                        <li><a href="booking.html" class="link"><span>></span>Booking</a></li>
-                        <li><a href="services.html" class="link"><span>></span>Services</a></li>
-                        <li><a href="about.html" class="link"><span>></span>About</a></li>
-                        <li><a href="contact.html" class="link"><span>></span>Contact</a></li>
+                        <li><a href="index.html" class="link" data-i18n="link_home"><span>></span>Home</a></li>
+                        <li><a href="room.html" class="link" data-i18n="link_rooms"><span>></span>Rooms</a></li>
+                        <li><a href="booking.html" class="link" data-i18n="link_booking"><span>></span>Booking</a></li>
+                        <li><a href="services.html" class="link" data-i18n="link_services"><span>></span>Services</a>
+                        </li>
+                        <li><a href="about.html" class="link" data-i18n="link_about"><span>></span>About</a></li>
+                        <li><a href="contact.html" class="link" data-i18n="link_contact"><span>></span>Contact</a></li>
                     </ul>
                 </div>
-
+                <!-- Col 3: Support -->
                 <div class="col-lg-2 col-md-6 col-sm-6">
-                    <div class="footer-heading">Booking</div>
+                    <div class="footer-heading" data-i18n="link_booking">Booking</div>
                     <ul class="footer-links">
-                        <li><a href="favorit.html" class="link"><span>></span>Favorite</a></li>
-                        <li><a href="my-booking.html" class="link"><span>></span>My Booking</a></li>
-                        <li><a href="search-reslut.html" class="link"><span>></span>Search Hotel</a></li>
-                        <li><a href="payment.html" class="link"><span>></span>Payment</a></li>
+                        <li><a href="favorit.html" class="link" data-i18n="link_favorite"><span>></span>Favorite</a>
+                        </li>
+                        <li><a href="my-booking.html" class="link" data-i18n="link_my_booking"><span>></span>My Booking
+                            </a></li>
+                        <li><a href="search-reslut.html" class="link" data-i18n="link_search_hotel"><span>></span>Search
+                                Hotel</a></li>
+                        <li><a href="" class="link" data-i18n="link_offer"><span>></span>Offers</a></li>
+                        <li><a href="payment.html" class="link" data-i18n="link_payment"><span>></span>Payment</a></li>
                     </ul>
                 </div>
-
+                <!-- Col 4: Contact -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="footer-heading">Contact Us</div>
+                    <div class="footer-heading" data-i18n="link_contact">Contact Us</div>
                     <div class="footer-contact-item">
-                        <i class="bi bi-geo-alt-fill"></i><span>Kabul, Afghanistan</span>
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span data-i18n="country">Kabul Afghanistan</span>
                     </div>
                     <div class="footer-contact-item">
-                        <i class="bi bi-envelope-fill"></i><span>Stayora1234@gmail.com</span>
+                        <i class="bi bi-envelope-fill"></i>
+                        <span>Stayora1234@gmail.com</span>
                     </div>
                     <div class="footer-contact-item">
-                        <i class="bi bi-telephone-fill"></i><span>+93 778 944 506</span>
+                        <i class="bi bi-telephone-fill"></i>
+                        <span>+93 778 944 506</span>
                     </div>
-                    <div class="footer-heading">Follow Us</div>
+                    <div class="footer-heading" data-i18n="link_follow">Follow Us</div>
                     <div class="footer-social">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-linkedin"></i></a>
-                        <a href="#"><i class="bi bi-youtube"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
                     </div>
                 </div>
             </div>
-
+            <!-- Bottom Footer -->
             <div class="footer-bottom d-flex flex-wrap align-items-center justify-content-between gap-2">
-                <p>&copy; 2024 <a href="#">Stayora</a>. All Rights Reserved.</p>
+                <p data-i18n="bottom-footer">&copy; 2024 <a href="#" data-i18n="bottom_footer">Stayora</a>. All Rights Reserved.</p>
                 <p>
-                    <a href="#" class="me-3">Privacy Policy</a>
-                    <a href="#" class="me-3">Terms of Conditions</a>
+                    <a href="#" class="me-3" data-i18n="privacy">Privacy Policy</a>
+                    <a href="#" class="me-3" data-i18n="terms">Terms of Conditions</a>
                 </p>
             </div>
         </div>
