@@ -100,7 +100,7 @@ async function hashPassword(password, saltHex = null) {
     .map((b) => b.toString(16).padStart(2, "0"))
     .join("");
 
-  return` pbkdf2$${saltEncoded}$${hash}`;
+  return`pbkdf2$${saltEncoded}$${hash}`;
 }
 
 async function verifyPassword(password, stored) {
