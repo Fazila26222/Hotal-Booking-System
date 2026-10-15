@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/darkmode.css">
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/favorit.css">
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!--icons and fonts file-->
     <link rel="stylesheet" href="icons/bootstrap-icons.min.css">
@@ -18,7 +19,7 @@
     <link rel="stylesheet" href="fonts/Vazirmatn-Regular.ttf">
 </head>
 
-<body>
+<body data-require-login="true">
     <!--=============
         Start Navbar
      ==============-->
@@ -280,4 +281,5 @@
 <script src="js/darkmode.js"></script>
 <script src="js/emailInput.js"></script>
 <script src="js/login.js"></script>
+<script src="js/guard.js"></script>
 </html>
