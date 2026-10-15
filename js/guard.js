@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  /* ---------- خواندن تنظیمات صفحه ---------- */
   const requiresLogin = document.body.dataset.requireLogin === "true";
   const requiresStaff = document.body.dataset.requireStaff === "true";
   const requiresAdmin = document.body.dataset.requireAdmin === "true";
@@ -7,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!requiresLogin) return;
 
   const user = getCurrentUser();
-
+// read session
   if (!user) {
     Swal.fire({
       icon: "info",
@@ -25,7 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     return;
   }
-// guset
+
+// guest
   if (requiresStaff && user.role === 0) {
     Swal.fire({
       icon: "error",
@@ -39,7 +41,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     return;
   }
-// admin
+
+//  admin
   if (requiresAdmin && user.role !== 3) {
     Swal.fire({
       icon: "error",

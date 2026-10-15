@@ -2,7 +2,7 @@ const USER_KEY = "aw_user";
 const CURRENT_USER_KEY = "aw_current_user";
 
 /* ========================
-   Storage Helpers
+   getuser
    ======================== */
 function getUsers() {
   try {
@@ -46,8 +46,19 @@ function isStrongPassword(password) {
 }
 
 function isValidPhone(phone) {
-  const phoneRegex = /^(\+93|0)?7\d{8}$/;
-  return phoneRegex.test(phone.replace(/\s/g, ""));
+  const cleaned = phone.replace(/[\s\-()]/g, "");
+
+  //number and +
+  if (!/^\+?\d+$/.test(cleaned)) return false;
+
+  // حذف + از ابتدا
+  const digits = cleaned.replace(/^\+/, "");
+
+  // بررسی طول
+  if (digits.length < 10) return false;
+  if (digits.length > 15) return false;
+
+  return true;
 }
 
 /* ========================
